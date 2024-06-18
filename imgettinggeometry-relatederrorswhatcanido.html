@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; System Errors &gt; I'm Getting Geometry-Related Errors, What can I do?</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Errors: Geometry Issues in Rhino" />
+   <meta name="description" content="If you suspect that the geometry you are using for CAM operations is causing problems there are a few things you can do. &nbsp;" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "imgettinggeometry-relatederrorswhatcanido.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">I'm Getting Geometry-Related Errors, What can I do?</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?imgettinggeometry-relatederrorswhatcanido.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; System Errors&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">I'm Getting Geometry-Related Errors, What can I do?</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="spellcheckererrorafffilenotfound.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="my_csvtoollibraryiscorruptedshowingtoolsincorrectly.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">If you suspect that the geometry you are using for CAM operations is causing problems there are a few things you can do. &nbsp;</p>
+<p class="p_Normal"><span style="font-size: 19px; font-weight: bold; text-decoration: underline;">What to Look For:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If your toolpaths will not generate.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If you get geometry related messages such as &quot;Open loops found. &nbsp;Cannot proceed.&quot;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If you import or open a part geometry file and the CAD system slows down noticeably.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Any other geometry related concerns.</span><br />
+<span class="f_Numbered">&nbsp;</span></p><p class="p_Numbered" style="margin: 0 0 8px 22px;"><span class="f_Numbered" style="font-size: 19px; font-weight: bold; text-decoration: underline;">What You Can Do for Curve Related Concerns:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">There may be times when you suspect that your NURBs curve geometry is causing a problem. &nbsp;&quot;NURBs&quot; stand for &quot;<a href="https://en.wikipedia.org/wiki/Non-uniform_rational_B-spline" target="_blank" class="weblink">Nonuniform Rational B-Splines</a>&quot;.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered" style="font-weight: bold;">In the CAD system, there are commands that will simplifying the curve</span><span class="f_Numbered"> into lines and arcs within a set operational tolerance. &nbsp;Meaning that in most cases, you will not notice a difference in the resulting simplified curve.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_Numbered">In </span><span class="f_BoldKeyword">Rhino</span><span class="f_Numbered"> try the following commands:</span><br />
+<span class="f_Numbered"> located at:</span><br />
+<span class="f_BoldKeyword">Curve</span><span class="f_Numbered"> &gt; </span><span class="f_BoldKeyword">Curve Edit Tools &gt; Refit to Tolerance</span><br />
+<span class="f_BoldKeyword">Curve</span><span class="f_Numbered"> &gt; </span><span class="f_BoldKeyword">Curve Edit Tools &gt; Simplify Lines &amp; Arcs</span><br />
+<span class="f_BoldKeyword">Surface &gt; Surface Edit Tools &gt; Refit to Tolerance</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold;">Simulation Before:</span></p>
+<p class="p_Normal"><img alt="rhino-surface-before" width="338" height="207" style="margin:0;width:338px;height:207px;border:none" src="rhino-surface-before.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-weight: bold;">Simulation After:</span></p>
+<p class="p_Normal"><img alt="rhino-surface-after" width="295" height="208" style="margin:0;width:295px;height:208px;border:none" src="rhino-surface-after.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered"><span class="f_Numbered" style="font-weight: bold;">Always merge curves before using them in CAM operations</span><span class="f_Numbered">. &nbsp;This will ensure that there are no open loops. &nbsp;The term &quot;open loops&quot; simply means that your geometry is not connected end-to-end when the CAM system needs them to be. &nbsp;If after merging the curves, there is still more than one curve, zoom into the end points and connect them manually, using a small line. &nbsp;Then try merging again until the merge completes and there is only one curve.</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered" style="font-weight: bold;">You can export the curve geometry out</span><span class="f_Numbered"> from the CAD system using a neutral format such as DXF, DWG, or IGES. &nbsp;Then import the neutral file back into the CAD system. &nbsp;This round-trip conversion will redefine the geometry and make it suitable for importing into the CAD system within the CAD system's currently defined operating tolerance.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered" style="font-weight: bold;">Enable Use Visual Indicators:  </span><span class="f_Numbered">Both </span><span class="f_BoldKeyword">Rhino</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">VisualCAD</span><span class="f_Numbered"> include commands that enable visual indicators on curves such as the start point and direction. &nbsp;In </span><span class="f_BoldKeyword">Rhino</span><span class="f_Numbered"> locate the </span><span class="f_BoldKeyword">Curve Tools</span><span class="f_Numbered"> tab. </span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered" style="font-weight: bold;">Look for the Start Point (VisualCAD/CAM &amp; RhinoCAM):  </span><span class="f_Numbered">After generating a toolpath operation that uses a merged or joined curve as Control Geometry,  </span><span class="f_BoldKeyword">RhinoCAM</span><span class="f_Numbered"> will highlight the geometry when the toolpath operation is selected from the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered"> tree. &nbsp;The start point of the curve is shown with an orange rectangle. &nbsp;If the curves are merged successfully, you will see only one start point.</span><br />
+<span class="f_Numbered">&nbsp;</span></p><p class="p_Numbered" style="margin: 0 0 8px 22px;"><span class="f_Numbered" style="font-size: 19px; font-weight: bold; text-decoration: underline;">What You Can Do for Surface Related Concerns:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If you suspect that you have surfaces that are causing problems, here are some things you can do.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">All CAD surfaces have a &quot;normal&quot; direction. &nbsp;This means that the surface has a front and a back. &nbsp;If you have a surface that is inverted, meaning that the back of the surface is facing outward, then there may be CAD tools available to you to &quot;flip&quot; the normal direction of the surface.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">In the CAD system, there may be commands that will simplifying the surface into multiple surfaces within a set operational tolerance. &nbsp;Meaning that in most cases, you will not notice a difference in the resulting simplified surfaces.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">You can export the surface geometry out from the CAD system using a neutral format such as IGES (*.igs) or STEP (*.stp or *.step). &nbsp;DO NOT USE STL (*.stl or *.sla) for these are faceted mesh formats, unless the original geometry is a mesh, then import the neutral file back into the CAD system within the CAD system's currently defined operating tolerance. &nbsp;This round-trip conversion will redefine the surfaces and may fix many geometry related errors.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?imgettinggeometry-relatederrorswhatcanido.html" target="_top">'+baseurl+'index.html?imgettinggeometry-relatederrorswhatcanido.html</a></p>');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Troubleshooting Error Messages</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Machining,Machining Troubleshooting Error Messages,Troubleshooting Error Messages,Troubleshooting Error Messages Could not find valid data. Internal algorithm failure,Troubleshooting Error Messages Invalid Step over parameter!,Troubleshooting Error Messages Invalid tool definition,Troubleshooting Error Messages Invalid Z level setting! Please correct before proceeding,Troubleshooting Error Messages No Valid solution could be found,Troubleshooting Error Messages Object(s) used in Machining Operation(s)! Skipping them,Troubleshooting Error Messages Open loops found. Cannot proceed further!,Troubleshooting Error Messages Out of Sync" />
+   <meta name="description" content="The following are some error messages that you might encounter along with some tips when generating toolpaths using RhinoCAM. &nbsp;" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "troubleshooting_tips.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Troubleshooting Tips</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?troubleshooting_tips.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Troubleshooting Tips</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="the-rhinocam-api-sdk.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="creatingmachiningoperations.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="creating2axismachiningoperations.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The following are some error messages that you might encounter along with some tips when generating toolpaths using <span class="f_BoldKeyword">RhinoCAM</span>. &nbsp;</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Invalid tool definition.</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-1" width="218" height="129" style="margin:0;width:218px;height:129px;border:none" src="tips-error-message-1.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">When creating/editing tools for all tools types make sure:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Flute Length</span><span class="f_Numbered"> &nbsp;value is set smaller than </span><span class="f_BoldKeyword">Shoulder Length</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Flute Length</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Shoulder Length</span><span class="f_Numbered"> value is set smaller than </span><span class="f_BoldKeyword">Tool Length</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Normal">For <span class="f_BoldKeyword">Dove Tail</span> tools check values for <span class="f_BoldKeyword">Tool Diameter</span>, <span class="f_BoldKeyword">Flute Length</span> and <span class="f_BoldKeyword">Taper Angle:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Make sure &nbsp;these values are geometrically correct. </span><span class="f_Numbered" style="font-weight: bold;">Hint</span><span class="f_Numbered">: Use the preview window to see if a preview of the </span><span class="f_BoldKeyword">Tool</span><span class="f_Numbered"> for the specified values can be seen. </span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span>See <span class="f_BoldKeyword">Create/Edit Tools</span>.</p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Could not find valid data. Internal algorithm failure.</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-2" width="372" height="128" style="margin:0;width:372px;height:128px;border:none" src="tips-error-message-2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">For <span class="f_BoldKeyword">2 Axis Pocketing</span> &amp; check for the following:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If </span><span class="f_BoldKeyword">Tool Diameter</span><span class="f_Numbered"> is larger than the width of the selected drive geometry &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> specified leave in cut parameters tab &nbsp;</span></p><p class="p_Normal">For <span class="f_BoldKeyword">2 axis Profiling</span>, i<span class="f_Numbered">f the toolpath you are trying to generate is on the inside of a closed curve/sketch check:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If </span><span class="f_BoldKeyword">Tool Diameter</span><span class="f_Numbered"> is larger than the width of the selected drive geometry &nbsp;</span></p><p class="p_Normal">For <span class="f_BoldKeyword">2 Axis Re-machining</span> when the reference <span class="f_BoldKeyword">Tool Diameter</span> under the cut parameters tab is set to be the same or less than the <span class="f_BoldKeyword">Tool Diameter</span> of the tool being used for the current operation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Invalid Step over parameter!</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-3" width="249" height="128" style="margin:0;width:249px;height:128px;border:none" src="tips-error-message-3.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">If using a <span class="f_BoldKeyword">V-Carving Mill</span> or <span class="f_BoldKeyword">Engraving</span> tool that has a <span class="f_BoldKeyword">Tip Diameter</span> = <span class="f_BoldKeyword">0</span>, specify <span class="f_BoldKeyword">Step Over</span> as a distance value instead of <span class="f_BoldKeyword">% of Tool Diameter</span>. &nbsp;See <span class="f_BoldKeyword">Create/Edit Tools</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">No Valid solution could be found!</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-4" width="274" height="124" style="margin:0;width:274px;height:124px;border:none" src="tips-error-message-4.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">For <span class="f_BoldKeyword">3 Axis Horizontal Roughing</span> &amp; <span class="f_BoldKeyword">Re-Roughing</span> check the following:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Check to see if there are no areas to generate a toolpath for the defined stock geometry &nbsp; </span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Check to see if the selected containment region is outside of the </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> &amp; </span><span class="f_BoldKeyword">Part</span><span class="f_Numbered"> extents &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Check to see if the </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> geometry defined is too small for the part being roughed &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Check to see if the </span><span class="f_BoldKeyword">Part</span><span class="f_Numbered"> &amp; </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> geometry are miss-aligned &nbsp;</span></p><p class="p_Normal">When defining <span class="f_BoldKeyword">Stock</span> <span class="f_BoldKeyword">from Selection</span> (after defining the <span class="f_BoldKeyword">Stock</span> &amp; before generating the roughing operation):</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Check to see if the geometry selected to define the </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> is hidden or suppressed. </span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Object(s) used in Machining Operation(s)! Skipping them.</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-5" width="408" height="130" style="margin:0;width:408px;height:130px;border:none" src="tips-error-message-5.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">This error can occur when attempting to delete a tool that is currently associated with machining operation:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">In the </span><span class="f_BoldKeyword">Machining Objects Browser</span><span class="f_Numbered">, expand the </span><span class="f_BoldKeyword">Tool</span><span class="f_Numbered"> icon by selecting the + sign ( </span><img alt="icon-tool-objects-browser" width="28" height="19" style="margin:0;width:28px;height:19px;border:none" src="icon-tool-objects-browser.png"/> )<span class="f_ImageCaption"> </span><span class="f_Numbered">to see there are any operations associated with that tool.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Open loops found. Cannot proceed further!</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-6" width="331" height="131" style="margin:0;width:331px;height:131px;border:none" src="tips-error-message-6.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">This error can occur when generating toolpaths for the following operations:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">2 Axis Pocketing</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">2 Axis High-Speed Pocketing</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">2 Axis V-Carve Roughing</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">2 Axis V-Carving</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Most </span><span class="f_BoldKeyword">3 Axis</span><span class="f_Numbered"> operations, expect for </span><span class="f_BoldKeyword">Curve Machining</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Between 2 Curves Machining</span><span class="f_Numbered"> operations</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">All </span><span class="f_BoldKeyword">4 Axis</span><span class="f_Numbered"> operations, except for </span><span class="f_BoldKeyword">Profiling</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Engraving</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Normal">When the selected drive/containment region:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Is not a closed curve/sketch &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Has self-intersections or has duplicate geometries &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">If the selected closed curve/sketch for </span><span class="f_BoldKeyword">4 Axis Parallel Finishing</span><span class="f_Numbered"> is not normal to the axis of rotation. For example, if the rotational axis is defined along X axis, the curve should be oriented parallel to &nbsp;the YZ coordinate axis. &nbsp;</span></p></td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -32px; margin: 0 0 8px 56px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Out of Sync</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-out-of-sync-rh" width="245" height="129" style="margin:0;width:245px;height:129px;border:none" src="tips-error-message-out-of-sync-rh.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">This error message tells us that <span class="f_BoldKeyword">Rhino's</span> database and <span class="f_BoldKeyword">RhinoCAM's</span> are not in sync. This can occur sometimes when you have other 3rd party plug-ins running in Rhino and the information is not shared between <span class="f_BoldKeyword">RhinoCAM</span> &amp; the other <span class="f_BoldKeyword">Rhino</span> plug-in. &nbsp;Save the file in <span class="f_BoldKeyword">Rhino</span>, close and reopen <span class="f_BoldKeyword">RhinoCAM</span> and regenerate the your toolpaths.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -32px; margin: 0 0 8px 56px;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Invalid Z level setting! Please correct before proceeding.</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tips-error-message-7" width="409" height="128" style="margin:0;width:409px;height:128px;border:none" src="tips-error-message-7.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">This error can occur when the <span class="f_BoldKeyword">Cut Level Z</span> containment for the <span class="f_BoldKeyword">Top</span> &amp; <span class="f_BoldKeyword">Bottom Z</span> values are not set correctly for the part being programmed.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?troubleshooting_tips.html" target="_top">'+baseurl+'index.html?troubleshooting_tips.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

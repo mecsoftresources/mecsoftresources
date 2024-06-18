@@ -1,0 +1,1078 @@
+;   TOOLTIP MAP FILE
+; Format:
+;          [DIALOG_ID]
+;          {
+;             [CONTROL_ID] | [FILE]
+;          }
+;   Symbol ';' - comment
+;
+;   Latest update: 11/28/18
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+24060 ; IDD_MACHINE_CSYS "Machine Tool Coordinate System"
+{
+   3244 | 3244-ToolTip-MACHINE-CSYS-ALIGNTOWCS.htm ; IDC_ALIGNTOWCS
+   3248 | 3248-ToolTip-MACHINE-CSYS-ALIGNTOCPLANE.htm ; IDC_ALIGNTOCPLANE
+   1479 | 1479-ToolTip-MACHINE-CSYS-PICK_FACE.htm ; IDC_PICK_FACE
+   2051 | 2051-ToolTip-MACHINE-CSYS-PICK_CURVE.htm ; IDC_PICK_CURVE
+   2165 | 2165-ToolTip-MACHINE-CSYS-WORLDX.htm ; IDC_WORLDX
+   2168 | 2168-ToolTip-MACHINE-CSYS-WORLDY.htm ; IDC_WORLDY
+   2163 | 2163-ToolTip-MACHINE-CSYS-WORLDZ.htm ; IDC_WORLDZ
+   1491 | 1491-ToolTip-MACHINE-CSYS-XROTATE.htm ; IDC_XROTATE
+   1494 | 1494-ToolTip-MACHINE-CSYS-YROTATE.htm ; IDC_YROTATE
+   1496 | 1496-ToolTip-MACHINE-CSYS-ZROTATE.htm ; IDC_ZROTATE
+   1501 | 1501-ToolTip-MACHINE-CSYS-RESET.htm ; IDC_RESET
+   3724 | 3724-ToolTip-MACHINE-CSYS-MCSYS_ANGLE.htm ; IDC_MCSYS_ANGLE
+   2651 | 2651-ToolTip-MACHINE-CSYS-ORIGINX.htm ; IDC_ORIGINX
+   2673 | 2673-ToolTip-MACHINE-CSYS-ORIGINY.htm ; IDC_ORIGINY
+   2664 | 2664-ToolTip-MACHINE-CSYS-ORIGINZ.htm ; IDC_ORIGINZ
+   2661 | 2661-ToolTip-MACHINE-CSYS-ORIGIN-PICK.htm ; IDC_ORIGIN_PICK
+   1470 | 1084-ToolTip-Dialog-Image.htm
+}
+1218 ; IDD_MOPS_INFO "Mops Information"
+{
+   1722 | 1722-ToolTip_Mops-Info-Print.htm ; IDC_MOPSINFO_PRINT
+   1505 | 1505-ToolTip_Mops-Info-List.htm ; IDC_MOPS_INFO_LIST
+}
+1275 ; IDD_PART_STOCK_COMPARE "Part/Stock Comparision"
+{
+   2294 | 2294-ToolTip-PART_STOCK_COMPARE_DELTAH.htm ; IDC_TPC_DELTAH
+   2298 | 2298-ToolTip-PART_STOCK_COMPARE_MORE_COLOR.htm ; IDC_TPC_MORE_COLOR2
+   2317 | 2298-ToolTip-PART_STOCK_COMPARE_MORE_COLOR.htm ; IDC_TPC_MORE_COLOR1
+   2331 | 2298-ToolTip-PART_STOCK_COMPARE_MORE_COLOR.htm ; IDC_TPC_MID_COLOR
+   2342 | 2298-ToolTip-PART_STOCK_COMPARE_MORE_COLOR.htm ; IDC_TPC_LESS_COLOR1
+   2357 | 2298-ToolTip-PART_STOCK_COMPARE_MORE_COLOR.htm ; IDC_TPC_LESS_COLOR2
+   1343 | 1343-ToolTip-PART_STOCK_COMPARE_APPLY.htm ; IDC_TPC_APPLY
+   2372 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_G4
+   2375 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_G2
+   2379 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_G3
+   2383 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_L1
+   2386 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_G1
+   2389 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_L3
+   2393 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_L2
+   2427 | 2372-ToolTip-PART_STOCK_COMPARE_RANGE.htm ; IDC_TPC_L4
+  ; IDHELP | file.htm ; IDHELP
+  ; IDCANCEL | file.htm ; IDCANCEL
+}
+7000 ; IDD_MACHINE_TURN_MANUAL "Turning Machine Setup"
+{
+   2631 | 2631-ToolTip-MACH-TURN-MANUAL-TOOLCHANGEX.htm ; IDC_TOOLCHANGEX
+   2637 | 2637-ToolTip-MACH-TURN-MANUAL-TOOLCHANGEZ.htm ; IDC_TOOLCHANGEZ
+   2641 | 2641-ToolTip-MACH-TURN-MANUAL-TOOLCHANGE-PICK.htm ; IDC_TOOLCHANGE_PICK
+   2646 | 2646-ToolTip-MACH-TURN-MANUAL-TRAVEL-XMIN.htm ; IDC_TRAVEL_XMIN
+   2659 | 2659-ToolTip-MACH-TURN-MANUAL-TRAVEL-ZMIN.htm ; IDC_TRAVEL_ZMIN
+   2667 | 2667-ToolTip-MACH-TURN-MANUAL-TRAVEL-MIN-PICK.htm ; IDC_TRAVEL_MIN_PICK
+   2674 | 2674-ToolTip-MACH-TURN-MANUAL-TRAVEL-XMAX.htm ; IDC_TRAVEL_XMAX
+   2680 | 2680-ToolTip-MACH-TURN-MANUAL-TRAVEL-ZMAX.htm ; IDC_TRAVEL_ZMAX
+   2685 | 2685-ToolTip-MACH-TURN-MANUAL-TRAVEL-MAX-PICK.htm ; IDC_TRAVEL_MAX_PICK
+   2636 | 2636-ToolTip-MACH-TURN-MANUAL-MAXRPM.htm ; IDC_MAXRPM
+}
+1222 ; IDD_POST_OPTIONS "Set Post-Processor Options"
+{
+   1572 | 1572-ToolTip-POST-OPTIONS-POSTPATH.htm ; IDC_POSTPATH
+   1739 | 1739-ToolTip-POST-OPTIONS-SHOWDLG.htm ; IDC_SHOWDLG
+   1574 | 1574-ToolTip-POST-OPTIONS-VIEWER.htm ; IDC_VIEWER
+   1027 | 1027-ToolTip-POST-OPTIONS-ROWSE-POST.htm ; IDC_BROWSE_POST
+   1033 | 1033-ToolTip-POST-OPTIONS-BROWSE-VIEWER.htm ; IDC_BROWSE_VIEWER
+   1163 | 1163-ToolTip-POST-OPTIONS-OST-COMBO.htm ; IDC_POST_COMBO
+   1300 | 1300-ToolTip-POST-OPTIONS-POST-EDIT.htm ; IDC_POST_EDIT
+   1309 | 1309-ToolTip-POST-OPTIONS-FILEEXTENSION.htm ; IDC_FILEEXTENSION
+   2206 | 2206-ToolTip-POST-OPTIONS-ADD-NEW-EXT.htm ; IDC_ADD_NEW_EXT
+   2211 | 2211-ToolTip-POST-OPTIONS-POST-FILE-NAME-RULE1.htm ; IDC_POST_FILE_NAME_RULE1
+   2215 | 2215-ToolTip-POST-OPTIONS-POST-FILE-NAME-RULE2.htm ; IDC_POST_FILE_NAME_RULE2
+   2219 | 2219-ToolTip-POST-OPTIONS-POST-FILE-NAME-RULE3.htm ; IDC_POST_FILE_NAME_RULE3
+}
+24099 ; IDD_TURN_PART "Turning Part Geometry"
+{
+   2813 | 2813-ToolTip-Select-Curves-Button.htm ; IDC_REGION_PICK
+   2173 | 2173-ToolTip-Part-Remove-Active-Curve.htm ; IDC_DESELECT_CURVE
+   2800 | 2800-ToolTip-Part-Mach-Feature-List.htm ; IDC_SURFACE_LIST
+   2816 | 2816-ToolTip-Part-Select-Surfaces.htm ; IDC_SURFACE_PICK
+   1149 | 1149-ToolTip-Part-Remove-All-Surfaces.htm ; IDC_DESELECT_ALL_SURF
+   1151 | 1151-ToolTip-Part-Remove-Active-Surface.htm ; IDC_DESELECT_SURF
+   1229 | 1229-ToolTip-Part-Remove-All-Curves.htm ; IDC_DESELECT_ALL_CURVES
+   2797 | 2797-ToolTip-Mach-Feature-List.htm ; IDC_REGION_LIST
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+7001 ; IDD_STOCKTURNCYLINDER "Stock Geometry"
+{
+   2315 | 2315-ToolTip-STOCKTURNCYLINDER-RADIUS.htm ; IDC_CS_RADIUS
+   2328 | 2328-ToolTip-STOCKTURNCYLINDER-LENGTH.htm ; IDC_CS_LENGTH
+   2300 | 2300-ToolTip-STOCKTURNCYLINDER-INNER-RADIUS.htm ; IDC_CS_INNER_RADIUS
+   3081 | 3081-ToolTip-STOCKTURNCYLINDER-INNER-LENGTH.htm ; IDC_CS_INNER_LENGTH
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+7002 ; IDD_STOCKTURNPARTCYLINDER "Stock Geometry"
+{
+   2435 | 2435-ToolTip-STOCK-TURN-PART-CYL-RADIUS-OFFSET.htm ; IDC_CSO_RADIUSOFFSET
+   3240 | 3240-ToolTip-STOCK-TURN-PART-CYL-AXIAL-OFFSET.htm ; IDC_CSO_AXIALOFFSET
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+7003 ; IDD_STOCKTURNOFFSET "Curve Offset Stock"
+{
+   1078 | 1078-tooltip-stock-turn-offset.htm ; IDC_STOCK_OFFSET
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+24108 ; IDD_STOCKTURNLOCATE "Align Stock about Part"
+{
+   2164 | 2164-ToolTip-STOCKTURNLOCATE-ZTOP.htm ; IDC_ZTOP
+   2170 | 2164-ToolTip-STOCKTURNLOCATE-ZTOP.htm ; IDC_ZCENTER
+   2167 | 2164-ToolTip-STOCKTURNLOCATE-ZTOP.htm ; IDC_ZBOTTOM
+   2244 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+1080 ; IDD_MATERIALLOAD_DLG "Choose Stock Material"
+{
+   2905 | 2905-ToolTip-Select-Stock-Material-Source-Folder.htm ; Default Folder
+   2908 | 2908-ToolTip-Select-Stock-Material-Material-Dropdown.htm ; IDC_STOCK_MATERIALSLIST
+   3151 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   2911 | 2911-ToolTip-Select-Stock-Material-File-Dropdown.htm ; IDC_MATERIALFILELIST
+}
+1408 ; IDD_SET_TURN_WORK_ZERO "Set Work Zero"
+{
+   2057 | 2057-ToolTip-Work-Zero-Pick.htm ; IDC_SET_POINT
+   2079 | 2079-ToolTip-Work-Zero-Stock-Box.htm ; IDC_SET_STOCK_FACE
+   2049 | 2049-ToolTip-Work-Zero-Part-Box.htm ; IDC_SET_FACE
+   3078 | 3078-ToolTip-Work-Zero-Zero-Face-Left.htm ; IDC_LEFT_FACE
+   3079 | 3079-ToolTip-Work-Zero-Zero-Face-Right.htm ; IDC_RIGHT_FACE
+   2071 | 2071-ToolTip-Work-Zero-Pick.htm ; IDC_ZVALUE
+   2045 | 2071-ToolTip-Work-Zero-Pick.htm ; IDC_PICK_ZERO
+   1463 | 1463-ToolTip-Work-Zero-Offset.htm ; IDC_REGISTERNUM
+   1497 | 1497-ToolTip-Work-Zero-Offset.htm ; IDC_OUTPUT
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+6035 ; IDD_MOP_TOOL_SELECT "Tool"
+{
+   3255 | 3255-ToolTip-Preview-Tool.htm ; IDC_PREVIEW_TOOL
+   3256 | 3256-ToolTip-Tool-List.htm ; IDC_TOOL_TREE
+   1144 | 1144-ToolTip-Edit-Create-Select-Tool.htm ; IDC_CREATE_TOOL
+   1017 | 1017-ToolTip-Tool-Desrciption.htm ; Tool properties window
+   3833 | file.htm ; IDC_ENABLE_FILTERS_RADIO
+   3834 | file.htm ; IDC_DISABLE_FILTERS_RADIO
+}
+24110 ; IDD_MOP_FEEDSSPEEDS_TURN "Feeds && Speeds"
+{
+   1399 | 1399-ToolTip-FS-Spindle-Speed.htm ; IDC_SPINDLE_RPM
+   2183 | 2183-ToolTip-FS-Direction.htm ; IDC_CW
+   2181 | 2181-ToolTip-FS-Direction.htm ; IDC_CCW
+   1606 | 1606-ToolTip-FS-Plunge.htm ; IDC_PLUNGEFEED
+   1596 | 1596-ToolTip-FS-Approach.htm ; IDC_APPROACHFEED
+   1585 | 1585-ToolTip-FS-Engage.htm ; IDC_ENGAGEFEED
+   1148 | 1148-ToolTip-FS-Cut.htm ; IDC_FEEDRATE
+   1582 | 1582-ToolTip-FS-Retract.htm ; IDC_RETRACTFEED
+   1583 | 1583-ToolTip-FS-Departure.htm ; IDC_DAPARTFEED
+   1156 | 1156-ToolTip_FS-Transfer-Use-Rapid.htm ; IDC_RAPID
+   1054 | 1054-ToolTip-FS-Transfer-Set.htm ; IDC_TRANSFER
+   1579 | 1054-ToolTip-FS-Transfer-Set.htm ; IDC_TRANSFERFEED
+   1904 | 1904-ToolTip-FS-Load-from-Tool.htm ; IDC_LOADFROMTOOL
+   1150 | 1150-ToolTip-FS-Load-from-File.htm ; IDC_LOADFROMTABLE
+   1927 | 1927-ToolTip-FS-CSS-Checkbox.htm ; IDC_CHK_CSS
+   3062 | 3062-ToolTip-FS-Max-Speed.htm ; IDC_MAX_SPINDLE_SPEED
+   1210 | 1210-ToolTip-FS-IPR.htm ; IDC_FEED_IPR
+   1237 | 1237-ToolTip-FS-IPM.htm ; IDC_FEED_IPM
+   3477 | 3472-ToolTip-FEEDSSPEEDS-Coolant.htm ; IDC_MOP_COOLANT_TURN_COMBO
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+24111 ; IDD_PREFERENCES_USERINTERFACE_TURN "User Interface"
+{
+   1962 | 1962-ToolTip-Pref-UI-FLOATWND_MOPSDLG.htm ; IDC_FLOATWND_MOPSDLG
+   1971 | 1971-ToolTip-Pref-UI-GETTING_STARTED_DLG.htm ; IDC_GETTING_STARTED_DLG
+   1989 | 1989-ToolTip-Pref-UI-CHECKAUTO_UPDATES.htm ; IDC_CHECKAUTO_UPDATES
+   2483 | 2483-ToolTip-Pref-UI-SHOW_CONFG_DLG.htm ; IDC_SHOW_CONFG_DLG
+   3618 | 3618-ToolTip-Pref-UI-USE_HELP_TOOLTIPS_TURN.htm ; IDC_USE_HELP_TOOLTIPS_TURN
+   1306 | 1306-ToolTip-Pref-UI-TOOLTIP_DELAY.htm ; IDC_TOOLTIP_DELAY
+   3744 | 3744-ToolTip-Pref-UI-EXPR_RES_TT_CB.htm ; IDC_EXPR_RES_TT_CB
+   3764 | 3764-ToolTip-Pref-UI-Show-Load-Settings.htm ; IDC_SHOW_LSFF_DLG_CB
+}
+24113 ; IDD_TURN_GLOBAL_FOLLOWCURVE "Global Parameters"
+{
+   3067 | 3067-ToolTip-Approach-Type.htm ; IDC_TYPE
+   2510 | 2510-ToolTip-Tolerance.htm ; IDC_TOL
+   1250 | 1250-ToolTip-Stock.htm ; IDC_STOCK
+   1092 | file.htm ; IDC_COMBO1
+   3068 | 3068-ToolTip-Sel-Contain-StartEnd.htm ; IDC_CHK_RESTRICT
+   3069 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_START_X
+   3070 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_START_Y
+   3073 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_END_X
+   3075 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_END_Y
+   3077 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_PICK_PTS
+   2797 | 2797-ToolTip-Mach-Feature-List.htm ; IDC_REGION_LIST
+   2813 | 2813-ToolTip-Select-Curves-Button.htm ; IDC_REGION_PICK
+   1147 | 1147-ToolTip-Avoid-Remove-Active.htm ; IDC_DESELECT_ALL
+   1145 | 1145-tooltip-avoid-remove-all.htm ; IDC_DESELECT
+   1936 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+658 ; IDD_TURN_ID_CPLANE "Turn ID"
+{
+   1176 | 1402-ToolTip-Automatic.htm ; IDC_ID_CPLANE_AUTO
+   1207 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_ID_CPLANE_PART
+   2313 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_ID_CPLANE_PART_VAL
+   1233 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_ID_CPLANE_STOCK
+   3057 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_ID_CPLANE_STOCK_VAL
+   3048 | 1314-ToolTip-Absolute.htm ; IDC_ID_CPLANE_ABS
+   3058 | 1321-ToolTip-Absolute.htm ; IDC_ID_CPLANE_ABS_VAL
+    661 | file.htm ; IDB_ICON_COLLAPSEALL
+}
+659 ; IDD_TURN_FACE_CPLANE "Turn Face"
+{
+   1177 | 1402-ToolTip-Automatic.htm ; IDC_FACE_CPLANE_AUTO
+   3059 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_FACE_CPLANE_PART
+   2314 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_FACE_CPLANE_PART_VAL
+   1234 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_FACE_CPLANE_STOCK
+   3060 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_FACE_CPLANE_STOCK_VAL
+   3049 | 1314-ToolTip-Absolute.htm ; IDC_FACE_CPLANE_ABS
+   3061 | 1321-ToolTip-Absolute.htm ; IDC_FACE_CPLANE_ABS_VAL
+    660 | file.htm ; IDB_ICON_EXPANDALL
+}
+657 ; IDD_TURN_OD_CPLANE "Turn OD"
+{
+   1178 | 1402-ToolTip-Automatic.htm ; IDC_OD_CPLANE_AUTO
+   1208 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_OD_CPLANE_PART
+   3054 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_OD_CPLANE_PART_VAL
+   1235 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_OD_CPLANE_STOCK
+   3055 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_OD_CPLANE_STOCK_VAL
+   3050 | 1314-ToolTip-Absolute.htm ; IDC_OD_CPLANE_ABS
+   3056 | 1321-ToolTip-Absolute.htm ; IDC_OD_CPLANE_ABS_VAL
+  ; IDC_STATIC | file.htm ; IDC_STATIC
+}
+24109 ; IDD_TURN_CPLANE "Clearance Geometry"
+{
+   1402 | 1402-ToolTip-Automatic.htm ; IDC_CCLEAR_AUTOMATIC
+   1327 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_CCLEAR_PARTZ
+   1334 | 1334-ToolTip-Part-Max-Dist.htm ; IDC_CCLEAR_PARTZVAL
+   1348 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_CCLEAR_STOCKZ
+   1405 | 1405-ToolTip-Stock-Max-Dist.htm ; IDC_CCLEAR_STOCKZVAL
+   1314 | 1314-ToolTip-Absolute.htm ; IDC_CCLEAR_ABSZ
+   1321 | 1321-ToolTip-Absolute.htm ; IDC_CCLEAR_ABSZVAL
+   1344 | 1344-ToolTip-Skim.htm ; IDC_TRANSFER_SKIM
+   1239 | 1239-ToolTip-Clearance-Plane.htm ; IDC_TRANSFER_CLEARANCE
+   2384 | 2384-ToolTip-Skim.htm ; IDC_SKIM_CLEARANCE
+   1217 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3494 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+1388 ; IDD_TURN_INSERT_TRIGON 
+{
+   3024 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_TRIGON_NAME
+   2301 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIGON_IC
+   2333 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIGON_RADIUS
+   3042 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIGON_TIPANGLE
+   2319 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIGON_THICKNESS
+   3092 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIGON_RELIEF_ANGLE
+   3096 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIGON_LEAD_ANGLE
+   1203 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_OD_FWD
+   1232 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_OD_BWD
+   1248 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_ID_FWD
+   1254 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_ID_BWD
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1387 ; IDD_TURN_INSERT_TRIANGLE 
+{
+   3020 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_TRIANGLE_NAME
+   3051 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIANGLE_TIPANGLE
+   3021 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIANGLE_TIPRADIUS
+   2302 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIANGLE_IC
+   3022 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIANGLE_THICKNESS
+   1262 | 2583-ToolTip-Tool-Dimension.htm ; IDC_T_TRIANGLE_RELIEF_ANGLE
+   3087 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIANGLE_RELIEF_ANGLE_SPIN
+   3086 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_TRIANGLE_LEAD_ANGLE
+   3088 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_TRIANGLE_RDO_OD_FWD
+   3089 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_TRIANGLE_RDO_OD_BWD
+   3090 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_TRIANGLE_RDO_ID_FWD
+   3091 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_TRIANGLE_RDO_ID_BWD
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1391 ; IDD_TURN_INSERT_PARALLELOGRAM 
+{
+   3026 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_PARALLELOGRAM_NAME
+   2334 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_LENGTH
+   3044 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_TIPANGLE
+   3045 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_TIPANGLE_SPIN
+   2344 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_TIPRADIUS
+   1994 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_TIPRADIUS_SPIN
+   2303 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_WIDTH
+   2320 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_THICKNESS
+   2007 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_THICKNESS_SPIN
+   3102 | 2583-ToolTip-Tool-Dimension.htm ; IDC_T_PARALLELOGRAM_RELIEF_ANGLE
+   3103 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_RELIEF_ANGLE_SPIN
+   3104 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_PARALLELOGRAM_LEAD_ANGLE
+   3105 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_PARALLELOGRAM_RDO_OD_FWD
+   3106 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_PARALLELOGRAM_RDO_OD_BWD
+   3107 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_PARALLELOGRAM_RDO_ID_FWD
+   3108 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_PARALLELOGRAM_RDO_ID_BWD
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1396 ; IDD_TURN_INSERT_K 
+{
+   3028 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_K_NAME
+   2345 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_K_LENGTH
+   2352 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_K_TIPRADIUS
+   2304 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_K_NOSEANGLE
+   2321 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_K_WIDTH
+   2335 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_K_THICKNESS
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1399 ; IDD_TURN_INSERT_GROOVE_ROUND 
+{
+   3034 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_GROOVE_ROUND_NAME
+   2346 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_TOTALLENGTH
+   2009 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_TOTALLENGTH_SPIN
+   2353 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_LENGTH
+   2359 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_TIPRADIUS
+   2029 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_TIPRADIUS_SPIN
+   2305 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_TOTALWIDTH
+   3035 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_TOTALWIDTH_SPIN
+   2322 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_THICKNESS
+   1979 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_THICKNESS_SPIN
+   2336 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_ROUND_WIDTH
+   1695 | 1695-ToolTip-Dialog-Image.htm
+    614 | file.htm ; IDB_CONTAINMENT_HIHLOWZ
+}
+1400 ; IDD_TURN_INSERT_GROOVE_RADIUS 
+{
+   3036 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_GROOVE_RADIUS_NAME
+   2347 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_TOTALLENGTH
+   2010 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_TOTALLENGTH_SPIN
+   2354 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_LENGTH
+   2360 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_TIPRADIUS
+   2030 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_TIPRADIUS_SPIN
+   2306 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_TOTALWIDTH
+   3037 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_TOTALWIDTH_SPIN
+   2323 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_THICKNESS
+   1980 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_THICKNESS_SPIN
+   2337 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_RADIUS_WIDTH
+   1695 | 1695-ToolTip-Dialog-Image.htm
+    615 | file.htm ; IDB_CUTCONNECTION_NONE
+}
+1398 ; IDD_TURN_INSERT_GROOVE_DEG 
+{
+   3032 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_GROOVE_DEG_NAME
+   2348 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_TOTALLENGTH
+   2011 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_TOTALLENGTH_SPIN
+   2355 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_LENGTH
+   2361 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_TIPANGLE
+   2364 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_TIPRADIUS
+   2307 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_TOTALWIDTH
+   3033 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_TOTALWIDTH_SPIN
+   3046 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_NOSELENGTH
+   3047 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_NOSELENGTH_SPIN
+   2324 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_THICKNESS
+   2338 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_DEG_WIDTH
+    613 | file.htm ; IDB_CONTAINMENT_HIHLOWZ_MULTIPLE
+   3109 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_GROOVEDEG_RDO_OD_FWD
+   3110 | 3088-ToolTip-Tool-Orientation.htm ; IDC_TI_GROOVEDEG_RDO_ID_FWD
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1397 ; IDD_TURN_INSERT_GROOVE_C 
+{
+   3030 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_GROOVE_C_NAME
+   2349 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_TLENGTH
+   2362 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_LENGTH
+   2365 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_CHAMFER
+   2339 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_TIPRADIUS
+   2308 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_TWIDTH
+   2325 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_THICKNESS
+   2356 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GROOVE_C_WIDTH
+   1695 | 1695-ToolTip-Dialog-Image.htm
+  ; IDC_STATIC | file.htm ; IDC_STATIC
+}
+1383 ; IDD_TURN_INSERT_GROOVE 
+{
+   1110 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TOOL_NAME
+   2991 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GR_LENGTH
+   2989 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GR_TIPLENGTH
+   2969 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GR_RADIUS
+   2963 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GR_INWIDTH
+   2974 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GR_THICKNESS
+   2309 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_GR_TIPWIDTH
+   1174 | 1174-ToolTip-Turn-Tool-Program-Point.htm ; IDC_TI_GR_LEFT
+   1202 | 1174-ToolTip-Turn-Tool-Program-Point.htm ; IDC_TI_GR_CENTER
+   1231 | 1174-ToolTip-Turn-Tool-Program-Point.htm ; IDC_TI_GR_RIGHT
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1382 ; IDD_TURN_INSERT_DIA80 
+{
+   1110 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TOOL_NAME
+   2954 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_D80_IC
+   2950 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_D80_RADIUS
+   3040 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_D80_TIPANGLE
+   2958 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_D80_THICKNESS
+   2310 | 2583-ToolTip-Tool-Dimension.htm ; IDC_RELIEF_ANGLE
+   1175 | 2583-ToolTip-Tool-Dimension.htm ; IDC_LEAD_ANGLE
+   1203 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_OD_FWD
+   1232 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_OD_BWD
+   1248 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_ID_FWD
+   1254 | 3088-ToolTip-Tool-Orientation.htm ; IDC_RDO_ID_BWD
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1401 ; IDD_TURN_INSERT_CUTOFF 
+{
+   3038 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_CUTOFF_NAME
+   2340 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_CUTOFF_LENGTH
+   2311 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_CUTOFF_WIDTH
+   2326 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_CUTOFF_THICKNESS
+   3093 | 1174-ToolTip-Turn-Tool-Program-Point.htm ; IDC_TI_PROGRAM_LEFT
+   3095 | 1174-ToolTip-Turn-Tool-Program-Point.htm ; IDC_TI_PROGRAM_CENTER
+   3097 | 1174-ToolTip-Turn-Tool-Program-Point.htm ; IDC_TI_PROGRAM_RIGHT
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1386 ; IDD_TURN_INSERT_CIRCLE 
+{
+   3018 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TI_CIRCLE_NAME
+   3015 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_CIRCLE_RADIUS
+   3011 | 2583-ToolTip-Tool-Dimension.htm ; IDC_TI_CIRCLE_THICKNESS
+   1695 | 1695-ToolTip-Dialog-Image.htm
+}
+1363 ; IDD_TOOL_DIALOG "Create/Select Tool"
+{
+   1672 | 1672-tooltip-tool-dialog-new.htm ; IDC_NEW
+   1441 | 1441-tooltip-tool-dialog-edit.htm ; IDC_EDIT
+   1678 | 1678-tooltip-tool-dialog-delet.htm ; IDC_DELETE
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+  ; IDHELP | file.htm ; IDHELP
+   1502 | 1502-ToolTip-Tool-Dialog-List.htm ; IDC_TOOL_LIST
+   2787 | 2787-ToolTip-TOOL_DLG_PROPERTIES.htm ; IDC_PROPERTIES
+   2292 | 2292-ToolTip-TOOL_DLG_PREVIEW.htm ; IDC_TOOL_PREVIEW
+}
+1219 ; IDD_TOOL_INFO "Tools Information"
+{
+   1724 | 1724-ToolTip-Tool-Info-List.htm ; IDC_TOOLS_INFO_LIST
+   1726 | 1726-ToolTip-Tool-Info-Print.htm ; IDC_TOOLINFO_PRINT
+}
+1194 ; IDD_FEEDS_SPEEDS_LOAD "Load Feeds from Table"
+{
+   1388 | 1388-ToolTip-FS-Calculator-Stock-Material.htm ; IDC_STOCK_MATERIAL
+   1387 | 1387-ToolTip-Tool-Material.htm ; IDC_TOOL_MATERIAL
+   1081 | 1081-ToolTip-SF-from-Table-Tool-Diameter.htm ; IDC_TOOL_DIAMETER
+   1097 | 1097-ToolTip-SF-from-Table-Number-Flutes.htm ; IDC_NUMFLUTES
+   1396 | 1396-ToolTip-SF-from-Table-Surface-Speed.htm ; IDC_SURFSPEED
+   1399 | 1399-ToolTip-Spindle-Speed.htm ; IDC_SPINDLE_RPM
+   1401 | 1401-ToolTip-SF-from-Table-Feed-per-Tooth.htm ; IDC_FEED_TOOTH
+   1148 | 1148-ToolTip-Cut-Feedrate.htm ; IDC_FEEDRATE
+   3824 | file.htm ; IDC_SPINDLE_RPM_MAX
+   3823 | file.htm ; IDC_FEEDRATE_MAX
+}
+7004 ; IDD_TOOL_TURN_FEEDSSPEEDS 
+{
+   1399 | 1399-ToolTip-FS-Spindle-Speed.htm ; IDC_SPINDLE_RPM
+   2183 | 2183-ToolTip-FS-Direction.htm ; IDC_CW
+   2181 | 2181-ToolTip-FS-Direction.htm ; IDC_CCW
+   1606 | 1606-tooltip-fs-plunge.htm ; IDC_PLUNGEFEED
+   1596 | 1596-tooltip-fs-approach.htm ; IDC_APPROACHFEED
+   1585 | 1585-tooltip-fs-engage.htm ; IDC_ENGAGEFEED
+   1148 | 1148-tooltip-fs-cut.htm ; IDC_FEEDRATE
+   1582 | 1582-tooltip-fs-retract.htm ; IDC_RETRACTFEED
+   1583 | 1583-tooltip-fs-departure.htm ; IDC_DAPARTFEED
+   1156 | 1156-tooltip-fs-transfer-use-rapid.htm ; IDC_RAPID
+   1054 | 1054-tooltip-fs-transfer-set.htm ; IDC_TRANSFER
+   1579 | 1054-tooltip-fs-transfer-set.htm ; IDC_TRANSFERFEED
+   2207 | 1150-tooltip-fs-load-from-file.htm ; IDC_LOAD_FROMTABLE
+   1204 | 1210-tooltip-fs-ipr.htm ; IDC_IPR
+   1058 | 1210-tooltip-fs-ipr.htm ; IDC_IPM
+   1404 | 3062-ToolTip-FS-Max-Speed.htm ; IDC_SPINDLE_MAXRPM
+   3012 | 1927-ToolTip-FS-CSS-Checkbox.htm ; IDC_CSS
+   2839 | 2839-ToolTip-Create-Tool-Cut-Depth-TURN.htm ; IDC_CUTDEPTH
+}
+1362 ; IDD_USERDEF_DLG 
+{
+   1110 | 1110-ToolTip-Tool-Dialog-TOOL_NAME.htm ; IDC_TOOL_NAME
+   1575 | 2583-ToolTip-Tool-Dimension.htm ; IDC_LOAD_SELECTED
+   2583 | 2583-ToolTip-Tool-Dimension.htm ; IDC_HOLDER_DIA
+   2591 | 2583-ToolTip-Tool-Dimension.htm ; IDC_HOLDER_LENGTH
+}
+6041 ; IDD_TOOL_ATTRIBUTES 
+{
+   1387 | 1387-ToolTip-Tool-Material.htm ; IDC_TOOL_MATERIAL
+   1394 | 1394-ToolTip-Tool-NumFlutes.htm ; IDC_TOOL_NUMFLUTES
+   1397 | 1397-ToolTip-Tool-Number.htm ; IDC_TOOL_NUMBER
+   1857 | 1857-ToolTip-Tool-Adjust-Reg.htm ; IDC_ADJUST_REG
+   1863 | 1863-ToolTip-Tool-CutCom-Reg.htm ; IDC_CUTCOM_REG
+   1704 | 1704-ToolTip-Tool-Z-Off.htm ; IDC_ZOFF
+   1098 | 1098-ToolTip-Tool-Coolant-Combo.htm ; IDC_COOLANT_COMBO
+   2368 | 2368-ToolTip-Tool-Comments.htm ; IDC_COMMENTS
+   3551 | 3551-ToolTip-Tool-Cut-Mat-Color.htm ; IDC_TOOL_CUTMATCOLOR
+}
+24096 ; IDD_TURN_GLOBAL "Global Parameters"
+{
+   3067 | 3067-ToolTip-Approach-Type.htm ; IDC_TYPE
+   2510 | 2510-ToolTip-Tolerance.htm ; IDC_TOL
+   1250 | 1250-ToolTip-Stock.htm ; IDC_STOCK
+   1092 | 1092-ToolTip-Compensation.htm ; IDC_COMBO1
+   3068 | 3068-ToolTip-Sel-Contain-StartEnd.htm ; IDC_CHK_RESTRICT
+   3069 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_START_X
+   3070 | 3070-ToolTip-Contain-XZ.htm ; IDC_ROUGH_START_Y
+   3073 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_END_X
+   3075 | 3075-ToolTip-Contain-XZ.htm ; IDC_ROUGH_END_Y
+   3077 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_PICK_PTS
+   2797 | 2797-ToolTip-Mach-Feature-List.htm ; IDC_REGION_LIST
+   2813 | 2813-ToolTip-Select-Curves-Button.htm ; IDC_REGION_PICK
+   1145 | 1145-ToolTip-Avoid-Remove-All.htm ; IDC_DESELECT_ALL
+   1147 | 1147-ToolTip-Avoid-Remove-Active.htm ; IDC_DESELECT
+   1936 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image  
+}
+34505 ; IDD_TURN_ROUGH_OFFSET 
+{
+   3349 | 3349-ToolTip-Top-of-Cut.htm ; IDC_TRO_USESTOCK
+   3321 | 3321-ToolTip-Top-of-Cut.htm ; IDC_TRO_STOP
+   3314 | 3314-ToolTip-Top-of-Cut.htm ; IDC_TRO_TOP
+   2014 | 2014-ToolTip-Top-of-Cut.htm ; IDC_TOP_PICK
+   3328 | 3328-ToolTip-Depth-per-Cut.htm ; IDC_TRO_SDEPTHOFCUT
+   3300 | 3300-ToolTip-Depth-per-Cut.htm ; IDC_TRO_DEPTHOFCUT
+   3335 | 3335-ToolTip-Depth-per-Cut.htm ; IDC_TRO_SNUMLEVELS
+   3307 | 3307-ToolTip-Depth-per-Cut.htm ; IDC_TRO_NUMLEVELS
+   3379 | 3379-ToolTip-Cut-Direction.htm ; IDC_OFFSET_NEGATIVE
+   1119 | 1119-ToolTip-Cut-Direction.htm ; IDC_ZIGZAG
+   3372 | 3372-ToolTip-Cut-Direction.htm ; IDC_OFFSET_POSITIVE
+}
+34504 ; IDD_TURN_ROUGH_LINEAR 
+{
+   3327 | 3327-ToolTip-Final-Cleanup-Pass.htm ; IDC_TRL_CLEANUP_PASS
+   3348 | 3348-ToolTip-Linear-Top-Use-Stock.htm ; IDC_TRL_USESTOCK
+   3356 | 3356-ToolTip-Top-of-Cut.htm ; IDC_TRL_STOP
+   3320 | 3320-ToolTip-Top-of-Cut.htm ; IDC_TRL_TOP
+   3299 | 3299-ToolTip-Top-of-Cut.htm ; IDC_TRL_TOP_PICK
+   3363 | 3363-ToolTip-Depth-per-Cut.htm ; IDC_TRL_SDEPTHOFCUT
+   3306 | 3306-ToolTip-Depth-per-Cut.htm ; IDC_TRL_DEPTHOFCUT
+   3371 | 3371-ToolTip-Depth-per-Cut.htm ; IDC_TRL_SNUMLEVELS
+   3313 | 3313-ToolTip-Depth-per-Cut.htm ; IDC_TRL_NUMLEVELS
+   3341 | 3341-ToolTip-Cut-Direction.htm ; IDC_NEGATIVE
+   1119 | 1119-ToolTip-Cut-Direction.htm ; IDC_ZIGZAG
+   3334 | 3334-ToolTip-Cut-Direction.htm ; IDC_LINEAR_POSITIVE
+}
+34507 ; IDD_TURN_ROUGH "Turn Roughing"
+{
+   3430 | 3430-ToolTip-Cut-Pattern-Type-Linear.htm ; IDC_TURN_ROUGH_LINEAR
+   3432 | 3432-ToolTip-Cut-Pattern-Type-Offset.htm ; IDC_TURN_ROUGH_OFFSET
+}
+34506 ; IDD_TURN_GLOBAL_ROUGH "Global Parameters"
+{
+   3067 | 3067-ToolTip-Approach-Type.htm ; IDC_TYPE
+   2510 | 2510-ToolTip-Tolerance.htm ; IDC_TOL
+   1250 | 1250-ToolTip-Stock.htm ; IDC_STOCK
+   1092 | file.htm ; IDC_COMBO1
+   3068 | 3068-ToolTip-Sel-Contain-StartEnd.htm ; IDC_CHK_RESTRICT
+   3069 | 3433-ToolTip-Contain-XZ.htm ; IDC_ROUGH_START_X
+   3070 | 3070-ToolTip-Contain-XZ.htm ; IDC_ROUGH_START_Y
+   3433 | 3433-ToolTip-Contain-XZ.htm ; IDC_PICK_RECTANGLE
+   3073 | 3073-ToolTip-Contain-XZ.htm ; IDC_ROUGH_END_X
+   3075 | 3075-ToolTip-Contain-XZ.htm ; IDC_ROUGH_END_Y
+   2797 | 2797-ToolTip-Mach-Feature-List.htm ; IDC_REGION_LIST
+   2813 | 2813-ToolTip-Select-Curves-Button.htm ; IDC_REGION_PICK
+   1145 | 1145-ToolTip-Avoid-Remove-All.htm ; IDC_DESELECT_ALL
+   1147 | 1147-ToolTip-Avoid-Remove-Active.htm ; IDC_DESELECT
+   1936 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+34503 ; IDD_TURN_GROOVE_ROUGH "Roughing"
+{
+   3383 | 3383-ToolTip-Groove-Rough-Top.htm ; IDC_TGR_USESTOCK
+   3390 | 3390-ToolTip-Groove-Rough-Top.htm ; IDC_TGR_STOP
+   3305 | 3305-ToolTip-Groove-Rough-Top.htm ; IDC_TGR_TOP
+   3298 | 3298-ToolTip-Groove-Rough-Top.htm ; IDC_TGR_TOP_PICK
+   3396 | 3396-ToolTip-Groove-Rough-Stepover.htm ; IDC_TGR_TDIA
+   3312 | 3312-ToolTip-Groove-Rough-Stepover.htm ; IDC_TGR_TDIA_VALUE
+   3400 | 3400-ToolTip-Groove-Rough-Stepover.htm ; IDC_TGR_DIST
+   3355 | 3355-ToolTip-Groove-Rough-Stepover.htm ; IDC_TGR_DIST_VALUE
+   3404 | 3404-ToolTip-Groove-Rough-Stepover.htm ; IDC_TGR_NUMS
+   3319 | 3319-ToolTip-Groove-Rough-Stepover.htm ; IDC_TGR_NUMS_VALUE
+   3326 | 3326-ToolTip-Groove-Rough-Stepdown.htm ; IDC_TGR_FDEPTH
+   3333 | 3333-ToolTip-Groove-Rough-Stepdown.htm ; IDC_TGR_SDEPTH
+   3340 | 3340-ToolTip-GrooveRough-Overlap.htm ; IDC_TGR_OVERLAP
+   3415 | 3415-ToolTip-Groove-Rough-Cut-Dir.htm ; IDC_TGR_CUT_DIRECTION
+   3429 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3921 | 3953-ToolTip-Cut-Level-From-Tool.htm ; IDC_SET_FROM_TOOL
+}
+34502 ; IDD_TURN_GROOVE_FINISH "Finishing Parameters"
+{
+   3421 | 3421-ToolTip-GROOVE-FINISH-Cut-Width.htm ; IDC_TGF_TOTWIDTH
+   3426 | 3421-ToolTip-GROOVE-FINISH-Cut-Width.htm ; IDC_TGF_WIDTH_CUT
+   3431 | 3421-ToolTip-GROOVE-FINISH-Cut-Width.htm ; IDC_TGF_WIDTH_SLIDER
+   3437 | 3437-ToolTip-Finish-ZigZag.htm ; IDC_CHK_ZIGZAG
+   3399 | 3399-ToolTip-Finish-Multiple-Passes.htm ; IDC_CHK_MULTIPLE
+}
+34508 ; IDD_TURN_THREAD_CUTPARAMS "Thread Cut Params"
+{
+   3373 | 3373-ToolTip-Thread-Depth-First.htm ; IDC_TURN_THREAD_FDEPTHVAL
+   3380 | 3380-ToolTip-Thread-Depth-Spring.htm ; IDC_TURN_THREAD_NUMSPRING
+   3336 | 3336-ToolTip-Thread-GCode-Type-Auto.htm ; IDC_GCODE_AUTOMATIC
+   3329 | 3329-ToolTip-Thread-GCode-Type-Single.htm ; IDC_GCODE_SINGLEPASS
+   3343 | 3343-ToolTip-Thread-GCode-Type-Box.htm ; IDC_GCODE_BOXCYCLE
+   3301 | 3301-ToolTip-Thread-InFeed-Volume1.htm ; IDC_P1
+   3308 | 3308-ToolTip-Thread-InFeed-Volume2.htm ; IDC_P2
+   3315 | 3315-ToolTip-Thread-InFeed-Depth1.htm ; IDC_P3
+   3322 | 3322-ToolTip-Thread-InFeed-Depth2.htm ; IDC_P4
+   3350 | 3350-ToolTip-Thread-G76-MinCut.htm ; IDC_TURN_THREAD_MINDEPTH
+   3358 | 3358-ToolTip-Thread-G76-Pullout.htm ; IDC_TURN_THREAD_PULLOUT
+   3392 | 3392-ToolTip-Thread-G76-Finish.htm ; IDC_TURN_THREAD_FINISHALLOWANCE
+   3799 | 3799-ToolTip-Thread-GCode-Type-Double.htm ; IDC_GCODE_FANUCG76
+  34515 | file.htm ; IDC_TURN_THREAD_FINISHALLOWANCESPIN
+}
+34509 ; IDD_TURN_THREAD_PARAMS "Thread Params"
+{
+   3413 | 3413-ToolTip-Thread-Type.htm ; IDC_TURN_THREAD_TYPE
+   3374 | 3374-ToolTip-Thread-Hand-RL.htm ; IDC_TURN_THREAD_ZNEG
+   3381 | 3381-ToolTip-Thread-Hand-RL.htm ; IDC_TURN_THREAD_ZPOS
+   3344 | 3344-ToolTip-Thread-Start-End.htm ; IDC_THREAD_START_X
+   3353 | 3353-ToolTip-Thread-Start-End.htm ; IDC_THREAD_START_Z
+   3427 | 3427-ToolTip-Thread-Start-End.htm ; IDC_PICK_THREAD_START
+   3402 | 3402-ToolTip-Clearance.htm ; IDC_Z_CLEARANCE
+   3398 | 3398-ToolTip-Clearance.htm ; IDC_X_CLEARANCE
+   3337 | 3337-ToolTip-Dependent-Parameters.htm ; IDC_TURN_THREAD_LENGTH
+   3316 | 3316-ToolTip-Dependent-Parameters.htm ; IDC_TURN_THREAD_MAJDIA
+   3309 | 3309-ToolTip-Thread-Depth-Pitch.htm ; IDC_TURN_THREAD_DEPTH
+   3323 | 3323-ToolTip-Thread-Depth-Pitch.htm ; IDC_TURN_THREAD_PITCHVAL
+   3330 | 3330-ToolTip-Dependent-Parameters.htm ; IDC_TURN_THREAD_TAPER
+   3359 | 3359-ToolTip-Thread-Start-End.htm ; IDC_THREAD_END_X
+   3368 | 3368-ToolTip-Thread-Start-End.htm ; IDC_THREAD_END_Z
+   3132 | 3132-ToolTip-Always-no-Taper.htm ; IDC_NOTAPER
+   3302 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+34501 ; IDD_TURN_PARTOFF "Part Off"
+{
+   3297 | 3297-ToolTip-PartOff-StubR.htm ; IDC_TPF_SWIDTH
+   3325 | 3325-ToolTip-PartOff-Position.htm ; IDC_CUTOFF_Z
+   1894 | 1894-ToolTip-PartOff-Position.htm ; IDC_POINT_PICK
+   3403 | 3403-ToolTip-PartOff-Multiple-Depth.htm ; IDC_CHK_MULTIPLE_DEPTH
+   3369 | 3369-ToolTip-PartOff-Multiple-Depth.htm ; IDC_PARTOFF_PECK_DIST
+   3389 | 3389-ToolTip-PartOff-Multiple-Depth.htm ; IDC_PARTOFF_PECK_RDIST
+   3407 | 3407-ToolTip-PartOff-Dwell.htm ; IDC_RDO_DWELL_OFF
+   3411 | 3411-ToolTip-PartOff-Dwell.htm ; IDC_RDO_DWELL_TIME
+   3354 | 3354-ToolTip-PartOff-Dwell.htm ; IDC_DWELL_TIME_VAL
+   3414 | 3414-ToolTip-PartOff-Dwell.htm ; IDC_RDO_DWELL_REV
+   3361 | 3361-ToolTip-PartOff-Dwell.htm ; IDC_DWELL_REV_VAL
+   3417 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3921 | 3953-ToolTip-Cut-Level-From-Tool.htm ; IDC_SET_FROM_TOOL
+}
+24098 ; IDD_TURN_FINISH "Finish Parameters"
+{
+   1378 | 1378-ToolTip-Finish-Multiple-Passes.htm ; IDC_TOTWIDTH
+   2746 | 2746-ToolTip-Finish-Multiple-Passes.htm ; IDC_WIDTH_CUT
+   2750 | 2750-ToolTip-Finish-Multiple-Passes.htm ; IDC_WIDTH_SLIDER
+   3399 | 3399-ToolTip-Finish-Multiple-Passes.htm ; IDC_CHK_MULTIPLE
+   3437 | 3437-ToolTip-Finish-ZigZag.htm ; IDC_CHK_ZIGZAG
+   3052 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3921 | 3953-ToolTip-Cut-Level-From-Tool.htm ; IDC_SET_FROM_TOOL
+}
+34500 ; IDD_TURN_FOLLOW_CURVE "Follow Curve Parameters"
+{
+   3399 | 3399-ToolTip-Finish-Multiple-Passes.htm ; IDC_CHK_MULTIPLE
+   3437 | 3437-ToolTip-Finish-ZigZag.htm ; IDC_CHK_ZIGZAG
+   1378 | 1378-ToolTip-Finish-Multiple-Passes.htm ; IDC_TOTWIDTH
+   2746 | 2746-ToolTip-Finish-Multiple-Passes.htm ; IDC_WIDTH_CUT
+   2750 | 2750-ToolTip-Finish-Multiple-Passes.htm ; IDC_WIDTH_SLIDER
+   3111 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3921 | 3953-ToolTip-Cut-Level-From-Tool.htm ; IDC_SET_FROM_TOOL
+}
+24094 ; IDD_TURN_ENGRET "Entry/Exit"
+{
+}
+24095 ; IDD_TURN_ENGAGE "Entry"
+{
+   3367 | 3367-ToolTip-Entry-Approach.htm ; IDC_LENGTHA
+   3352 | 3352-ToolTip-Entry-Approach.htm ; IDC_TURN_ENGRET_TANGENTA
+   3360 | 3360-ToolTip-Entry-Approach.htm ; IDC_TURN_ENGRET_OTHERA
+   3382 | 3382-ToolTip-Entry-Approach.htm ; IDC_ANGLEA
+   1446 | 1446-ToolTip-Entry-Engage.htm ; IDC_LENGTH
+   3303 | 3303-ToolTip-Entry-Engage.htm ; IDC_TURN_ENGRET_TANGENT
+   3394 | 3394-ToolTip-Entry-Engage.htm ; IDC_TURN_ENGRET_OTHER
+   1264 | 1264-ToolTip-Entry-Engage.htm ; IDC_ANGLE
+}
+24097 ; IDD_TURN_RETRACT "Exit"
+{
+   3727 | 3727-ToolTip-Exit-Retract.htm ; IDC_EXIT_LENGTH
+   3729 | 3729-ToolTip-Exit-Retract.htm ; IDC_TURN_ENGRET_EXIT_TANGENT
+   3730 | 3730-ToolTip-Exit-Retract.htm ; IDC_TURN_ENGRET_EXIT_OTHER
+   3731 | 3731-ToolTip-Exit-Retract.htm ; IDC_EXIT_ANGLE
+   3324 | 3324-ToolTip-Exit-Depart.htm ; IDC_LENGTHD
+   3310 | 3310-ToolTip-Exit-Depart.htm ; IDC_TURN_ENGRET_TANGENTD
+   3317 | 3317-ToolTip-Exit-Depart.htm ; IDC_TURN_ENGRET_OTHERD
+   3338 | 3338-ToolTip-Exit-Depart.htm ; IDC_ANGLED
+}
+6043 ; IDD_MOP_FEEDSSPEEDS_MILL "Feeds && Speeds"
+{
+   1399 | 1399-ToolTip-FS-Spindle-Speed.htm ; IDC_SPINDLE_RPM
+   2183 | 2183-ToolTip-FS-Direction.htm ; IDC_CW
+   2181 | 2181-ToolTip-FS-Direction.htm ; IDC_CCW
+   1606 | 1606-ToolTip-FS-Plunge.htm ; IDC_PLUNGEFEED
+   1596 | 1596-ToolTip-FS-Approach.htm ; IDC_APPROACHFEED
+   1585 | 1585-ToolTip-FS-Engage.htm ; IDC_ENGAGEFEED
+   1148 | 1148-ToolTip-FS-Cut.htm ; IDC_FEEDRATE
+   1582 | 1582-ToolTip-FS-Retract.htm ; IDC_RETRACTFEED
+   1583 | 1583-ToolTip-FS-Departure.htm ; IDC_DAPARTFEED
+   1156 | 1156-ToolTip-FS-Transfer-Use-Rapid.htm ; IDC_RAPID
+   1054 | 1054-ToolTip-Transfer-Set.htm ; IDC_TRANSFER
+   1579 | 1054-ToolTip-Transfer-Set.htm ; IDC_TRANSFERFEED
+   2914 | 2914-ToolTip-FR-Reduction-Factors-Plunge.htm ; IDC_ZMOTION
+   2915 | 2915-ToolTip-FR-Reduction-Factors-XY-Pass.htm ; IDC_XYPASS
+   1904 | 1904-ToolTip-FS-Load-from-Tool.htm ; IDC_LOADFROMTOOL
+   1150 | 1150-ToolTip-FS-Load-from-File.htm ; IDC_LOADFROMTABLE
+   3472 | 3472-ToolTip-FEEDSSPEEDS-Coolant.htm ; IDC_MOP_COOLANT_COMBO
+   1695 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+6036 ; IDD_MOP_3AXIS_CLEARANCE "Clearance Plane"
+{
+   1402 | 1402-ToolTip-Automatic.htm ; IDC_CCLEAR_AUTOMATIC
+   1327 | 1327-ToolTip-Part-Max-Dist.htm ; IDC_CCLEAR_PARTZ
+   1334 | 1334-ToolTip-Part-Max-Dist.htm ; IDC_CCLEAR_PARTZVAL
+   1348 | 1348-ToolTip-Stock-Max-Dist.htm ; IDC_CCLEAR_STOCKZ
+   1405 | 1405-ToolTip-Stock-Max-Dist.htm ; IDC_CCLEAR_STOCKZVAL
+   1314 | 1314-ToolTip-Absolute.htm ; IDC_CCLEAR_ABSZ
+   1321 | 1321-ToolTip-Absolute.htm ; IDC_CCLEAR_ABSZVAL
+   1344 | 1344-ToolTip-Skim.htm ; IDC_TRANSFER_SKIM
+   2384 | 2384-ToolTip-Skim.htm ; IDC_SKIM_CLEARANCE
+   1239 | 1239-ToolTip-Clearance-Plane.htm ; IDC_TRANSFER_CLEARANCE
+   2811 | 1314-ToolTip-Absolute.htm ; IDC_CLEARANCE_PICK
+   2784 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   2783 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3772 | file.htm ; IDC_CCLEAR_IGNOREWIRES_CB
+}
+1235 ; IDD_DRILL_PARAMS "Cut Parameters"
+{
+   2573 | 2573-ToolTip-Drill-Type.htm ; IDC_DRILL_LIST
+   1759 | 1810-ToolTip-Drill-Depth.htm ; IDC_DRILL_DEPTH
+   1810 | 1810-ToolTip-Drill-Depth.htm ; IDC_DRILL_DEPTH_INPUT
+   1913 | 1913-ToolTip-Drill-Depth-Add-Tip.htm ; IDC_TOGGLE_TOOL_TIP
+   1828 | 1828-ToolTip-Drill-Dwell.htm ; IDC_TOGGLE_DWELL
+   1814 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_TIME
+   1802 | 1802-ToolTip-Drill-Dwell.htm ; IDC_DWELLTIME
+   1817 | 1817-ToolTip-Drill-Dwell.htm ; IDC_DWELL_REV
+   1763 | 1763-ToolTip-Drill-Dwell.htm ; IDC_DWELLREV
+   1771 | 1771-ToolTip-Drill-CSink-Dia.htm ; IDC_CSINKDIA
+   1784 | 1784-ToolTip-Drill-Step.htm ; IDC_STEPINCR
+   1837 | 1837-ToolTip-Drill-Approach.htm ; IDC_APPROACH_DISTANCE2
+   2199 | 2199-ToolTip-DrillPoint-At-Top.htm ; IDC_TOP
+   2205 | 2205-ToolTip-DrillPoint-At-Bot.htm ; IDC_BOTTOM
+   2210 | 2210-ToolTip-DrillPoint-Project.htm ; IDC_PROJECT
+   2535 | 2535-ToolTip-Drill-Depth.htm ; IDC_DEPTH_PICK
+   3435 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_TURN_AXIALPTZ
+   1894 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_POINT_PICK
+   2703 | 2703-ToolTip-DrillPoint-Pick-Top.htm ; IDC_SPECIFY
+   1833 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+1238 ; IDD_TAP_PARAMS "Cut Parameters"
+{
+   1093 | 1093-ToolTip-Tap-Type.htm ; IDC_TAP_LIST
+   1810 | 1810-ToolTip-Tap-Depth.htm ; IDC_DRILL_DEPTH
+   1872 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_OFF
+   1814 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_TIME
+   1802 | 1802-ToolTip-Drill-Dwell.htm ; IDC_DWELLTIME
+   1817 | 1817-ToolTip-Drill-Dwell.htm ; IDC_DWELL_REV
+   1763 | 1763-ToolTip-Drill-Dwell.htm ; IDC_DWELLREV
+   1166 | 1166-ToolTip-Tap-RightHand.htm ; IDC_TAP_RH
+   1192 | 1192-ToolTip-Tap-LeftHand.htm ; IDC_TAP_LH
+   1837 | 1837-ToolTip-Drill-Approach.htm ; IDC_APPROACH_DISTANCE2
+   2199 | 2199-ToolTip-DrillPoint-At-Top.htm ; IDC_TOP
+   2205 | 2205-ToolTip-DrillPoint-At-Bot.htm ; IDC_BOTTOM
+   2210 | 2210-ToolTip-DrillPoint-Project.htm ; IDC_PROJECT
+   2535 | 2535-ToolTip-Drill-Depth.htm ; IDC_DEPTH_PICK
+   3435 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_TURN_AXIALPTZ
+   1894 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_POINT_PICK
+   2703 | 2703-ToolTip-DrillPoint-Pick-Top.htm ; IDC_SPECIFY
+   1794 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+   3783 | 3783-ToolTip-Tap-Cut-Peck-Depth.htm ; IDC_TAP_PECK_DEPTH
+}
+1234 ; IDD_BORE_PARAMS "Cut Parameters"
+{
+   1094 | 1094-ToolTip-Bore-Type.htm ; IDC_BORE_LIST
+   1810 | 1810-ToolTip-Drill-Depth.htm ; IDC_DRILL_DEPTH
+   1872 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_OFF
+   1814 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_TIME
+   1802 | 1802-ToolTip-Drill-Dwell.htm ; IDC_DWELLTIME
+   1817 | 1817-ToolTip-Drill-Dwell.htm ; IDC_DWELL_REV
+   1763 | 1763-ToolTip-Drill-Dwell.htm ; IDC_DWELLREV
+   1840 | 1840-ToolTip-Bore-Tool-Orient.htm ; IDC_TOGGLE_ORIENT
+   1847 | 1847-ToolTip-Bore-Tool-Orient.htm ; IDC_ORIENT_VALUE
+   1837 | 1837-ToolTip-Drill-Approach.htm ; IDC_APPROACH_DISTANCE2
+   2199 | 2199-ToolTip-DrillPoint-At-Top.htm ; IDC_TOP
+   2205 | 2205-ToolTip-DrillPoint-At-Bot.htm ; IDC_BOTTOM
+   2210 | 2210-ToolTip-DrillPoint-Project.htm ; IDC_PROJECT
+   3687 | 1810-ToolTip-Drill-Depth.htm ; IDC_DEPTH_PICK2
+   3435 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_TURN_AXIALPTZ
+   1894 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_POINT_PICK
+   2703 | 2703-ToolTip-DrillPoint-Pick-Top.htm ; IDC_SPECIFY
+   1791 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+1237 ; IDD_RBORE_PARAMS "Cut Parameters"
+{
+   1095 | 1095-ToolTip-RBore-Type.htm ; IDC_RBORE_LIST
+   1810 | 1810-ToolTip-RBore-Depth.htm ; IDC_DRILL_DEPTH
+   1872 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_OFF
+   1814 | 1814-ToolTip-Drill-Dwell.htm ; IDC_DWELL_TIME
+   1802 | 1802-ToolTip-Drill-Dwell.htm ; IDC_DWELLTIME
+   1817 | 1817-ToolTip-Drill-Dwell.htm ; IDC_DWELL_REV
+   1763 | 1763-ToolTip-Drill-Dwell.htm ; IDC_DWELLREV
+   1840 | 1840-ToolTip-Bore-Tool-Orient.htm ; IDC_TOGGLE_ORIENT
+   1847 | 1847-ToolTip-Bore-Tool-Orient.htm ; IDC_ORIENT_VALUE
+   1844 | 1844-ToolTip-RBore-Approach-Dist.htm ; IDC_APPROACH_DISTANCE3
+   2199 | 2199-ToolTip-DrillPoint-At-Top.htm ; IDC_TOP
+   2205 | 2205-ToolTip-DrillPoint-At-Bot.htm ; IDC_BOTTOM
+   2210 | 2210-ToolTip-DrillPoint-Project.htm ; IDC_PROJECT
+   3687 | 1810-ToolTip-RBore-Depth.htm ; IDC_DEPTH_PICK2
+   3435 | 3435-ToolTip-DrillPoint-Pick-Top.htm ; IDC_TURN_AXIALPTZ
+   1894 | 2703-ToolTip-DrillPoint-Pick-Top.htm ; IDC_POINT_PICK
+   2703 | 2703-ToolTip-DrillPoint-Pick-Top.htm ; IDC_SPECIFY
+   1299 | 1695-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+24042 ; IDD_MACHINE_CONTROL "Select Machine Control Cycle"
+{
+   2184 | 2184-ToolTip-MACHINE-CONTROL-CYCLE.htm ; IDC_CYCLE1
+   2186 | 2184-ToolTip-MACHINE-CONTROL-CYCLE.htm ; IDC_CYCLE2
+   2190 | 2184-ToolTip-MACHINE-CONTROL-CYCLE.htm ; IDC_CYCLE3
+   2195 | 2184-ToolTip-MACHINE-CONTROL-CYCLE.htm ; IDC_CYCLE4
+}
+1274 ; IDD_PREFRENCES_MACHINING_TURN "Machining"
+{
+   2239 | 2239-ToolTip-UI-Machining-Output-Arcs.htm ; IDC_OUTPUTARCS
+   2234 | 2234-ToolTip-UI-Machining-Tool-Tip.htm ; IDC_TOOLTIP
+   2236 | 2234-ToolTip-UI-Machining-Tool-Tip.htm ; IDC_TOOLCENTER
+   2220 | 2220-ToolTip-UI-Machining-Default-KB-Name.htm ; IDC_DEFAULT_KB_NAME
+   2223 | 2223-ToolTip-UI-Machining-Default-KB-Path.htm ; IDC_DEFAULT_KBPATH
+   2247 | 2247-ToolTip-UI-Machining-TURN-Program-Mode.htm ; IDC_PROGRAMMING_MODE
+   3746 | 3746-ToolTip-UI-Machining-Output-Linear-Motions.htm ; IDC_CYCLEASMOTIONS
+}
+1313 ; IDD_PREFRENCES_SIMULATION_TURN "Simulation"
+{
+   2500 | 2501-ToolTip-UI-Simulation-Mode-Max-Interval.htm ; IDC_COUNT
+   1903 | 1903-ToolTip-UI-Simulation-Tool-Holder.htm ; IDC_TOOLHOLDER
+   2194 | 2194-ToolTip-UI-Simulation-Tool-Solid.htm ; IDC_SOLID_TOOL
+   2198 | 2198-ToolTip-UI-Simulation-Tool-Trans.htm ; IDC_TRANSPARENT_TOOL
+   2202 | 2202-ToolTip-UI-Simulation-Tool-Wireframe.htm ; IDC_WIREFRAME_TOOL
+   1155 | 1155-ToolTip-UI-Simulation-Tool-None.htm ; IDC_NO_TOOL
+   2497 | 2497-ToolTip-UI-Simulation-Sim-Mode-Speed-Slider.htm ; IDC_SPEED
+   2670 | 2670-ToolTip-UI-Simulation-Accuracy-Slider.htm ; IDC_ACCURACY
+   2677 | 2677-ToolTip-UI-Simulation-Trans-Std-Display-Mode.htm ; IDC_TRANSPARENCY
+   2682 | 2682-ToolTip-UI-Simulation-Trans-Sim-Display-Mode.htm ; IDC_SIMMODE_TRANSPARENCY
+   2255 | 2255-ToolTip-UI-Simulation-By-Motions.htm ; IDC_SIMBYMOTIONS
+   2258 | 2258-ToolTip-UI-Simulation-By-Distance.htm ; IDC_SIMBYDIST
+   2501 | 2501-ToolTip-UI-Simulation-Mode-Max-Interval.htm ; IDC_MAXDIST
+   2209 | 2209-ToolTip-UI-Simulation-Mode.htm ; IDC_FULL
+   2214 | 2209-ToolTip-UI-Simulation-Mode.htm ; IDC_3QUARTER
+   2217 | 2209-ToolTip-UI-Simulation-Mode.htm ; IDC_HALF
+   1206 | 2209-ToolTip-UI-Simulation-Mode.htm ; IDC_QUARTER
+   1928 | 1928-ToolTip-UI-Simulation-Display-Sih-Edges.htm ; IDC_CHECK_DISPLAY_SILHOUETTE_EDGES
+   1931 | 1931-ToolTip-UI-Simulation-Display-Sharp-Edges.htm ; IDC_CHECK_DISPLAY_SHARP_EDGES
+   3555 | 3555-ToolTip-UI-Simulation-Display-Sih-Edges-Color.htm ; IDC_COLOR_PICK_SILHOUETTE_EDGES
+   3557 | 3557-ToolTip-UI-Simulation-Display-Sharp-Edges-Color.htm ; IDC_COLOR_PICK_SHARP_EDGES
+   2836 | 2836-ToolTip-UI-Simulation-Display-Sharp-Edges-Angle.htm ; IDC_EDIT_SHARP_EDGES_ANGLE
+   3857 | file.htm ; IDC_USE_BASIC_OGL
+   3936 | file.htm ; IDC_TOOLPATH_ERROR_DURING_SIMULATION
+}
+761 ; IDD_CYLINDERSTOCK_TURN_OFFSET "Part Offset Stock"
+{
+    762 | file.htm ; ID_MENU_4AXIS
+   3083 | file.htm ; IDC_CS_OFFSETVAL
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+   2442 | file.htm ; IDC_CS_HELP
+}
+1081 ; IDD_PREFERENCES_FEEDSSPEEDS "Feeds && Speeds"
+{
+   2918 | 2918-ToolTip-Load-From-Tool.htm ; IDC_LOADFROM_TOOL
+   2152 | 2152-ToolTip-Load-from-File.htm ; IDC_LOADFROM_TABLE
+   2920 | 2920-tooltip-load-fs-from-defaults.htm ; IDC_LOADFROM_DEFAULTS
+   1048 | 1048-ToolTip-Cut-Feedrate.htm ; IDC_CUTFEED
+   1606 | 1606-ToolTip-Plunge-Feedrate.htm ; IDC_PLUNGEFEED
+   1596 | 1596-ToolTip-FS-Approach.htm ; IDC_APPROACHFEED
+   1585 | 1585-ToolTip-FS-Engage.htm ; IDC_ENGAGEFEED
+   1582 | 1582-ToolTip-FS-Retract.htm ; IDC_RETRACTFEED
+   2924 | 1583-ToolTip-FS-Departure.htm ; IDC_DEPARTUREFEED
+   1579 | 1579-ToolTip-FS-Transfer-Set.htm ; IDC_TRANSFERFEED
+   3467 | 3467-ToolTipa-Always-Track-to-Used-Tool.htm ; IDC_REPLACE_FS_WITHOUT_PRMT_CHECK
+}
+34525 ; IDD_PREFERENCES_RIBBON "Ribbon"
+{
+   2859 | 2859-ToolTip-RIBBON_PREF_SYSTEM.htm ; IDC_RIBBON_PREFERENCE_SYSTEM
+   2157 | 2157-ToolTip-RIBBON_PREF_OFFICE2007BLUE.htm ; IDC_RIBBON_PREFERENCE_OFFICE2007BLUE
+   3580 | 3580-ToolTip-RIBBON_PREF_OFFICE2007SILVER.htm ; IDC_RIBBON_PREFERENCE_OFFICE2007SILVER
+   3581 | 3581-ToolTip-RIBBON_PREF_OFFICE2007BLACK.htm ; IDC_RIBBON_PREFERENCE_OFFICE2007BLACK
+   3582 | 3582-ToolTip-RIBBON_PREF_OFFICE2007AQUA.htm ; IDC_RIBBON_PREFERENCE_OFFICE2007AQUA
+   3584 | 3584-ToolTip-RIBBON_PREF_OFFICE2010BLUE.htm ; IDC_RIBBON_PREFERENCE_OFFICE2010BLUE
+   2883 | 2883-ToolTip-RIBBON_PREF_OFFICE2010SILVER.htm ; IDC_RIBBON_PREFERENCE_OFFICE2010SILVER
+   2887 | 2887-ToolTip-RIBBON_PREF_OFFICE2010BLACK.htm ; IDC_RIBBON_PREFERENCE_OFFICE2010BLACK
+   2890 | 2890-ToolTip-RIBBON_PREF_WINDOWS7SCENIC.htm ; IDC_RIBBON_PREFERENCE_WINDOWS7SCENIC
+}
+34526 ; IDD_PREFERENCES_CUTTING_TOOLS "Cutting Tools"
+{
+   3481 | 3481-ToolTip-PREF_CUTTING_TOOLSLOAD_DEF_LIB_CHECK.htm ; IDC_LOAD_DEF_LIB_CHECK
+   3480 | 3480-ToolTip-PREF_CUTTING_TOOLSDEF_LIB_TOOLS_EDIT.htm ; IDC_DEF_LIB_TOOLS_EDIT
+   3484 | 3484-ToolTip-PREF_CUTTING_TOOLSTOOL_LIB_PATH_BTN.htm ; IDC_DEF_TOOL_LIB_PATH_BTN
+   3747 | 3747-ToolTip-PREF_CUTTING_TOOLSCLEAR_DEF_TOOL_LIB_PATH_BTN.htm ; IDC_CLEAR_DEF_TOOL_LIB_PATH_BTN
+}
+24143 ; IDD_PREFERENCES_FEATURES "Features"
+{
+   3686 | 3686-ToolTip-Preferences-Features-Trans.htm ; IDC_FEATURES_TRANSPARENCY
+   3692 | 3692-ToolTip-Preferences-Features-Color.htm ; IDC_FEATURE_COLOR
+   3693 | 3693-ToolTip-Preferences-Features-Color-Selected.htm ; IDC_SEL_FEATURE_COLOR
+   3810 | file.htm ; IDC_TURNON_FEATURE_PRESEL
+   3811 | file.htm ; IDC_TURNON_FEATURE_PRESEL_TIPS
+   3827 | file.htm ; IDC_DEF_AFM_KB_EDIT
+   3828 | file.htm ; IDC_DEF_AMF_KB_PATH_BTN
+   3856 | file.htm ; IDC_SHOW_FEATTAB_IN_MOBS_BROWSER
+   3859 | file.htm ; IDC_SHOW_FEATURESTAB
+}
+
+1253 ; IDD_PREFERENCES_COLOR "Color"
+{
+   2121 | 2121-ToolTip-UI-Color-Tool-Flutes.htm ; IDC_FLUTES_COLOR
+   2124 | 2124-ToolTip-UI-Color-Tool-Shank.htm ; IDC_SHANK_COLOR
+   2149 | 2149-ToolTip-UI-Color-Tool-Holder.htm ; IDC_HOLDER_COLOR
+   2127 | 2127-ToolTip-UI-Color-Tool-Cut-Motions.htm ; IDC_CUT_COLOR
+   2144 | 2144-ToolTip-UI-Color-Tool-Plunge-Motions.htm ; IDC_PLUNGE_COLOR
+   2142 | 2142-ToolTip-UI-Color-Tool-Approach-Motions.htm ; IDC_APPROACH_COLOR
+   2129 | 2129-ToolTip-UI-Color-Tool-Engage-Motions.htm ; IDC_ENGAGE_COLOR
+   2133 | 2133-ToolTip-UI-Color-Tool-Retract-Motions.htm ; IDC_RETRACT_COLOR
+   2146 | 2146-ToolTip-UI-Color-Tool-Depart-Motions.htm ; IDC_DEPART_COLOR
+   2135 | 2135-ToolTip-UI-Color-Tool-Rapid-Motions.htm ; IDC_RAPID_COLOR
+   2131 | 2131-ToolTip-UI-Color-Tool-Cut-Arc-Motions.htm ; IDC_CUTARC_COLOR
+   2116 | 2116-ToolTip-UI-Color-Tool-Stock.htm ; IDC_STOCK_COLOR
+   2118 | 2118-ToolTip-UI-Color-Tool-Cut-Stock.htm ; IDC_CUTSTOCK_COLOR
+   2137 | 2137-ToolTip-UI-Color-Tool-Drive-Surfaces.htm ; IDC_DRIVE_SURF_COLOR
+   2140 | 2140-ToolTip-UI-Color-Tool-Check-Surfaces.htm ; IDC_CHECK_SURF_COLOR
+   2166 | 2166-ToolTip-UI-Color-Tool-Containment-Regions.htm ; IDC_CONT_REGION_COLOR
+   2169 | 2169-ToolTip-UI-Color-Tool-Avoid-Regions.htm ; IDC_AVOID_REGION_COLOR
+   3555 | 3555-ToolTip-UI-Simulation-Display-Sih-Edges-Color.htm ; IDC_COLOR_PICK_SILHOUETTE_EDGES
+   3557 | 3557-ToolTip-UI-Simulation-Display-Sharp-Edges-Color.htm ; IDC_COLOR_PICK_SHARP_EDGES
+}
+35586 ; IDD_COMPONENT_DECOMPOS_FEATURE_DLG "Explode Cabinet Control Parameters "
+{
+   3445 | 3445-ToolTip-COMP_DECOM_EXPLODE_ALL_VISIBLE.htm ; IDC_RADIO_EXPLODE_ALL_VISIBLE
+   3444 | 3444-ToolTip-COMP_DECOM_EXPLODE_FOLLOW_LAYERS.htm ; IDC_RADIO_EXPLODE_FOLLOW_LAYERS
+   3448 | 3448-ToolTip-COMP_DECOM_SINGLE_ALONG_X.htm ; IDC_RADIO_SINGLE_ALONG_X
+   3447 | 3447-ToolTip-COMP_DECOM_SINGLE_ALONG_Y.htm ; IDC_RADIO_SINGLE_ALONG_Y
+   3446 | 3446-ToolTip-COMP_DECOM_ARRAY_ALONG_X.htm ; IDC_RADIO_ARRAY_ALONG_X
+   3449 | 3449-ToolTip-COMP_DECOM_RADIO_ARRAY_ALONG_Y.htm ; IDC_RADIO_ARRAY_ALONG_Y
+   3450 | 3450-ToolTip-COMP_DECOM_EDIT_SPACING.htm ; IDC_EDIT_SPACING
+   3458 | file.htm ; IDC_CHECK_CREATE_GROUP
+   3443 | 3443-ToolTip-COMP_DECOM_CHECK_LAYERS_LIST.htm ; IDC_CHECK_LAYERS_LIST
+   3453 | 3453-ToolTip-COMP_DECOM_SEL_ALL_LAYERS.htm ; IDC_BUTTON_SEL_ALL_LAYERS
+   3454 | 3454-ToolTip-COMP_DECOM_CLEAR_SEL_LAYERS.htm ; IDC_BUTTON_CLEAR_SEL_LAYERS
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+   3457 | 3457-ToolTip-COMP_DECOM_HIDE_GEOMETRY.htm ; IDC_CHECK_HIDE_GEOMETRY
+   3459 | 3459-ToolTip-COMP_DECOM_GEOMETRY_AND_CURVES.htm ; IDC_RADIO_GEOMETRY_AND_CURVES
+   3460 | 3460-ToolTip-COMP_DECOM_ONLY_CURVE.htm ; IDC_RADIO_ONLY_CURVE
+   3461 | 3461-ToolTip-COMP_DECOM_ONLY_GEOMETRY.htm ; IDC_RADIO_ONLY_GEOMETRY
+   3455 | 3455-ToolTip-COMP_DECOM_EDIT_FIX_DISTANCE.htm ; IDC_EDIT_FIX_DISTANCE
+   3463 | 3463-ToolTip-COMP_DECOM_ADD_TO_PARENT_LAYER.htm ; IDC_RADIO_ADD_TO_PARENT_LAYER
+   3462 | 3462-ToolTip-COMP_DECOM_ADD_TO_NEW_LAYER.htm ; IDC_RADIO_ADD_TO_NEW_LAYER
+   3465 | 3465-ToolTip-COMP_DECOM_EXPLODE_SELECTED.htm ; IDC_RADIO_EXPLODE_SELECTED
+   3464 | 3464-ToolTip-COMP_DECOM_SELECTED_PICK.htm ; IDC_BUTTON_SELECTED_PICK
+  ; IDHELP | file.htm ; IDHELP
+   3609 | 3609-ToolTip-COMP_DECOM_CHECK_ON_ONE_PANE.htm ; IDC_CHECK_ON_ONE_PANE
+   3774 | file.htm ; IDC_ECD_SAVE_COLORS_CB
+}
+106 ; IDD_KB_GEOM_PROPS_TAB "Geometry"
+{
+   3131 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_POINTS_CB
+   3130 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_LINES_CB
+   3129 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_RECTS_CB
+   3128 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_POLY_CB
+   3127 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_ARCS_CB
+   3126 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_CIRCLES_CB
+   3125 | 3131-ToolTip-KB-Geometry-Type-Filters.htm ; IDC_KB_GP_CURVES_CB
+   3124 | 3124-ToolTip-KB-Geo-Sizes-Filters-Diameter-Range.htm ; IDC_KB_GP_USE_DIA_CB
+   3120 | 3120-ToolTip-KB-Geo-Sizes-Filters-Side-Length-Range.htm ; IDC_KB_GP_BBOX_MIN_LEN_CB
+   2826 | 3124-ToolTip-KB-Geo-Sizes-Filters-Diameter-Range.htm ; IDC_KB_GP_MIN_DIA_INP
+   2842 | 3124-ToolTip-KB-Geo-Sizes-Filters-Diameter-Range.htm ; IDC_KB_GP_MAX_DIA_INP
+   2848 | 3120-ToolTip-KB-Geo-Sizes-Filters-Side-Length-Range.htm ; IDC_KB_GP_MIN_SIDE_LEN_INP
+   3122 | 3122-ToolTip-KB-Geo-Property-Filters.htm ; IDC_KB_GP_OPEN_CB
+   3121 | 3122-ToolTip-KB-Geo-Property-Filters.htm ; IDC_KB_GP_CLOSED_CB
+   2862 | 2862-ToolTip-KB-Geo-Topo-Filters.htm ; IDC_KB_GP_NONE_RB
+   2159 | 2862-ToolTip-KB-Geo-Topo-Filters.htm ; IDC_KB_GP_OUTERMOST_RB
+   3587 | 2862-ToolTip-KB-Geo-Topo-Filters.htm ; IDC_KB_GP_IGNORE_OUTERMOST_RB
+   3616 | 3120-ToolTip-KB-Geo-Sizes-Filters-Side-Length-Range.htm ; IDC_KB_GP_MAX_SIDE_LEN_INP
+}
+24132 ; IDD_KB_LAYER_PROPS_TAB "Layer Filters"
+{
+   3604 | 3604-ToolTip-KB-Layer-Filters-Names-List.htm ; IDC_KB_LP_NAMES_LST
+   3550 | 3550-ToolTip-KB-Layer-Filters-Names-Add.htm ; IDC_KB_LP_ADD_BTN
+   2827 | 3550-ToolTip-KB-Layer-Filters-Names-Add.htm ; IDC_KB_LP_NAME_INP
+   3576 | 3576-ToolTip-KB-Layer-Filters-Delete-Active.htm ; IDC_KB_LP_DEL_ACTIVE_BTN
+   3605 | 3605-ToolTip-KB-Layer-Filters-In-File.htm ; IDC_LP_LAYER_IN_FILE
+}
+24135 ; IDD_KB_COLOR_PROPS_TAB "Color Filters"
+{
+   3615 | 3615-ToolTip-KB-Color-Filters-Use.htm ; IDC_KB_USE_COLOR_FILTERS_CB
+   3578 | 3578-ToolTip-KB-Color-Filters-Select-Color.htm ; IDC_KB_SELECT_COLOR_BTN
+   3591 | 3591-ToolTip-KB-Color-Filters-Remove-Color.htm ; IDC_KB_COLOR_REM_BTN
+   3590 | 3590-ToolTip-KB-Color-Filters-Active-Color.htm ; IDC_KB_COLOR_LIST
+   3592 | 3592-ToolTip-KB-Color-Filters-Active-Color-Pick.htm
+   3768 | file.htm ; IDC_KB_COLOR_PICK_BTN
+}
+34598 ; IDD_OPEN_FILE_LOAD_SETTINGS_DLG "Load settings from file"
+{
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+   3763 | 3763-ToolTip-OPEN_FILE_SET_REM_SELECTION.htm ; IDC_OPEN_FILE_SETTINGS_REMEMBER_SELECTION_CB
+}
+1280 ; IDD_MOP_PROPERTIES "Machining Operation Properties"
+{
+   2450 | 2450-ToolTip-MOP_PROPERTIES_NAME.htm ; IDC_NAME
+   2457 | 2457-ToolTip-MOP_PROPERTIES_PROGRAM_NO.htm ; IDC_PROGRAM_NO
+   2368 | 2368-ToolTip-MOP_PROPERTIES_COMMENTS.htm ; IDC_COMMENTS
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+  ; IDHELP | file.htm ; IDHELP
+   2453 | 2453-ToolTip-MOP_PROPERTIES_POSTFILENAME.htm ; IDC_POSTFILENAME
+   2456 | 2456-ToolTip-MOP_PROPERTIES_POSTDATE.htm ; IDC_POSTDATE
+   3552 | 3552-ToolTip-MOP_PROPERTIES_MOPCUTCOLOR.htm ; IDC_MOPCUTCOLOR
+}
+24165 ; IDD_TURN_FEEDS_SPEEDS_LOAD "Load Feeds from Table"
+{
+   1388 | 1388-ToolTip-FS-Calculator-Stock-Material.htm ; IDC_STOCK_MATERIAL
+   1387 | 1387-ToolTip-SF-from-Table-Tool-Material.htm ; IDC_TOOL_MATERIAL
+   1396 | 1396-ToolTip-SF-from-Table-Surface-Speed.htm ; IDC_SURFSPEED
+   1401 | 1401-ToolTip-SF-from-Table-Feed-per-Tooth.htm ; IDC_FEED_TOOTH
+   1081 | 1081-ToolTip-SF-from-Table-Tool-Diameter.htm ; IDC_TOOL_DIAMETER
+   1399 | 1399-ToolTip-FS-Spindle-Speed.htm ; IDC_SPINDLE_RPM
+   1148 | 1148-ToolTip-FS-Cut.htm ; IDC_FEEDRATE
+   3824 | 3824-ToolTip-FS-Max-Limits-for-Comp.htm ; IDC_SPINDLE_RPM_MAX
+   3823 | 3824-ToolTip-FS-Max-Limits-for-Comp.htm ; IDC_FEEDRATE_MAX
+}
+6041 ; IDD_TOOL_ATTRIBUTES 
+{
+   1387 | 1387-ToolTip-Tool-Material.htm ; IDC_TOOL_MATERIAL
+   1394 | 1394-ToolTip-Tool-NumFlutes.htm ; IDC_TOOL_NUMFLUTES
+   1397 | 1397-ToolTip-Tool-Number.htm ; IDC_TOOL_NUMBER
+   1857 | 1857-ToolTip-Tool-Adjust-Reg.htm ; IDC_ADJUST_REG
+   1863 | 1863-ToolTip-Tool-CutCom-Reg.htm ; IDC_CUTCOM_REG
+   1704 | 1704-ToolTip-Tool-Z-Off.htm ; IDC_ZOFF
+   1098 | 1098-ToolTip-Tool-Coolant-Combo.htm ; IDC_COOLANT_COMBO
+   2368 | 2368-ToolTip-Tool-Comments.htm ; IDC_COMMENTS
+   3551 | 3551-ToolTip-Tool-Cut-Mat-Color.htm ; IDC_TOOL_CUTMATCOLOR
+}
+24166 ; IDD_SET_TURN_WCS "Locate WCS with respect to Part or Stock"
+{
+   2057 | 2057-ToolTip-Work-Zero-Pick.htm ; IDC_SET_POINT
+   2079 | 2079-ToolTip-Work-Zero-Stock-Box.htm ; IDC_SET_STOCK_FACE
+   2049 | 2049-ToolTip-Work-Zero-Part-Box.htm ; IDC_SET_FACE
+   3078 | 3078-ToolTip-Work-Zero-Zero-Face-Left.htm ; IDC_LEFT_FACE
+   3079 | 3079-ToolTip-Work-Zero-Zero-Face-Right.htm ; IDC_RIGHT_FACE
+   2071 | 2071-ToolTip-Work-Zero-Pick.htm ; IDC_ZVALUE
+   2045 | 2045-ToolTip-Work-Zero-Pick.htm ; IDC_PICK_ZERO
+}
+24167 ; IDD_MACHINEAXES_WARNING "Machine Tool Axes Limitation Warning"
+{
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+  ; IDHELP | file.htm ; IDHELP
+   3281 | file.htm ; IDC_CHECK_INVOKE_INFO
+}
+1223 ; IDD_ORIENT "Set World Coordinate System"
+{
+   1766 | 1766-ToolTip-Orient-Part-Set-Direction.htm ; IDC_YZ_NEG
+   1182 | 1182-ToolTip-Orient-Part-Set-Direction.htm ; IDC_XZ
+   1762 | 1762-ToolTip-Orient-Part-Set-Direction.htm ; IDC_XY_NEG
+   1214 | 1214-ToolTip-Orient-Part-Set-Direction.htm ; IDC_YZ
+   1157 | 1157-ToolTip-Orient-Part-Set-Direction.htm ; IDC_XZ_NEG
+   3711 | 3711-ToolTip-Orient-Part-Rotate-About-Spin-Angle.htm ; IDC_PO_ANGLE
+   1491 | 1491-ToolTip-MACHINE-CSYS-XROTATE.htm ; IDC_XROTATE
+   1494 | 1494-ToolTip-MACHINE-CSYS-YROTATE.htm ; IDC_YROTATE
+   1496 | 1496-ToolTip-MACHINE-CSYS-ZROTATE.htm ; IDC_ZROTATE
+   1479 | 1479-ToolTip-MACHINE-CSYS-PICK_FACE.htm ; IDC_PICK_FACE
+   2051 | 2051-ToolTip-MACHINE-CSYS-PICK_CURVE.htm ; IDC_PICK_CURVE
+   1770 | 1770-ToolTip-Orient-Part-Align-View.htm ; IDC_VIEW_PLANE
+   1779 | 1779-ToolTip-Orient-Part-Align-C-Plane.htm ; IDC_C_PLANE
+   2063 | 2063-ToolTip-WorkZero-Pick.htm
+   2067 | 2063-ToolTip-WorkZero-Pick.htm ; IDC_YVALUE
+   2071 | 2063-ToolTip-WorkZero-Pick.htm ; IDC_ZVALUE
+   2045 | 2063-ToolTip-WorkZero-Pick.htm ; IDC_PICK_ZERO
+}

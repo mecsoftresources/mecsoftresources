@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Simulate a Toolpath</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Simulate, a Toolpath" />
+   <meta name="description" content="RhinoCAM allows you to simulate your toolpath to see the cut material removal and in-process stock." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-simulate-a-toolpath.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Simulate a Toolpath</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-simulate-a-toolpath.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Simulate a Toolpath</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-suppress-a-toolpath.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="how-to-setup-a-part.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_BoldKeyword">RhinoCAM</span> allows you to simulate your toolpath to see the cut material removal and in-process stock.</p>
+<p class="p_Normal">Here are the basic steps to simulate a toolpath:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First create a toolpath to simulate and make sure the toolpath has generated cleanly. &nbsp;Each toolpath when generated is listed under a </span><span class="f_BoldKeyword">Setup</span><span class="f_Numbered"> in the </span><span class="f_BoldKeyword">Machining</span><span class="f_Numbered"> </span><span class="f_BoldKeyword">Job</span><span class="f_Numbered">. &nbsp;If the operation is flagged it means that it needs to be regenerated and cannot be simulated yet.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:257px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="257" height="182" style="width:257px;height:182px;border:none" src="how-to-simulate-a-toolpath-1.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">From the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">, select the operation that you want to simulate.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:259px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="259" height="181" style="width:259px;height:181px;border:none" src="how-to-simulate-a-toolpath-2.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Simulate</span><span class="f_Numbered"> tab. &nbsp;Its located to the right of the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:395px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="395" height="335" style="width:395px;height:335px;border:none" src="how-to-simulate-a-toolpath-3.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><img alt="Perform Toolpath Simulation or Animation" title="Perform Toolpath Simulation or Animation" width="57" height="25" style="margin:0;width:57px;height:25px;border:none" src="doc_filesimage035.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">Pick the </span><span class="f_BoldKeyword">Play</span><span class="f_Numbered"> button to run the simulation.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-simulate-a-toolpath-4" width="315" height="195" style="margin:0;width:315px;height:195px;border:none" src="how-to-simulate-a-toolpath-4.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><img alt="Toolpath Visibility" title="Toolpath Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage030.png"/><span class="f_ImageCaption">  </span>You can toggle off the toolpath to see the resulting in-process stock model by selecting the <span class="f_BoldKeyword">Toggle Toolpath Visibility</span> icon from the base of the <span class="f_BoldKeyword">Machining Browser</span>.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-simulate-a-toolpath-5" width="315" height="189" style="margin:0;width:315px;height:189px;border:none" src="how-to-simulate-a-toolpath-5.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span>You can slow down the simulation by adjusting the slider located on the <span class="f_BoldKeyword">Simulate</span> tab menu. &nbsp;You can further slow down the simulation by un-checking <span class="f_BoldKeyword">Simulate by Moves</span> from the <span class="f_BoldKeyword">Simulate</span> tab menu.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:395px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="395" height="118" style="width:395px;height:118px;border:none" src="how-to-simulate-a-toolpath-6.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span><img alt="Pause Toolpath Simulation" title="Pause Toolpath Simulation" width="66" height="25" style="margin:0;width:66px;height:25px;border:none" src="doc_filesimage039.png"/><span class="f_ImageCaption"> <img alt="Simulate to End" title="Simulate to End" width="72" height="25" style="margin:0;width:72px;height:25px;border:none" src="doc_filesimage038.png"/>  </span>You can fast-forward to the end of the simulation by selecting <span class="f_BoldKeyword">Pause</span> and then <span class="f_BoldKeyword">To End</span>.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span><img alt="Simulate Next Toolpath Block" title="Simulate Next Toolpath Block" width="58" height="25" style="margin:0;width:58px;height:25px;border:none" src="doc_filesimage036.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">To see each cut motion one at a time, you can select the </span><span class="f_BoldKeyword">Step</span><span class="f_Numbered"> button.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span><img alt="how-to-simulate-a-toolpath-7" width="94" height="23" style="margin:0;width:94px;height:23px;border:none" src="how-to-simulate-a-toolpath-7.png"/>  <span class="f_Numbered">You can set simulation preferences by selecting </span><span class="f_BoldKeyword">Preferences</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Simulate</span><span class="f_Numbered"> tab menu.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span><img alt="Material Texture Visibility" title="Material Texture Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage029.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">You can apply a </span><span class="f_BoldKeyword">Stock Material</span><span class="f_Numbered"> texture to the simulation by selecting the </span><span class="f_BoldKeyword">Toggle Material Texture Visibility</span><span class="f_Numbered"> icon from the base of the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span><span class="f_Numbered">If the in-process </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> does not display on the screen during the simulation, make sure you have simulated all previous operations that appear in the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-simulate-a-toolpath.html" target="_top">'+baseurl+'index.html?how-to-simulate-a-toolpath.html</a></p>');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Machine &gt; Machine Setup</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Machine Setup,Machine Setup Manual Definition" />
+   <meta name="description" content="This dialog allows you to setup your Machine Tool Definition. &nbsp;Refer to each section below for more information. &nbsp;See also: Load From File, Machine Tool Setup" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "manualdefinition.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Manual Definition</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?manualdefinition.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a> &gt; <a href="machine-setup.html">Machine</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Manual Definition</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="machine-setup.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="machine-setup.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="loadfromfile.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">This dialog allows you to setup your <span class="f_BoldKeyword">Machine Tool Definition</span>. &nbsp;Refer to each section below for more information. &nbsp;See also: <a href="loadfromfile.html" class="topiclink">Load From File, Machine Tool Setup</a></p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Dialog Box: Machine Tool Setup - Manual Definition tab - Load from File</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">See: <a href="loadfromfile.html" class="topiclink">Load From File, Machine Tool Setup</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Dialog Box: Machine Tool Setup - Manual Definition tab</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BoldParameter"><span class="f_BoldParameter">Manual Definition</span></p>
+<p class="p_Normal">This option allows you to manually setup your <span class="f_BoldKeyword">Machine Tool Definition</span>. &nbsp;Refer to each section below for more information.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Load from File</span> (See <a href="loadfromfile.html" class="topiclink">Load From File, Machine Tool Setup</a>)</p>
+<p class="p_Normal">This option allows you to select a machine tool from a library of machine tools. &nbsp;See <span class="f_BoldKeyword">Load From File, Machine Tool Setup</span> for more information.</p>
+<div class="p_Normal"><div style="margin:0;width:414px"><img alt="Dialog Box: Machine Tool Setup - Manual Definition" title="Dialog Box: Machine Tool Setup - Manual Definition" width="414" height="692" style="width:414px;height:692px;border:none" src="doc_filesimage156.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Machine Tool Setup - Manual Definition</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Machine Type</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="machine-setup-machine-type" width="369" height="44" style="margin:0;width:369px;height:44px;border:none" src="machine-setup-machine-type.png"/></p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Number of Axis</span></p>
+<p class="p_Normal">Specify the number of axis of the your <span class="f_BoldKeyword">Machine Tool</span>. &nbsp;Select <span class="f_BoldKeyword">3 Axis</span> for both <span class="f_BoldKeyword">2½</span> and <span class="f_BoldKeyword">3 Axis </span>machining methods.</p>
+<p class="p_Normal">General information:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Select </span><span class="f_BoldKeyword">3 Axis</span><span class="f_Numbered"> for </span>both <span class="f_BoldKeyword">2½</span> and <span class="f_BoldKeyword">3 Axis</span> machining methods.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span>Selecting <span class="f_BoldKeyword">4 Axis</span> or <span class="f_BoldKeyword">5 Axis</span> will the <span class="f_BoldKeyword">Configuration</span> parameter listed below. &nbsp;</p><p class="p_BoldParameter"><span class="f_BoldParameter">Configuration</span></p>
+<p class="p_Normal">Select the configuration of your machine. &nbsp;For <span class="f_BoldKeyword">4 Axis</span>, select either <span class="f_BoldKeyword">Table</span> or <span class="f_BoldKeyword">Head</span>. &nbsp;For <span class="f_BoldKeyword">5 Axis</span>, select either <span class="f_BoldKeyword">Head-Head</span>, <span class="f_BoldKeyword">Table-Head</span> or <span class="f_BoldKeyword">Head-Head</span> (i.e., Trunnion Style) configuration.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">For 3 Axis Setups</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">For all <span class="f_BoldKeyword">Machine Types</span>, the following <span class="f_BoldKeyword">General Parameters</span> are available.</p>
+<p class="p_Normal"><img alt="machine-setup-general-parameters" width="369" height="148" style="margin:0;width:369px;height:148px;border:none" src="machine-setup-general-parameters.png"/></p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Tool Change Point</span></p>
+<p class="p_Normal"><img alt="Pick" title="Pick" width="19" height="21" style="float:left;margin:0 3px 0 0;width:19px;height:21px;border:none" src="dialog-pick-icon.png"/>Specify the <span class="f_BoldKeyword">X Axis</span> coordinate location of a <span class="f_BoldKeyword">Tool Change Point</span> or use the <span class="f_BoldKeyword">Pick</span> button to select a point from your 3D model. &nbsp;This coordinate location will be output prior to every tool change.  <span style="font-weight: bold; color: #7f7f7f;">Note</span>: Tool change variables may need to configured in your selected <span class="f_BoldKeyword">Post Processor</span>.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Output all coordinates in local Setup Coordinate System</span></p>
+<p class="p_Normal">Check this box to output the G code's tool motion coordinates in the local setup <span class="f_BoldKeyword">Machine Coordinate System </span>(<span class="f_BoldKeyword">MCS)</span>. &nbsp;If left unchecked all coordinates will be output in the <span class="f_BoldKeyword">World Coordinate System </span>(<span class="f_BoldKeyword">WCS</span>).  <span style="font-weight: bold;">Note</span>: Rapid motions in all indexed operations are converted to federate motions when the setup is not aligned with the machine Z. &nbsp;This is done only when a head configuration is defined and the option <span class="f_BoldKeyword">Output all coordinates in local Setup Coordinate System</span> is <span style="text-decoration: underline;">NOT</span> checked.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Translational Limits</span></p>
+<p class="p_Normal">This will be the <span class="f_BoldKeyword">Minimum X</span> direction <span class="f_BoldKeyword">Translation Limit</span> allowed by your machine tool. <span style="font-weight: bold; color: #7f7f7f;">Note</span>: These parameters are not applied and are reserved for future use.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">4th Axis (Primary Axis) Parameters</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">For the <span class="f_BoldKeyword">4 Axis</span> <span class="f_BoldKeyword">Machine Type</span> the following additional <span class="f_BoldKeyword">Parameters</span> are available.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="note-icon2.png"/><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Set </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Configuration</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Table</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Head</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">. Most CNC machines use rotary table for 4 axis.</span></p>
+<p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="note-icon2.png"/><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Make sure to set the </span><span class="f_BoldKeyword">Rotary Axis</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> to </span><span class="f_BoldKeyword">+X</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span class="f_BoldKeyword">-X</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> if the part rotates about the </span><span class="f_BoldKeyword">X (A)</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> axis or to </span><span class="f_BoldKeyword">+Y</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or</span><span class="f_BoldKeyword"> -Y</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> if the part is rotating about </span><span class="f_BoldKeyword">Y (B)</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> axis.</span></p>
+<p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="note-icon2.png"/>Make sure to set the <span class="f_BoldKeyword">Rotary Center</span>. The part geometry must pass through the rotary center. The rotary center is indicated with a <span style="font-weight: bold; color: #008000;">Green</span> arrow when the <span class="f_BoldKeyword">Machine Setup Dialog</span> is selected and machine type is set to 4 Axis.</p>
+<p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="note-icon2.png"/><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Set </span><span class="f_BoldKeyword">Rotary Axis Angle Limit</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div class="p_Normal"><div style="margin:0;width:369px"><img alt="For 4 Axis Setups" title="For 4 Axis Setups" width="369" height="127" style="width:369px;height:127px;border:none" src="machine-setup-4th-axis-parameters.png"/><p style="text-align:center"><span class="f_ImageCaption">For 4 Axis Setups</span></p></div></div>
+<p class="p_Normal"><span class="f_ImageCaption"> <img alt="doc_filesimage157-b" width="170" height="182" style="margin:0;width:170px;height:182px;border:none" src="doc_filesimage157-b.png"/></span></p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Center</span></p>
+<p class="p_Normal">Your <span class="f_BoldKeyword">Machine Type</span> is set to <span class="f_BoldKeyword">4 Axis</span>. &nbsp;Specify the <span class="f_BoldKeyword">X Axis</span> coordinate location of the <span class="f_BoldKeyword">Rotary Center</span> point of the <span class="f_BoldKeyword">Primary Axis</span> of your <span class="f_BoldKeyword">Machine Tool</span>.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis</span></p>
+<p class="p_Normal">When <span class="f_BoldKeyword">Number of Axis</span> is set to <span class="f_BoldKeyword">4 Axis</span>:<br />
+Make sure to set the <span class="f_BoldKeyword">Rotary Axis</span> to <span class="f_BoldKeyword">+X</span> or <span class="f_BoldKeyword">-X</span> if the part rotates about the <span class="f_BoldKeyword">X (A)</span> axis or to <span class="f_BoldKeyword">+Y</span> or <span class="f_BoldKeyword">-Y</span> if the part is rotating about <span class="f_BoldKeyword">Y (B)</span> axis.</p>
+<p class="p_Normal">When <span class="f_BoldKeyword">Number of Axis</span> is set to <span class="f_BoldKeyword">5 Axis</span>:<br />
+For a <span class="f_BoldKeyword">Head-Head</span> machining configuration, the <span class="f_BoldKeyword">Primary Axis</span> rotates about Z axis. Select <span class="f_BoldKeyword">+Z</span> or <span class="f_BoldKeyword">-Z</span> depending on your machine tool. &nbsp;For <span class="f_BoldKeyword">Table-Head</span> the <span class="f_BoldKeyword">Primary Axis</span> is the rotary table and this could be set to <span class="f_BoldKeyword">X &nbsp;Y</span> or <span class="f_BoldKeyword">Z</span> depending on your machine tool. &nbsp;For <span class="f_BoldKeyword">Table-Table</span> configurations, the primary axis could be set to <span class="f_BoldKeyword">X</span> or <span class="f_BoldKeyword">Y</span> depending on your machine tool.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis Angle Limit</span></p>
+<p class="p_Normal">Select from this list of <span class="f_BoldKeyword">Rotary Axis Angle Limits</span> depending on your machine tool. &nbsp;Select <span class="f_BoldKeyword">User Defined Limits</span> to activate the <span class="f_BoldKeyword">Min</span> and <span class="f_BoldKeyword">Max</span> input fields to enter your machine tool's limits (in degrees).</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis Limits (In Degrees)</span></p>
+<p class="p_Normal">You have chosen <span class="f_BoldKeyword">User Defined</span> <span class="f_BoldKeyword">Limits</span> for the <span class="f_BoldKeyword">Angle Limits</span> of the 4th axis of your <span class="f_BoldKeyword">Machine Tool</span>. &nbsp;Enter here the <span class="f_BoldKeyword">Minimum Angle Limit</span> in degrees.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">5 Axis Secondary Axis) Parameters</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">For the <span class="f_BoldKeyword">5 Axis</span> <span class="f_BoldKeyword">Machine Type</span> the following additional <span class="f_BoldKeyword">Parameters</span> are available.</p>
+<p class="p_Normal"><img alt="machine-setup-5th-axis-parameters" width="369" height="164" style="margin:0;width:369px;height:164px;border:none" src="machine-setup-5th-axis-parameters.png"/></p>
+<p class="p_Numbered" style="margin: 0 0 8px 24px;"><span class="f_Numbered">Recommendations:</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:495px; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="note-icon2.png"/>Set <span class="f_BoldKeyword">Configuration</span> for <span class="f_BoldKeyword">Primary</span> and <span class="f_BoldKeyword">Secondary</span> <span class="f_BoldKeyword">Axis</span></p>
+<p class="p_Numbered"><span class="f_BoldKeyword">Head</span><span class="f_Numbered"> – </span><span class="f_BoldKeyword">Head</span><span class="f_Numbered"> </span></p>
+<p class="p_Numbered"><span class="f_BoldKeyword">Table</span><span class="f_Numbered"> – </span><span class="f_BoldKeyword">Table</span></p>
+<p class="p_Numbered"><span class="f_BoldKeyword">Table</span><span class="f_Numbered"> – </span><span class="f_BoldKeyword">Table</span><span class="f_Numbered"> (Trunnion style) </span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Center</span></p>
+<p class="p_Normal"><img alt="Pick" title="Pick" width="19" height="21" style="float:left;margin:0 5px 0 0;width:19px;height:21px;border:none" src="dialog-pick-icon.png"/>Specify the location of the <span class="f_BoldKeyword">Rotary Center</span> point or select the <span class="f_BoldKeyword">Pick</span> icon to select a point from the graphics screen. &nbsp;The part geometry must pass through the rotary center. The rotary center is indicated with a <span style="font-weight: bold; color: #ff0000;">Red</span> arrow when this dialog is displayed and machine type is set to <span class="f_BoldKeyword">5 Axis</span>.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis</span></p>
+<p class="p_Normal">Select the axis that will define the <span class="f_BoldKeyword">Rotary Axis</span>. &nbsp;For a <span class="f_BoldKeyword">Head-Head</span> and <span class="f_BoldKeyword">Table-Head</span> machining configurations, the <span class="f_BoldKeyword">Secondary Axis</span> rotates about <span class="f_BoldKeyword">X</span> or <span class="f_BoldKeyword">Y</span> axis. Select this depending on your machine tool. &nbsp;For <span class="f_BoldKeyword">Table-Table</span> configurations, the secondary axis could be set to <span class="f_BoldKeyword">X</span>,<span class="f_BoldKeyword">Y</span> or <span class="f_BoldKeyword">Z</span> depending on your machine tool.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis Tilt Angle (Nutating Angle) In Degrees</span></p>
+<p class="p_Normal">The <span class="f_BoldKeyword">Rotary Axis Tilt Angle</span> is used for <span class="f_BoldKeyword">5 Axis</span> machines with a <span class="f_BoldKeyword">Nutating Head</span>. &nbsp;The schematic of a <span class="f_BoldKeyword">Nutating</span> <span class="f_BoldKeyword">Head</span> is shown below. &nbsp;Here the <span class="f_BoldKeyword">C Axis</span> (<span style="font-weight: bold; color: #ff0000;">Red</span>) is the <span class="f_BoldKeyword">Primary Rotation</span> and the <span class="f_BoldKeyword">Nutating Axis</span> (<span style="font-weight: bold; color: #00ff00;">Green</span>) is the <span class="f_BoldKeyword">Secondary Rotation</span>.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:125px"><img alt="Nutating Head" title="Nutating Head" width="125" height="194" style="width:125px;height:194px;border:none" src="5axis-nutation-head.png"/><p style="text-align:center"><span class="f_ImageCaption">Nutating Head</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis Angle Limit</span></p>
+<p class="p_Normal">Select from the list of <span class="f_BoldKeyword">5th Rotary Axis Angle Limits</span> depending on your machine tool. &nbsp;Select <span class="f_BoldKeyword">User Defined Limits</span> to activate the <span class="f_BoldKeyword">Min</span> and <span class="f_BoldKeyword">Max</span> input fields to enter your machine tool's limits (in degrees).</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Rotary Axis Limits (In Degrees)</span></p>
+<p class="p_Normal">You have chosen <span class="f_BoldKeyword">User Defined</span> <span class="f_BoldKeyword">Limits</span> for the <span class="f_BoldKeyword">Angle Limits</span> of the 5th axis of your <span class="f_BoldKeyword">Machine Tool</span>. &nbsp;Enter here the <span class="f_BoldKeyword">Minimum Angle Limit</span> in degrees.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Gage Length</span></p>
+<p class="p_Normal">For 5 axis toolpath computation, this value specifies the distance from the pivot point to the spindle face. &nbsp;When set to a non-zero value, the system automatically adds the tool length to this value to compute the <span class="f_BoldKeyword">Gage Length</span>.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:144px"><img alt="Gage Length" title="Gage Length" width="144" height="132" style="width:144px;height:132px;border:none" src="doc_filesimage158-snall.png"/><p style="text-align:center"><span class="f_ImageCaption">Gage Length</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">5 Axis - Gage Length (for Machines with a Rotary Head)</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This parameter is used for 5 axis toolpath computation. The value that needs to be specified in the machine setup dialog for <span class="f_BoldKeyword">Gage Length</span> is the distance from the pivot point to the spindle face. &nbsp;When this is set to a non-zero value, the system automatically adds the tool length specified under the tool definition dialog to this value to compute the <span class="f_BoldKeyword">Gage Length</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:383px"><img alt="5th Axis - Gage Length (for Machines with a Rotary Head)" title="5th Axis - Gage Length (for Machines with a Rotary Head)" width="383" height="430" style="width:383px;height:430px;border:none" src="doc_filesimage158.png"/><p style="text-align:center"><span class="f_ImageCaption">5th Axis - Gage Length (for Machines with a Rotary Head)</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">5 Axis Machine Setup for a Head – Head configuration</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:414px"><img alt="5 Axis Machine Setup for a Head – Head configuration" title="5 Axis Machine Setup for a Head – Head configuration" width="414" height="692" style="width:414px;height:692px;border:none" src="doc_filesimage159.png"/><p style="text-align:center"><span class="f_ImageCaption">5 Axis Machine Setup for a Head – Head configuration</span></p></div></div>
+<p class="p_Normal"><span class="f_ImageCaption"> &nbsp; &nbsp;</span></p>
+<div class="p_Normal"><div style="margin:0;width:239px"><img alt="5 Axis Machine Setup for a Head – Head configuration" title="5 Axis Machine Setup for a Head – Head configuration" width="239" height="383" style="width:239px;height:383px;border:none" src="doc_filesimage175-sw-mill.jpg"/><p style="text-align:center"><span class="f_ImageCaption">5 Axis Machine Setup for a Head – Head configuration</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?manualdefinition.html" target="_top">'+baseurl+'index.html?manualdefinition.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

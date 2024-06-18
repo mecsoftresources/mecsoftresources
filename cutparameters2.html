@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating 2½ Axis Operations &gt; V-Carve Roughing &gt; Cut Parameters</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="V-Carve Roughing, 2½ Axis,V-Carve Roughing, 2½ Axis Cut Parameters,Blog,Blog How to Increase Tool Path Accuracy,Tolerances,Tolerances How to Increase Tool Path Accuracy,Blog,Blog Understanding Climb vs Conventional Milling,Climb Milling,Conventional Milling,Cut Direction" />
+   <meta name="description" content="The following Cut Parameters tab allows you to define the cut parameters for the current 2½ Axis V-Carve Roughing operation; similar to the Pocketing operation Cut Parameters. ..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "cutparameters2.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Cut Parameters tab, V-Carve Roughing, 2½ Axis</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?cutparameters2.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creating2axismachiningoperations.html">Creating 2½ Axis Operations</a> &gt; <a href="vcarveroughing1.html">V-Carve Roughing</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Cut Parameters tab, V-Carve Roughing, 2½ Axis</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="control_geometry_tab_v-carve_roughing_2_axis.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="vcarveroughing1.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="cutlevels.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The following <span class="f_BoldKeyword">Cut Parameters</span> tab allows you to define the cut parameters for the current 2½ Axis <span class="f_BoldKeyword">V-Carve Roughing</span> operation; similar to the <span class="f_BoldKeyword">Pocketing</span> operation Cut<span class="f_BoldKeyword"> Parameters</span>. &nbsp;You can set <span class="f_BoldKeyword">Global Parameters</span>, <span class="f_BoldKeyword">Cut Direction</span> and the <span class="f_BoldKeyword">Stepover Distance</span> via this tab of the operation dialog. &nbsp;</p>
+<p class="p_Normal">The <span class="f_BoldKeyword">Global Parameters</span> section allows you to set the tolerance value to be used in machining. &nbsp;A uniform thickness or stock that needs to be left around the part can also be specified here. &nbsp;Refer to each option below.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Dialog Box: Cut Parameters tab</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:474px"><img alt="Dialog Box: 2½ Axis V-Carve Roughing" title="Dialog Box: 2½ Axis V-Carve Roughing" width="474" height="628" style="width:474px;height:628px;border:none" src="2x-vcarve-rough-cut-parameters.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: 2½ Axis V-Carve Roughing</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Global Parameters</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Global Parameters</span> section allows you to set the tolerance value to be used in machining. A uniform thickness or stock that needs to be left around the part can be specified here.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Tolerance</span> &nbsp;</p>
+<p class="p_Normal">This is the allowable deviation from the actual part geometry plus the <span class="f_BoldKeyword">Stock</span> allowance (if any). &nbsp;In <span class="f_BoldKeyword">2 Axis</span> methods, this <span class="f_BoldKeyword">Tolerance</span> is applied to <span class="f_BoldKeyword">XY</span> motions only.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:142px"><img alt="Tolerance" title="Tolerance" width="142" height="89" style="width:142px;height:89px;border:none" src="global-parameters-2x-vcarving-operations-tolerance.png"/><p style="text-align:center"><span class="f_ImageCaption">Tolerance</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">How to Increase Tool Path Accuracy</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="How to Increase Tool Path Accuracy" width="130" height="88" style="float:right;margin:0 0 0 5px;width:130px;height:88px;border:none" src="hmfile_hash_26f0c88f.png"/><span class="f_BoldKeyword">Tolerances</span> play a vital role in both design engineering and digital manufacturing. &nbsp;In design, the goal is to allow the broadest tolerance range possible while meeting your design specifications. This is because, generally speaking, there is a direct correlation between tighter tolerances and higher manufacturing costs.</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/how-to-increase-tool-path-accuracy/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Stock</span></p>
+<p class="p_Normal">This is the thickness of the layer that will remain on top of the part after the toolpath is complete. Roughing operations generally leave a thin layer of stock. &nbsp;For finishing operations this value is zero.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:142px"><img alt="Stock" title="Stock" width="142" height="89" style="width:142px;height:89px;border:none" src="global-parameters-2x-vcarving-operations-stock.png"/><p style="text-align:center"><span class="f_ImageCaption">Stock</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Compensation</span> &nbsp;</p>
+<p class="p_Normal">This enables cutter compensation. &nbsp;The compensation direction, left or right, is determined by the <span class="f_BoldKeyword">Cut Direction</span> selected (<span class="f_BoldKeyword">Climb</span> or <span class="f_BoldKeyword">Conventional</span>).</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">V-Carving Finish Tool Taper Angle</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This represents the Taper angle (included angle) of the V-bit that would be used after the roughing operation is generated. A <span class="f_BoldKeyword">Flat End Mill</span> is used for <span class="f_BoldKeyword">V-Carve Roughing</span> toolpath.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Cut Pattern</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Cut Pattern</span><span style="font-weight: bold;"> </span>section allows you to define the type of cut pattern that the tool will follow when it is at each Z level. Currently you can choose from the following cut patterns:</p>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Offset</span> and the tool will traverse in successive uniform offsets of the part shape starting from the <span class="f_BoldKeyword">Inside</span> or <span class="f_BoldKeyword">Outside</span> depending on the <span class="f_BoldKeyword">Start Point</span> selection.</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="margin:0 auto; width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:113px"><img alt="Offset" title="Offset" width="113" height="72" style="width:113px;height:72px;border:none" src="vcc-start-point-outside.png"/><p style="text-align:center"><span class="f_ImageCaption">Offset</span></p></div></div>
+</td>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:114px"><img alt="Island Offset" title="Island Offset" width="114" height="78" style="width:114px;height:78px;border:none" src="2x-facing-offset-patter,-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Island Offset</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Linear</span> and the tool will traverse in a <span class="f_BoldKeyword">Linear</span> cut beginning at the <span class="f_BoldKeyword">Top</span> or <span class="f_BoldKeyword">Bottom</span> depending on the <span class="f_BoldKeyword">Start Point</span> selection.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:120px"><img alt="Linear" title="Linear" width="120" height="73" style="width:120px;height:73px;border:none" src="2z-facing-linear-cut-pattern-bottom-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Linear</span></p></div></div>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Circular Spiral</span> and the tool will follow a circular path starting from the Inside or <span class="f_BoldKeyword">Outside</span> depending on the <span class="f_BoldKeyword">Start Point</span> selection.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:110px"><img alt="Spiral Cut Pattern" title="Spiral Cut Pattern" width="110" height="74" style="width:110px;height:74px;border:none" src="vcc-spiral-inside.png"/><p style="text-align:center"><span class="f_ImageCaption">Spiral Cut Pattern</span></p></div></div>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Radial</span> and the tool will cut in a radial pattern starting from the <span class="f_BoldKeyword">Inside</span> or <span class="f_BoldKeyword">Outside</span> depending on the <span class="f_BoldKeyword">Start Point</span> selection.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:118px"><img alt="Radial" title="Radial" width="118" height="75" style="width:118px;height:75px;border:none" src="doc_filesimage422.jpg"/><p style="text-align:center"><span class="f_ImageCaption">Radial</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Cut Direction</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select <span class="f_BoldKeyword">Climb</span> (<span class="f_BoldKeyword">Down Cut</span>) and the tool will be maintained in a downward motion into the stock.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:123px"><img alt="Climb (Down Cut)" title="Climb (Down Cut)" width="123" height="82" style="width:123px;height:82px;border:none" src="doc_filesimage575.png"/><p style="text-align:center"><span class="f_ImageCaption">Climb (Down Cut)</span></p></div></div>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Conventional</span> (<span class="f_BoldKeyword">Up Cut</span>) and the direction of the tool will be maintained in an upward motion out of the stock.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:119px"><img alt="Conventional (Up Cut)" title="Conventional (Up Cut)" width="119" height="82" style="width:119px;height:82px;border:none" src="doc_filesimage576.png"/><p style="text-align:center"><span class="f_ImageCaption">Conventional (Up Cut)</span></p></div></div>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Mixed</span> and the direction of cutting is alternated between each parallel plane. &nbsp;This is a mixture of both <span class="f_BoldKeyword">Climb</span> and <span class="f_BoldKeyword">Conventional</span> cutting of the stock.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:128px"><img alt="Mixed" title="Mixed" width="128" height="77" style="width:128px;height:77px;border:none" src="doc_filesimage577.png"/><p style="text-align:center"><span class="f_ImageCaption">Mixed</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 52px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Understanding Climb vs Conventional Milling</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Understanding Cut Levels in 2½ Axis Machining" width="130" height="130" style="float:right;margin:0 0 0 5px;width:130px;height:130px;border:none" src="hmfile_hash_dd2ca297.png"/>One of the basic concepts to understand in any milling operation is <span class="f_BoldKeyword">Cut Direction</span>. &nbsp;It can be characterized by how the flutes of the cutting tool engage the stock material and form the chip that is removed during cutting. In many of MecSoft CAM’s 2½ &amp; 3 Axis toolpath strategies you will see that <span class="f_BoldKeyword">Cut Direction</span> is defined by selecting one of three options, <span class="f_BoldKeyword">Climb</span>, <span class="f_BoldKeyword">Conventional</span> or <span class="f_BoldKeyword">Mixed</span>. &nbsp;Let’s take a look at the characteristics of each option.</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/understanding-climb-vs-conventional-milling/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Specify the <span class="f_BoldKeyword">Angle of Cuts</span> (0-360) measured from the <span class="f_BoldKeyword">X Axis</span>. &nbsp;This additional parameter is available for some operations when a linear cut pattern is used.</p>
+<p class="p_Normal" style="text-align: center;"><img alt="Angle of Cuts" title="Angle of Cuts" width="212" height="100" style="margin:0 auto 0 auto;width:212px;height:100px;border:none" src="pfinish-angle-of-cuts-tooltip.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Start Point</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select this option if you want the starting locating for the cut pattern to begin at the bottom of the cut pattern (i.e., min Y).</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:119px"><img alt="Start at Bottom" title="Start at Bottom" width="119" height="71" style="width:119px;height:71px;border:none" src="linear-start-at-bottom.png"/><p style="text-align:center"><span class="f_ImageCaption">Start at Bottom</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Stepover Distance</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Specify the stepover distance for the current operation as a percentage of the active tool diameter (<span class="f_BoldKeyword">% Tool Dia)</span> and then enter the percentage value.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:166px"><img alt="% Tool Dia." title="% Tool Dia." width="166" height="93" style="width:166px;height:93px;border:none" src="vcc-stepover-distance.png"/><p style="text-align:center"><span class="f_ImageCaption">% Tool Dia.</span></p></div></div>
+<p class="p_Normal">Specify the stepover for the current operation as an exact <span class="f_BoldKeyword">Distance</span> and then enter the distance value in the field provided.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:166px"><img alt="Distance" title="Distance" width="166" height="93" style="width:166px;height:93px;border:none" src="vcc-stepover-distance.png"/><p style="text-align:center"><span class="f_ImageCaption">Distance</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Cleanup Pass</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Automatically detect corners that the tool could not reach between cut level and add a toolpath based on the uncut area detected. &nbsp;Either <span class="f_BoldKeyword">Linear</span> or <span class="f_BoldKeyword">Offset</span> cut patterns are used in these areas.</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="margin:0 auto; width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:118px"><img alt="Cleanup Pass" title="Cleanup Pass" width="118" height="75" style="width:118px;height:75px;border:none" src="doc_filesimage401.jpg"/><p style="text-align:center"><span class="f_ImageCaption">Cleanup Pass</span></p></div></div>
+</td>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:128px"><img alt="No Cleanup Pass" title="No Cleanup Pass" width="128" height="80" style="width:128px;height:80px;border:none" src="doc_filesimage403.jpg"/><p style="text-align:center"><span class="f_ImageCaption">No Cleanup Pass</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?cutparameters2.html" target="_top">'+baseurl+'index.html?cutparameters2.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MESH Module &gt; Ribbon Bar &gt; Inspect &amp; Modify Tab &gt; Manipulator</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Manipulator,Mesh,Mesh Manipulate,Facet Selection,Facet Selection Paint,Facet Selection Planar Face,Facet Selection Single Fact Triangle,Facet Selection Surface Lasso,Facet Selection View Lasso" />
+   <meta name="description" content="This command can be used to Manipulate individual facets on your mesh using a graphical manipulator. &nbsp;Various options are provided for selecting the area to manipulate. &nbsp;Once..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "manipulate_mesh.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Manipulator</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?manipulate_mesh.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MESH Module &gt; <a href="mesh_ribbon_bar_tabs.html">Ribbon Bar</a> &gt; <a href="inspect__modify_tab.html">Inspect &amp; Modify Tab</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Manipulator</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="smooth_mesh.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="inspect__modify_tab.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="repair_tab.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="Manipulator" title="Manipulator" width="94" height="25" style="float:left;margin:0 10px 0 0;width:94px;height:25px;border:none" src="icon-modify-manipulator.png"/>This command can be used to <span class="f_BoldKeyword">Manipulate</span> individual facets on your mesh using a graphical manipulator. &nbsp;Various options are provided for selecting the area to manipulate. &nbsp;Once the <span class="f_BoldKeyword">Manipulator</span> is displayed you can use it to transform along or rotate about the three principal axis displayed. &nbsp;Dynamic feedback is provided prior to committing the change.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 72px;"><table style="width:450px; border:solid thin #1159aa; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">This command will change the shape of your mesh model!</span>: &nbsp;Experimentation with the methods and options listed below is advised until you understand and are satisfied with your results.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Work Flow</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First the mesh and then vertices on the mesh are selected for modification. &nbsp;Various selection methods are provided.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">The </span><span class="f_BoldKeyword">Manipulator</span><span class="f_Numbered"> is then placed on a vertex and used to graphically manipulate the selected area dynamically.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">The change is then applied and the mesh is updated.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Basic Procedure</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Screen Pick</span></p>
+</td>
+<td style="vertical-align:top; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Optional Information</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 1</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the mesh you want to modify and then press <span class="f_BoldKeyword">Enter</span>. You can select from the graphics window or from the <span class="f_BoldKeyword">Browser</span>.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">You can select a mesh first and then select the command icon.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 2</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">From the <span class="f_BoldKeyword">Command Dialog</span>, choose one of the available options to select those vertices on the mesh that you want to manipulate. &nbsp;See <span class="f_BoldKeyword">Manipulator Options</span> below.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">See below.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 3</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the <span class="f_BoldKeyword">Place manipulator</span> button and then pick one of the selected vertices. &nbsp;The <span class="f_BoldKeyword">Manipulator</span> will display on the vertex.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">See below.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 4</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Use the <span class="f_BoldKeyword">Manipulator</span> to transform and/or rotate the selected vertices. &nbsp;All of the selected vertices will be affected. &nbsp;The results are shown dynamically on the screen.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">See below.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 5</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the <span class="f_BoldKeyword">Finish and create new mesh</span> button to accept the modifications.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">-</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Manipulator Options</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Choose one of the following selection options from the <span class="f_BoldKeyword">Command Dialog</span> to define the vertices on the selected mesh that you wish to manipulate. &nbsp;After the vertices are highlighted, pick the <span class="f_BoldKeyword">Place manipulator</span> button and then pick the highlighted vertices to display the manipulator on them.</p>
+<div class="p_Normal"><div style="margin:0;width:388px"><img alt="Manipulator Options" title="Manipulator Options" width="388" height="144" style="width:388px;height:144px;border:none" src="manipulator-options-dialog.png"/><p style="text-align:center"><span class="f_ImageCaption">Manipulator Options</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Facet Selection Toolbar</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Facet Selection Toolbar" title="Facet Selection Toolbar" width="388" height="29" style="margin:0;width:388px;height:29px;border:none" src="mesh-selection-options.png"/></p>
+<p class="p_Normal">Choose one of the following selection options from the <span class="f_BoldKeyword">Command Dialog</span> to define the facet/vertices on the selected mesh that you wish to modify.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Single triangle selection</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Single triangle selection" title="Single triangle selection" width="22" height="22" style="float:left;margin:0 10px 0 0;width:22px;height:22px;border:none" src="icon-manipulator-single.png"/>The facets three vertices are selected.</p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manipulator-single-triangle-selectionb" width="124" height="99" style="margin:0;width:124px;height:99px;border:none" src="manipulator-single-triangle-selectionb.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">View lasso selection</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="View lasso selection" title="View lasso selection" width="22" height="22" style="float:left;margin:0 10px 0 0;width:22px;height:22px;border:none" src="icon-manipulator-view-lasso.png"/>All vertices within the polygon are selected for manipulation.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: 'Arial';color:#333333;display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Left-click to pick start and end points for the polygon and then double-left-click to complete the polygon. &nbsp;Then left-click within the polygon to select the vertices contained within.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manipulator-lasso-selection-a" width="99" height="99" style="margin:0;width:99px;height:99px;border:none" src="manipulator-lasso-selection-a.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Surface lasso selection</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Surface lasso selection" title="Surface lasso selection" width="22" height="22" style="float:left;margin:0 10px 0 0;width:22px;height:22px;border:none" src="icon-manipulator-surface-lasso.png"/>All vertices within the polygon are selected for manipulation.  <span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Left-click to drag/pick the corners of the polygon. &nbsp;As the lasso surface area is widened, vertices within the lasso area are selected for manipulation.</span></p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manipulator-surface-lasso-selectionb" width="116" height="100" style="margin:0;width:116px;height:100px;border:none" src="manipulator-surface-lasso-selectionb.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Planar face selection</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Planar face selection" title="Planar face selection" width="22" height="22" style="float:left;margin:0 10px 0 0;width:22px;height:22px;border:none" src="icon-manipulator-planar-face-selection.png"/>All vertices lying on the surface are selected for manipulation.  <span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select the planar surface and its vertices are selected.</span></p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manipulator-surface-planar-face-selectionb" width="212" height="149" style="margin:0;width:212px;height:149px;border:none" src="manipulator-surface-planar-face-selectionb.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Paint selection</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Paint selection" title="Paint selection" width="22" height="22" style="float:left;margin:0 10px 0 0;width:22px;height:22px;border:none" src="icon-manipulator-paint-selection.png"/>All vertices lying within the painted area are selected for manipulation.  <span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Drag the cursor over the mesh painting an area and selecting vertices.</span></p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manipulator-paint-selectionb" width="118" height="100" style="margin:0;width:118px;height:100px;border:none" src="manipulator-paint-selectionb.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Other Options</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Paint selection" title="Paint selection" width="149" height="27" style="float:left;margin:0 10px 0 0;width:149px;height:27px;border:none" src="icon-selection-radius.png"/>You can enter a selection radius in the field provided. &nbsp;It will affect how many vertices are selected using each method listed above.</p>
+<p class="p_Normal"><img alt="Paint selection" title="Paint selection" width="22" height="22" style="float:left;margin:0 10px 0 0;width:22px;height:22px;border:none" src="icon-clear-facet-selection.png"/>Choose this icon to clear the current selection.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Place Manipulator</a></span></td></tr></table></div><div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">After facets are selected (using the <span class="f_BoldKeyword">Facet Selection Toolbar</span> shown above), this button is used to place the <span class="f_BoldKeyword">Manipulator</span> on a vertex. &nbsp;Once displayed, the <span class="f_BoldKeyword">Manipulator</span> can be used to transform or rotate the selection. &nbsp;See <span class="f_BoldKeyword">Using the Manipulator</span> below for more information.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:300px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:111px"><img alt="(a)" title="(a)" width="111" height="99" style="width:111px;height:99px;border:none" src="manipulator-single-triangle-selection.png"/><p style="text-align:center"><span class="f_ImageCaption">(a)</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:131px"><img alt="(b)" title="(b)" width="131" height="100" style="width:131px;height:100px;border:none" src="manipulator-paint-selection.png"/><p style="text-align:center"><span class="f_ImageCaption">(b)</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:137px"><img alt="(c)" title="(c)" width="137" height="100" style="width:137px;height:100px;border:none" src="manipulator-surface-planar-face-selection.png"/><p style="text-align:center"><span class="f_ImageCaption">(c)</span></p></div></div>
+</td>
+</tr>
+<tr>
+<td colspan="3"  style="vertical-align:top; padding:0; border:none"><p class="p_ImageCaption" style="text-align: center;"><span class="f_ImageCaption">The Manipulator displayed (a) on a single facet (b) on multiple facets (c) on a planar surface</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Finish and create new mesh</a></span></td></tr></table></div><div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Once the edits are made, choose this button to update the mesh.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Using the Manipulator</a></span></td></tr></table></div><div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The<span class="f_BoldKeyword"> Manipulator</span> is used to graphically rotate or transform the selected vertices of your mesh similar to using the <span class="f_BoldKeyword">Gumball</span> in <span class="f_BoldKeyword">Rhino</span>.</p>
+<p class="p_Normal">The arrows displayed on the <span class="f_BoldKeyword">Manipulator</span> can be selected and a numerical value placed to move the geometry in either X, Y or Z direction. Or the arrows can be selected and simply dragged in either the X, Y or Z direction. </p>
+<p class="p_Normal">To rotate the vertices, use the arcs displayed on the <span class="f_BoldKeyword">Manipulator</span>. Each arc can be selected and a numerical value entered to rotate the vertices in either X, Y or Z direction. &nbsp;Alternately the arcs can be selected and simply rotated by dragging with the left hold of the mouse. </p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:400px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:227px"><img alt="Drag a Linear Axis" title="Drag a Linear Axis" width="227" height="176" style="width:227px;height:176px;border:none" src="manipulator-b.png"/><p style="text-align:center"><span class="f_ImageCaption">Drag a Linear Axis</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:220px"><img alt="Drag a Rotational Arc" title="Drag a Rotational Arc" width="220" height="180" style="width:220px;height:180px;border:none" src="manipulator-c.png"/><p style="text-align:center"><span class="f_ImageCaption">Drag a Rotational Arc</span></p></div></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:249px"><img alt="Enter translation Distance or Angle for rotation" title="Enter translation Distance or Angle for rotation" width="249" height="185" style="width:249px;height:185px;border:none" src="manipulator-d.png"/><p style="text-align:center"><span class="f_ImageCaption">Enter translation Distance or Angle for rotation</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><br />
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">To Cancel this Command</a></span></td></tr></table></div><div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Before mesh is are selected: <img alt="Press the &lt;Esc&gt; key" title="Press the &lt;Esc&gt; key" width="47" height="32" style="margin:0;width:47px;height:32px;border:none" src="esc-key.png"/> <span style="font-style: italic;">or</span> <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/></p>
+<p class="p_Normal">After mesh is selected: <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/> <span style="font-style: italic;">or </span><img alt="Pick Cancel from the RhinoCAM Browser" title="Pick Cancel from the RhinoCAM Browser" width="13" height="13" style="margin:0;width:13px;height:13px;border:none" src="cancel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="mesh_ribbon_bar_tabs.html" class="topiclink">The Ribbon Bar</a></p>
+<p class="p_Normal"><a href="inspect__modify_tab.html" class="topiclink">Inspect &amp; Modify Tab</a></p>
+<p class="p_Normal"><a href="reflection_line_analysis.html" class="topiclink">Reflection Lines</a></p>
+<p class="p_Normal"><a href="curvature_analysis.html" class="topiclink">Curvature</a></p>
+<p class="p_Normal"><a href="compare_meshes.html" class="topiclink">Compare</a></p>
+<p class="p_Normal"><a href="reduce_mesh.html" class="topiclink">Reduce</a></p>
+<p class="p_Normal"><a href="re-mesh.html" class="topiclink">Re-Mesh</a></p>
+<p class="p_Normal"><a href="smooth_mesh.html" class="topiclink">Smooth</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?manipulate_mesh.html" target="_top">'+baseurl+'index.html?manipulate_mesh.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

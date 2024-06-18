@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Copy/Edit a Toolpath</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Copy a Toolpath" />
+   <meta name="description" content="Toolpaths can be combined to machine complex objects. &nbsp;In our How to Generate a Toolpath example, we showed you how to generate a single 2 Axis Pocketing toolpath. &nbsp;However,..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-copy_edit-a-toolpath.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Copy/Edit a Toolpath</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-copy_edit-a-toolpath.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Copy/Edit a Toolpath</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-create-a-tool.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="how-to-assign-a-stock-material.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Toolpaths can be combined to machine complex objects. &nbsp;In our <a href="how-to-generate-a-toolpath.html" class="topiclink">How to Generate a Toolpath</a> example, we showed you how to generate a single <span class="f_BoldKeyword">2 Axis Pocketing</span> toolpath. &nbsp;However, you might of noticed that example only cut the bottom portion pocket. &nbsp;There is also a pocket above it that has different geometry.</p>
+<p class="p_Normal">Note that all roughing and finishing toolpaths can be generated in any order. &nbsp;Re-Roughing requires a previous Roughing toolpath to be generated and simulated first. &nbsp;However when completed, it is a good practice to have each toolpath appear in the <span class="f_BoldKeyword">Machining Job</span> in the order you plan to machine them. &nbsp;You can change the order of the toolpaths after you generate them. &nbsp;</p>
+<p class="p_Normal">In the example below we create the <span class="f_BoldKeyword">2 Axis Pocketing</span> toolpath for the top level of the pocket from a copy of the previous toolpath. &nbsp;We will them move it up in the <span class="f_BoldKeyword">Machining Job</span>.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First read <a href="how-to-generate-a-toolpath.html" class="topiclink">How to Generate a Toolpath</a> topic and then proceed.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:395px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="395" height="160" style="width:395px;height:160px;border:none" src="how-to-program-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Select a toolpath from the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">, right-click and select </span><span class="f_BoldKeyword">Copy</span><span class="f_Numbered"> from the menu. &nbsp;Note: You can use the </span><span class="f_BoldKeyword">Clone</span><span class="f_Numbered"> command to perform the </span><span class="f_BoldKeyword">Copy</span><span class="f_Numbered">/</span><span class="f_BoldKeyword">Paste</span><span class="f_Numbered"> functions at the same time.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:364px"><img alt="Machining Browser: Copy an Operation - Premium Configuration Shown" title="Machining Browser: Copy an Operation - Premium Configuration Shown" width="364" height="623" style="width:364px;height:623px;border:none" src="doc_filesimage858.png"/><p style="text-align:center"><span class="f_ImageCaption">Machining Browser: Copy an Operation - Premium Configuration Shown</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Now right-click on the toolpath again and select </span><span class="f_BoldKeyword">Paste</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="doc_filesimage859" width="353" height="624" style="margin:0;width:353px;height:624px;border:none" src="doc_filesimage859.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">A copy of the toolpath will appear in the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered"> below the original.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:256px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="256" height="184" style="width:256px;height:184px;border:none" src="how-to-copy-edit-toolpaths-2.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><span class="f_Numbered">Now select the second operation, right-click and select </span><span class="f_BoldKeyword">Rename</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:347px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="347" height="432" style="width:347px;height:432px;border:none" src="how-to-copy-edit-toolpaths-7.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span><span class="f_Numbered">The name of the operation will be activated for editing. &nbsp;Change the name as desired and then select anywhere outside of the name to accept the edit. &nbsp;In this example, we changed the name to </span><span class="f_BoldKeyword">2 1/2 Axis Pocketing (Upper)</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:272px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="272" height="210" style="width:272px;height:210px;border:none" src="how-to-copy-edit-toolpaths-6.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span><span class="f_Numbered">Now left-click on the folder to the left of the copied operation and Drag it up until you see a horizontal bar appear. &nbsp;This line indicates to you where in the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered"> tree the operation will go if you release the left-mouse button.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_Numbered">When you see the horizontal bar appear above the operation where you want to move to, release the mouse and the operation will move to that location.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:361px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="361" height="264" style="width:361px;height:264px;border:none" src="how-to-copy-edit-toolpaths-8.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:252px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="252" height="183" style="width:252px;height:183px;border:none" src="how-to-copy-edit-toolpaths-9.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span><span class="f_Numbered">Now right-click on the operation you just moved and select </span><span class="f_BoldKeyword">Edit</span><span class="f_Numbered"> to display the toolpaths operation dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:371px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="371" height="405" style="width:371px;height:405px;border:none" src="how-to-copy-edit-toolpaths-5.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+<p class="p_Normal"><img alt="how-to-copy-edit-toolpaths-10" width="476" height="640" style="margin:0;width:476px;height:640px;border:none" src="how-to-copy-edit-toolpaths-10.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span><img alt="how-to-copy-edit-toolpaths-11" width="100" height="24" style="margin:0;width:100px;height:24px;border:none" src="how-to-copy-edit-toolpaths-11.png"/>  <span class="f_Numbered">The remaining procedure is similar to </span><span class="f_BoldKeyword">How to Generate a Toolpath</span><span class="f_Numbered"> so we will not show each dialog. &nbsp; From the </span><span class="f_BoldKeyword">Control Geometry</span><span class="f_Numbered"> tab select the </span><span class="f_BoldKeyword">Remove All</span><span class="f_Numbered"> button to remove the machining regions from this list.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span><img alt="how-to-copy-edit-toolpaths-12" width="204" height="24" style="margin:0;width:204px;height:24px;border:none" src="how-to-copy-edit-toolpaths-12.png"/>  <span class="f_Numbered">Now pick the </span><span class="f_BoldKeyword">Select Curve/Edge Regions</span><span class="f_Numbered"> button and the dialog will minimize.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">12.</span><span class="f_Numbered">Select the face edges around the top perimeter of the upper pocket. &nbsp;Then right-click or press </span><span class="f_BoldKeyword">&lt;Enter&gt;</span><span class="f_Numbered"> to continue.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-combine-toolpaths-2" width="315" height="215" style="margin:0;width:315px;height:215px;border:none" src="how-to-combine-toolpaths-2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">13.</span><span class="f_Numbered">Pick the </span><span class="f_BoldKeyword">Cut Levels</span><span class="f_Numbered"> tab and change the </span><span class="f_BoldKeyword">Location of Cut Geometry</span><span class="f_Numbered"> to </span><span class="f_BoldKeyword">At Top</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-copy-edit-toolpaths-14" width="188" height="81" style="margin:0;width:188px;height:81px;border:none" src="how-to-copy-edit-toolpaths-14.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">14.</span><img alt="how-to-copy-edit-toolpaths-13" width="74" height="21" style="margin:0;width:74px;height:21px;border:none" src="how-to-copy-edit-toolpaths-13.png"/>  <span class="f_Numbered">The remaining tabs and parameters can remain the so we pick </span><span class="f_BoldKeyword">Generate</span><span class="f_Numbered"> to calculate the toolpath and display it on the screen.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-copy-edit-toolpaths-15" width="315" height="208" style="margin:0;width:315px;height:208px;border:none" src="how-to-copy-edit-toolpaths-15.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">15.</span><img alt="Toolpath Visibility" title="Toolpath Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage030.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">If you do not see the toolpath displayed, select the </span><span class="f_BoldKeyword">Toggle Toolpath Visibility</span><span class="f_Numbered"> icon located at the bottom of the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:401px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="401" height="120" style="width:401px;height:120px;border:none" src="57-rh.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-copy_edit-a-toolpath.html" target="_top">'+baseurl+'index.html?how-to-copy_edit-a-toolpath.html</a></p>');
+
+</script>
+</body>
+</html>

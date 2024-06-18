@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>TURN Module &gt; Key Concepts &gt; Part Geometry</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Geometry,Geometry,Geometry Part Geometry Types,Geometry Types Supported,TURN,TURN Part Geometry Types" />
+   <meta name="description" content="TURN Module requires Solid, Surfaces, Polygon Meshes, Regions/Curves that defines the part geometry. &nbsp;Since all parts that can be created in a 2-Axis turning machine are solids..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "partgeometry-turn.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Part Geometry</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?partgeometry-turn.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      TURN Module &gt; <a href="keyconcepts-turn.html">Key Concepts</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Part Geometry</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="turnmoduledefaultview-turn.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="keyconcepts-turn.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="orient-part-geometry-turn.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_BoldKeyword">TURN</span> Module requires <span class="f_BoldKeyword">Solid</span>, <span class="f_BoldKeyword">Surfaces</span>, <span class="f_BoldKeyword">Polygon Meshes</span>, <span class="f_BoldKeyword">Regions</span>/<span class="f_BoldKeyword">Curves</span> that defines the part geometry. &nbsp;Since all parts that can be created in a 2-Axis turning machine are solids of revolutions, it is enough to describe the profile that needs to be revolved to create this shape. &nbsp;The profile can be created in <span class="f_BoldKeyword">Rhino</span> as a region or curve.  <span class="f_BoldKeyword">TURN</span> Module automatically creates the 2D silhouette of this part region when 3D <span class="f_BoldKeyword">Solid</span> or <span class="f_BoldKeyword">Surface</span> geometry is selected as <span class="f_BoldKeyword">TURN</span> part geometry.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">The First Quadrant, XY Plane Restriction</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:95%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Furthermore, <span class="f_BoldKeyword">TURN</span> Module places a further restriction that these part geometry need to be constrained to lie <span style="font-style: italic; font-weight: bold;">only</span> in the first quadrant of the ZX plane in turn coordinate system. This would essentially be XY plane (Top view) in world coordinate system in <span class="f_BoldKeyword">Rhino</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:374px"><img alt="The First Quadrant, XY Plane Restriction" title="The First Quadrant, XY Plane Restriction" width="374" height="64" style="width:374px;height:64px;border:none" src="doc_filesimage005.jpg"/><p style="text-align:center"><span class="f_ImageCaption">The First Quadrant, XY Plane Restriction</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">If Geometry Falls Outside the First Quadrant of the XY Plane</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:95%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_BoldKeyword">TURN</span> Module will be unable to process a part region that fall outside the first quadrant. If the selected part region is outside the first quadrant, <span class="f_BoldKeyword">TURN</span> Module will trim this to the first quadrant.</p>
+<div class="p_Normal"><div style="margin:0;width:220px"><img alt="If Geometry Falls Outside the First Quadrant of the XY Plane" title="If Geometry Falls Outside the First Quadrant of the XY Plane" width="220" height="242" style="width:220px;height:242px;border:none" src="doc_filesimage007-t.png"/><p style="text-align:center"><span class="f_ImageCaption">If Geometry Falls Outside the First Quadrant of the XY Plane</span></p></div></div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Example of Curves Correctly Positioned</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:95%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Example below shows &nbsp;curve region correctly positioned in the first ZX quadrant of the turn coordinate system touching both the X and Z axis. This would essentially be XY plane (Top view) in world coordinate system in <span class="f_BoldKeyword">Rhino</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:221px"><img alt="Example of Curves Correctly Positioned" title="Example of Curves Correctly Positioned" width="221" height="186" style="width:221px;height:186px;border:none" src="doc_filesimage008-turn.png"/><p style="text-align:center"><span class="f_ImageCaption">Example of Curves Correctly Positioned</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Example of Curves NOT Touching the X or Y Axis</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:95%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Example below shows region not touching the X axis and/or Z axis</p>
+<div class="p_Normal"><div style="margin:0;width:460px"><img alt="Part Profiles are Automatically Extended to the X and Z axis" title="Part Profiles are Automatically Extended to the X and Z axis" width="460" height="156" style="width:460px;height:156px;border:none" src="hmfile_hash_69c69b4e.png"/><p style="text-align:center"><span class="f_ImageCaption">Part Profiles are Automatically Extended to the X and Z axis</span></p></div></div>
+<p class="p_Normal">In such cases, <span class="f_BoldKeyword">TURN</span> Module automatically extends the part regions to the X and Z axis when the regions do not touch the X axis and/or Z axis.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table class="AlertBox" >
+<tr class="AlertBox">
+<td class="AlertBox"><p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Note!" title="Note!" width="16" height="16" style="float:left;margin:0 10px 0 0;width:16px;height:16px;border:none" src="note-icon.png"/>Part regions need to be constrained to the first quadrant of the ZX coordinate system.</p>
+<p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Note!" title="Note!" width="16" height="16" style="float:left;margin:0 10px 0 0;width:16px;height:16px;border:none" src="note-icon.png"/>Parts can be imported or can be created within <span class="f_BoldKeyword">VisualCAD</span> using the <span class="f_BoldKeyword">Geometry</span> creation and editing tools found under the CAD ribbon bar.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">TURN Geometry with MILL features</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:95%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">You can select 3D geometry (surfaces, solids or meshes) for defining the TURN part that contains milling features. &nbsp;Such milling features are ignored while the turn part profile is being defined.</p>
+<p class="p_Normal"><img alt="turn-part-with-mill-features" width="200" height="178" style="margin:0;width:200px;height:178px;border:none" src="turn-part-with-mill-features.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?partgeometry-turn.html" target="_top">'+baseurl+'index.html?partgeometry-turn.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

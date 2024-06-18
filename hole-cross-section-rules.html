@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Features &gt; Knowledge Base for Hole Features &gt; Hole Feature Cross-Section Rules</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Automatic Feature Machining (AFM),Automatic Feature Machining (AFM) Rules for Hole Features,Hole Feature,Hole Feature AFM Rules for,Knowledge Base for Hole Features,Knowledge Base for Hole Features Hole Feature Cross-Section Rules" />
+   <meta name="description" content="The following rules are applied when a detected hole feature's cross-section varies from those found in the Default AFM Knowledge Base." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "hole-cross-section-rules.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Hole Feature Cross-Section Rules</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?hole-cross-section-rules.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a> &gt; <a href="aboutfeaturemachining.html">Features</a> &gt; <a href="createmachiningkbforselectedholefeature.html">Knowledge Base for Hole Features</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Hole Feature Cross-Section Rules</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="select_from_matching_knowledge.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="createmachiningkbforselectedholefeature.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="knowledgebase.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The following rules are applied when a detected hole feature's cross-section varies from those found in the <span class="f_BoldKeyword">Default AFM Knowledge Base</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Rules when similar Hole Features are detected</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:3px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Important Note!" title="Important Note!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/><span class="f_BoldKeyword" style="text-decoration: underline;">ALWAYS</span> perform a <span class="f_BoldKeyword">Cut Material Simulation</span> after Automatic<span class="f_BoldKeyword"> Feature Machining</span> (<span class="f_BoldKeyword">AFM</span>) to verify that the resulting toolpaths are what you are expect and desire. &nbsp;This should <span class="f_BoldKeyword" style="text-decoration: underline;">ALWAYS BE DONE</span> before posting your toolpath!</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:520px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="3"  style="vertical-align:bottom; width:501px; background-color:#376C9D; padding:2px; border:solid thin #376c9d;"><p style="text-align: center; line-height: 1.38; margin: 0 0 13px 0;"><span style="font-size: 16px; font-weight: bold; color: #ffffff;">Rules when a Similarity of Holes Diameters are encountered during AFM</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="3"  style="vertical-align:top; width:501px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:462px"><img alt="Hole Types Supported" title="Hole Types Supported" width="462" height="84" style="width:462px;height:84px;border:none" src="afm-hole-types.png"/><p style="text-align:center"><span class="f_ImageCaption">Hole Types Supported</span></p></div></div>
+</td>
+</tr>
+<tr>
+<td rowspan="3"  style="vertical-align:middle; width:20px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="AFM-Hole-Types-thru" width="45" height="24" style="margin:0 auto 0 auto;width:45px;height:24px;border:none" src="afm-hole-types-thru.png"/></p>
+<p class="p_Normal" style="text-align: center;"><img alt="AFM-Hole-Types-cbore" width="43" height="24" style="margin:0 auto 0 auto;width:43px;height:24px;border:none" src="afm-hole-types-cbore.png"/></p>
+</td>
+<td colspan="2"  style="vertical-align:bottom; width:427px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="margin: 0 0 8px 26px;"><span style="font-size: 13px; font-weight: bold;">Hole Pocketing &amp; Profiling</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">If the tool is smaller than diameter</span></p>
+</td>
+<td style="vertical-align:middle; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:198px; padding:2px; border:solid thin #376c9d;"><p style="line-height: 1.38; margin: 0 0 13px 0;"><span style="font-size: 13px;">If the tool is larger than diameter</span></p>
+</td>
+<td style="vertical-align:middle; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool but mark the operation as dirty. &nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="3"  style="vertical-align:middle; width:20px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="AFM-Hole-countersink" width="37" height="24" style="margin:0 auto 0 auto;width:37px;height:24px;border:none" src="afm-hole-countersink.png"/></p>
+</td>
+<td colspan="2"  style="vertical-align:bottom; width:427px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="margin: 0 0 8px 26px;"><span style="font-size: 13px; font-weight: bold;">Countersink </span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:bottom; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">If the tool is smaller than diameter &amp; matches the chamfer angle</span></p>
+</td>
+<td style="vertical-align:middle; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the program with the same tool.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">All other cases</span></p>
+</td>
+<td style="vertical-align:bottom; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool but mark the operation as dirty.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="3"  style="vertical-align:middle; width:20px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="AFM-Hole-blind" width="30" height="24" style="margin:0 auto 0 auto;width:30px;height:24px;border:none" src="afm-hole-blind.png"/></p>
+</td>
+<td colspan="2"  style="vertical-align:bottom; width:427px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="margin: 0 0 8px 26px;"><span style="font-size: 13px; font-weight: bold;">Drilling</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:bottom; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">The tool matches the diameter exactly (within a user specified tolerance).</span></p>
+</td>
+<td style="vertical-align:middle; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:bottom; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">The tool is larger or smaller than the hole diameter.</span></p>
+</td>
+<td style="vertical-align:bottom; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool but mark it as dirty.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:20px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="AFM-Hole-blind" width="30" height="24" style="margin:0 auto 0 auto;width:30px;height:24px;border:none" src="afm-hole-blind.png"/></p>
+</td>
+<td colspan="2"  style="vertical-align:bottom; width:427px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="margin: 0 0 8px 26px;"><span style="font-size: 13px; font-weight: bold;">Spot Drilling</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">In all cases</span></p>
+</td>
+<td style="vertical-align:bottom; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool but mark it as dirty.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:20px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="AFM-Hole-Types-spot-face" width="69" height="23" style="margin:0 auto 0 auto;width:69px;height:23px;border:none" src="afm-hole-types-spot-face.png"/></p>
+</td>
+<td colspan="2"  style="vertical-align:bottom; width:427px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="margin: 0 0 8px 26px;"><span style="font-size: 13px; font-weight: bold;">Spot Facing</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:198px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px;">In all cases</span></p>
+</td>
+<td style="vertical-align:bottom; width:218px; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Create the operation with the same tool but mark it as dirty.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Hole/Z Depth Rules when similar Hole Features are detected</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:3px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Important Note!" title="Important Note!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/><span class="f_BoldKeyword" style="text-decoration: underline;">ALWAYS</span> perform a <span class="f_BoldKeyword">Cut Material Simulation</span> after Automatic<span class="f_BoldKeyword"> Feature Machining</span> (<span class="f_BoldKeyword">AFM</span>) to verify that the resulting toolpaths are what you are expect and desire. &nbsp;This should <span class="f_BoldKeyword" style="text-decoration: underline;">ALWAYS BE DONE</span> before posting your toolpath!</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:520px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="2"  style="vertical-align:bottom; width:250px; background-color:#376C9D; padding:2px; border:solid thin #376c9d;"><p style="text-align: center; line-height: 1.38; margin: 0 0 13px 0;"><span style="font-size: 16px; font-weight: bold; color: #ffffff;">Rules when a Similarity of Hole Z Depths are encountered during AFM</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; width:250px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:192px"><img alt="Hole Section Anatomy" title="Hole Section Anatomy" width="192" height="146" style="width:192px;height:146px;border:none" src="matching-kb-hole-section-2.png"/><p style="text-align:center"><span class="f_ImageCaption">Hole Section Anatomy</span></p></div></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:34px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Variation</span></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#F0F0F0; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Conditions &amp; Rules</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition1" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition1.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Start Z position is at start of a segment.</span><br />
+<span style="font-size: 13px;">Z Depth spans an entire section.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map start Z position to start of similar segment.</span><br />
+<span style="font-size: 13px;">Map Z depth to the entire depth of similar segment.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition2" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition2.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Start Z position is at start of a segment.</span><br />
+<span style="font-size: 13px;">Z Depth spans multiple sections.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map start Z position to start of similar segment.</span><br />
+<span style="font-size: 13px;">Map Z depth to span all similar segments.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition3" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition3.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Start Z position is at start of a segment.</span><br />
+<span style="font-size: 13px;">Z Depth is smaller than the same segment height.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map start Z position to start of similar segment.</span><br />
+<span style="font-size: 13px;">Map Z depth to a value computed as a ratio of the Z heights of the similar segments.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition4" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition4.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">End Z position is at end of a segment.</span><br />
+<span style="font-size: 13px;">Z Depth is smaller than the same segment height.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map end Z position to end of similar segment.</span><br />
+<span style="font-size: 13px;">Map Z depth to a value computed as a ratio of the Z heights of the similar segments.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition5" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition5.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition</span><span style="font-size: 13px;">:</span><br />
+<span style="font-size: 13px;">Both Start and End Z positions are between the start and end of a segment.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map start and end Z positions to values computed as a ratio of the Z heights of the similar segments.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition6" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition6.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Start Z position is at start of a segment.</span><br />
+<span style="font-size: 13px;">End Z position is between another segment.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map start Z position to start of similar segment.</span><br />
+<span style="font-size: 13px;">Map end Z position to a value computed as a ratio of the Z heights of the similar segments where the Z height ends.</span><br />
+<span style="font-size: 13px;">Make sure all completely spanned segments between the start and end Z are also completely spanned.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition7" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition7.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Start Z position is between a segment.</span><br />
+<span style="font-size: 13px;">End Z position is at the end of a segment.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px;">Rule:</span><br />
+<span style="font-size: 13px;">Map start Z position to a value computed as a ratio of the Z heights of the similar segments where the Z height starts.</span><br />
+<span style="font-size: 13px;">Map end Z position to end of similar segment.</span><br />
+<span style="font-size: 13px;">Make sure all completely spanned segments between the start and end Z are also completely spanned.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-condition8" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-condition8.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Start Z position is between a segment.</span><br />
+<span style="font-size: 13px;">End Z position is also between a segment.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule:</span><br />
+<span style="font-size: 13px;">Map start Z position to a value computed as a ratio of the Z heights of the similar segments where the Z height starts.</span><br />
+<span style="font-size: 13px;">Map end Z position to a value computed as a ratio of the Z heights of the similar segments where the Z height ends.</span><br />
+<span style="font-size: 13px;">Make sure all completely spanned segments between the start and end Z are also completely spanned.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:34px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal" style="text-align: center;"><img alt="matching-kb-hole-section-9" width="93" height="89" style="margin:0 auto 0 auto;width:93px;height:89px;border:none" src="matching-kb-hole-section-9.png"/></p>
+</td>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Condition:</span><br />
+<span style="font-size: 13px;">Completely dissimilar holes are found.</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:219px; background-color:#FFFFFF; padding:2px; border:solid thin #376c9d;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold;">Rule</span><span style="font-size: 13px;">:</span><br />
+<span style="font-size: 13px;">the system will ignore the operations and have a status message (or error message) stating that some KB operations were not applied. </span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?hole-cross-section-rules.html" target="_top">'+baseurl+'index.html?hole-cross-section-rules.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

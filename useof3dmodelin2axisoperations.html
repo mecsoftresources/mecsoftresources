@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Use of 3D model in 2 axis operations</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Total Cut Depth,Use 3D Model to Detect Depth,Use 3D Model to Detect Depth Use and limitations" />
+   <meta name="description" content="Historically 2½ Axis operations have been typically used with curves as the control geometry and the underlying 3D model is implied by the curves selected. &nbsp;However, with the..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "useof3dmodelin2axisoperations.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Use of 3D Model in 2½ Axis Operations</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?useof3dmodelin2axisoperations.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Use of 3D Model in 2½ Axis Operations</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <span class="hmbtnprev"></span>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <span class="hmbtnnext"></span>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Historically <span class="f_BoldKeyword">2½ Axis</span> operations have been typically used with curves as the control geometry and the underlying 3D model is implied by the curves selected. &nbsp;However, with the advent of solid modeling systems, <span class="f_BoldKeyword">2½ Axis</span> operations can be utilized more effectively by CAM systems by utilizing the intelligence already built into the 3D model, rather than having to derive it from just curves. &nbsp;There are three separate areas where cutting information can be derived from 3D models. &nbsp;These are:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Automatic detection of </span><span class="f_BoldKeyword">Total Cut Depth</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Automatic detection of a height when </span><span class="f_BoldKeyword">Location of Cut Geometry</span><span class="f_Numbered"> is </span><span class="f_BoldKeyword">At Bottom</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Automatic detection of </span><span class="f_BoldKeyword">Cut Start Side</span><span class="f_Numbered"> in </span><span class="f_BoldKeyword">Profile</span><span class="f_Numbered"> operations.</span></p><p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Detection of Cutting Depth</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 80px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The total cutting depth can be derived from the 3D model rather than having to input this value by measurement. &nbsp;In addition to efficiency, this feature allows for automation of machining. &nbsp;To utilize this feature, check the called <span class="f_BoldKeyword">Use 3D Model to compute Depth</span>. This parameter can be found on the <span class="f_BoldKeyword">Cut Levels</span> tab of most <span class="f_BoldKeyword">2½ Axis</span> operations.</p>
+<div class="p_Normal"><div style="margin:0;width:474px"><img alt="Dialog Box: Cut Levels tab, MILL Operations" title="Dialog Box: Cut Levels tab, MILL Operations" width="474" height="610" style="width:474px;height:610px;border:none" src="use-3d-model-to-detect-depth-p.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Cut Levels tab, MILL Operations</span></p></div></div>
+<p class="p_Normal">Setting this parameter will allow the system to calculate the depth of cut needed by examining the pocket or profile region selected by the user in relation to the 3D model. &nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="16" style="float:left;margin:0 10px 0 0;width:16px;height:16px;border:none" src="note-icon.png"/>It is assumed that these curves are derived from the 3D model, most typically as edge curves, and are not free standing curves.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Typical use cases</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 80px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section describes the typical use cases for this parameter setting.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Pockets and profiles with a single flat bottom.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="use-3d-model-to-detect-depth-a" width="327" height="248" style="margin:0;width:327px;height:248px;border:none" src="use-3d-model-to-detect-depth-a.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Pockets and Profiles with single flat bottoms but with different depths. &nbsp;Both hole pocketing and regular pocketing can be used for machining.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="use-3d-model-to-detect-depth-b" width="356" height="319" style="margin:0;width:356px;height:319px;border:none" src="use-3d-model-to-detect-depth-b.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Outside Profiles. &nbsp;In such cases the system will compute the bottom most point of the 3D model as the last cut level.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="use-3d-model-to-detect-depth-c" width="425" height="239" style="margin:0;width:425px;height:239px;border:none" src="use-3d-model-to-detect-depth-c.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Stepped Pockets &amp; Profiles: &nbsp;In such cases the cutter will stop at the highest step and will not go down any further.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="use-3d-model-to-detect-depth-d" width="411" height="234" style="margin:0;width:411px;height:234px;border:none" src="use-3d-model-to-detect-depth-d.png"/></p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-e" width="425" height="228" style="margin:0;width:425px;height:228px;border:none" src="use-3d-model-to-detect-depth-e.png"/></p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-f" width="422" height="232" style="margin:0;width:422px;height:232px;border:none" src="use-3d-model-to-detect-depth-f.png"/></p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-g" width="423" height="238" style="margin:0;width:423px;height:238px;border:none" src="use-3d-model-to-detect-depth-g.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Detection of Control Geometry Heights</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 80px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Another useful scenario under which this feature can be used is when you select a flat area that is the bottom of a pocket as the control geometry. &nbsp;You can then choose to specify the location of control geometry to be <span class="f_BoldKeyword">At Bottom</span>. &nbsp;If you have checked Use <span class="f_BoldKeyword">3D Model to compute Depth</span>, then the system will automatically compute the height of the wall of the pocket to start cutting from. &nbsp;</p>
+<p class="p_Normal">Refer to the dialog and example shown below:</p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-i" width="474" height="610" style="margin:0;width:474px;height:610px;border:none" src="use-3d-model-to-detect-depth-i.png"/></p>
+<p class="p_Normal">The system uses the 3D model and computes the height of the wall around the flat area selected and begins cutting from that level. &nbsp;This can be seen by the multiple z levels computed in the toolpath example.</p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-h" width="427" height="228" style="margin:0;width:427px;height:228px;border:none" src="use-3d-model-to-detect-depth-h.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Limitations</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 80px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The detection of cutting depth is not a fool proof algorithm and there are cases where this parameter cannot be applied successfully. &nbsp;This section describes these cases.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">When you have a chamfer or fillet at the floor of the pocket, or a sculpted surface bottom in a pocket this method cannot be used to determine the depth correctly. &nbsp;Different strategies need to be employed to machine such geometrical conditions. </span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="margin: 0 0 8px 24px;"><img alt="use-3d-model-to-detect-depth-j" width="403" height="239" style="margin:0;width:403px;height:239px;border:none" src="use-3d-model-to-detect-depth-j.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">Pocketing of stepped pockets, including stepped holes as seen below cannot be cut with a single operation. These need to be programmed in multiple stages, one program for each step.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="use-3d-model-to-detect-depth-k" width="360" height="283" style="margin:0;width:360px;height:283px;border:none" src="use-3d-model-to-detect-depth-k.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Determine using 3D model</span><span class="f_Numbered"> does not work for </span><span class="f_BoldKeyword">4 Axis Facing</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Pocketing</span><span class="f_Numbered"> or </span><span class="f_BoldKeyword">Profiling</span><span class="f_Numbered"> operations.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="use-3d-model-to-detect-depth-l" width="416" height="251" style="margin:0;width:416px;height:251px;border:none" src="use-3d-model-to-detect-depth-l.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Automatic Detection of Cut Side in Profiling</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 80px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Another useful scenario under which information from 3D models can be utilized is in determining the cutting side of a control curve in <span class="f_BoldKeyword">2½ Axis Profile</span> machining. &nbsp;You can choose to automatically compute the side where the cutter should cut by selecting <span class="f_BoldKeyword">Determine Using 3D Model</span> from the Cut Parameters tab shown below:</p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-m" width="474" height="646" style="margin:0;width:474px;height:646px;border:none" src="use-3d-model-to-detect-depth-m.png"/></p>
+<p class="p_Normal">An example is shown below. &nbsp;Here the highlighted curve is selected as the control geometry and under the <span class="f_BoldKeyword">Cut Start</span> Side section of the dialog, <span class="f_BoldKeyword">Determine using 3D Model</span> is checked. &nbsp;This results in the toolpath being generated on the correct side of the selected curve as shown in the example below:</p>
+<p class="p_Normal"><img alt="use-3d-model-to-detect-depth-o" width="506" height="282" style="margin:0;width:506px;height:282px;border:none" src="use-3d-model-to-detect-depth-o.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?useof3dmodelin2axisoperations.html" target="_top">'+baseurl+'index.html?useof3dmodelin2axisoperations.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','1');
+</script>
+</body>
+</html>

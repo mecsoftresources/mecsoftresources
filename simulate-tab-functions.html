@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>simulate-tab-functions</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta name="description" content="The following controls are available on the Simulate tab:" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "simulate-tab-functions.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">simulate-tab-functions</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?simulate-tab-functions.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">simulate-tab-functions</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <span class="hmbtnprev"></span>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <span class="hmbtnnext"></span>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The following controls are available on the <span class="f_BoldKeyword">Simulate</span> tab:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Summary</span></p>
+</td>
+<td colspan="5"  style="vertical-align:top; width:400px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Available Configuration</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">XPR</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">STD</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">EXP</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRO</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:79px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRE</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create Stock Model" title="Create Stock Model" width="76" height="25" style="margin:0 auto 0 auto;width:76px;height:25px;border:none" src="doc_filesimage01011.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:top; width:400px; padding:1px; border:solid thin #3d78af; border-left:none;"><p class="p_Normal"><span class="f_BoldKeyword">Create Stock Model: </span>Allows you to create <span class="f_BoldKeyword">Stock</span> geometry. You can also delete a <span class="f_BoldKeyword">Stock</span> geometry by selecting <span class="f_BoldKeyword">Delete Stock</span>. </p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Perform Toolpath Simulation or Animation" title="Perform Toolpath Simulation or Animation" width="57" height="25" style="margin:0 auto 0 auto;width:57px;height:25px;border:none" src="doc_filesimage035.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:top; width:400px; padding:1px; border:solid thin #3d78af; border-left:none;"><p class="p_Normal"><span class="f_BoldKeyword">Perform Toolpath Simulation or Animation: </span>Allows you to perform cut material simulation with tool animation.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Simulate Next Toolpath Block" title="Simulate Next Toolpath Block" width="58" height="25" style="margin:0 auto 0 auto;width:58px;height:25px;border:none" src="doc_filesimage036.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:top; width:400px; padding:1px; border:solid thin #3d78af; border-left:none;"><p class="p_Normal"><span class="f_BoldKeyword">Simulate Next Toolpath Block: </span>Simulation is performed in steps as defined by the display interval in the simulation preferences.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Simulate Next Toolpath Z Levels" title="Simulate Next Toolpath Z Levels" width="93" height="25" style="margin:0 auto 0 auto;width:93px;height:25px;border:none" src="doc_filesimage037.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Simulate Next Toolpath Z Levels: </span>Simulation is performed in separate Z levels.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Simulate to End" title="Simulate to End" width="72" height="25" style="margin:0 auto 0 auto;width:72px;height:25px;border:none" src="doc_filesimage038.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Simulate to End: </span>Simulation is performed without updating the display until the end of the toolpath.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Pause Toolpath Simulation" title="Pause Toolpath Simulation" width="66" height="25" style="margin:0 auto 0 auto;width:66px;height:25px;border:none" src="doc_filesimage039.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Pause Toolpath Simulation: Pause</span>/<span class="f_BoldKeyword">Stop</span> the simulation.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Part Stock Compare" title="Part Stock Compare" width="81" height="25" style="margin:0 auto 0 auto;width:81px;height:25px;border:none" src="doc_filesimage040.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Part Stock Compare*: </span>Compare the simulated model with the part geometry. The part geometry must contain surface/solid/mesh geometry.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Stop Toolpath Simulation" title="Stop Toolpath Simulation" width="59" height="25" style="margin:0 auto 0 auto;width:59px;height:25px;border:none" src="doc_filesimage041.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Stop Toolpath Simulation: Exits Simulation Mode</span>. Pause simulation before exiting simulation mode.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Simulation Speed" title="Simulation Speed" width="119" height="29" style="margin:0 auto 0 auto;width:119px;height:29px;border:none" src="doc_filesimage042.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Simulation Speed: </span>Varies simulation speed</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Set Simulation Preferences" title="Set Simulation Preferences" width="96" height="25" style="margin:0 auto 0 auto;width:96px;height:25px;border:none" src="doc_filesimage043.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Set Simulation Preferences: </span>Provides access to simulation preferences.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Simulate by Moves" title="Simulate by Moves" width="126" height="29" style="margin:0 auto 0 auto;width:126px;height:29px;border:none" src="doc_filesimage044.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Simulate by Moves: </span>Switches from <span class="f_BoldKeyword">Simulate by Distance</span> to <span class="f_BoldKeyword">Simulate by Motions</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?simulate-tab-functions.html" target="_top">'+baseurl+'index.html?simulate-tab-functions.html</a></p>');
+
+</script>
+</body>
+</html>

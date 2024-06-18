@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; Post-Processing &gt; How to: Post G-Code</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Post: How to Post a Toolpath" />
+   <meta name="description" content="RhinoCAM installs with over 300 pre-defined post-processors for the most popular CNC machine controllers." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-post-g-code.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Post G-Code</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-post-g-code.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; Post-Processing&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Post G-Code</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="posting-feedrate-for-tap-cycle.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="howtodefinethepost-processor.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_BoldKeyword">RhinoCAM</span> installs with over 300 pre-defined post-processors for the most popular CNC machine controllers.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Create and adjust the toolpath operations that you want to post G-Code for.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Make sure the toolpaths have generated cleanly. &nbsp;Each toolpath when generated is listed under a </span><span class="f_BoldKeyword">Setup</span><span class="f_Numbered"> in the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">. &nbsp;If the operation is flagged it means that it needs to be regenerated. &nbsp;</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:257px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="257" height="182" style="width:257px;height:182px;border:none" src="how-to-simulate-a-toolpath-1.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><img alt="Set Post-Processor Options" title="Set Post-Processor Options" width="58" height="25" style="margin:0;width:58px;height:25px;border:none" src="doc_filesimage008.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">From the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab, select </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> to display the dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:395px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="395" height="160" style="width:395px;height:160px;border:none" src="how-to-program-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:395px"><img alt="Dialog Box: Set Post-Processor Options" title="Dialog Box: Set Post-Processor Options" width="395" height="277" style="width:395px;height:277px;border:none" src="doc_filesimage891.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Set Post-Processor Options</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Select a </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Current Post Processor</span><span class="f_Numbered"> selection menu. &nbsp;See <a href="howtodefinethepost-processor.html" class="topiclink">How to Define the Post-Processor</a> for more information.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-post-g-code-1" width="395" height="277" style="margin:0;width:395px;height:277px;border:none" src="how-to-post-g-code-1.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">Make sure you have simulated each toolpath and are satisfied with each toolpath operation. &nbsp;See </span><span class="f_BoldKeyword">How to Simulate a Toolpath</span><span class="f_Numbered"> for more information.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><span class="f_Numbered">Select the operation that you want to post. &nbsp;You can select multiple operations by pressing the</span><span class="f_BoldKeyword"> &lt;Ctrl&gt;</span><span class="f_Numbered"> key while selecting. &nbsp;You can also select an entire </span><span class="f_BoldKeyword">Setup</span><span class="f_Numbered"> or the entire </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:259px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="259" height="181" style="width:259px;height:181px;border:none" src="how-to-simulate-a-toolpath-2.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span><span class="f_Numbered">Right-click on the selected operation(s) and select </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> to display the dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:365px"><img alt="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="365" height="250" style="width:365px;height:250px;border:none" src="how-to-post-g-code-2.png"/><p style="text-align:center"><span class="f_ImageCaption">Note: MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span><span class="f_Numbered">Your </span><span class="f_BoldKeyword">Current Post</span><span class="f_Numbered"> is listed at the bottom of the dialog. &nbsp;You can change it here if desired.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-post-g-code-3" width="557" height="245" style="margin:0;width:557px;height:245px;border:none" src="how-to-post-g-code-3.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span>Navigate to the folder where you want the posted G-Code file to be saved.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span>Adjust the name of the G-Code file if desired.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span>Make sure the file extension (example: <span class="f_BoldKeyword">.nc</span>) of the G-Code file is correct and that your CNC machine controller will read this file extension. &nbsp;Refer to your controller manual for this information.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">12.</span>Select the <span class="f_BoldKeyword">Post</span> button and the G-Code file is calculated and displayed. &nbsp;</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-post-g-code-4" width="429" height="334" style="margin:0;width:429px;height:334px;border:none" src="how-to-post-g-code-4.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">13.</span>G-Code files are <span class="f_BoldKeyword">ASCII Text Files</span> and by default, are displayed in <span class="f_BoldKeyword">notepad</span>, a windows generic text editor.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">14.</span>You can review the G-Code and make any manual edits if needed and save the file from notepad.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">15.</span>If you use a different text and G-Code editor program, you can tell <span class="f_BoldKeyword">RhinoCAM</span> to display your G-Code files in this program. &nbsp;To do this select <span class="f_BoldKeyword">Post</span> from the <span class="f_BoldKeyword">Program</span> tab to display the dialog.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">16.</span><img alt="...-button" width="19" height="21" style="margin:0;width:19px;height:21px;border:none" src="...-button.png"/> &nbsp;In the section of the dialog were it says <span class="f_BoldKeyword">Program to send posted file to</span> select the ... button to the right to display the File Open dialog.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-post-g-code-5" width="336" height="66" style="margin:0;width:336px;height:66px;border:none" src="how-to-post-g-code-5.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">17.</span>Locate the <span class="f_BoldKeyword">.exe</span> program that you use to edit your G-Code files with and then press <span class="f_BoldKeyword">Open</span>.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">18.</span>Then pick <span class="f_BoldKeyword">OK</span> to close the <span class="f_BoldKeyword">Set Post-Processor Options</span> dialog.</p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-post-g-code.html" target="_top">'+baseurl+'index.html?how-to-post-g-code.html</a></p>');
+
+</script>
+</body>
+</html>

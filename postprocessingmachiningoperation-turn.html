@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>TURN Module &gt; Post Processing Machining Operations&nbsp;</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Post Processing,Post Processing Overview" />
+   <meta name="description" content="Once machining operations are created they can be post processed to a specific machine controller. To post process a machining operation, select the operation in the Machining..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "postprocessingmachiningoperation-turn.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Post Processing Machining Operations</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?postprocessingmachiningoperation-turn.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      TURN Module&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Post Processing Machining Operations</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="partstockcompare.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="setpostoptions.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Once machining operations are created they can be post processed to a specific machine controller. To post process a machining operation, select the operation in the <span class="f_BoldKeyword">Machining Browser</span>, right click and select <span class="f_BoldKeyword">Post</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">To Post Process from the Machining Browser</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">There must be a <span class="f_BoldKeyword">Post </span>defined for the <span class="f_BoldKeyword">Machining Job</span>.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">If no </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> is defined, pick </span><img alt="Set Turning Post Processor Options" title="Set Turning Post Processor Options" width="54" height="22" style="margin:0;width:54px;height:22px;border:none" src="post-icon.png"/><span class="f_ImageCaption"> </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> and then select a post processor from the </span><span class="f_BoldKeyword">Set Post Processor Options</span><span class="f_Numbered"> dialog box.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Turn Operation</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Right-click and select </span><img alt="Post Process" title="Post Process" width="27" height="28" style="margin:0;width:27px;height:28px;border:none" src="post-menu-icon.png"/><span class="f_BoldKeyword">Post</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:342px"><img alt="To Post Process a Turn Operation from the Machining Browser" title="To Post Process a Turn Operation from the Machining Browser" width="342" height="275" style="width:342px;height:275px;border:none" src="doc_filesimage320.png"/><p style="text-align:center"><span class="f_ImageCaption">To Post Process a Turn Operation from the Machining Browser</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">4.</span>Enter a file name for the posted file and pick <span class="f_BoldKeyword">Post</span> from the <span class="f_BoldKeyword">Post &amp; Save As</span> dialog box.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">5.</span>The posted file is displayed in Notepad.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:261px"><img alt="The posted file is displayed in Notepad" title="The posted file is displayed in Notepad" width="261" height="352" style="width:261px;height:352px;border:none" src="posted-file-in-notepad.png"/><p style="text-align:center"><span class="f_ImageCaption">The posted file is displayed in Notepad</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">To Post Process Multiple Operations</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">You have the ability to select multiple <span class="f_BoldKeyword">Turn Operations</span> or the entire set of machining operations and post process all of them with a single button click. To do this: </p>
+<p class="p_Normal">There must be a <span class="f_BoldKeyword">Post </span>defined for the <span class="f_BoldKeyword">Machining Job</span>.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">If no </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> is defined, pick </span><img alt="Set Turning Post Processor Options" title="Set Turning Post Processor Options" width="54" height="22" style="margin:0;width:54px;height:22px;border:none" src="post-icon.png"/><span class="f_ImageCaption"> </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> and then select a post processor from the </span><span class="f_BoldKeyword">Set Post</span><span class="f_Numbered"> </span><span class="f_BoldKeyword">Processor Options</span><span class="f_Numbered"> dialog box.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Setup</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered">.  </span>You can also select multiple operations by holding down the <span class="f_BoldKeyword">&lt;Ctrl&gt;</span> key.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Right-click and select </span><img alt="Post Process" title="Post Process" width="27" height="28" style="margin:0;width:27px;height:28px;border:none" src="post-menu-icon.png"/><span class="f_BoldKeyword">Post</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:410px"><img alt="Right-click on a Setup and select Post to post all Turn Operations in the Setup" title="Right-click on a Setup and select Post to post all Turn Operations in the Setup" width="410" height="227" style="width:410px;height:227px;border:none" src="doc_filesimage321.png"/><p style="text-align:center"><span class="f_ImageCaption">Right-click on a Setup and select Post to post all Turn Operations in the Setup</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:408px"><img alt="Example shows selecting multiple operations by holding down the &lt;Ctrl&gt; key for posting." title="Example shows selecting multiple operations by holding down the &lt;Ctrl&gt; key for posting." width="408" height="293" style="width:408px;height:293px;border:none" src="doc_filesimage322.png"/><p style="text-align:center"><span class="f_ImageCaption">Example shows selecting multiple operations by holding down the &lt;Ctrl&gt; key for posting.</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">7.</span>Enter a file name for the posted file and pick <span class="f_BoldKeyword">Post</span> from the <span class="f_BoldKeyword">Post &amp; Save As</span> dialog box.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">8.</span>The posted file is displayed in Notepad.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:261px"><img alt="The posted file is displayed in Notepad" title="The posted file is displayed in Notepad" width="261" height="352" style="width:261px;height:352px;border:none" src="posted-file-in-notepad.png"/><p style="text-align:center"><span class="f_ImageCaption">The posted file is displayed in Notepad</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">To Post Process All Operations</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Alternatively you can select the <span class="f_BoldKeyword">Machining Job</span> at the root level under the <span class="f_BoldKeyword">Machining Browser</span>, right click and select <span class="f_BoldKeyword">Post All</span>.</p>
+<p class="p_Normal">There must be a <span class="f_BoldKeyword">Post </span>defined for the <span class="f_BoldKeyword">Machining Job</span>.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">If no </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> is defined, pick </span><img alt="Set Turning Post Processor Options" title="Set Turning Post Processor Options" width="54" height="22" style="margin:0;width:54px;height:22px;border:none" src="post-icon.png"/><span class="f_ImageCaption"> </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> and then select a post processor from the </span><span class="f_BoldKeyword">Set Post</span><span class="f_Numbered"> </span><span class="f_BoldKeyword">Processor Options</span><span class="f_Numbered"> dialog box.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Right-click and select </span><img alt="Post Process" title="Post Process" width="27" height="28" style="margin:0;width:27px;height:28px;border:none" src="post-menu-icon.png"/><span class="f_BoldKeyword">Post</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:410px"><img alt="Select the Machining Job from the Machining Browser, right-click and pick Poast All" title="Select the Machining Job from the Machining Browser, right-click and pick Poast All" width="410" height="228" style="width:410px;height:228px;border:none" src="doc_filesimage323.png"/><p style="text-align:center"><span class="f_ImageCaption">Select the Machining Job from the Machining Browser, right-click and pick Poast All</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">7.</span>Enter a file name for the posted file and pick <span class="f_BoldKeyword">Post</span> from the <span class="f_BoldKeyword">Post &amp; Save As</span> dialog box.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">8.</span>The posted file is displayed in Notepad.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:261px"><img alt="The posted file is displayed in Notepad" title="The posted file is displayed in Notepad" width="261" height="352" style="width:261px;height:352px;border:none" src="posted-file-in-notepad.png"/><p style="text-align:center"><span class="f_ImageCaption">The posted file is displayed in Notepad</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">About the Post &amp; Save As dialog box</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Post-processing can be done from <span class="f_BoldKeyword">Program</span> and <span class="f_BoldKeyword">Simulate</span> tabs under the <span class="f_BoldKeyword">Machining Browser.  </span>Selecting <span class="f_BoldKeyword">Post</span> will display the <span class="f_BoldKeyword">Post and Save As Dialog</span>. &nbsp;The following are the default settings when the <span class="f_BoldKeyword">Post and Save As</span> dialog box is displayed:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 24px; margin: 0 0 8px 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Post and Save As</span> dialog points to the folder location where the part geometry is located.</p><p class="p_Normal" style="text-indent: 0; padding-left: 24px; margin: 0 0 8px 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Save as type</span> – refers to post file extension. This information is obtained from the set post options dialog.</p><p class="p_Normal" style="text-indent: 0; padding-left: 24px; margin: 0 0 8px 24px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Current Post</span> - refers to the <span class="f_BoldKeyword">controller/post processor</span> to post process the toolpath. This information is also obtained from the <span class="f_BoldKeyword">set post options dialog</span>.</p><p class="p_Normal">You can override the default settings under the <span class="f_BoldKeyword">Post &amp; Save As</span> dialog box. &nbsp;Once you click on the <span class="f_BoldKeyword">Post</span> button in the dialog, post processing will begin and the posted file is located under the specified folder and then displayed in <span class="f_BoldKeyword">Notepad</span> by default.</p>
+<div class="p_Normal"><div style="margin:0;width:417px"><img alt="Enter a file name for the posted file and pick Post from the Post &amp; Save As dialog box" title="Enter a file name for the posted file and pick Post from the Post &amp; Save As dialog box" width="417" height="355" style="width:417px;height:355px;border:none" src="post-and-save-as-dialog-box.png"/><p style="text-align:center"><span class="f_ImageCaption">Enter a file name for the posted file and pick Post from the Post &amp; Save As dialog box</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?postprocessingmachiningoperation-turn.html" target="_top">'+baseurl+'index.html?postprocessingmachiningoperation-turn.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>G-CODE EDITOR Modile &gt; Project Tab &gt; Setup Pane &gt; Tool Library</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Cutting Tools,Cutting Tools Library,Tool Library,Tools (See Cutting Tools)" />
+   <meta name="description" content="Use this command to load a pre-defined Tool Library file (*.csv). &nbsp;You can save a Tool Library (*.csv) file from the MILL module Save Tool Library command. &nbsp;When you create..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "library.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Tool Library</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?library.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      G-CODE EDITOR Modile &gt; <a href="project.html">Project Tab</a> &gt; Setup Pane&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Tool Library</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="stock-from-selection.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="project.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="tool-crib.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="Tool Library" title="Tool Library" width="76" height="21" style="float:left;margin:0 10px 0 0;width:76px;height:21px;border:none" src="icon-library.png"/>Use this command to load a pre-defined <span class="f_BoldKeyword">Tool Library</span> file (*.csv). &nbsp;You can save a <span class="f_BoldKeyword">Tool Library</span> (<span class="f_BoldKeyword">*.csv</span>) file from the <span class="f_BoldKeyword">MILL</span> module <span class="f_BoldKeyword">Save Tool Library</span> command. &nbsp;When you create your <a href="tool-crib.html" class="topiclink">Tool Crib</a>, the tools are selected from this <span class="f_BoldKeyword">Tool Library</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">To Access this Command:</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Navigate to:" title="Navigate to:" width="12" height="19" style="margin:0;width:12px;height:19px;border:none" src="navigate-23.png"/> click: <img alt="Project tab" title="Project tab" width="67" height="27" style="margin:0;width:67px;height:27px;border:none" src="tab-project.png"/> <span style="font-weight: bold; color: #ff0000;">&gt;</span> <img alt="Tool Library" title="Tool Library" width="76" height="21" style="margin:0;width:76px;height:21px;border:none" src="icon-library.png"/><span style="font-weight: bold; color: #ff0000;">&gt;</span> Load</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Tool Library menu item</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:80%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:396px"><img alt="G-Code Browser: Tool Library menu item" title="G-Code Browser: Tool Library menu item" width="396" height="227" style="width:396px;height:227px;border:none" src="tool-library-menu-selection.png"/><p style="text-align:center"><span class="f_ImageCaption">G-Code Browser: Tool Library menu item</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Procedure</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Select </span><span class="f_BoldKeyword">Library</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Project</span><span class="f_Numbered"> tab of the </span><span class="f_BoldKeyword">G-Code Browser</span><span class="f_Numbered"> and pick </span><span class="f_BoldKeyword">Load</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">The </span><span class="f_BoldKeyword">File Open</span><span class="f_Numbered"> dialog will display. &nbsp;Navigate to the </span><span class="f_BoldKeyword">Tool Library</span><span class="f_Numbered"> file and pick </span><span class="f_BoldKeyword">Open</span><span class="f_Numbered"> to load it. &nbsp;The file extension must be *.csv.  </span>You can save a <span class="f_BoldKeyword">Tool Library</span> (<span class="f_BoldKeyword">*.csv</span>) file from the <span class="f_BoldKeyword">MILL</span> module <span class="f_BoldKeyword">Save Tool Library</span> command.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span>The <span class="f_BoldKeyword">Tool Library</span> is loaded.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:685px"><img alt="A Tool Library is loaded" title="A Tool Library is loaded" width="685" height="317" style="width:685px;height:317px;border:none" src="tool-library-dialog1.png"/><p style="text-align:center"><span class="f_ImageCaption">A Tool Library is loaded</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span>Selecting a tool type icon from the menu at the top will display those tool types.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:685px"><img alt="Listing only Drill Tools" title="Listing only Drill Tools" width="685" height="196" style="width:685px;height:196px;border:none" src="tool-library-dialog2.png"/><p style="text-align:center"><span class="f_ImageCaption">Listing only Drill Tools</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span>The default <span class="f_BoldKeyword">Tool Library</span> (<span class="f_BoldKeyword">*.csv</span>) files saved from the <span class="f_BoldKeyword">MILL</span> module contains the following data fields as shown in each column of the dialog. &nbsp;You can edit <span class="f_BoldKeyword">*.csv</span> files using an <span class="f_BoldKeyword">Excel</span> compatible spreadsheet program.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Default <span class="f_BoldKeyword">Tool</span> Data Fields Supported by the <span class="f_BoldKeyword">MILL</span> Module are:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Name</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Tool Type</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Diameter</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Corner Radius</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Taper</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Flute Length</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Tool Length</span><span class="f_Numbered"> &nbsp;</span></p></td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Tool Number</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Tool Material</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Spindle RPM</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Cut Feed</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Adjust Register</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Cutcom Register</span><span class="f_Numbered"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldKeyword">Comments</span><span class="f_Numbered"> &nbsp;</span></p></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Tool Library Toolbar</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select an icon from the toolbar to display only those tools.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:36px; background-color:#1159AA; padding:0; border:solid thin #1159aa; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Icon</span></p>
+</td>
+<td style="vertical-align:top; width:107px; background-color:#1159AA; padding:0; border:solid thin #1159aa; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Type</span></p>
+</td>
+<td style="vertical-align:top; width:33px; background-color:#1159AA; padding:0; border:solid thin #1159aa; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Icon</span></p>
+</td>
+<td style="vertical-align:top; width:110px; background-color:#1159AA; padding:0; border:solid thin #1159aa; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Type</span></p>
+</td>
+<td style="vertical-align:top; width:35px; background-color:#1159AA; padding:0; border:solid thin #1159aa; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Icon</span></p>
+</td>
+<td style="vertical-align:top; width:119px; background-color:#1159AA; padding:0; border:solid thin #1159aa; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Type</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-ballmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-ballmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Ball</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-facemill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-facemill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Face</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-reamer-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-reamer-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Ream</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-flatmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-flatmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Flat</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-dovetailmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-dovetailmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Dove Tail</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-tapdrill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-tapdrill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Tap</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-cradmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-cradmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Corner Rad</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-filletmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-filletmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Fillet</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-bore-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-bore-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Bore</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-vmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-vmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Vee</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-lollypopmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-lollypopmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Lollypop</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-rbore-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-rbore-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">RBore</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-chamfermill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-chamfermill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Chamfer</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-userdefinedmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-userdefinedmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">User Defined</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-show-all-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-show-all-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Show All</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-tapermill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-tapermill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Taper</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-drill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-drill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Drill</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-threadmill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-threadmill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:107px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Thread</p>
+</td>
+<td style="vertical-align:top; width:33px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><img alt="icon-centerdrill-tool-library-toolbar" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-centerdrill-tool-library-toolbar.png"/></p>
+</td>
+<td style="vertical-align:top; width:110px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">Center Drill</p>
+</td>
+<td style="vertical-align:top; width:35px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:119px; padding:0; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="userinterface.html" class="topiclink">User Interface</a></p>
+<p class="p_Normal"><a href="library.html" class="topiclink">Project Tab</a></p>
+<p class="p_Normal"><a href="stock.html" class="topiclink">Stock Menu</a></p>
+<p class="p_Normal"><a href="tool-crib.html" class="topiclink">Tool Crib</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?library.html" target="_top">'+baseurl+'index.html?library.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

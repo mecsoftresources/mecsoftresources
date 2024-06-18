@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Use Cutter Compensation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Cutter Compensation" />
+   <meta name="description" content="All toolpaths except engraving are automatically compensated for the tool geometry. &nbsp;Cutter compensation is used typically to compensate for the difference in the dimensions of..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-implement-cutter-compensation.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Use Cutter Compensation</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-implement-cutter-compensation.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Use Cutter Compensation</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="5axiscontinuousmachiningofmeshes.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="understandingsimulationmodels.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">All toolpaths except engraving are automatically compensated for the tool geometry.  <span class="f_BoldKeyword">Cutter compensation</span> is used typically to compensate for the difference in the dimensions of the actual cutter used in machining and the cutter used for programming in <span class="f_BoldKeyword">RhinoCAM</span>. &nbsp;For example, if the cutter used in programming is 0.25 inches and due to tool wear the actual cutter is only 0.24 inches in size, you can compensate for this at the controller rather than having to re-program the operation in <span class="f_BoldKeyword">RhinoCAM</span>. &nbsp;</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Cutter compensation</span> is used extensively in production (high volume) machining where the machine operator can compensate for tool wear before having to stop and replace the tool or insert.</p>
+<p class="p_Normal"><span style="font-size: 21px; font-weight: bold; text-decoration: underline;">In order to do this you need to do the following:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Turn cutter compensation on in the operation to </span><span class="f_BoldKeyword">Auto/ON</span><span class="f_Numbered"> or </span><span class="f_BoldKeyword">CONTROL/ON</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Specify the cutter compensation value and the compensation register in the controller (the controller needs to be capable of doing this).</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span>Please make sure the post processor is configured to output cutter compensation. This is &nbsp;defined under the <span class="f_BoldKeyword">Cutter Compensation</span> section in the post processor generator. Most controllers expect an X &amp; Y motion on the same line as cutter compensation.</p><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Cutter Compensation Left</p>
+<p class="p_Normal"><span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM] G41 [G_CODE] X[NEXT_NONMDL_X] Y[NEXT_NONMDL_Y] D[TOOL_CUTCOM_REG]</span></p>
+<p class="p_Normal">Cutter Compensation Right</p>
+<p class="p_Normal"><span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM] G42 [G_CODE] X[NEXT_NONMDL_X] Y[NEXT_NONMDL_Y] D[TOOL_CUTCOM_REG]</span></p>
+<p class="p_Normal">Cutter Compensation Off</p>
+<p class="p_Normal"><span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM] G40</span></p>
+<p class="p_Normal"><img alt="cutcom-ppg-dialog" width="713" height="420" style="margin:0;width:713px;height:420px;border:none" src="cutcom-ppg-dialog.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-size: 21px; font-weight: bold; text-decoration: underline;">A few things to watch out for:</span></p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_BoldKeyword">Cutter compensation</span><span class="f_Numbered"> makes sense only in 2-1/2 axis operations. &nbsp;If you are using roughing (pocketing &amp; facing) the compensation will be turned on only in the final passes.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Make sure you are using </span><span class="f_BoldKeyword">Climb</span><span class="f_Numbered"> or </span><span class="f_BoldKeyword">Conventional</span><span class="f_Numbered"> cut traversal in any of the methods that you want to turn compensation on.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="cutcom-toolpath-cut-parameters-tab" width="597" height="345" style="margin:0;width:597px;height:345px;border:none" src="cutcom-toolpath-cut-parameters-tab.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Make sure you have a linear motion for the controller to turn on the compensation for. &nbsp;If your first motion is an arc the controller will not be able to turn on the compensation. &nbsp;Thus, in </span><span class="f_BoldKeyword">2-1/2 axis profiling</span><span class="f_Numbered">, make sure there is a linear entry motion for the controller to be able to turn compensation on &amp; linear exit to turn off compensation.</span></p><p class="p_Normal">If you are looking to compensate for the full tool diameter, set <span class="f_BoldKeyword">Stock</span> = <span class="f_BoldKeyword">-0.125</span> under the cut parameters tab. (<span class="f_BoldKeyword">0.125</span> being the radius of the tool). This would generate the toolpath ON the curve. This would invalidate the simulation as the tool tip stays on the drive geometry.</p>
+<p class="p_Normal"><span style="font-weight: bold;">Note</span>: &nbsp;The <span class="f_BoldKeyword">Cutcom Register</span> is set under the <span class="f_BoldKeyword">Create/Select Tool</span> definition dialog.</p>
+<p class="p_Normal" style="text-align: center;"><img alt="cutcom-register-create-select-tools-dialog" width="214" height="249" style="margin:0 auto 0 auto;width:214px;height:249px;border:none" src="cutcom-register-create-select-tools-dialog.png"/></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-implement-cutter-compensation.html" target="_top">'+baseurl+'index.html?how-to-implement-cutter-compensation.html</a></p>');
+
+</script>
+</body>
+</html>

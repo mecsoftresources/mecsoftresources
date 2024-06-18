@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MESH Module &gt; Ribbon Bar &gt; Repair Tab &gt; Manual Holes Fix</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Fix Holes Manually,Mesh,Mesh Fix Holes Manually,Repair Mesh,Repair Mesh Fix Manually" />
+   <meta name="description" content="You can use this command to fix individual holes in your mesh model. &nbsp;Once all holes are identified, you can select a hole, preview the fix and then apply it to the mesh. &nbsp;A..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "manual_hole_fix.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Manual Holes Fix</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?manual_hole_fix.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MESH Module &gt; <a href="mesh_ribbon_bar_tabs.html">Ribbon Bar</a> &gt; <a href="repair_tab.html">Repair Tab</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Manual Holes Fix</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="auto_repair.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="repair_tab.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="check__repair.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="Manual Holes Fix" title="Manual Holes Fix" width="52" height="75" style="float:left;margin:0 10px 0 0;width:52px;height:75px;border:none" src="icon-manual-holes-fix.png"/>You can use this command to fix individual holes in your mesh model. &nbsp;Once all holes are identified, you can select a hole, preview the fix and then apply it to the mesh. &nbsp;A hole fix for this example is shown below.</p>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal" style="margin: 0 0 8px 72px;"><div style="margin:0;width:245px"><img alt="Manual Holes Fix" title="Manual Holes Fix" width="245" height="231" style="width:245px;height:231px;border:none" src="manual-holes-fix.png"/><p style="text-align:center"><span class="f_ImageCaption">Manual Holes Fix</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 72px;"><table style="width:450px; border:solid thin #1159aa; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">To Fix your Mesh Automatically</span>: &nbsp;This command requires you to fix holes in your mesh manually (i.e., one at a time). &nbsp;If your mesh has many holes, gaps between edges and/or improperly oriented facets, you should try using either the <span class="f_BoldKeyword">Stitch &amp; Close</span> or <span class="f_BoldKeyword">Auto Fix</span> command. &nbsp;You can also use the <span class="f_BoldKeyword">Diagnose</span> tool to fix other irregularities such as <span class="f_BoldKeyword">Short Edges</span>, <span class="f_BoldKeyword">Large Angles</span>, etc.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Work Flow</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First the mesh is selected and the holes are detected and listed.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Then a hole is selected along with the type of fix to use.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">You can then preview and apply the fix.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Basic Procedure</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Screen Pick</span></p>
+</td>
+<td style="vertical-align:top; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Optional Information</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 1</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the mesh you want to fix and then press <span class="f_BoldKeyword">Enter</span>. You can select from the graphics window or from the <span class="f_BoldKeyword">Browser</span>.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">You can select a mesh first and then select the command icon.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 2</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Pick the <span class="f_BoldKeyword">Detect holes</span> button and the <span class="f_BoldKeyword">Holes list</span> will be populated.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">See below.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 3</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select a hole from the list and then choose a <span class="f_BoldKeyword">Fix type</span> option.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">-</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 4</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the <span class="f_BoldKeyword">Preview Fix</span> button to see the results and then pick the Apply<span class="f_BoldKeyword"> Fix</span> button to update the mesh.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">-</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Manual Holes Fix Options</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">These options appear on the <span class="f_BoldKeyword">Browser</span> for this command.</p>
+<div class="p_Normal"><div style="margin:0;width:388px"><img alt="Manual Holes Fix Options" title="Manual Holes Fix Options" width="388" height="358" style="width:388px;height:358px;border:none" src="manual-holes-fix-options-dialog.png"/><p style="text-align:center"><span class="f_ImageCaption">Manual Holes Fix Options</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Holes list</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The mesh is evaluated and all detected holes are numbered and listed. &nbsp;Select a hole from the and it will highlight on the mesh.  <span style="font-weight: bold;">Note</span>: If you double-left-click on a hole in the list, it will be oriented for displayed on the graphics screen.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manual-holes-fix-holes-list" width="276" height="176" style="margin:0;width:276px;height:176px;border:none" src="manual-holes-fix-holes-list.png"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="manual-holes-fix-hile-selected" width="111" height="118" style="margin:0;width:111px;height:118px;border:none" src="manual-holes-fix-hile-selected.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Fix type</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Choose one of the <span class="f_BoldKeyword">Fix type</span> options. &nbsp;The sample results of each type are shown in the images below.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:400px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:111px"><img alt="Fix type = Fan" title="Fix type = Fan" width="111" height="118" style="width:111px;height:118px;border:none" src="manual-holes-fix-fan.png"/><p style="text-align:center"><span class="f_ImageCaption">Fan</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:111px"><img alt="Fix type = Min Area" title="Fix type = Min Area" width="111" height="118" style="width:111px;height:118px;border:none" src="manual-holes-fix-min-area.png"/><p style="text-align:center"><span class="f_ImageCaption">&nbsp;Min Area</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:111px"><img alt="Fix type = Planar" title="Fix type = Planar" width="111" height="118" style="width:111px;height:118px;border:none" src="manual-holes-fix-planar.png"/><p style="text-align:center"><span class="f_ImageCaption">Planar</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:111px"><img alt="Fix type = Smooth" title="Fix type = Smooth" width="111" height="118" style="width:111px;height:118px;border:none" src="manual-holes-fix-smooth.png"/><p style="text-align:center"><span class="f_ImageCaption">Smooth</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldParameter">Preview Fix </span><span class="f_Numbered"> </span><br />
+<span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button to preview the fix on the mesh</span><span class="f_Numbered">. &nbsp;The </span><span class="f_BoldKeyword">Fix type</span><span class="f_Numbered"> images shown above are previews.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_BoldParameter">Apply Fix &nbsp;</span><br />
+When satisfied with the <span class="f_BoldKeyword">Fix type</span> and the <span class="f_BoldKeyword">Preview</span>, select this button to update the mesh<span class="f_Numbered">.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">To Cancel this Command</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Before mesh(es) are selected: <img alt="Press the &lt;Esc&gt; key" title="Press the &lt;Esc&gt; key" width="47" height="32" style="margin:0;width:47px;height:32px;border:none" src="esc-key.png"/> <span style="font-style: italic;">or</span> <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/></p>
+<p class="p_Normal">After mesh(es) are selected: <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/> <span style="font-style: italic;">or </span><img alt="Pick Cancel from the RhinoCAM Browser" title="Pick Cancel from the RhinoCAM Browser" width="13" height="13" style="margin:0;width:13px;height:13px;border:none" src="cancel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Notes</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table class="AlertBox" style="border:solid thin #1159aa; border-spacing:0;">
+<tr class="AlertBox">
+<td class="AlertBox" style="border:none"><p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Note!" title="Note!" width="20" height="19" style="float:left;margin:0 10px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/>Using this command will change the shape of your facet model! &nbsp;Experimentation with the methods and options listed above is advised until you understand and are satisfied with your results.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="mesh_ribbon_bar_tabs.html" class="topiclink">The Ribbon Bar</a></p>
+<p class="p_Normal"><a href="repair_tab.html" class="topiclink">Repair Tab</a></p>
+<p class="p_Normal"><a href="stitchandclose.html" class="topiclink">Stitch &amp; Close</a></p>
+<p class="p_Normal"><a href="auto_repair.html" class="topiclink">Auto Fix</a></p>
+<p class="p_Normal"><a href="check__repair.html" class="topiclink">Diagnose</a></p>
+<p class="p_Normal"><a href="separate_meshes.html" class="topiclink">Separate</a></p>
+<p class="p_Normal"><a href="fix_orientation.html" class="topiclink">Fix Orientation</a></p>
+<p class="p_Normal"><a href="flip_normals.html" class="topiclink">Flip Orientation</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?manual_hole_fix.html" target="_top">'+baseurl+'index.html?manual_hole_fix.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

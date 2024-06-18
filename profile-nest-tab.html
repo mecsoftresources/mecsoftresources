@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Profile-NEST Module &gt; User Interface &gt; Machining Browser &gt; Nest Tab</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Display,Display Machine CSYS Visibility,Display Material Texture Visibility,Display Stock Model Visibility,Display Toolpath Levels,Display Toolpath Visibility,Display World CSYS Visibility,Machine CSYS Visibility,Machining Browser,Machining Browser Nest Tab,Material Texture Visibility,Nest Tab,Nest Tab 2 1/2 Axis Profiling,Nest Tab Align,Nest Tab Display Toolpath Levels,Nest Tab Machine,Nest Tab Machine CSYS Visibility,Nest Tab Material,Nest Tab Material Texture Visibility,Nest Tab Nesting Report,Nest Tab Post,Nest Tab Sheets,Nest Tab Stock,Nest Tab Stock Model Visibility,Nest Tab Toolpath Visibility,Nest Tab Work Zero,Nest Tab World CSYS Visibility,Toolpath,Toolpath Display in Levels,Toolpath Toggle Display,World CSYS Visibility" />
+   <meta name="description" content="Selecting the Profile-NEST tab in the Machining Browser provides access to Machine, Stock and Operations to Nest commands. &nbsp;These commands are listed in the ribbon bar when the..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "profile-nest-tab.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Nest Tab</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?profile-nest-tab.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      Profile-NEST Module &gt; <a href="user-interface-mill-nest.html">User Interface</a> &gt; <a href="machining-browser-mill-nest.html">Machining Browser</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Nest Tab</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="browser-toggle-tabs-mill-nest.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="machining-browser-mill-nest.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="simulate-tab-mill-nest.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Selecting the <span class="f_BoldKeyword">Profile-NEST</span> tab in the <span class="f_BoldKeyword">Machining Browser</span> provides access to <span class="f_BoldKeyword">Machine</span>, <span class="f_BoldKeyword">Stock</span> and <span class="f_BoldKeyword">Operations to Nest</span> commands. &nbsp;These commands are listed in the ribbon bar when the <span class="f_BoldKeyword">Nest</span> tab is selected.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">The Machining Operations (Mops) Browser, Nest Tab</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:32px"><img alt="Profile-NEST Browser" title="Profile-NEST Browser" width="32" height="32" style="width:32px;height:32px;border:none" src="profile-nesting-browser.png"/><p style="text-align:center"><span class="f_ImageCaption">Profile-NEST Browser</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Machine Setup Pane</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section allows you to define the <span class="f_BoldKeyword">Machine Tool</span>, <span class="f_BoldKeyword">Post Processor</span> and the Nested<span class="f_BoldKeyword"> Sheets</span>.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Machine Tool Setup" title="Machine Tool Setup" width="81" height="25" style="margin:0;width:81px;height:25px;border:none" src="doc_filesimage007.png"/></p>
+</td>
+<td style="vertical-align:middle; width:301px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Machine Tool Setup:</span> Sets the <span class="f_BoldKeyword">Machine</span> for 2½ axis, 3 axis, 4 axis and 5 axis operations.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Set Post-Processor Options" title="Set Post-Processor Options" width="58" height="25" style="margin:0;width:58px;height:25px;border:none" src="doc_filesimage008.png"/></p>
+</td>
+<td style="vertical-align:middle; width:301px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Set Post-Processor Options:</span> Allows you to set the <span class="f_BoldKeyword">Current Post Processor</span>, posted file naming conventions, posted file extension, program to display the posted file.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Add Sheets" title="Add Sheets" width="69" height="21" style="margin:0;width:69px;height:21px;border:none" src="sheets-button-profile-nesting.png"/></p>
+</td>
+<td style="vertical-align:middle; width:301px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Add <span class="f_BoldKeyword">Sheets</span> by defining sheet size parameters or geometry.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Stock Pane</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section allows you to define the <span class="f_BoldKeyword">Machine Tool</span>, <span class="f_BoldKeyword">Post Processor</span> and the Nested<span class="f_BoldKeyword"> Sheets</span>.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Create Stock Model" title="Create Stock Model" width="76" height="25" style="margin:0;width:76px;height:25px;border:none" src="doc_filesimage010.png"/></p>
+</td>
+<td style="vertical-align:middle; width:301px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Create Stock Model:</span> Allows you to create <span class="f_BoldKeyword">Stock</span> geometry. User can also delete a <span class="f_BoldKeyword">Stock</span> geometry by selecting <span class="f_BoldKeyword">Delete Stock</span>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Align" title="Align" width="75" height="25" style="margin:0;width:75px;height:25px;border:none" src="doc_filesimage011.png"/></p>
+</td>
+<td style="vertical-align:middle; width:301px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Align:</span> Allows you to <span class="f_BoldKeyword">Align</span> stock model to part and locate <span class="f_BoldKeyword">WCS</span> with respect to <span class="f_BoldKeyword">Part</span> or <span class="f_BoldKeyword">Stock</span> . &nbsp;This function is especially useful when the part model and the stock model are created without regard to their respective positional locations.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Define Stock Material" title="Define Stock Material" width="78" height="25" style="margin:0;width:78px;height:25px;border:none" src="doc_filesimage012.png"/></p>
+</td>
+<td style="vertical-align:middle; width:301px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Define Stock Material:</span> Allows you to select a material from the material list.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Operations to Nest</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section allows you to create machining operations &nbsp;The <span class="f_BoldKeyword">Profile-NEST</span> module allows you to create multiple <span class="f_BoldKeyword">2 Axis Profile</span> machining operations in a part file. This is a powerful feature that allows you to create an entire sequence of machining operations that is required in the nested sheet. &nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Set Current Coordinate Zero Location" title="Set Current Coordinate Zero Location" width="90" height="21" style="margin:0;width:90px;height:21px;border:none" src="work-zero-button-profile-nesting.png"/></p>
+</td>
+<td style="vertical-align:middle; width:378px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Add a <span class="f_BoldKeyword">Work Zero</span> to set the current work coordinate location for machining.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Nesting Parameters" title="Nesting Parameters" width="135" height="21" style="margin:0;width:135px;height:21px;border:none" src="nesting-parameters-button-profile-nesting.png"/></p>
+</td>
+<td style="vertical-align:middle; width:378px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Set <span class="f_BoldKeyword">Nesting Parameters</span> for the current <span class="f_BoldKeyword">Profiling Nesting</span> <span class="f_BoldKeyword">Machining Job</span>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Profile a Curve in 2 Axis Machining Mode" title="Profile a Curve in 2 Axis Machining Mode" width="128" height="21" style="margin:0;width:128px;height:21px;border:none" src="2axis-profiling-button-profile-nesting.png"/></p>
+</td>
+<td style="vertical-align:middle; width:378px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Add a <span class="f_BoldKeyword">2 Axis Profile</span> toolpath operation to the Machining Job. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Create Nesting Report" title="Create Nesting Report" width="111" height="21" style="margin:0;width:111px;height:21px;border:none" src="hmfile_hash_f5aacfc9.png"/></p>
+</td>
+<td style="vertical-align:middle; width:378px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Generate a <span class="f_BoldKeyword">Nesting Report</span> of the current <span class="f_BoldKeyword">Machining Job</span>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Execute Nest" title="Execute Nest" width="100" height="21" style="margin:0;width:100px;height:21px;border:none" src="execute-nest-icon.png"/></p>
+</td>
+<td style="vertical-align:middle; width:378px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Execute</span> the nest with current parameters.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Display Toggle Toolbar</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This toolbar is located at the base of the <span class="f_BoldKeyword">Machining Browser</span> and has the following controls:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Stock Model Visibility" title="Stock Model Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage028.png"/></p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldParameter">Stock Model Visibility</span><span class="f_BoldKeyword">: </span>Turn on/off stock model </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Material Texture Visibility" title="Material Texture Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage029.png"/></p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldParameter">Material Texture Visibility</span><span class="f_BoldKeyword">: </span>Turn on/off material texture visibility</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Toolpath Visibility" title="Toolpath Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage030.png"/></p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldParameter">Toolpath Visibility</span><span class="f_BoldKeyword">: </span>Turn on/off toolpath display</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Toggle Hidden Toolpath Display" title="Toggle Hidden Toolpath Display" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="toggle-display-of-hidden-toolpaths.png"/></p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldParameter">Hidden Toolpath Visibility</span>: Turn the hidden portions of toolpaths on/off.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Display Toolpath Levels" title="Display Toolpath Levels" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage031.png"/></p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldParameter">Display Toolpath Levels</span><span class="f_BoldKeyword">:</span> Displays tool path by Z levels</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="World CSYS Visibility" title="World CSYS Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage032-rh.png"/></p>
+<p class="p_Normal">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+<p class="p_Normal"><span class="f_BoldParameter">World CSYS Visibility</span><span class="f_BoldKeyword">: </span>Turns on/off of <span class="f_BoldKeyword">World Coordinate System</span> display.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:200px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><img alt="Machine CSYS Visibility" title="Machine CSYS Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage032.png"/></p>
+</td>
+<td style="vertical-align:middle; width:396px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldParameter">Machine CSYS Visibility</span><span class="f_BoldKeyword">: </span>Turns on/off of <span class="f_BoldKeyword">Machine Coordinate System</span> display.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?profile-nest-tab.html" target="_top">'+baseurl+'index.html?profile-nest-tab.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

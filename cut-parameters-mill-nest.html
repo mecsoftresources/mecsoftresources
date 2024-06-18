@@ -1,0 +1,326 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Profile-NEST Module &gt; 2 Axis Profiling &gt; Cut Parameters</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Cut Parameters,Profiling, 2½ Axis,Profiling, 2½ Axis Cut Parameters" />
+   <meta name="description" content="This Cut Parameters tab is similar for the Mill operations listed below. &nbsp;It allows you to define the cut parameters for the current Profiling operation. &nbsp;You can set Global..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "cut-parameters-mill-nest.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Cut Parameters</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?cut-parameters-mill-nest.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      Profile-NEST Module &gt; <a href="create-2axis-profiling-operation-mill-nest.html">2 Axis Profiling</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Cut Parameters</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="control-geometry-mill-nest.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="create-2axis-profiling-operation-mill-nest.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="cut-level-parameters-mill-nest.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">This <span class="f_BoldKeyword">Cut Parameters </span>tab is similar for the <span class="f_BoldKeyword">Mill</span> operations listed below. &nbsp;It allows you to define the cut parameters for the current <span class="f_BoldKeyword">Profiling</span> operation. &nbsp;You can set <span class="f_BoldKeyword">Global Parameters</span>, <span class="f_BoldKeyword">Cut Direction</span> and the <span class="f_BoldKeyword">Stepover Distance</span> via this tab of the operation dialog. &nbsp;The <span class="f_BoldKeyword">Global Parameters</span> section allows you to set the tolerance value to be used in machining. &nbsp;A uniform thickness or stock that needs to be left around the part can also be specified here. &nbsp;Refer to each option below. </p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Dialog Box: Cut Parameters tab, Profiling Operations</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:476px"><img alt="Cut Parameters tab, Profiling Operations" title="Cut Parameters tab, Profiling Operations" width="476" height="746" style="width:476px;height:746px;border:none" src="2x-profiling-cut-parameters-mill-nest.png"/><p style="text-align:center"><span class="f_ImageCaption">Cut Parameters tab, Profiling Operations</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Global Parameters</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Global Parameters</span> section allows you to set the tolerance value to be used in machining. A uniform thickness or stock that needs to be left around the part can be specified here.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Tolerance</span></p>
+<p class="p_Normal">This is the allowable deviation from the actual part geometry plus the <span class="f_BoldKeyword">Stock</span> allowance (if any). &nbsp;In <span class="f_BoldKeyword">2 Axis</span> methods, this <span class="f_BoldKeyword">Tolerance</span> is applied to <span class="f_BoldKeyword">XY</span> motions only.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:142px"><img alt="Tolerance" title="Tolerance" width="142" height="89" style="width:142px;height:89px;border:none" src="global-parameters-2x-vcarving-operations-tolerance.png"/><p style="text-align:center"><span class="f_ImageCaption">Tolerance</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">How to Increase Tool Path Accuracy</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="How to Increase Tool Path Accuracy" width="130" height="88" style="float:right;margin:0 0 0 5px;width:130px;height:88px;border:none" src="hmfile_hash_26f0c88f.png"/><span class="f_BoldKeyword">Tolerances</span> play a vital role in both design engineering and digital manufacturing. &nbsp;In design, the goal is to allow the broadest tolerance range possible while meeting your design specifications. This is because, generally speaking, there is a direct correlation between tighter tolerances and higher manufacturing costs.</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/how-to-increase-tool-path-accuracy/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Stock</span></p>
+<p class="p_Normal">This is the thickness of the layer that will remain on top of the part after the toolpath is complete. Roughing operations generally leave a thin layer of stock. &nbsp;For finishing operations this value is zero.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:142px"><img alt="Stock" title="Stock" width="142" height="89" style="width:142px;height:89px;border:none" src="global-parameters-2x-vcarving-operations-stock.png"/><p style="text-align:center"><span class="f_ImageCaption">Stock</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Compensation</span></p>
+<p class="p_Normal">This enables cutter compensation. &nbsp;The compensation direction, left or right, is determined by the <span class="f_BoldKeyword">Cut Direction</span> selected (<span class="f_BoldKeyword">Climb</span> or <span class="f_BoldKeyword">Conventional</span>).</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Cut Direction</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BoldParameter"><span class="f_BoldParameter">Climb (Down Cut) &nbsp;</span></p>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Climb</span> (<span class="f_BoldKeyword">Down Cut</span>) and the tool will be maintained in a downward motion into the stock.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:123px"><img alt="Climb (Down Cut)" title="Climb (Down Cut)" width="123" height="82" style="width:123px;height:82px;border:none" src="doc_filesimage575.png"/><p style="text-align:center"><span class="f_ImageCaption">Climb (Down Cut)</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Conventional (Up Cut) &nbsp;</span></p>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Conventional</span> (<span class="f_BoldKeyword">Up Cut</span>) and the direction of the tool will be maintained in an upward motion out of the stock.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:119px"><img alt="Conventional (Up Cut)" title="Conventional (Up Cut)" width="119" height="82" style="width:119px;height:82px;border:none" src="doc_filesimage576.png"/><p style="text-align:center"><span class="f_ImageCaption">Conventional (Up Cut)</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Mixed</span></p>
+<p class="p_Normal">Select <span class="f_BoldKeyword">Mixed</span> and the direction of cutting is alternated between each parallel plane. &nbsp;This is a mixture of both <span class="f_BoldKeyword">Climb</span> and <span class="f_BoldKeyword">Conventional</span> cutting of the stock.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:128px"><img alt="Mixed" title="Mixed" width="128" height="77" style="width:128px;height:77px;border:none" src="doc_filesimage577.png"/><p style="text-align:center"><span class="f_ImageCaption">Mixed</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Understanding Climb vs Conventional Milling</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Understanding Cut Levels in 2½ Axis Machining" width="130" height="130" style="float:right;margin:0 0 0 5px;width:130px;height:130px;border:none" src="hmfile_hash_dd2ca297.png"/>One of the basic concepts to understand in any milling operation is <span class="f_BoldKeyword">Cut Direction</span>. &nbsp;It can be characterized by how the flutes of the cutting tool engage the stock material and form the chip that is removed during cutting. In many of MecSoft CAM’s 2½ &amp; 3 Axis toolpath strategies you will see that <span class="f_BoldKeyword">Cut Direction</span> is defined by selecting one of three options, <span class="f_BoldKeyword">Climb</span>, <span class="f_BoldKeyword">Conventional</span> or <span class="f_BoldKeyword">Mixed</span>. &nbsp;Let’s take a look at the characteristics of each option.</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/understanding-climb-vs-conventional-milling/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span class="f_BoldParameter">For Z Level Cuts:</span><br />
+When <span class="f_BoldKeyword">Mixed</span> is selected, zigzag motions are applied between step downs to eliminate tool retracts between z levels. &nbsp;If <span class="f_BoldKeyword">Climb</span> or <span class="f_BoldKeyword">Conventional</span> is selected, retract between z levels are applied. &nbsp;Refer to the images below:</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="margin:0 auto; width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_ImageCaption"><div style="margin:0;width:226px"><img alt="Climb or Conventional" title="Climb or Conventional" width="226" height="183" style="width:226px;height:183px;border:none" src="2x-profiling-climb-or-conventional-at-each-z-level.png"/><p style="text-align:center"><span class="f_ImageCaption">Climb or Conventional</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_ImageCaption"><div style="margin:0;width:191px"><img alt="Mixed" title="Mixed" width="191" height="183" style="width:191px;height:183px;border:none" src="2x-profiling-mixed-zigzag-at-each-z-level.png"/><p style="text-align:center"><span class="f_ImageCaption">Mixed</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Cut Start Point for Closed Curves</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Check this box to move the cut start point to the mid-point of the longest side of a closed curve.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:140px"><img alt="Use Midpoint of Longest Curve" title="Use Midpoint of Longest Curve" width="140" height="82" style="width:140px;height:82px;border:none" src="use-midpoint-of-longest-side-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Use Midpoint of Longest Curve</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Cutting Side</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 7px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Specify</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 39px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select this option to activate the <span class="f_BoldKeyword">Cutting Side</span> parameters in this dialog.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Right of Curve / Left of Curve</span></p>
+<p class="p_Normal"><span class="f_BoldKeyword">Right</span> or <span class="f_BoldKeyword">Left</span> determines the side of the curve to cut. &nbsp;This can be set for both open and closed curves.  <span class="f_BoldKeyword">Right</span> or <span class="f_BoldKeyword">Left</span> is determined by the start point and direction.</p>
+<div class="p_Normal"><div style="margin:0;width:148px"><img alt="Cut Start Side" title="Cut Start Side" width="148" height="108" style="width:148px;height:108px;border:none" src="cut-start-side-right-left-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Cut Start Side</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Use Inside/Outside for Closed Curves</span></p>
+<p class="p_Normal">Select this option if you have a closed curve region. &nbsp;Then select <span class="f_BoldKeyword">Inside</span> or <span class="f_BoldKeyword">Outside</span> to have the tool cut on that side.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:110px"><img alt="Inside" title="Inside" width="110" height="66" style="width:110px;height:66px;border:none" src="use-inside-for-curt-side-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Inside</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:124px"><img alt="Outside" title="Outside" width="124" height="74" style="width:124px;height:74px;border:none" src="use-outside-for-curt-side-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Outside</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Alternate using Nesting</span></p>
+<p class="p_Normal">If your control geometry has nested curves, check this box to alternate the cut side (i.e., <span class="f_BoldKeyword">Outside</span>/<span class="f_BoldKeyword">Inside</span> or <span class="f_BoldKeyword">Inside</span>/<span class="f_BoldKeyword">Outside</span>). You can use the <a href="sorting-parameters-mill-nest.html" class="topiclink">Sort Parameters</a> tab to sort clustered profiles.</p>
+<div class="p_Normal"><div style="margin:0;width:125px"><img alt="On" title="On" width="125" height="120" style="width:125px;height:120px;border:none" src="alternate-using-nesting-on.png"/><p style="text-align:center"><span class="f_ImageCaption">On</span></p></div></div>
+<p class="p_Normal">&nbsp;</p>
+<div class="p_Normal"><div style="margin:0;width:120px"><img alt="Off" title="Off" width="120" height="120" style="width:120px;height:120px;border:none" src="alternate-using-nesting-off.png"/><p style="text-align:center"><span class="f_ImageCaption">Off</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Stepover Control</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This is how wide your cut should be. &nbsp;The <span class="f_BoldKeyword">Step/Cut</span> determines your stepover. &nbsp;For example if Total<span class="f_BoldKeyword"> Cut Width</span> is set to 1.0 and <span class="f_BoldKeyword">Step/Cut</span> is set to 0.25, there will be 4 passes created.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:116px"><img alt="Total Cut Width" title="Total Cut Width" width="116" height="102" style="width:116px;height:102px;border:none" src="stepover_zoom80.png"/><p style="text-align:center"><span class="f_ImageCaption">Total Cut Width</span></p></div></div>
+<p class="p_Normal">This will determine the stepover for each cutting pass beginning at your total cut width and ending at your control geometry.</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:116px"><img alt="Total Cut Width" title="Total Cut Width" width="116" height="102" style="width:116px;height:102px;border:none" src="stepover_zoom80.png"/><p style="text-align:center"><span class="f_ImageCaption">Total Cut Width</span></p></div></div>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Corner Cleanup</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Check the <span class="f_BoldKeyword">Corner Cleanup</span> box to automatically detect corners that the tool could not reach between each pass. &nbsp;The system will then add a toolpath based on the uncut area detected.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 33px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Perform Global Gauge Check</a></span></td></tr></table></div><div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 65px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">With this parameter checked, the cutter will not violate any of the selected control geometry. This option only works with closed curves as shown in the illustration below.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal" style="text-align: right;"><div style="margin:0 0 0 auto;width:136px"><img alt="Gauge Check ON" title="Gauge Check ON" width="136" height="90" style="width:136px;height:90px;border:none" src="2x-profile-gauge-check-on.png"/><p style="text-align:center"><span class="f_ImageCaption">Gauge Check ON</span></p></div></div>
+<p class="p_Normal" style="text-align: right;"><span class="f_ImageCaption"> &nbsp; &nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_ImageCaption"> &nbsp; &nbsp;</span></p>
+<div class="p_Normal"><div style="margin:0;width:136px"><img alt="Gauge Check OFF" title="Gauge Check OFF" width="136" height="90" style="width:136px;height:90px;border:none" src="2x-profile-gauge-check-off.png"/><p style="text-align:center"><span class="f_ImageCaption">Gauge Check OFF</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?cut-parameters-mill-nest.html" target="_top">'+baseurl+'index.html?cut-parameters-mill-nest.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Features &gt; Knowledge Base for Hole Features</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Automatic Feature Machining (AFM),Automatic Feature Machining (AFM) Create Hole Machining KB,Features Tab,Features Tab Create Machining KB for Selected Hole Feature,Knowledge Base for Hole Features,Knowledge Base for Hole Features Available Hole Making Operations,Knowledge Base for Hole Features Create for Selected Hole Feature,Knowledge Base for Hole Features Create Hole Feature MOpSet,Knowledge Base for Hole Features Desired Operations,Knowledge Base for Hole Features Hole Cross Section,Knowledge Base for Hole Features Save as Knowledge Base,Knowledge Base for Hole Features Save in AFM Knowledge Base,Knowledge Base for Hole Features Save in Knowledge Base,Knowledge Base for Hole Features Set Top Z / Set Bottom Z" />
+   <meta name="description" content="Use this dialog to create a set of machining operations (MOpSet) for a Hole Feature that you have selected from the Features tab of the Machining Objects Browser. &nbsp;This dialog..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "createmachiningkbforselectedholefeature.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Knowledge Base for Hole Features</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?createmachiningkbforselectedholefeature.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a> &gt; <a href="aboutfeaturemachining.html">Features</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Knowledge Base for Hole Features</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="createmachiningkbformillingfeatures.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="aboutfeaturemachining.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="hole-features-recognized.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Use this dialog to create a set of machining operations (<span class="f_BoldKeyword">MOpSet</span>) for a <span class="f_BoldKeyword">Hole Feature</span> that you have selected from the <span class="f_BoldKeyword">Features</span> tab of the Machining<span class="f_BoldKeyword"> Objects Browser</span>. &nbsp;This dialog will not display unless you have first selected a <span class="f_BoldKeyword">Hole Feature</span> from the <span class="f_BoldKeyword">Features</span> tab.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Dialog Box: Select/Load/Create Operations</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This dialog contains three sections:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: 'Arial';display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_BoldKeyword">Available Hole Making Operations</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif;"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: 'Arial';display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_BoldKeyword">Desired Operations</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif;"> &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="font-family: 'Arial';display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_BoldKeyword">Hole Cross Section</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif;"> &nbsp; </span></p><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">These are used to define a set of operations for the selected </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Hole Feature</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">. &nbsp;Each section is described below.</span></p>
+<div class="p_Normal"><div style="margin:0;width:608px"><img alt="Dialog Box: Select/Load Operations for Creating Hole Features" title="Dialog Box: Select/Load Operations for Creating Hole Features" width="608" height="524" style="width:608px;height:524px;border:none" src="select-load-operations-for-creating-hole-features.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Select/Load Operations for Creating Hole Features</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Available Hole Making Operations</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">In the left column of the dialog you will see the list of available operations that you can use to machine your <span class="f_BoldKeyword">Hole Feature</span>. &nbsp;Also, refer to the <span class="f_BoldKeyword">K-Bases</span> Tab of the <span class="f_BoldKeyword">Machining Objects Browser</span> for more information about the use of knowledge bases. </p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Desired Operations</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section of the dialog contains the operations that you wish to use to program the selected <span class="f_BoldKeyword">Hole Feature</span>. &nbsp;The top-level folder (<span class="f_BoldKeyword">Hole Feature 1</span> in the above dialog) is the <span class="f_BoldKeyword">Hole Feature</span> you have selected from the <span class="f_BoldKeyword">Features</span> tab of the <span class="f_BoldKeyword">Machining Objects Browser</span>.</p>
+<p class="p_Normal">Choose from the <span class="f_BoldKeyword">Available Hole Making Operations</span> listed on the left of the dialog and drag them to the <span class="f_BoldKeyword">Desired Operations</span> column (i.e., drag folder on left to folder on right). &nbsp;In the above dialog example, <span class="f_BoldKeyword">Center Drill</span>, <span class="f_BoldKeyword">Standard Drill</span> and <span class="f_BoldKeyword">Chamfering</span> operations were dragged from the left column to the right column.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Hole Cross Section</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Hole Cross Section</span> pane of the dialog shows you a graphical cross-section representation of the selected <span class="f_BoldKeyword">Hole Feature</span>. &nbsp;See Hole<span class="f_BoldKeyword"> Feature Cross-Section Rules</span>. &nbsp;These rules are applied when a detected hole feature's cross-section varies from those found in the <span class="f_BoldKeyword">Default AFM Knowledge Base</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Set Top Z / Set Bottom Z</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Move Up/Move Down" title="Move Up/Move Down" width="40" height="21" style="float:left;margin:0 10px 0 0;width:40px;height:21px;border:none" src="icon-topz-bottm-z-hole-features.png"/>These fields appear when you select an operation you have dragged to the <span class="f_BoldKeyword">Desired Operations</span> column. &nbsp;They contain the <span class="f_BoldKeyword">Top Z</span> and <span class="f_BoldKeyword">Bottom Z</span> values extracted from the selected <span class="f_BoldKeyword">Hole Feature</span>. &nbsp;You can change the <span class="f_BoldKeyword">Top</span> and <span class="f_BoldKeyword">Bottom Z</span> values incrementally by selecting the <span class="f_BoldKeyword">Move Up</span> or <span class="f_BoldKeyword">Move Down</span> buttons provided. &nbsp;The new values will be displayed graphically in the <span class="f_BoldKeyword">Hole Preview</span> pane of the dialog. &nbsp;Note that changing these values will ONLY apply to the operation you have selected from the <span class="f_BoldKeyword">Desired Operations</span> column of the dialog.</p>
+<p class="p_BoldKeyword" style="margin: 0 0 0 24px;"><span class="f_BoldKeyword">Diameter</span></p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;">These diameter values are also extracted from the actual <span class="f_BoldKeyword">Hole Feature</span> geometry and displayed as reference.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Create Hole Feature MOpSet</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Pick this button to generate a new machining operation from the <span class="f_BoldKeyword">Hole Feature</span> and its <span class="f_BoldKeyword">Desired Operations</span>. &nbsp;They will be place under your active <span class="f_BoldKeyword">Setup</span> of the <span class="f_BoldKeyword">Machining Job</span> in the <span class="f_BoldKeyword">Machining Objects Browser</span>. &nbsp;The example machining job shown below shows the selected machining operations for <span class="f_BoldKeyword">Hole Feature 2</span> that is shown in the dialog above.</p>
+<p class="p_Normal">You can then select each operation to review/edit any of it parameters such as <span class="f_BoldKeyword">Cut Parameters</span>, <span class="f_BoldKeyword">Tool</span>, <span class="f_BoldKeyword">Feeds &amp; Speeds</span>, <span class="f_BoldKeyword">Clearance</span>, etc.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/>When you pick <span class="f_BoldKeyword">Create Hole Feature MOpSet</span>, the new operations are created but the toolpaths are not generated yet. &nbsp;It is important that you review each new operation and make any specific changed that you require, such as selecting the <span class="f_BoldKeyword">Tool</span>, <span class="f_BoldKeyword">Cutting Parameters</span>, etc.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="hole-feature-ops-browser-example" width="204" height="200" style="margin:0;width:204px;height:200px;border:none" src="hole-feature-ops-browser-example.png"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:300px"><img alt="Hole Feature2 example with 6 Hole Instances" title="Hole Feature2 example with 6 Hole Instances" width="300" height="181" style="width:300px;height:181px;border:none" src="hole-feature-example.png"/><p style="text-align:center"><span class="f_ImageCaption">Hole Feature example with 6 Hole Instances</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Save as Knowledge Base</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Pick this button to save the <span class="f_BoldKeyword">Hole Feature</span> and its <span class="f_BoldKeyword">Desired Operations</span> as a new <span class="f_BoldKeyword">Knowledge Base</span> (*.vkb) file. &nbsp;By default, the <span class="f_BoldKeyword">Hole Feature</span> knowledge base files are located at (<span class="f_BoldKeyword">C:\ProgramData\MecSoft Corporation\RhinoCAM 20xx for Rhino x.x\FeatureBasedMachiningKBs\</span>). &nbsp;Also, refer to the <span class="f_BoldKeyword">K-Bases</span> Tab of the <span class="f_BoldKeyword">Machining Objects Browser</span> for more information about the use of knowledge bases.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Save in AFM Knowledge Base</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_Numbered">Select this button to save the </span>the <span class="f_BoldKeyword">Hole Feature</span> and its <span class="f_BoldKeyword">Desired Operations</span><span class="f_Numbered"> into the </span><span class="f_BoldKeyword">Default (AFM) Knowledge Base</span><span class="f_Numbered"> file. &nbsp;This file is </span>defined in the Features<span class="f_BoldKeyword"> section of the CAM Preferences</span> dialog.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Save in Knowledge Base</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_Numbered">Select this button to save the </span>the <span class="f_BoldKeyword">Hole Feature</span> and its <span class="f_BoldKeyword">Desired Operations</span><span class="f_Numbered"> into an</span><span class="f_BoldKeyword"> (AFM) Knowledge Base</span><span class="f_Numbered"> file that is not set as the </span><span class="f_BoldKeyword">Default (AFM)</span><span class="f_Numbered"> </span>defined in the <span class="f_BoldKeyword">Features section of the CAM Preferences</span> dialog.</p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?createmachiningkbforselectedholefeature.html" target="_top">'+baseurl+'index.html?createmachiningkbforselectedholefeature.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

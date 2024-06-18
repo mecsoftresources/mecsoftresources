@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Create a Work Zero</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Create a Work Zero" />
+   <meta name="description" content="When you zero your CNC machine for a job, you can tell RhinoCAM where this Work Zero location is. &nbsp;Your G-Code coordinates will then be calculated from this location. &nbsp;You can..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-create-a-work-zero.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Create a Work Zero</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-create-a-work-zero.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Create a Work Zero</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-print-a-tool-list.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="how-to-create-a-tool.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">When you zero your CNC machine for a job, you can tell <span class="f_BoldKeyword">RhinoCAM</span> where this <span class="f_BoldKeyword">Work Zero</span> location is. &nbsp;Your G-Code coordinates will then be calculated from this location. &nbsp;You can also have multiple <span class="f_BoldKeyword">Work Zero</span> locations defined in your part. &nbsp;If no <span class="f_BoldKeyword">Work Zero</span> is defined, then coordinates are measured from the <span class="f_BoldKeyword">WCS</span> origin of the part.</p>
+<p class="p_Normal">To Create a <span class="f_BoldKeyword">Work Zero</span>:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-program-tab" width="395" height="160" style="margin:0;width:395px;height:160px;border:none" src="how-to-program-tab.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><img alt="Set Current Work Coordinate Zero" title="Set Current Work Coordinate Zero" width="90" height="25" style="margin:0;width:90px;height:25px;border:none" src="doc_filesimage013.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">Select </span><span class="f_BoldKeyword">Work Zero</span><span class="f_Numbered"> from the menu to display the dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:362px"><img alt="Dialog Box: Work Zero" title="Dialog Box: Work Zero" width="362" height="602" style="width:362px;height:602px;border:none" src="how-to-create-a-work-zero-1.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Work Zero</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">You have the option to </span><span class="f_BoldKeyword">Pick</span><span class="f_Numbered"> the </span><span class="f_BoldKeyword">Work Zero</span><span class="f_Numbered"> location. &nbsp;Select </span><span class="f_BoldKeyword">Pick</span><span class="f_Numbered"> and then select the pick button to select a point on the part. &nbsp;Its coordinates are populated into the dialog.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Optionally you can select </span><span class="f_BoldKeyword">Set to Stock Box</span><span class="f_Numbered"> and then select from the three available options </span><span class="f_BoldKeyword">Highest Z</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Mid Z</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Lowest Z</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">Then select the </span><span class="f_BoldKeyword">Zero Position</span><span class="f_Numbered">. &nbsp;The nine locations to choose from.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><span class="f_Numbered">Optionally you can also output the </span><span class="f_BoldKeyword">Work Offset Register</span><span class="f_Numbered">. &nbsp;To do so, check the box to </span><span class="f_BoldKeyword">Output Work Offset</span><span class="f_Numbered"> and then accept the </span><span class="f_BoldKeyword">54</span><span class="f_Numbered"> value or change it. &nbsp;This value will be posted to your G-Code file as </span><span class="f_BoldKeyword">G54</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span><span class="f_Numbered">Pick </span><span class="f_BoldKeyword">OK</span><span class="f_Numbered"> and you will see the </span><span class="f_BoldKeyword">Work Zero</span><span class="f_Numbered"> added to the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">. &nbsp;</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_Numbered">In the example shown below the </span><span class="f_BoldKeyword">Work Zero</span><span class="f_Numbered"> is set to the </span><span class="f_BoldKeyword">Stock Box</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Highest Z</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">South West</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="margin: 0 0 8px 24px;"><img alt="0040-sw" width="196" height="145" style="margin:0;width:196px;height:145px;border:none" src="0040-sw.png"/></p>
+<p class="p_Normal"><img alt="how-to-generate-a-toolpath-1" width="314" height="184" style="margin:0;width:314px;height:184px;border:none" src="how-to-generate-a-toolpath-1.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-create-a-work-zero.html" target="_top">'+baseurl+'index.html?how-to-create-a-work-zero.html</a></p>');
+
+</script>
+</body>
+</html>

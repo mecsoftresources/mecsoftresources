@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Knowledge Base &gt; Set KB Geometry Selection Rules</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Color,Color Set for Knowledge Bases,Features Tab,Features Tab Set for Knowledge Bases,Knowledge Base,Knowledge Base Set Rules for,Rules,Rules Set for Knowledge Bases,Rules Based Geometry Selection,Rules Based Geometry Selection Feature Filters,Rules Based Geometry Selection Geometry Properties Filters,Rules Based Geometry Selection Geometry Selection Rules Dialog,Rules Based Geometry Selection Geometry Sizes Filters,Rules Based Geometry Selection Geometry Topology Filters,Rules Based Geometry Selection Geometry Types Filters,Rules Based Geometry Selection Geometry vs. Features,Rules Based Geometry Selection Layer Filte,Rules Based Geometry Selection Select by these Layer names,Rules Based Geometry Selection Select by these Layers in file,Rules Based Geometry Selection Use Color Filters,Rules Based Geometry Selection Work Flow" />
+   <meta name="description" content="Available in: Xpress &nbsp;Standard &nbsp;Expert &nbsp;Professional &nbsp;Premium &nbsp;You can set Geometry Selection Rules for a Knowledge Base. &nbsp;This allows you to automate the geometry selec" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "knowledge_base_rules.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Rule Based Geometry Selection</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?knowledge_base_rules.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a> &gt; <a href="knowledgebase.html">Knowledge Base</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Rule Based Geometry Selection</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="load_a_knowledge_base.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="knowledgebase.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="set-kb-stock-definition-rules.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:87px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold; color: #800000;">Available in:</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">You can set <span class="f_BoldKeyword">Geometry</span> <span class="f_BoldKeyword">Selection</span> <span class="f_BoldKeyword">Rules</span> for a <span class="f_BoldKeyword">Knowledge</span> <span class="f_BoldKeyword">Base</span>. &nbsp;This allows you to automate the geometry selection process when the <span class="f_BoldKeyword">Knowledge</span> <span class="f_BoldKeyword">Base</span> or one of its machining operation is loaded into the Machining Job. &nbsp;To apply rules to a <span class="f_BoldKeyword">Knowledge Base</span>, use the <span class="f_BoldKeyword">K-Bases</span> tab on the <span class="f_BoldKeyword">Machining Objects Browser</span>. &nbsp;Refer to the work flow below.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Work Flow</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Here are the basic steps to apply selection rules to your knowledge base. &nbsp;This process can be complete at the time the KB is saved or afterward.</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First you need to create a knowledge base. &nbsp;Create one or more machining operation and they will appear in the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Right-click on the </span><span class="f_BoldKeyword">Machining Job</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Setup</span><span class="f_Numbered"> or the operation and select </span><span class="f_BoldKeyword">Save to Knowledge Base</span><span class="f_Numbered">. &nbsp;Give it a name (ex, My-KB) and location and pick </span><span class="f_BoldKeyword">OK</span><span class="f_Numbered">. &nbsp;A file with extension </span><span class="f_BoldKeyword">My-KB.vkb</span><span class="f_Numbered"> is created. &nbsp;If the </span><span class="f_BoldKeyword">Knowledge Base</span> has no selection rules set, a message is displayed allowing you set them at this time or continue with the steps below. &nbsp;See <span class="f_BoldKeyword"><a href="create_a_knowledge_base.html" class="topiclink">Create a Knowledge Base</a></span> for more information. </p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Go to the </span><span class="f_BoldKeyword">K-Bases</span><span class="f_Numbered"> tab of the </span><span class="f_BoldKeyword">Machining Objects Browser</span><span class="f_Numbered"> and select the </span><span class="f_BoldKeyword">Load Knowledge Base</span><span class="f_Numbered"> icon from the toolbar.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Navigate to where you saved your knowledge base, select the file (ex., </span><span class="f_BoldKeyword">My-KB.vkb</span><span class="f_Numbered">) and pick </span><span class="f_BoldKeyword">OK</span><span class="f_Numbered">. &nbsp;The machining operations in the knowledge base will be listed user K-Bases.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">Expand an operation in the knowledge base to locate </span><span class="f_BoldKeyword">Selection Rules</span><span class="f_Numbered"> and double-click on it to display the </span><span class="f_BoldKeyword">Geometry Selection Rules</span><span class="f_Numbered"> dialog. &nbsp;Use this dialog to set the rules for the operation and pick </span><span class="f_BoldKeyword">OK</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><span class="f_Numbered">Use the </span><span class="f_BoldKeyword">Save Knowledge Base</span><span class="f_Numbered"> icon from the toolbar to save your knowledge base.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Dialog: Geometry Selection Rules &gt; Geometry</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Geometry</span> tab allows you to set selection filters based on the <span class="f_BoldKeyword">Geometry Types</span> that reside in your part files. &nbsp;For example, you can set filters so that only rectangles are selected or only circles of a certain size are selected as <span class="f_BoldKeyword">Control Geometry</span> for a toolpath operation. &nbsp;Refer to the dialog shown below.</p>
+<div class="p_Normal"><div style="margin:0;width:476px"><img alt="Geometry Selection Rules" title="Geometry Selection Rules" width="476" height="641" style="width:476px;height:641px;border:none" src="geometry-selection-rules-geometry.png"/><p style="text-align:center"><span class="f_ImageCaption">Geometry Selection Rules</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:10px; border:none"><p class="p_Normal"><img alt="alert-icon" width="20" height="19" style="float:left;margin:0 10px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/>If you set <span class="f_BoldKeyword">Geometry Type Filter</span> &amp; <span class="f_BoldKeyword">Color Filter</span>, geometries that meet both these criteria will be selected. &nbsp;For example if you set <span class="f_BoldKeyword">Geometry Type Filter</span> to <span class="f_BoldKeyword">Circles</span> and <span class="f_BoldKeyword">Color Filter</span> to <span class="f_BoldKeyword">Red</span>, this would only select circles that are Red in color. Circles in other colors would not be selected.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Logic to use to combine filters specified in tabs</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This option allows you to use <span class="f_BoldKeyword">AND/OR</span> logic when combining &nbsp;the rules specified in each tab in this dialog. &nbsp;For example, you can combine the <span class="f_BoldKeyword">Layer Filters</span> tab with the <span class="f_BoldKeyword">Geometry</span> tab to only select <span class="f_BoldKeyword">Lines</span> on a certain <span class="f_BoldKeyword">Layer</span>. &nbsp;That would be an <span class="f_BoldKeyword">AND</span> condition. &nbsp;An <span class="f_BoldKeyword">OR</span> condition would allow the selection of all <span class="f_BoldKeyword">Lines</span> as well as all geometry of a certain <span class="f_BoldKeyword">Layer</span>. &nbsp;These are powerful options so be sure to experiment before finalizing on which option to use. </p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Geometry vs. Features</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select <span class="f_BoldKeyword">Geometry</span> to specify additional geometry selection filters. &nbsp;These filters can be used to select only a certain geometry types when the toolpath operation is <span class="f_BoldKeyword">Generated</span> after being inserted from your <span class="f_BoldKeyword">Knowledge Base</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Geometry Types Filters</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">These <span class="f_BoldKeyword">Geometry Type Filters</span> can be used to select only these (checked) geometry types when the toolpath operation is <span class="f_BoldKeyword">Generated</span> after being inserted from your <span class="f_BoldKeyword">Knowledge Base</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Geometry Sizes Filters</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Geometry Size Filters</span> can be used to limit the selection of geometry based on size measured in the default units setting of the part file.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Use diameter range for arcs/circles &nbsp;</span></p>
+<p class="p_Normal">Check this box and then enter the <span class="f_BoldKeyword">Minimum diameter</span> and <span class="f_BoldKeyword">Maximum diameter</span> values for the <span class="f_BoldKeyword">Arcs</span> or <span class="f_BoldKeyword">Circles</span> to be selected. &nbsp;For example, you could check the box next to <span class="f_BoldKeyword">Circles</span> under <span class="f_BoldKeyword">Geometry Types Filters</span> and then use these values to further limit the selection of circles whose diameters fall within a <span class="f_BoldKeyword">Min</span> and <span class="f_BoldKeyword">Max</span> range.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Use bounding box side length range &nbsp;</span></p>
+<p class="p_Normal">Check this box and then enter the <span class="f_BoldKeyword">Minimum side length</span> and Maximum side length for rectangles to be selected. &nbsp;For example, you could check the box next to <span class="f_BoldKeyword">Rectangles</span> under <span class="f_BoldKeyword">Geometry Types Filters</span> and then use these values to further limit the selection of rectangles whose side lengths fall within these Min and Max values.</p>
+<p class="p_Normal"><span class="f_BoldParameter">Use bounding box diagonal length range &nbsp;</span></p>
+<p class="p_Normal">Check this box and then enter the <span class="f_BoldKeyword">Minimum Diagonal Length</span> and <span class="f_BoldKeyword">Maximum Diagonal Length</span> for rectangles to be selected. &nbsp;For example, you could check the box next to <span class="f_BoldKeyword">Rectangles</span> under <span class="f_BoldKeyword">Geometry Types Filters</span> and then use these values to further limit the selection of rectangles whose diagonal lengths fall within these Min and Max values.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Geometry Properties Filters</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Geometry Property Filters</span> can be used to select only <span class="f_BoldKeyword">Open</span> or <span class="f_BoldKeyword">Closed</span> geometry when the toolpath operation is <span class="f_BoldKeyword">Generated</span> after being inserted from your <span class="f_BoldKeyword">Knowledge Base</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Geometry Topology Filters</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Geometry Topology Filters</span> can be used to Ignore or not Ignore outermost curve regions. &nbsp;For example, if your part has a flat area with inner and outer boundaries, you can use this filter to automatically select the <span class="f_BoldKeyword">Inner</span> or <span class="f_BoldKeyword">Outer</span> boundary.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Dialog: Geometry Selection Rules &gt; Layer Filters Tab</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Layer Filters</span> tab allows you to set selection filters based on the <span class="f_BoldKeyword">Layers</span> that reside in your part files. &nbsp;For example, you can set filters so that only the geometry on a specific <span class="f_BoldKeyword">Layer</span> gets assigned as <span class="f_BoldKeyword">Control Geometry</span> for a toolpath operation. Refer to the dialog shown below.</p>
+<div class="p_Normal"><div style="margin:0;width:476px"><img alt="Layer Filter Rules" title="Layer Filter Rules" width="476" height="536" style="width:476px;height:536px;border:none" src="geometry-selection-rules-layers.png"/><p style="text-align:center"><span class="f_ImageCaption">Layer Filter Rules</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Geometry vs. Features</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select <span class="f_BoldKeyword">Geometry</span> to specify additional geometry selection filters. &nbsp;These filters can be used to select only a certain geometry types when the toolpath operation is <span class="f_BoldKeyword">Generated</span> after being inserted from your <span class="f_BoldKeyword">Knowledge Base</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Select by these Layers in file</a></span></td></tr></table></div><div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section allows you to select ONLY the <span class="f_BoldKeyword">Layers</span> that you wish <span class="f_BoldKeyword">Geometry Selection Rules</span> (from the <span class="f_BoldKeyword">Geometry</span> tab) to apply to. &nbsp;Check the box next to the desired <span class="f_BoldKeyword">Layers</span> available for selection.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Select by these Layer names</a></span></td></tr></table></div><div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_BoldKeyword">Layer Name to Add</span> &nbsp;</p>
+<p class="p_Normal">Alternately, you can specify the names of <span class="f_BoldKeyword">Layers</span> that you want subjected to the <span class="f_BoldKeyword">Geometry Selection Rules</span> (on the <span class="f_BoldKeyword">Geometry</span> tab of this dialog). &nbsp;Enter the name of the <span class="f_BoldKeyword">Layer</span> and then pick the <span class="f_BoldKeyword">Add</span> button to add it to the list of <span class="f_BoldKeyword">Layers</span>.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Names</span> &nbsp;</p>
+<p class="p_Normal">This list contains the names of the <span class="f_BoldKeyword">Layers</span> that you want subjected to the <span class="f_BoldKeyword">Geometry Selection Rules</span> (on the <span class="f_BoldKeyword">Geometry</span> tab of this dialog).</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Delete Active</span> &nbsp;</p>
+<p class="p_Normal">To remove a <span class="f_BoldKeyword">Layer</span> from the list, select it and then pick the <span class="f_BoldKeyword">Delete Active</span> button. &nbsp;This <span class="f_BoldKeyword">DOES NOT</span> delete the actual <span class="f_BoldKeyword">Layer</span> in the part file. &nbsp;It is only removes it from the list of <span class="f_BoldKeyword">Layers</span> subject to the <span class="f_BoldKeyword">Geometry Selection Rules</span> (on the <span class="f_BoldKeyword">Geometry</span> tab of this dialog).</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Dialog: Geometry Selection Rules &gt; Colors Tab</a></span></td></tr></table></div><div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Color Filters</span> tab allows you to set selection filters based on the <span class="f_BoldKeyword">Color properties</span> of entities that reside in your part files. &nbsp;For example, you can set filters so that only the geometry of a specific color attribute gets assigned as <span class="f_BoldKeyword">Control Geometry</span> for a toolpath operation. &nbsp;Refer to the dialog shown below.</p>
+<div class="p_Normal"><div style="margin:0;width:476px"><img alt="Color Filter Rules" title="Color Filter Rules" width="476" height="461" style="width:476px;height:461px;border:none" src="geometry-selection-rules-colors.png"/><p style="text-align:center"><span class="f_ImageCaption">Color Filter Rules</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span class="f_BoldKeyword">Use Color Filters</span> &nbsp;</p>
+<p class="p_Normal">Check this box to enable <span class="f_BoldKeyword">Color Filters</span>. &nbsp;It allows you to set selection filters based on the <span class="f_BoldKeyword">Color</span> properties of entities that reside in your part files. &nbsp;For example, you can set filters so that only the geometry of a specific color attribute gets assigned as <span class="f_BoldKeyword">Control Geometry</span> for a toolpath operation.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Include Color</span> &nbsp;</p>
+<p class="p_Normal">Select a color from this <span class="f_BoldKeyword">Color Selector</span>. &nbsp;It will be added to the <span class="f_BoldKeyword">Color Filter List</span> below.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Delete Active</span> &nbsp;</p>
+<p class="p_Normal">Select this button to <span class="f_BoldKeyword">Remove</span> the currently selected <span class="f_BoldKeyword">Color</span> from the <span class="f_BoldKeyword">Color Filter List</span>.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Pick Color</span> &nbsp;</p>
+<p class="p_Normal">Select this button to pick a <span class="f_BoldKeyword">Color</span> from your part file. &nbsp;The dialog will minimize allowing you to select an entity. &nbsp;It's color will be added to the <span class="f_BoldKeyword">Color Filter List</span>.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Colors List</span> &nbsp;</p>
+<p class="p_Normal">This is the list of colors that will be used when assigning <span class="f_BoldKeyword">Control Geometry</span> for a toolpath operation. &nbsp;If a geometry entity has this <span class="f_BoldKeyword">Color</span>, it will be assigned as <span class="f_BoldKeyword">Control Geometry</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Dialog: Geometry Selection Rules &gt; Feature Filters Tab</a></span></td></tr></table></div><div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Feature Filters</span> tab allows you to set selection filters based on the <span class="f_BoldKeyword">Feature Types</span> supported by the current operation in your <span class="f_BoldKeyword">AFM</span> <span class="f_BoldKeyword">Knowledge Base</span>. &nbsp;For example, you can set filters so that only <span class="f_BoldKeyword">Prismatic Pocket Features</span> get assigned as <span class="f_BoldKeyword">Control Geometry</span> for a the <span class="f_BoldKeyword">2½ Pocketing</span> operation in your <span class="f_BoldKeyword">AFM KB</span>. &nbsp;Refer to the dialog shown below. &nbsp;To learn more about using Features in <span class="f_BoldKeyword">RhinoCAM</span> see <span class="f_BoldKeyword">Features</span> Tab, <span class="f_BoldKeyword">Machining Objects (Mobs) Browser</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:476px"><img alt="Feature Filters" title="Feature Filters" width="476" height="390" style="width:476px;height:390px;border:none" src="geometry-selection-rules-features-filters-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">Feature Filters</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px -2px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Feature Types</a></span></td></tr></table></div><div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 30px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This list will display the feature types supported by the active toolpath operation (i.e., the operation that invoked this dialog). &nbsp;First, select <span class="f_BoldKeyword">Features</span> from the top of the dialog to display the <span class="f_BoldKeyword">Feature Filters</span> tab. &nbsp;Then select the feature types to assign as <span class="f_BoldKeyword">Control Geometry</span> for the active toolpath operation.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-indent: -32px; margin: 0 0 8px 56px;">&nbsp;</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?knowledge_base_rules.html" target="_top">'+baseurl+'index.html?knowledge_base_rules.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MESH Module &gt; Ribbon Bar &gt; 3D Print Tab &gt; 3D Print &gt; Check</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="3D Print,3D Print Check Mesh,Check Mesh,Analysis Tips,Tips,Tips Analysis" />
+   <meta name="description" content="Use this command to check a selected mesh to make sure it meets the specifications of the 3D printer you have selected using the Select command. &nbsp;The command dialog also..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "check.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Check</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?check.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MESH Module &gt; <a href="mesh_ribbon_bar_tabs.html">Ribbon Bar</a> &gt; <a href="3d-print-tab.html">3D Print Tab</a> &gt; 3D Print&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Check</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="fit.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="3d-print-tab.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="export.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="Check Mesh" title="Check Mesh" width="57" height="22" style="float:left;margin:0 10px 0 0;width:57px;height:22px;border:none" src="icon-check.png"/>Use this command to check a selected mesh to make sure it meets the specifications of the 3D printer you have selected using the <a href="select.html" class="topiclink">Select</a> command. &nbsp;The command dialog also perform additional checks on your mesh (see below). &nbsp;Pass/Fail indicator icons are displayed. &nbsp;You can adjust the parameters re-check your results.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Read these Tips!</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">This command may change the shape of your mesh model!</span>: &nbsp;Experimentation with the methods and options listed below is advised until you understand and are satisfied with your results.</p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Diagnosing Problems</span>: &nbsp;Be sure to select the <span class="f_BoldKeyword">Diagnose</span> button to re-check your mesh after making <span class="f_BoldKeyword">ANY</span> adjustments to the parameters.</p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><img alt="Toggle Printer Volume Visibility" title="Toggle Printer Volume Visibility" width="24" height="24" style="float:right;margin:0 0 0 5px;width:24px;height:24px;border:none" src="icon-toggle-printer-volume-visibility.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Toggle Printer Volume Visibility</span>: &nbsp;Select this<span class="f_ImageCaption">  </span>icon to display the <span class="f_BoldKeyword">Volume</span> of your selected <span class="f_BoldKeyword">3D Printer</span> in the graphics window, then use the <span class="f_BoldKeyword"><a href="fit.html" class="topiclink">Fit</a></span> command to reposition your mesh within this volume if needed.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Command Prompts</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Select mesh(es) to check.. Press Enter when done:</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select mesh(es) and click &quot;Diagnose&quot;. Hit Right Mouse Button/Cancel to exit.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Basic Procedure</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:234px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Screen Pick</span></p>
+</td>
+<td style="vertical-align:top; width:262px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Optional Information</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 1</span></p>
+</td>
+<td style="vertical-align:top; width:234px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Pick the <span class="f_BoldKeyword">Check</span> icon from the <a href="3d-print-tab.html" class="topiclink">3D Print Tab</a>.</p>
+</td>
+<td rowspan="2"  style="vertical-align:middle; width:262px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">Steps 1 &amp; 2 can be performed in reverse order. &nbsp;You can select a mesh first and then select the command icon.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 2</span></p>
+</td>
+<td style="vertical-align:top; width:234px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the mesh you want to check.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 3</span></p>
+</td>
+<td style="vertical-align:top; width:234px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">From the command dialog, select the <span class="f_BoldKeyword">Checks</span> to run and then pick the <span class="f_BoldKeyword">Diagnose</span> button to display the results.</p>
+</td>
+<td style="vertical-align:middle; width:262px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">The graphics window will display the color-coded results of the check according to the <span class="f_BoldKeyword">3D Printer</span> you have selected. &nbsp;See <a href="select.html" class="topiclink">Select</a> and <a href="specifications.html" class="topiclink">3D Printer Specifications</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">To Cancel this Command</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Before mesh(es) are selected: <img alt="Press the &lt;Esc&gt; key" title="Press the &lt;Esc&gt; key" width="47" height="32" style="margin:0;width:47px;height:32px;border:none" src="esc-key.png"/> <span style="font-style: italic;">or</span> <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/></p>
+<p class="p_Normal">After mesh(es) are selected: <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/> <span style="font-style: italic;">or </span><img alt="Pick Cancel from the RhinoCAM Browser" title="Pick Cancel from the RhinoCAM Browser" width="13" height="13" style="margin:0;width:13px;height:13px;border:none" src="cancel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">More Tips!</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Proper Mesh Positioning</span>: &nbsp;If your mesh model is positioned outside the volume specifications of the 3D printer you have selected using the <a href="select.html" class="topiclink">Select</a> command, use the <a href="fit.html" class="topiclink">Fit</a> command to position it correctly. &nbsp;Then use the <a href="check.html" class="topiclink">Check</a> command to verify that the mesh not only fits within the printer's volume but that it is also positioned correctly within that volume.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Abrupt changes in Curvature</span>: &nbsp;Use <span class="f_BoldKeyword"><a href="curvature_analysis.html" class="topiclink">Curvature</a> </span>and<span class="f_BoldKeyword"> <a href="reflection_line_analysis.html" class="topiclink">Reflection Lines</a></span> to show abrupt changes in facet curvature tangents on your mesh model. &nbsp;If unwanted curvatures or protrusions are found, try using the <a href="smooth_mesh.html" class="topiclink">Smooth</a> and <a href="re-mesh.html" class="topiclink">Re Mesh</a> commands and then analyze your mesh again to see the difference in curvature results.</p>
+<p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Imported Point Cloud Data</span>: &nbsp;The <span class="f_BoldKeyword"><a href="curvature_analysis.html" class="topiclink">Curvature</a></span> method is useful for analyzing mesh models created from imported point cloud data! &nbsp;Refer to the <a href="from_point_cloud.html" class="topiclink">Create Mesh from Point Cloud</a> command for more information.</p>
+<p class="p_Normal" style="margin: 0 0 8px 11px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Analyze before Printing</span>: &nbsp;It is <span style="color: #ff0000; text-decoration: underline;">ALWAYS</span> a good idea to use these <span class="f_BoldKeyword">Analysis</span> techniques before sending your mesh model to the 3D printer. &nbsp;They can reveal areas of concern that can be fixed, saving you valuable time and money!</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Check Mesh Options</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The following options and reference information is available from the <a href="the_mesh_browser.html" class="topiclink">Browser</a>:</p>
+<div class="p_Normal"><div style="margin:0;width:405px"><img alt="Check Mesh Options" title="Check Mesh Options" width="405" height="329" style="width:405px;height:329px;border:none" src="check-options-dialog.png"/><p style="text-align:center"><span class="f_ImageCaption">Check Mesh Options</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Selected 3D Printer Data</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Print Volume</span><span style="font-family: Arial,Helvetica,sans-serif;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif;">These values are determined by the 3D printer you select using the <a href="select.html" class="topiclink">Select</a> command. &nbsp;They are displayed for reference only. </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Selected Meshes</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Volume</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> </span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">This value displays the total volume of your selected mesh. &nbsp;If it exceeds the Max</span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;"> Print Volume</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> for the selected 3D printer, this check will fail.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">All meshes entirely within printer volume</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">If ANY facet in the selected mesh is located outside of the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Print Volume</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, this check will fail.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">All selected meshes closed</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">If your mesh model is not closed, this check will fail. &nbsp;You can use <a href="stitchandclose.html" class="topiclink">Stitch &amp; Close</a>, <a href="auto_repair.html" class="topiclink">Auto Fix</a> or <a href="check__repair.html" class="topiclink">Diagnose</a> to fix this problem automatically.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">No walls thinner than</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> </span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">If the width of any walls in the selected mesh fall below this parameter, this check will fail. &nbsp;Thin walls are displayed in the color selected.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">No overhangs greater than and higher than</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">If the overhang of facets in the selected mesh are greater than this </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Angle</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Height</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> parameter, this check will fail. &nbsp;Overhang areas are displayed in the color selected.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span class="f_BoldKeyword">Diagnose</span><span class="f_Numbered"> </span><br />
+<span class="f_Numbered">Select this button to &quot;re-check&quot; the selected mesh and display new results in the dialog and graphically on the screen.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Check Mesh Example</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">After selecting <span class="f_BoldKeyword">Cube Pro 2</span> as the 3D printer (see <a href="select.html" class="topiclink">Select</a>), the following mesh model was checked and the results displayed.</p>
+<p class="p_Normal"><img alt="Failed parameter check" title="Failed parameter check" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="icon-check-mesh-bad.png"/> indicates the mesh model failed a parameter check.</p>
+<p class="p_Normal"><img alt="Passed parameter check" title="Passed parameter check" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="icon-check-mesh-good.png"/> indicates the mesh model passed a parameter check.</p>
+<div class="p_Normal"><div style="margin:0;width:416px"><img alt="Check Mesh Results (Before)" title="Check Mesh Results (Before)" width="416" height="270" style="width:416px;height:270px;border:none" src="check-mesh-results-rh.png"/><p style="text-align:center"><span class="f_ImageCaption">Check Mesh Results (Before)</span></p></div></div>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal">After using the <a href="fit.html" class="topiclink">Fit</a>, <a href="stitchandclose.html" class="topiclink">Stitch &amp; Close</a> commands and then making some parameter adjustments, selecting the <span class="f_BoldKeyword">Diagnose</span> button finds that the mesh now passes all checks and is ready to 3D print.</p>
+<p class="p_Normal"><img alt="Passed parameter check" title="Passed parameter check" width="16" height="16" style="margin:0;width:16px;height:16px;border:none" src="icon-check-mesh-good.png"/> indicates the mesh model passed a parameter check.</p>
+<div class="p_Normal"><div style="margin:0;width:416px"><img alt="Check Mesh Results (After)" title="Check Mesh Results (After)" width="416" height="270" style="width:416px;height:270px;border:none" src="check-mesh-after-adjustments-rh.png"/><p style="text-align:center"><span class="f_ImageCaption">Check Mesh Results (After)</span></p></div></div>
+<p class="p_Normal">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="mesh_ribbon_bar_tabs.html" class="topiclink">The Ribbon Bar</a></p>
+<p class="p_Normal"><a href="3d-print-tab.html" class="topiclink">3D Print Tab</a></p>
+<p class="p_Normal"><a href="part-orientation.html" class="topiclink">Part Orientation</a></p>
+<p class="p_Normal"><a href="support-generation.html" class="topiclink">Support Generation</a></p>
+<p class="p_Normal"><a href="select.html" class="topiclink">Select 3D Printer</a></p>
+<p class="p_Numbered" style="margin: 0 0 8px 24px;"><span class="f_Numbered"><a href="specifications.html" class="topiclink">3D Printer Specifications</a></span></p>
+<p class="p_Normal"><a href="fit.html" class="topiclink">Fit Mesh</a></p>
+<p class="p_Normal"><a href="export.html" class="topiclink">Export Mesh</a></p>
+<p class="p_Normal"><a href="generate-g-code.html" class="topiclink">Generate G-Code</a></p>
+<p class="p_Normal"><a href="print.html" class="topiclink">Print</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?check.html" target="_top">'+baseurl+'index.html?check.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; System Errors &gt; How to: Fix the &quot;No Class Derived&quot; Error</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Errors: No Class Derived" />
+   <meta name="description" content="If the RhinoCAM plugin fails to load and errors out with No class derived from CRhinoPlugin in plugin file, perform the following steps:" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "howtoresolvethenoclassderivederror.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Fix the &quot;No Class Derived&quot; Error</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?howtoresolvethenoclassderivederror.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; System Errors&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Fix the &quot;No Class Derived&quot; Error</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="displayissuesrelatedtowindows7.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="howtoresolvetheplug-ininitializationfailederror.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">If the <span class="f_BoldKeyword">RhinoCAM</span> plugin fails to load and errors out with <span style="font-weight: bold;">No class derived from CRhinoPlugin in plugin file</span>, perform the following steps:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Close </span><span class="f_BoldKeyword">Rhino</span><span class="f_Numbered">.</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span>Download the <span class="f_BoldKeyword">.zip</span> file from the <a href="https://www.mecsoft.com/guest/Support%20Documents/2017/Troubleshoot/RC_Plug-inLoad_Issue-RegFix.zip" target="_blank" class="weblink">following link</a>: <a href="https://www.mecsoft.com/guest/Support%20Documents/2017/Troubleshoot/RC_Plug-inLoad_Issue-RegFix.zip" target="_blank" class="weblink">click here</a>. &nbsp;Download it to your downloads folder.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span>Go to your downloads folder, right click on the file and then click <span class="f_BoldKeyword">Extract All</span>.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span>After you extract the folder, you will see a file with <span class="f_BoldKeyword">.reg</span> extension. Select this file, right mouse button click and choose <span class="f_BoldKeyword">Merge</span>. Click <span class="f_BoldKeyword">Yes</span> when prompted by windows user account control.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span>Then select <span class="f_BoldKeyword">Yes</span> and <span class="f_BoldKeyword">OK</span>.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span>Now open <span class="f_BoldKeyword">Rhino</span> and this should load your <span class="f_BoldKeyword">RhinoCAM</span> plug-in.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span>If the plug-in still fails to load and displays the above error, close <span class="f_BoldKeyword">Rhino</span>.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span>Open your <span class="f_BoldKeyword">Registry</span> editor by typing <span class="f_BoldKeyword">regedit</span> into the <span class="f_BoldKeyword">Windows</span> search field.<br />
+&nbsp;<br />
+<span class="f_BoldKeyword">Windows 8 &amp; 8.1</span>: From the windows charms bar on the right in the search box type regedit<br />
+<span class="f_BoldKeyword">Windows 10</span>: type regedit under Search the web and Windows in your task bar.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span>From the left panel navigate to<span class="f_BoldKeyword"> HKEY_CURRENT_USER</span> -&gt; <span class="f_BoldKeyword">SOFTWARE</span> -&gt; <span class="f_BoldKeyword">Microsoft</span> -&gt; <span class="f_BoldKeyword">Windows NT</span> -&gt; <span class="f_BoldKeyword">CurrentVersion</span> -&gt; <span class="f_BoldKeyword">AppCompatFlags</span> -&gt; <span class="f_BoldKeyword">Layers</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span>On the right panel locate the line containing:<br />
+<span class="f_BoldKeyword">C:\Program Files\Rhinoceros x (64-bit)\System\Rhino.exe and Data set to $ IgnoreFreeLibrary&lt;RhinoCAM For Rhinox.0.rhp&gt;</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span>Delete this line and close registry editor.</p><p class="p_Normal" style="text-indent: 0; padding-left: 48px; margin-left: 0;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">12.</span>Open <span class="f_BoldKeyword">Rhino</span> and make sure the <span class="f_BoldKeyword">RhinoCAM</span> plug-in loads.</p><p class="p_Normal">Several other <span class="f_BoldKeyword">Rhino</span> plug-ins have had this error.  <a href="http://discourse.mcneel.com/t/no-class-derived-from-crhinoplugin-in-plug-in-file/11254/26" target="_blank" class="weblink">Click here for more information</a>.</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?howtoresolvethenoclassderivederror.html" target="_top">'+baseurl+'index.html?howtoresolvethenoclassderivederror.html</a></p>');
+
+</script>
+</body>
+</html>

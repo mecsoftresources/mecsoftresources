@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Add a Tool Change Point</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Add a Tool Change Point?" />
+   <meta name="description" content="To output a Tool Change Point to your posted g-code files, please do the following:" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "howcanaddatoolchangepoint.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Add a Tool Change Point?</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?howcanaddatoolchangepoint.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      &raquo;No topics above this level&laquo;
+      </p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Add a Tool Change Point?</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <span class="hmbtnprev"></span>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <span class="hmbtnnext"></span>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">To output a <span class="f_BoldKeyword">Tool Change Point</span> to your posted g-code files, please do the following:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">From the </span><span class="f_BoldKeyword">Machine Setup</span><span class="f_Numbered"> dialog (</span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab &gt; </span><span class="f_BoldKeyword">Machine</span><span class="f_Numbered"> &gt; </span><span class="f_BoldKeyword">General Parameters</span><span class="f_Numbered"> &gt; </span><span class="f_BoldKeyword">Tool Change Pt</span><span class="f_Numbered">), enter your required tool change point coordinates.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span>For the sample code (shown at the end of this section) we entered the following values in the <span class="f_BoldKeyword">Machine Setup</span> dialog:<br />
+&nbsp;<br />
+<span style="font-size: 19px; color: #0000ff;">X: -4, Y: 0 Z: 0</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="machine-tool-setup-dialog-tool-change-point" width="412" height="365" style="margin:0;width:412px;height:365px;border:none" src="machine-tool-setup-dialog-tool-change-point.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span>Edit your post processor by selecting <span class="f_BoldKeyword">Program</span> tab &gt; <span class="f_BoldKeyword">Post</span> &gt; <span class="f_BoldKeyword">Edit</span>.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:593px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="593" height="345" style="width:593px;height:345px;border:none" src="edit-post-menu-selection.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span>From the <span class="f_BoldKeyword">Post Process Generator</span> dialog, select the <span class="f_BoldKeyword">Tool Change</span> section from the left side of the dialog.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span>In the <span class="f_BoldKeyword">Tool Change Macro</span> block section, replace the first line of text with the following two lines of text at the top of the macro. &nbsp;<br />
+These two lines of text should precede the line that includes <span class="f_BoldKeyword">T[TOOL_NUM]</span> as shown in the examples below.<br />
+&nbsp;<br />
+<span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM][DELIMITER]G0 Z[TOOL_CHG_PT_Z]</span><br />
+<span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM][DELIMITER]G0 X[TOOL_CHG_PT_X] Y[TOOL_CHG_PT_Y]</span><br />
+<span style="font-size: 12px;">[SEQ_PRECHAR][SEQNUM][DELIMITER]T[TOOL_NUM]</span><br />
+<span style="font-size: 12px;">...</span><br />
+<span style="font-size: 12px;">...</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="ppg-tool-change-point" width="714" height="420" style="margin:0;width:714px;height:420px;border:none" src="ppg-tool-change-point.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span>If your controller expects to see an optional stop call BEFORE each tool change, you can add another line like below:<br />
+&nbsp;<br />
+<span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM][DELIMITER]G0 Z[TOOL_CHG_PT_Z]</span><br />
+<span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM][DELIMITER]G0 X[TOOL_CHG_PT_X] Y[TOOL_CHG_PT_Y]</span><br />
+<span style="font-size: 12px; color: #0000ff;">[SEQ_PRECHAR][SEQNUM][DELIMITER]M01</span><br />
+<span style="font-size: 12px;">[SEQ_PRECHAR][SEQNUM][DELIMITER]T[TOOL_NUM]</span><br />
+<span style="font-size: 12px;">...</span><br />
+<span style="font-size: 12px;">...</span><br />
+<span style="font-size: 12px;">&nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span>From the <span class="f_BoldKeyword">Post Process Generator</span> dialog, pick <span class="f_BoldKeyword">Save As</span>.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span>Enter a unique name for your post file (<span class="f_BoldKeyword" style="font-style: italic;">*.spm</span>) for testing and pick <span class="f_BoldKeyword">Save</span>.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span>From the <span class="f_BoldKeyword">Set Post-Processor Options</span> dialog, select the revised post from the <span class="f_BoldKeyword">Current Post Processor</span> list.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="tool-change-point-post-selection" width="395" height="342" style="margin:0;width:395px;height:342px;border:none" src="tool-change-point-post-selection.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span><span style="font-weight: bold;">Note</span>: If you do not see your revised post in the list, select the &quot;...&quot; button to the right of the &quot;<span class="f_BoldKeyword">Folder where post-processor file are located</span>&quot; and select the folder where you saved your revised post file to (see <span class="f_BoldKeyword">Step 7</span> above) and pick <span class="f_BoldKeyword">OK</span>.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span>You should now see your revised post in the list. &nbsp;Select it and pick <span class="f_BoldKeyword">OK</span>.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">12.</span>Post a sample toolpath using the revised post.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">13.</span>Review the g-code test file and locate the first tool change lines of code. </p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">14.</span>Your sample test should look something like this depending on your post (based on the tool change point we used in <span class="f_BoldKeyword">Step 2</span> above). &nbsp;Note the tool change coordinates in blue:<br />
+&nbsp;<br />
+<span style="font-size: 12px; color: #0000ff;">...</span><br />
+<span style="font-size: 12px; color: #0000ff;">...</span><br />
+<span style="font-size: 12px; color: #0000ff;">N66 ;2 1/2 Axis Profiling</span><br />
+<span style="font-size: 12px; color: #0000ff;">N68 G0 Z0.</span><br />
+<span style="font-size: 12px; color: #0000ff;">N70 G0 X-4. Y0.</span><br />
+<span style="font-size: 12px; color: #0000ff;">N72 T1 M06</span><br />
+<span style="font-size: 12px; color: #0000ff;">...</span><br />
+<span style="font-size: 12px; color: #0000ff;">...</span><br />
+<span style="font-size: 12px; color: #0000ff;">&nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">15.</span>That's it!</p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?howcanaddatoolchangepoint.html" target="_top">'+baseurl+'index.html?howcanaddatoolchangepoint.html</a></p>');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; User Interface &gt; CAM Preferences &nbsp;&gt; Simulation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="CAM Preferences,CAM Preferences Simulation,Polygonal Model (Simulation),Simulation,Simulation Accuracy,Simulation Mode,Simulation Model Type,Simulation More Options,Simulation Preferences,Simulation Remove Remnants during,Simulation Stock Transparency,Stock,Stock Transparency,Voxel Model (Simulation)" />
+   <meta name="description" content="You can set the simulation preferences using this dialog. &nbsp;Note: Some options are not available in XPR (Xpress) configuration." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "simulationpreferences.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Simulation</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?simulationpreferences.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="userinterface.html">User Interface</a> &gt; <a href="cam-preferences.html">CAM Preferences&nbsp;</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Simulation</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="preferences-toolpath.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="cam-preferences.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="userinterfacepreferences.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">You can set the simulation preferences using this dialog.  <span style="font-weight: bold;">Note</span>: Some options are not available in <span class="f_BoldKeyword">XPR</span> (<span class="f_BoldKeyword">Xpress</span>) configuration.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Dialog Box: CAM Preferences &gt; Simulation</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:545px"><img alt="CAM Preferences &gt; Simulation&nbsp;" title="CAM Preferences &gt; Simulation&nbsp;" width="545" height="669" style="width:545px;height:669px;border:none" src="preferences-simulation-2020.png"/><p style="text-align:center"><span class="f_ImageCaption">CAM Preferences &gt; Simulation</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Simulation Model</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">In the <span class="f_BoldKeyword">RhinoCAM</span> <span class="f_BoldKeyword">MILL</span> module you can choose between two simulation models. &nbsp;One is called the <span class="f_BoldKeyword">Voxel Model</span> and the other the <span class="f_BoldKeyword">Polygonal Model</span>.</p>
+<p class="p_Normal"><span class="f_BoldParameter">Voxel Model &nbsp;</span><br />
+The <span class="f_BoldKeyword">Voxel</span> <span class="f_BoldKeyword">Model</span> is a fast simulation model that is primarily used for 3 axis applications. &nbsp;It is especially useful when there are large amounts of toolpath blocks to be simulated. &nbsp;This model is fast but suffers from some accuracy limitations near vertical walls. &nbsp;The display quality of this simulation might also be insufficient for some applications especially when simulating near vertical walls.</p>
+<p class="p_Normal"><span class="f_BoldParameter">Polygonal Model &nbsp;</span><br />
+<span class="f_Numbered">The Polygonal Model on the other hand is a high quality simulation model. &nbsp;This model uses more accurate simulation algorithms at the expense of speed. &nbsp;The speed of this simulation can be relatively slow when compared to the </span><span class="f_BoldKeyword">Voxel Model</span><span class="f_Numbered">. &nbsp;Additionally only the </span><span class="f_BoldKeyword">Polygonal Model</span><span class="f_Numbered"> of simulation can be used for </span><span class="f_BoldKeyword">4</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">5 Axis</span><span class="f_Numbered"> simulations. &nbsp;The </span><span class="f_BoldKeyword">Voxel Model</span><span class="f_Numbered"> is limited strictly to 3 Axis applications.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span style="font-size: 12px; font-weight: bold; color: #4f81bd;">Note</span><span style="font-size: 12px; color: #4f81bd;">: * This feature is not available in Xpress configuration.</span></p>
+<p class="p_Normal">Here is an example of a cylinder stock model representation with <span class="f_BoldKeyword">Voxel</span> and <span class="f_BoldKeyword">Polygonal</span> model. </p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; width:295px; padding:4px; border:none"><div class="p_Normal"><div style="margin:0;width:156px"><img alt="Simulation Model - Voxel" title="Simulation Model - Voxel" width="156" height="174" style="width:156px;height:174px;border:none" src="doc_filesimage391.jpg"/><p style="text-align:center"><span class="f_ImageCaption">Simulation Model - Voxel</span></p></div></div>
+</td>
+<td style="vertical-align:bottom; width:295px; padding:4px; border:none"><div class="p_Normal"><div style="margin:0;width:152px"><img alt="Simulation Model – Polygonal" title="Simulation Model – Polygonal" width="152" height="159" style="width:152px;height:159px;border:none" src="doc_filesimage392.jpg"/><p style="text-align:center"><span class="f_ImageCaption">Simulation Model – Polygonal</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Simulation Mode</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">You can set the simulation mode to <span class="f_BoldKeyword">Distance</span> or by <span class="f_BoldKeyword">Motion</span>. <span class="f_BoldKeyword">Simulate by Motion</span> simulates the toolpath based on the number of go to motions in the generated toolpath. <span class="f_BoldKeyword">Simulate by Distance</span> uses a distance based approach.</p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><span style="font-size: 12px; font-weight: bold; color: #4f81bd;">Note</span><span style="font-size: 12px; color: #4f81bd;">: * This feature is not available in Xpress configuration.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Simulation Speed</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">You can control the speed of the simulation using the slider bar and the <span class="f_BoldKeyword">Maximum</span> display interval. When using <span class="f_BoldKeyword">Simulate by distance</span> mode, the speed is determined as <span class="f_BoldKeyword"># of Motions</span> / <span class="f_BoldKeyword">Distance</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Simulation Accuracy</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This setting is used to control the accuracy of display of the simulated model. You can control the accuracy of the stock model by selecting from <span class="f_BoldKeyword">Standard</span>, <span class="f_BoldKeyword">Medium</span> or <span class="f_BoldKeyword">Fine</span>. The finer the stock model accuracy results in slower performance and increases the simulation time. &nbsp;</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Use Specified Simulation Spacing for Voxel Model</span></p>
+<p class="p_Normal">When <span class="f_BoldKeyword">Voxel Model</span> is selected (see <span class="f_BoldKeyword">Simulation Model</span> above), you can also specify the spacing for the <span class="f_BoldKeyword">Voxel</span> model. &nbsp;Check the box and enter the <span class="f_BoldKeyword">Spacing</span> distance desired.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Stock Model Simulation Display Transparency</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Use this slider to adjust the <span class="f_BoldKeyword">Stock Model Transparency</span> when the <span class="f_BoldKeyword">Simulate</span> tab is selected (i.e., when you are performing a cut material simulation).</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Removal of Remnants</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Check this box to <span class="f_BoldKeyword">Remove Remnants During Simulation</span>. &nbsp;Any disassociated stock will be removed from the simulation.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Additional Options</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BoldKeyword"><span class="f_BoldKeyword">Stop Simulation in Error</span></p>
+<p class="p_Normal">Check this box to pause the <span class="f_BoldKeyword">Simulation</span> at each error flag. &nbsp;If enabled, a message will display asking if you wish to continue with the simulation. &nbsp;Selecting <span class="f_BoldKeyword">Play</span> will simulate to the next error flag and then pause. etc.</p>
+<div class="p_Normal"><div style="margin:0;width:276px"><img alt="Stop Simulation at Error Flag" title="Stop Simulation at Error Flag" width="276" height="327" style="width:276px;height:327px;border:none" src="cam-pref-stop-at-error-flag.png"/><p style="text-align:center"><span class="f_ImageCaption">Stop Simulation at Error Flag</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:318px"><img alt="Stop Simulation at Error Flag message" title="Stop Simulation at Error Flag message" width="318" height="102" style="width:318px;height:102px;border:none" src="cam-pref-stop-at-error-flag-message.png"/><p style="text-align:center"><span class="f_ImageCaption">Stop Simulation at Error Flag message</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Disable Advanced OpenGL</span></p>
+<p class="p_Normal">Check this box only if you have an older graphics card adapter that does not support advanced <span class="f_BoldKeyword">OpenGL</span> (i.e., <span class="f_BoldKeyword">OpenGL 2</span>). &nbsp;Some older cards may only support <span class="f_BoldKeyword">OpenGL 1</span> for example. &nbsp;If you experience graphics instability checking this box may help resolve the issue.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Simulation Display State</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Select how color is applied to toolpaths during simulations. Choose from the following: </p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BoldParameter">Default</span><span class="f_Numbered">: The CAM preferences for </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> </span><span class="f_BoldKeyword">Colors</span><span class="f_Numbered"> are applied. &nbsp;See the Stock tab in the </span><span class="f_BoldKeyword">CAM Preferences</span><span class="f_Numbered"> dialog. </span></p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BoldParameter">Tool</span><span class="f_Numbered">: The </span><span class="f_BoldKeyword">Cut Material</span><span class="f_Numbered"> color assigned to the tool is applied. &nbsp;See the </span><span class="f_BoldKeyword">Create/Edit Tool</span><span class="f_Numbered"> Dialog</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BoldParameter">Mop</span><span class="f_Numbered">: The color properties of the </span><span class="f_BoldKeyword">Machining Operations</span><span class="f_Numbered"> (Mops) are applied. &nbsp;Right-click on the </span><span class="f_BoldKeyword">MOp</span><span class="f_Numbered"> and select </span><span class="f_BoldKeyword">Properties</span><span class="f_Numbered">.</span></p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span class="f_BoldParameter">Texture</span><span class="f_Numbered">: The material texture defined in the </span><span class="f_BoldKeyword">Materials</span><span class="f_Numbered"> dialog is applied. Select </span><span class="f_BoldKeyword">Materials</span><span class="f_Numbered"> from the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab.</span></p><p class="p_Normal"><span class="f_Numbered">To change the display state manually, go to the </span><span class="f_BoldKeyword">Simulate</span><span class="f_Numbered"> tab and adjust the </span><span class="f_BoldKeyword">Display State</span><span class="f_Numbered"> menu located at the bottom of the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered"> as shown below. &nbsp;</span></p>
+<p class="p_Normal"><img alt="simulation-display-state-menu" width="451" height="182" style="margin:0;width:451px;height:182px;border:none" src="simulation-display-state-menu.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?simulationpreferences.html" target="_top">'+baseurl+'index.html?simulationpreferences.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

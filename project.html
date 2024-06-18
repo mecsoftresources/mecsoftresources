@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>G-CODE EDITOR Modile &gt; User Interface &gt; G-Code Browser &gt; Project Tab</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Project,Project Tab,User Interface,User Interface Project Tab" />
+   <meta name="description" content="The Project tab is Selecting the Program tab in the Mops Browser shows 3 groups of menus that provide access for specifying Machine, Stock and defining Machining Operations." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "project.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Project Tab</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?project.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      G-CODE EDITOR Modile &gt; <a href="userinterface.html">User Interface</a> &gt; <a href="g-code-browser.html">G-Code Browser</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Project Tab</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="g-code-browser.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="g-code-browser.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="the-project-tree.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The Project tab is Selecting the <span class="f_BoldKeyword">Program</span> tab in the <span class="f_BoldKeyword">Mops Browser</span> shows 3 groups of menus that provide access for specifying <span class="f_BoldKeyword">Machine</span>, <span class="f_BoldKeyword">Stock</span> and defining <span class="f_BoldKeyword">Machining Operations</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">To Access this Command:</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Navigate to:" title="Navigate to:" width="12" height="19" style="margin:0;width:12px;height:19px;border:none" src="navigate-23.png"/> click: <img alt="Project tab" title="Project tab" width="67" height="27" style="margin:0;width:67px;height:27px;border:none" src="tab-project.png"/><span class="f_Heading2_atoc_"> </span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">The Project Tab</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:95%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:397px"><img alt="G-Code Browser, Project Tab" title="G-Code Browser, Project Tab" width="397" height="394" style="width:397px;height:394px;border:none" src="browser-project-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">G-Code Browser, Project Tab</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 22px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Ribbon Bar Options</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 54px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:middle; width:96px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Project Tab" title="Project Tab" width="67" height="27" style="margin:0 0 0 auto;width:67px;height:27px;border:none" src="tab-project.png"/></p>
+</td>
+<td style="vertical-align:middle; width:355px; padding:5px; border:none"><p class="p_Normal">Contains <span class="f_BoldKeyword">Project</span> related commands.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:96px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Minimize Ribbon Bar" title="Minimize Ribbon Bar" width="23" height="23" style="margin:0 0 0 auto;width:23px;height:23px;border:none" src="icon-min-ribbon.png"/><span class="f_ImageCaption"> <img alt="Maximize Ribbon Bar" title="Maximize Ribbon Bar" width="23" height="23" style="margin:0 0 0 auto;width:23px;height:23px;border:none" src="icon-max-ribbon.png"/></span></p>
+</td>
+<td style="vertical-align:middle; width:355px; padding:5px; border:none"><p class="p_Normal">Use these icons to maximize and minimize the ribbon bar menus.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:96px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Preferences" title="Preferences" width="23" height="23" style="margin:0 0 0 auto;width:23px;height:23px;border:none" src="icon-preferences.png"/></p>
+</td>
+<td style="vertical-align:middle; width:355px; padding:5px; border:none"><p class="p_Normal">Display the <span class="f_BoldKeyword"><a href="preferences.html" class="topiclink">Preferences</a></span> dialog.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:middle; width:96px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Online Help" title="Online Help" width="23" height="23" style="margin:0 0 0 auto;width:23px;height:23px;border:none" src="icon-help.png"/></p>
+</td>
+<td style="vertical-align:middle; width:355px; padding:5px; border:none"><p class="p_Normal">Display the <span class="f_BoldKeyword">Online Help</span> system.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 22px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Project Setup Pane</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 54px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:98px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Stock Menu" title="Stock Menu" width="69" height="21" style="margin:0 0 0 auto;width:69px;height:21px;border:none" src="icon-stock.png"/></p>
+</td>
+<td style="vertical-align:top; width:353px; padding:5px; border:none"><p class="p_Normal">Displays a menu of <span class="f_BoldKeyword"><a href="stock.html" class="topiclink">Stock</a></span> definition commands.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:98px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Tool Library" title="Tool Library" width="76" height="21" style="margin:0 0 0 auto;width:76px;height:21px;border:none" src="icon-library.png"/></p>
+</td>
+<td style="vertical-align:top; width:353px; padding:5px; border:none"><p class="p_Normal">Displays the <span class="f_BoldKeyword"><a href="library.html" class="topiclink">Tool Library</a></span> dialog.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:98px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Tool Crib" title="Tool Crib" width="78" height="21" style="margin:0 0 0 auto;width:78px;height:21px;border:none" src="icon-numbers.png"/></p>
+</td>
+<td style="vertical-align:top; width:353px; padding:5px; border:none"><p class="p_Normal">Displays the <span class="f_BoldKeyword"><a href="tool-crib.html" class="topiclink">Tool Crib</a></span> dialog.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 22px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Project G-Code Pane</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 54px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:99px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Load G-Code File" title="Load G-Code File" width="55" height="21" style="margin:0 0 0 auto;width:55px;height:21px;border:none" src="icon-load.png"/></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:5px; border:none"><p class="p_Normal"><span class="f_BoldKeyword"><a href="load.html" class="topiclink">Load</a></span> a g-code file into the Project tree.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:99px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Project Information" title="Project Information" width="50" height="21" style="margin:0 0 0 auto;width:50px;height:21px;border:none" src="icon-info.png"/></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:5px; border:none"><p class="p_Normal">Display <span class="f_BoldKeyword"><a href="info.html" class="topiclink">Information</a></span> about the g-code files currently loaded into the Project.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 22px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Project File Operations Pane</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 54px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:150px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Merge G-Code Files" title="Merge G-Code Files" width="89" height="21" style="margin:0 0 0 auto;width:89px;height:21px;border:none" src="icon-merge-files.png"/></p>
+</td>
+<td style="vertical-align:top; width:532px; padding:5px; border:none"><p class="p_Normal"><span class="f_BoldKeyword"><a href="merge-files.html" class="topiclink">Merge</a></span> two selected g-code files into one file.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:150px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Transform G-Code" title="Transform G-Code" width="83" height="21" style="margin:0 0 0 auto;width:83px;height:21px;border:none" src="icon-transform.png"/></p>
+</td>
+<td style="vertical-align:top; width:532px; padding:5px; border:none"><p class="p_Normal">Displays the <span class="f_BoldKeyword"><a href="transform.html" class="topiclink">Transform</a></span> g-code dialog.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:150px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Z Instance G-Code" title="Z Instance G-Code" width="83" height="21" style="margin:0 0 0 auto;width:83px;height:21px;border:none" src="icon-z-instance.png"/></p>
+</td>
+<td style="vertical-align:top; width:532px; padding:5px; border:none"><p class="p_Normal">Displays the <span class="f_BoldKeyword"><a href="z-instance.html" class="topiclink">Z Instance</a></span> g-code dialog.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:150px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="XY Instance G-Code" title="XY Instance G-Code" width="90" height="21" style="margin:0 0 0 auto;width:90px;height:21px;border:none" src="icon-xy-instance.png"/></p>
+</td>
+<td style="vertical-align:top; width:532px; padding:5px; border:none"><p class="p_Normal">Displays the <span class="f_BoldKeyword"><a href="xy-instance.html" class="topiclink">XY Instance</a></span> g-code dialog.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:150px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Save G-Code File" title="Save G-Code File" width="53" height="21" style="margin:0 0 0 auto;width:53px;height:21px;border:none" src="icon-save.png"/></p>
+</td>
+<td style="vertical-align:top; width:532px; padding:5px; border:none"><p class="p_Normal"><span class="f_BoldKeyword"><a href="save.html" class="topiclink">Saves</a></span> all g-code files currently loaded into the Project. </p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:150px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Output G-Code File" title="Output G-Code File" width="67" height="21" style="margin:0 0 0 auto;width:67px;height:21px;border:none" src="icon-output.png"/></p>
+</td>
+<td style="vertical-align:top; width:532px; padding:5px; border:none"><p class="p_Normal"><span class="f_BoldKeyword"><a href="output.html" class="topiclink">Outputs</a></span> the g-code files currently loaded into the Project.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 22px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Project Tab, Right-Click Menu</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 54px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:99px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Edit" title="Edit" width="111" height="22" style="margin:0 0 0 auto;width:111px;height:22px;border:none" src="icon-edit.png"/></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:5px; border:none"><p class="p_Normal">Edit the selected G-Code file.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:99px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Simulate" title="Simulate" width="111" height="22" style="margin:0 0 0 auto;width:111px;height:22px;border:none" src="icon-simulate-menu-item.png"/></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:5px; border:none"><p class="p_Normal">Simulate the selected G-Code file.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:99px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Information" title="Information" width="111" height="22" style="margin:0 0 0 auto;width:111px;height:22px;border:none" src="icon-info-menu-item.png"/></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:5px; border:none"><p class="p_Normal">Display information about the selected G-Code file.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:99px; padding:5px; border:none"><p class="p_Normal" style="text-align: right;"><img alt="Delete" title="Delete" width="111" height="22" style="margin:0 0 0 auto;width:111px;height:22px;border:none" src="icon-delete-menu-item.png"/></p>
+</td>
+<td style="vertical-align:top; width:352px; padding:5px; border:none"><p class="p_Normal">Delete the selected G-Code file.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="the-project-tree.html" class="topiclink">Project Tree</a></p>
+<p class="p_Normal"><a href="edit-tab.html" class="topiclink">Edit Tab</a></p>
+<p class="p_Normal"><a href="simulate-tab.html" class="topiclink">Simulate Tab</a></p>
+<p class="p_Normal"><a href="online-help.html" class="topiclink">Online Help</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?project.html" target="_top">'+baseurl+'index.html?project.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

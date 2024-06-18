@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Generate a Toolpath</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Generate a Toolpath" />
+   <meta name="description" content="RhinoCAM includes many toolpath operation types to choose from depending on your software configuration. &nbsp;Also each operation type has default parameters predefined to allow..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-generate-a-toolpath.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Generate a Toolpath</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-generate-a-toolpath.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Generate a Toolpath</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-load-a-tool-library.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="how-to-tool-related-preferences.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><span class="f_BoldKeyword">RhinoCAM</span> includes many toolpath operation types to choose from depending on your software configuration. &nbsp;Also each operation type has default parameters predefined to allow you to quickly create a toolpath and view the results.</p>
+<p class="p_Normal">Here are the basic steps to create a toolpath:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Open a part or drawing file or create the geometry that your wish to create a toolpath for.  </span><span class="f_BoldKeyword">2 Axis</span><span class="f_Numbered"> operations can be created with 2D or 3D geometry.  </span><span class="f_BoldKeyword">3 Axis</span><span class="f_Numbered"> operations require surface and/or mesh geometry. &nbsp;Some </span><span class="f_BoldKeyword">4 Axis</span><span class="f_Numbered"> operations require 3D solids or surfaces only. &nbsp;All and </span><span class="f_BoldKeyword">5 Axis</span><span class="f_Numbered"> operations require 3D solids or surfaces only. &nbsp;You must have visible geometry in your part file to create a toolpath.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_Numbered">In this example we will generate a </span><span class="f_BoldKeyword">2 Axis Pocketing</span><span class="f_Numbered"> toolpath to machine the bottom pocket in this 3D solid model.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-0" width="314" height="184" style="margin:0;width:314px;height:184px;border:none" src="how-to-generate-a-toolpath-0.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Perform the steps needed to setup your part. &nbsp;These include defining your </span><span class="f_BoldKeyword">Machine</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered">. &nbsp;You must first have geometry and </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> defined to create a toolpath.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-1" width="314" height="184" style="margin:0;width:314px;height:184px;border:none" src="how-to-generate-a-toolpath-1.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:395px"><img alt="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" title="MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST" width="395" height="160" style="width:395px;height:160px;border:none" src="how-to-program-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">MILL Module shown, Similar for MILL-TURN, TURN and Profile-NEST</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Decide what type of toolpath to create and select the operation type from the menus on the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab. &nbsp;Depending on your software configuration, you can select from the </span><span class="f_BoldKeyword">2 Axis</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">3 Axis</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">4 Axis</span><span class="f_Numbered"> or </span><span class="f_BoldKeyword">5 Axis</span><span class="f_Numbered"> menus. &nbsp;The operation dialog for that toolpath type will display. &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><img alt="2 Axis Machining Operations menu icon" title="2 Axis Machining Operations menu icon" width="73" height="22" style="margin:0;width:73px;height:22px;border:none" src="2x-op-icon-no-shadow.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">For this example we will generate a </span><span class="f_BoldKeyword">2 Axis Pocketing</span><span class="f_Numbered"> toolpath so select the </span><span class="f_BoldKeyword">2 Axis</span><span class="f_Numbered"> menu.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><img alt="Pocketing, 2 Axis menu icon" title="Pocketing, 2 Axis menu icon" width="72" height="56" style="margin:0;width:72px;height:56px;border:none" src="2x-pocketing-op-icon.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">Select </span><span class="f_BoldKeyword">Pocketing</span><span class="f_Numbered"> from the menu to display the dialog. </span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-2" width="405" height="544" style="margin:0;width:405px;height:544px;border:none" src="how-to-generate-a-toolpath-2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span><span class="f_Numbered">The dialog has several tabs at the top. &nbsp;The </span><span class="f_BoldKeyword">Control Geometry</span><span class="f_Numbered"> tab is displayed first. &nbsp;Use it to select your machining regions. &nbsp;All </span><span class="f_BoldKeyword">2 Axis</span><span class="f_Numbered"> operations require that you select machining regions. &nbsp;In </span><span class="f_BoldKeyword">3 Axis</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">4 Axis</span><span class="f_Numbered"> operations machining regions are used to if you want to contain the toolpath but are not required for all 3 and </span><span class="f_BoldKeyword">4</span><span class="f_Numbered"> </span><span class="f_BoldKeyword">Axis</span><span class="f_Numbered"> operations.  </span><span class="f_BoldKeyword">5 Axis</span><span class="f_Numbered"> operations do require machining regions. &nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span><span class="f_Numbered">The buttons on this tab are used to select your machining regions. &nbsp;Here we will pick the </span><span class="f_BoldKeyword">Select Flat Area Regions</span><span class="f_Numbered"> button.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-3" width="204" height="24" style="margin:0;width:204px;height:24px;border:none" src="how-to-generate-a-toolpath-3.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span><span class="f_Numbered">The dialog minimizes and you are prompted to select a flat area. &nbsp;We select the bottom of the inner pocket and then right-click or press </span><span class="f_BoldKeyword">&lt;Enter&gt;</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-4" width="315" height="178" style="margin:0;width:315px;height:178px;border:none" src="how-to-generate-a-toolpath-4.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span><span class="f_Numbered">The dialog reappears with the selected machining regions listed. &nbsp;They are also highlighted on the part.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-5" width="405" height="192" style="margin:0;width:405px;height:192px;border:none" src="how-to-generate-a-toolpath-5.png"/></p>
+<p class="p_Normal"><img alt="how-to-generate-a-toolpath-6" width="316" height="181" style="margin:0;width:316px;height:181px;border:none" src="how-to-generate-a-toolpath-6.png"/></p>
+<p class="p_Normal">There are other ways to define and select machining regions. &nbsp;You can pick Help from the dialog to learn about each button option. </p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Tools</span><span class="f_Numbered"> tab and select a tool from the </span><span class="f_BoldKeyword">Tools</span><span class="f_Numbered"> list or select the </span><span class="f_BoldKeyword">Edit/Create/Select Tool ...</span><span class="f_Numbered"> button to create a tool. &nbsp;You must select a tool to create a toolpath. </span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-7" width="405" height="190" style="margin:0;width:405px;height:190px;border:none" src="how-to-generate-a-toolpath-7.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">12.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Feeds &amp; Speeds</span><span class="f_Numbered"> tab and set the </span><span class="f_BoldKeyword">Spindle Speed</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Feed Rates</span><span class="f_Numbered"> for the operation and use the </span><span class="f_BoldKeyword">Load from Tool ...</span><span class="f_Numbered"> or </span><span class="f_BoldKeyword">Load from File ...</span><span class="f_Numbered"> buttons. &nbsp;The </span><span class="f_BoldKeyword">Load from File ...</span><span class="f_Numbered"> button displays the </span><span class="f_BoldKeyword">Feeds &amp; Speeds Calculator</span><span class="f_Numbered"> to assist you will selecting feeds and speeds values for the operation.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-8" width="405" height="506" style="margin:0;width:405px;height:506px;border:none" src="how-to-generate-a-toolpath-8.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">13.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Clearance Plane</span><span class="f_Numbered"> tab and adjust if desired.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-9" width="405" height="397" style="margin:0;width:405px;height:397px;border:none" src="how-to-generate-a-toolpath-9.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">14.</span><span class="f_Numbered">Now we will select the </span><span class="f_BoldKeyword">Cut Parameters</span><span class="f_Numbered"> tab of the dialog and make the following adjustments. &nbsp;Stock will leave 0.01 remaining on the side walls. &nbsp;The cut pattern will offset the perimeter of the pocket. &nbsp;The cut will start in the middle of the pocket, offset outward at a step over 0.01 and perform a cleanup pass at each cut level.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_BoldKeyword">Tolerance </span><span class="f_Numbered">: 0.001</span><br />
+<span class="f_BoldKeyword">Stock </span><span class="f_Numbered">: 0.01</span><br />
+<span class="f_BoldKeyword">Cut Pattern </span><span class="f_Numbered">: Offset</span><br />
+<span class="f_BoldKeyword">Cut Direction </span><span class="f_Numbered">: Climb</span><br />
+<span class="f_BoldKeyword">Start Point</span><span class="f_Numbered">: Inside</span><br />
+<span class="f_BoldKeyword">Stopover Distance </span><span class="f_Numbered">: 0.12</span><br />
+<span class="f_BoldKeyword">Corner Cleanup Loops </span><span class="f_Numbered">: None</span><br />
+<span class="f_BoldKeyword">Cleanup Pass </span><span class="f_Numbered">: Checked</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-21" width="405" height="492" style="margin:0;width:405px;height:492px;border:none" src="how-to-generate-a-toolpath-21.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">15.</span><span class="f_Numbered">Next we select the </span><span class="f_BoldKeyword">Cut Levels</span><span class="f_Numbered"> tab. &nbsp;All </span><span class="f_BoldKeyword">2 Axis</span><span class="f_Numbered"> operations require your to adjust the </span><span class="f_BoldKeyword">Cut Levels</span><span class="f_Numbered"> tab to control the depth of cut. &nbsp;In all </span><span class="f_BoldKeyword">3, 4 and 5 Axis</span><span class="f_Numbered"> operations your part surfaces will limit the maximum depth of cut. </span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-10" width="405" height="476" style="margin:0;width:405px;height:476px;border:none" src="how-to-generate-a-toolpath-10.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">16.</span><span class="f_Numbered">First make a selection to define the </span><span class="f_BoldKeyword">Location of Cut Geometry</span><span class="f_Numbered">. &nbsp;In our example we select </span><span class="f_BoldKeyword">At Bottom</span><span class="f_Numbered"> because the machining regions we selected lie at the bottom of the pocket. &nbsp;If they lie at the top we would select </span><span class="f_BoldKeyword">At Top</span><span class="f_Numbered">. &nbsp;If they do not lie either at the top or the bottom of the pocket you can use the </span><span class="f_BoldKeyword">Pick Top</span><span class="f_Numbered"> option to define the top of the cut.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-11" width="188" height="80" style="margin:0;width:188px;height:80px;border:none" src="how-to-generate-a-toolpath-11.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">17.</span><span class="f_Numbered">Next we move to the </span><span class="f_BoldKeyword">Cut Depth Control</span><span class="f_Numbered"> section. &nbsp;If you know how deep the pocket should be just enter the depth in the </span><span class="f_BoldKeyword">Total Cut Depth</span><span class="f_Numbered"> field. &nbsp;This is always an absolute value (i.e., no negative numbers).</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-13" width="188" height="130" style="margin:0;width:188px;height:130px;border:none" src="how-to-generate-a-toolpath-13.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">18.</span><img alt="how-to-generate-a-toolpath-12" width="19" height="21" style="margin:0;width:19px;height:21px;border:none" src="how-to-generate-a-toolpath-12.png"/>  <span class="f_Numbered">In our case we do not know the exact depth without manually measuring the geometry so we will select the </span><span class="f_BoldKeyword">Pick</span><span class="f_Numbered"> button.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">19.</span><span class="f_Numbered">The dialog minimizes and prompts us to select s start point and an en end point to define the </span><span class="f_BoldKeyword">Total Cut Depth</span><span class="f_Numbered">. &nbsp;We select the top and bottom floor of the pocket and then right-click or press </span><span class="f_BoldKeyword">&lt;Enter&gt;</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-14" width="216" height="144" style="margin:0;width:216px;height:144px;border:none" src="how-to-generate-a-toolpath-14.png"/></p>
+<p class="p_Normal"><img alt="how-to-generate-a-toolpath-15" width="214" height="132" style="margin:0;width:214px;height:132px;border:none" src="how-to-generate-a-toolpath-15.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">20.</span><span class="f_Numbered">The dialog reappears with the Depth of Cut calculated for us.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-16" width="188" height="130" style="margin:0;width:188px;height:130px;border:none" src="how-to-generate-a-toolpath-16.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">21.</span><span class="f_Numbered">Notice that the value in the </span><span class="f_BoldKeyword">Rough Depth</span><span class="f_Numbered"> field is now the same as the </span><span class="f_BoldKeyword">Total Cut Depth</span><span class="f_Numbered">. &nbsp;You have the option to split the </span><span class="f_BoldKeyword">Total Cut Depth</span><span class="f_Numbered"> into a </span><span class="f_BoldKeyword">Rough Depth</span><span class="f_Numbered"> and a </span><span class="f_BoldKeyword">Finish Depth</span><span class="f_Numbered">. &nbsp;We will enter </span><span class="f_BoldKeyword">0.05</span><span class="f_Numbered"> into the Finish Depth field and then press the &lt;Tab&gt; key (or simply activate another field.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">22.</span><span class="f_Numbered">We see that the </span><span class="f_BoldKeyword">Rough Depth</span><span class="f_Numbered"> value is now reduced by </span><span class="f_BoldKeyword">0.05</span><span class="f_Numbered">. &nbsp;The </span><span class="f_BoldKeyword">Rough Depth</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Finish Depth</span><span class="f_Numbered"> values will always equal the </span><span class="f_BoldKeyword">Total Cut Depth</span><span class="f_Numbered"> value. &nbsp;You can also use the slider to split these values up.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-17" width="188" height="130" style="margin:0;width:188px;height:130px;border:none" src="how-to-generate-a-toolpath-17.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">23.</span><span class="f_Numbered">You will also notice now that the </span><span class="f_BoldKeyword">Rough Depth/Cut</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Finish Depth/Cut</span><span class="f_Numbered"> fields are populated with the save values. &nbsp;If we generate the pocket toolpath right now, there would be one rough level cut and one finish level cut.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-18" width="401" height="69" style="margin:0;width:401px;height:69px;border:none" src="how-to-generate-a-toolpath-18.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">24.</span><span class="f_Numbered">We can add additional cut levels by entering </span><span class="f_BoldKeyword">0.03</span><span class="f_Numbered"> in the </span><span class="f_BoldKeyword">Rough Depth/Cut</span><span class="f_Numbered"> field and entering </span><span class="f_BoldKeyword">0.01</span><span class="f_Numbered"> in the </span><span class="f_BoldKeyword">Finish Depth/Cut</span><span class="f_Numbered"> field. &nbsp;This will produce 4 rough cut levels at the top of the pocket and 5 finish cut levels at the bottom of the pocket.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-19" width="401" height="69" style="margin:0;width:401px;height:69px;border:none" src="how-to-generate-a-toolpath-19.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">25.</span><span class="f_Numbered">With our cut levels defined we select the </span><span class="f_BoldKeyword">Pocket Entry/Exit</span><span class="f_Numbered"> tab of the dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-20" width="405" height="488" style="margin:0;width:405px;height:488px;border:none" src="how-to-generate-a-toolpath-20.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">26.</span><span class="f_Numbered">Now we select the </span><span class="f_BoldKeyword">Pocketing Entry/Exit</span><span class="f_Numbered"> tab to control how the cutter will enter and exit the part and make the following selections:</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_BoldKeyword">Approach Motion Length (L)</span> : Default (0.025)<br />
+<span class="f_BoldKeyword">Engage Motion</span> : &nbsp;Helix<br />
+<span class="f_BoldKeyword">Helix Radius (R)</span>: Default (0.0625)<br />
+<span class="f_BoldKeyword">Retract Motion</span> : Linear, Length: 0.0625, Angle (A): 45<br />
+<span class="f_BoldKeyword">Departure Motion </span>: Vertical Distance (D): Default (0.025)<br />
+<span class="f_BoldKeyword">Apply entry/exit at each cut level </span>: Checked<br />
+&nbsp;</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-20" width="405" height="488" style="margin:0;width:405px;height:488px;border:none" src="how-to-generate-a-toolpath-20.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">27.</span><span class="f_Numbered">Now we will select the </span><span class="f_BoldKeyword">Advanced Cut Parameters</span><span class="f_Numbered"> tab and make the following selections. &nbsp;The parameters available on this tab will depend of the type of toolpath operation and your software configuration.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_BoldKeyword">Perform Arc Fitting</span><span class="f_Numbered"> : Checked</span><br />
+<span class="f_BoldKeyword">Fitting Tolerance (t)</span><span class="f_Numbered"> : 0.002</span><br />
+<span class="f_BoldKeyword">Use Smooth Cut Connections</span><span class="f_Numbered"> : Checked</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-22" width="405" height="358" style="margin:0;width:405px;height:358px;border:none" src="how-to-generate-a-toolpath-22.png"/></p>
+<p class="p_Normal">With these selections full and partial arc motions will be generated within the Fitting Tolerance (t) we have specified. &nbsp;There will also be smooth cut connections between step over paths. &nbsp;These advanced parameters will reduce the torque stress on your CNC machine and also reduce tool deflection, prolonging tool life. &nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">28.</span><span class="f_Numbered">Since we only have one pocket we do not need to look at the </span><span class="f_BoldKeyword">Sorting</span><span class="f_Numbered"> tab.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">29.</span><span class="f_Numbered">Now were ready! &nbsp;Select the </span><span class="f_BoldKeyword">Generate</span><span class="f_Numbered"> button at the bottom of the dialog to generate the </span><span class="f_BoldKeyword">2 Axis Pocketing</span><span class="f_Numbered"> toolpath and display it on the screen.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-23" width="357" height="62" style="margin:0;width:357px;height:62px;border:none" src="how-to-generate-a-toolpath-23.png"/><br />
+<img alt="how-to-generate-a-toolpath-28" width="314" height="180" style="margin:0;width:314px;height:180px;border:none" src="how-to-generate-a-toolpath-28.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">30.</span><span class="f_Numbered">It is also listed in the Machining Job.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-27" width="212" height="163" style="margin:0;width:212px;height:163px;border:none" src="how-to-generate-a-toolpath-27.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">31.</span><img alt="Toolpath Visibility" title="Toolpath Visibility" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="doc_filesimage030.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">If you do not see the toolpath displayed, select the </span><span class="f_BoldKeyword">Toggle Toolpath Visibility</span><span class="f_Numbered"> icon located at the bottom of the </span><span class="f_BoldKeyword">Machining Browser</span><span class="f_Numbered">.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">32.</span><span class="f_Numbered">Let's have a closer look at the toolpath.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-generate-a-toolpath-24" width="379" height="242" style="margin:0;width:379px;height:242px;border:none" src="how-to-generate-a-toolpath-24.png"/></p>
+<p class="p_Normal"><img alt="how-to-generate-a-toolpath-25" width="331" height="205" style="margin:0;width:331px;height:205px;border:none" src="how-to-generate-a-toolpath-25.png"/></p>
+<p class="p_Normal"><img alt="how-to-generate-a-toolpath-26" width="376" height="142" style="margin:0;width:376px;height:142px;border:none" src="how-to-generate-a-toolpath-26.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-generate-a-toolpath.html" target="_top">'+baseurl+'index.html?how-to-generate-a-toolpath.html</a></p>');
+
+</script>
+</body>
+</html>

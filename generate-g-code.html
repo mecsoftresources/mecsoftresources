@@ -1,0 +1,398 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MESH Module &gt; Ribbon Bar &gt; 3D Print Tab &gt; 3D Print &gt; Generate G-Code</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="3D Print,3D Print Generate G-Code,Generate G-Code" />
+   <meta name="description" content="If you do not have a 3D printer attached to your computer you can use this command to generate a G-Code file that you can send to your printer from another computer or..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "generate-g-code.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Generate G-Code</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?generate-g-code.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MESH Module &gt; <a href="mesh_ribbon_bar_tabs.html">Ribbon Bar</a> &gt; <a href="3d-print-tab.html">3D Print Tab</a> &gt; 3D Print&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Generate G-Code</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="export.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="3d-print-tab.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="print.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="Generate G-Code" title="Generate G-Code" width="52" height="75" style="float:left;margin:0 10px 0 0;width:52px;height:75px;border:none" src="icon-generate-g-code.png"/>If you do not have a 3D printer attached to your computer you can use this command to generate a G-Code file that you can send to your printer from another computer or location. &nbsp;For example, if you use a 3D printing service, you can send them the G-Code file created by this command. &nbsp;It will contain all of the information needed to print your part.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 72px;"><table style="width:450px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Check your 3D Printer Selection</span>: &nbsp;Before generating G-Code it's a good idea to check and make sure you have the correct <span class="f_BoldKeyword">3D Printer</span> selected and that the <span class="f_BoldKeyword">Nozzle Diameter</span> parameter matches the actual nozzle installed on your printer. &nbsp;See <a href="select.html" class="topiclink">Select Printer</a> for more information.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Work Flow</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First use the </span><a href="fit.html" class="topiclink">Fit</a>, <a href="part-orientation.html" class="topiclink">Part Orientation</a><span class="f_Numbered"> and <a href="support-generation.html" class="topiclink">Support Generation</a> commands to prepare your mesh geometry for printing.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Print Parameters</span><span class="f_Numbered"> tab of the dialog and set your desired parameters.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Set desired values on the </span><span class="f_BoldKeyword">Printer Control Parameters </span><span class="f_Numbered">tab.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Pick </span><span class="f_BoldKeyword">Generate</span><span class="f_Numbered"> and the printer paths will be generated and displayed on your part.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">Pick </span><span class="f_BoldKeyword">Post</span><span class="f_Numbered"> to save the </span><span class="f_BoldKeyword">G-Code</span><span class="f_Numbered"> file (</span><span class="f_BoldKeyword">file_name.gcode</span><span class="f_Numbered">).</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><span class="f_Numbered">Send this file to your printer or service bureau.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Command Prompts</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Select a mesh which you want to print.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select parameters to generate G-Code for 3D printer.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Basic Procedure</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Screen Pick</span></p>
+</td>
+<td style="vertical-align:top; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Optional Information</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 1</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select <span class="f_BoldKeyword">Generate G-Code</span> from the <a href="3d-print-tab.html" class="topiclink">3D Print Tab</a>.</p>
+</td>
+<td rowspan="2"  style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">Steps 1 &amp; 2 can be performed in reverse order. &nbsp;You can select a mesh first and then select the command icon.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 2</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the mesh you want to print.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 3</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Choose the desired parameters and options.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">See below.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 4</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Pick <span class="f_BoldKeyword">Generate</span> to display the printed layer on the screen.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal"><img alt="Display Path Levels" title="Display Path Levels" width="24" height="24" style="float:left;margin:0 10px 0 0;width:24px;height:24px;border:none" src="doc_filesimage031.png"/>Preview the printed layers on your part using the <span class="f_BoldKeyword">Display Path levels</span> icon.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 5</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Pick <span class="f_BoldKeyword">Post</span> to display the <span class="f_BoldKeyword">Post &amp; Save As</span> dialog to save your G-Code file.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;">-</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Generate G-Code Options</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The following options and reference information are available from the <a href="the_mesh_browser.html" class="topiclink">Browser</a>.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Print Parameters tab</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:393px"><img alt="Print Parameters tab" title="Print Parameters tab" width="393" height="533" style="width:393px;height:533px;border:none" src="generate-gcode-options-dialog-print-parameters.png"/><p style="text-align:center"><span class="f_ImageCaption">Print Parameters tab</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">General</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Layer height</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">This specifies the height of each 3D printed layer. &nbsp;This value will depend on the material used. &nbsp;Refer to your printer guide or service for recommended values.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Perimeters</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Each layer will consist of an outer perimeter and possibly an inner perimeter depending on the geometry of your part. &nbsp;This value specifies the solid thickness of each perimeter.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Retract only between levels</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Check this box to only retract the extruder after an entire layer is printed. &nbsp;If unchecked, enter the distance between retractions. &nbsp;</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Automatically calculate extrusion volume</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Check this box to have the extrusion volume calculated automatically based on the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Nozzle Diameter</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> of the <a href="select.html" class="topiclink">selected 3D Printer</a>. &nbsp;Refer to the cross-section figure below.  </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Width</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> is equal to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">1.05</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> times the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Nozzle Diameter</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> while </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Height</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> is equal to the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Layer Height</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> parameter listed above. &nbsp;If this is unchecked, enter the Material</span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;"> multiplier</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Spacing</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> listed below.</span></p>
+<div style="text-align: left; text-indent: -24px; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="auto-calculate-extruder-volume" width="251" height="150" style="margin:0;width:251px;height:150px;border:none" src="auto-calculate-extruder-volume.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Material multiplier</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">This value that defines the volume of material extruded per unit of distance. &nbsp;This multiplied by the distance traversed by the head will give you the total volume extruded during each move of the extruder head. &nbsp;</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Spacing</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">This refers to the stepover distance of the extruder head in filled areas.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Solid Layers</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Top / Bottom</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">You can instruct the printer to solid fill the top and bottom layers of your part. &nbsp;Enter the total number of solid layers to fill.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Infill</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Density</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Enter the fill density between the perimeters of each layer. &nbsp;100 would be a solid fill.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Fill angle</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">If Density is set to less than 100, enter the angle for the fill pattern between perimeters measured from the X axis of the printer.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Top/bottom fill pattern</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">If </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Top</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Bottom</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> (see </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Solid Layers</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> above) are specified, select either </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Hatch</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Cross</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Hatch</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> as the fill pattern.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Middle file pattern</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select either </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Hatch</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Cross Hatch</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> for the fill pattern for all layers between the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Top</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Bottom</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> layers (see </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Solid Layers</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> above).</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Printer Control Parameters tab</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:410px"><img alt="Printer Control Parameters tab" title="Printer Control Parameters tab" width="410" height="358" style="width:410px;height:358px;border:none" src="generate-gcode-options-dialog-printer-control-parameters.png"/><p style="text-align:center"><span class="f_ImageCaption">Printer Control Parameters tab</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Temperature</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Extruder</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> / </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Bed</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">You can specify the operating temperature for both the extruder and the bed of the printer. &nbsp;This will depend on the material used. &nbsp;Refer to your printer guide or service for recommended values.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Speeds</a></span></td></tr></table></div><div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Perimeter / Infill  </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">You can specify separately the speed of the extruder when printing </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Perimeters</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Infills</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Traversals</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">. &nbsp;Speed values are measured in part units per minute.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Use travel speed instead of rapid</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">You can specify separately the speed of the extruder when the printer traverses. &nbsp;Speed values are measured in part units per minute.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Other Options</a></span></td></tr></table></div><div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Generate</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Generate</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> the printed layers and display them on your part in the graphics screen.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Post</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Post</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> the generated printed layers to a G-Code file. &nbsp;From the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Post &amp; Save As</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> dialog, select a folder and enter a file name and file extension for the posted gcode file and pick </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Post</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">. &nbsp;Enter a file extension supported by your printer. </span></p>
+<div style="text-align: left; text-indent: -24px; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:331px"><img alt="Sample G-Code File" title="Sample G-Code File" width="331" height="242" style="width:331px;height:242px;border:none" src="sample-gcode-file.png"/><p style="text-align:center"><span class="f_ImageCaption">Sample G-Code File</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Path Visibility</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<img alt="Toggle Path Visibility" title="Toggle Path Visibility" width="24" height="24" style="float:left;margin:0 10px 0 0;width:24px;height:24px;border:none" src="doc_filesimage030.png"/><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this icon to toggle the display of the printed layers on your part in the graphics screen.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Display Path Levels</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<img alt="Display Path Levels" title="Display Path Levels" width="24" height="24" style="float:left;margin:0 10px 0 0;width:24px;height:24px;border:none" src="doc_filesimage031.png"/><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this icon to display the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Z Level Display</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> dialog. &nbsp;You can use this dialog to view each printed layer individually.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">To Cancel this Command</a></span></td></tr></table></div><div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Before mesh(es) are selected: <img alt="Press the &lt;Esc&gt; key" title="Press the &lt;Esc&gt; key" width="47" height="32" style="margin:0;width:47px;height:32px;border:none" src="esc-key.png"/> <span style="font-style: italic;">or</span> <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/></p>
+<p class="p_Normal">After mesh(es) are selected: <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/> <span style="font-style: italic;">or </span><img alt="Pick Cancel from the RhinoCAM Browser" title="Pick Cancel from the RhinoCAM Browser" width="13" height="13" style="margin:0;width:13px;height:13px;border:none" src="cancel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="mesh_ribbon_bar_tabs.html" class="topiclink">The Ribbon Bar</a></p>
+<p class="p_Normal"><a href="3d-print-tab.html" class="topiclink">3D Print Tab</a></p>
+<p class="p_Normal"><a href="part-orientation.html" class="topiclink">Part Orientation</a></p>
+<p class="p_Normal"><a href="support-generation.html" class="topiclink">Support Generation</a></p>
+<p class="p_Normal"><a href="select.html" class="topiclink">Select 3D Printer</a></p>
+<p class="p_Numbered" style="margin: 0 0 8px 24px;"><span class="f_Numbered"><a href="specifications.html" class="topiclink">3D Printer Specifications</a></span></p>
+<p class="p_Normal"><a href="fit.html" class="topiclink">Fit Mesh</a></p>
+<p class="p_Normal"><a href="check.html" class="topiclink">Check Mesh</a></p>
+<p class="p_Normal"><a href="export.html" class="topiclink">Export Mesh</a></p>
+<p class="p_Normal"><a href="print.html" class="topiclink">Print</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?generate-g-code.html" target="_top">'+baseurl+'index.html?generate-g-code.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

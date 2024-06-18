@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Create Miscellaneous Operations &gt; Fixture Offsets</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Miscellaneous Operations,Miscellaneous Operations Fixture Offsets" />
+   <meta name="description" content="Available in: Xpress &nbsp;Standard &nbsp;Expert &nbsp;Professional &nbsp;Premium &nbsp;Fixture offset is used to set work zero (program home) that is different from the absolute, machine coordi" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "fixtureoffsets.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Fixture Offsets</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?fixtureoffsets.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a> &gt; <a href="createmiscellaneousoperations.html">Create Miscellaneous Operations</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Fixture Offsets</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="machinecontrol.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="createmiscellaneousoperations.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="xyinstance.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:87px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold; color: #800000;">Available in:</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><img alt="Fixture Offsets" title="Fixture Offsets" width="72" height="56" style="float:left;margin:0 10px 0 0;width:72px;height:56px;border:none" src="fixture-offsets-icon.png"/>Fixture offset is used to set work zero (program home) that is different from the absolute, machine coordinate system. This allows the programmer to set up home positions for multiple parts. A typical operation that uses fixture offsets would be to mill multiple copies of parts.</p>
+<p class="p_Normal">The offset locations are defined on the machine controller and are called using a work coordinate offset register number. For example: <span class="f_BoldKeyword">G54</span>, <span class="f_BoldKeyword">G55</span> etc...</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Fixture Offsets Menu Item</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">User can create a <span class="f_BoldKeyword">Fixture Offset</span> operation by selecting “<span class="f_BoldKeyword">Fixture Offsets</span>” from <span class="f_BoldKeyword">Create Miscellaneous Operations</span> under the <span class="f_BoldKeyword">Program</span> tab in <span class="f_BoldKeyword">Machining Browser</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:726px"><img alt="Fixture Offsets Menu Item" title="Fixture Offsets Menu Item" width="726" height="181" style="width:726px;height:181px;border:none" src="doc_filesimage370.png"/><p style="text-align:center"><span class="f_ImageCaption">Fixture Offsets Menu Item</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Dialog Box: Fixture Offset</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This allows you to specify fixture offset parameters.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:366px"><img alt="Dialog Box: Fixture Offset" title="Dialog Box: Fixture Offset" width="366" height="486" style="width:366px;height:486px;border:none" src="doc_filesimage371.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Fixture Offset</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Register Start Number </span></p>
+<p class="p_Normal">This specifies the start register value. Use <span class="f_BoldKeyword">54</span> to output <span class="f_BoldKeyword">G54</span> in the posted file. The work offset prefix is set in the post processor.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Operation Repeat Count</span> </p>
+<p class="p_Normal">Specify the number of repeats. To machine 4 parts set the repeat count = 4.<br />
+When Operation Repeat Count = 1, the posted code outputs the specified register start number in the posted code.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Register Number Increment</span> </p>
+<p class="p_Normal">Setting this to 1 increment the work offset number by 1. (<span class="f_BoldKeyword">54</span>, <span class="f_BoldKeyword">55</span>, <span class="f_BoldKeyword">54</span> etc…)</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Fixture Offset operation shown under Setup</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Selecting <span class="f_BoldKeyword">Generate</span> creates and lists the <span class="f_BoldKeyword">Fixture Offset</span> operation under <span class="f_BoldKeyword">Setup</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:205px"><img alt="Fixture Offset operation shown under Setup" title="Fixture Offset operation shown under Setup" width="205" height="179" style="width:205px;height:179px;border:none" src="doc_filesimage372.png"/><p style="text-align:center"><span class="f_ImageCaption">Fixture Offset operation shown under Setup</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Creating/Editing operations under a Fixture Offset operation</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">You can create machining operation or move existing machining operations under <span class="f_BoldKeyword">Fixture Offset</span> operation. This fixture offset number applies to all machining operations that are created and listed under the <span class="f_BoldKeyword">Fixture offset</span> operation. &nbsp;</p>
+<p class="p_Normal">To create a new operation under a <span class="f_BoldKeyword">Fixture Offset</span> operation, select the <span class="f_BoldKeyword">Fixture Offset</span> operation folder under the <span class="f_BoldKeyword">Machining Browser</span> and then choose from <span class="f_BoldKeyword">Milling</span> or <span class="f_BoldKeyword">Hole Machining</span> operations. The operation would appear below the <span class="f_BoldKeyword">Fixture Offset</span> operation and is a level into the <span class="f_BoldKeyword">Machining Job</span> tree structure.</p>
+<p class="p_Normal">To move existing operations, select a machining operation, drag and drop it into the <span class="f_BoldKeyword">Fixture Offset</span> operation so the machining operation appears one level into the <span class="f_BoldKeyword">Machining Job</span> tree.</p>
+<p class="p_Normal">When operation repeat count of 2 or more is specified, the posted output creates copies of each operation by the specified repeat count and increments the <span class="f_BoldKeyword">Fixture offset</span> value by the specified register number increment.</p>
+<p class="p_Normal">Multiple <span class="f_BoldKeyword">Fixture Offset</span> operations can be created and operations can be grouped under each <span class="f_BoldKeyword">Fixture Offset</span> operation folder.</p>
+<div class="p_Normal"><div style="margin:0;width:230px"><img alt="Creating/Editing operations under a Fixture Offset operation" title="Creating/Editing operations under a Fixture Offset operation" width="230" height="205" style="width:230px;height:205px;border:none" src="doc_filesimage373.png"/><p style="text-align:center"><span class="f_ImageCaption">Creating/Editing operations under a Fixture Offset operation</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-indent: -32px; margin: 0 0 8px 56px;"><span style="font-size: 13px; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?fixtureoffsets.html" target="_top">'+baseurl+'index.html?fixtureoffsets.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

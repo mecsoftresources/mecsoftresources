@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Knowledge Base &gt; Create Knowledge Base (KB)</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Knowledge Base,Knowledge Base Create from Operation,Knowledge Base Geometry Selection Rules" />
+   <meta name="description" content="Available in: Xpress &nbsp;Standard &nbsp;Expert &nbsp;Professional &nbsp;Premium &nbsp;Machining operations including the current Stock parameters (not only the stock model) and Post in the cur" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "create_a_knowledge_base.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Create Knowledge Base (KB)</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?create_a_knowledge_base.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a> &gt; <a href="knowledgebase.html">Knowledge Base</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Create Knowledge Base (KB)</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="knowledgebase.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="knowledgebase.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="load_a_knowledge_base.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:87px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold; color: #800000;">Available in:</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:top; width:80px; padding:0; border:solid thin #c0c0c0; border-top:none; border-right:none; border-left:none;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">Machining operations including the current <span class="f_BoldKeyword">Stock</span> parameters (not only the stock model) and <span class="f_BoldKeyword">Post</span> in the current <span class="f_BoldKeyword">Machining Job</span>) can be saved to a <span class="f_BoldKeyword">Knowledge Base</span> file. &nbsp;Start by creating machining operations. Once created these machining operations can be re-sequenced if necessary. &nbsp;When completely satisfied with the machining operations used and their sequence, select <span class="f_BoldKeyword">Knowledge Base</span> and <span class="f_BoldKeyword">Save to KB</span> from the <span class="f_BoldKeyword">Program</span> tab. &nbsp;You can also select the <span class="f_BoldKeyword">Save to Knowledge Base</span> option by right clicking on the <span class="f_BoldKeyword">Machining Job</span>, <span class="f_BoldKeyword">Setup</span> or <span class="f_BoldKeyword">Machining Operation</span> (<span class="f_BoldKeyword">Mop</span>) and selecting the <span class="f_BoldKeyword">Save to Knowledge Base</span> option.</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="margin:0 auto; width:450px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:solid thin #1159aa;"><p class="p_Normal"><span class="f_BoldParameter">To Update Your Knowledge Base: </span>Once you have a KB saved you may want to add Mops (Machining Operations) to it. &nbsp;Load the Knowledge Base from the Program tab. &nbsp;It will be appended to your Machining Job. &nbsp;Once you have the additional Mops defined, right-click on the <span class="f_BoldKeyword">Machining J</span>ob and select <span class="f_BoldKeyword">Save to Knowledge Base</span>. &nbsp;All Mops in your Machining Job will be saved to the KB, overwriting the KB file.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-weight: bold;">Note:</span> To add machining operations to the <span class="f_BoldKeyword">Knowledge Base</span> AFTER it is saved, use the <span class="f_BoldKeyword">K-Bases</span> tab of the <span class="f_BoldKeyword">Machining Objects</span> <span class="f_BoldKeyword">Browser</span>.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">From the Program tab of the Machining Browser</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:712px"><img alt="From the Program tab of the Machining Browser - Premium Configuration shown" title="From the Program tab of the Machining Browser - Premium Configuration shown" width="712" height="208" style="width:712px;height:208px;border:none" src="doc_filesimage349.png"/><p style="text-align:center"><span class="f_ImageCaption">From the Program tab of the Machining Browser - Premium Configuration shown</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">By right click on Machining Operations</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:331px"><img alt="Right click on Machining Job" title="Right click on Machining Job" width="331" height="241" style="width:331px;height:241px;border:none" src="doc_filesimage350.png"/><p style="text-align:center"><span class="f_ImageCaption">Right click on Machining Job</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:362px"><img alt="Right click on Selected MOps" title="Right click on Selected MOps" width="362" height="651" style="width:362px;height:651px;border:none" src="doc_filesimage350b.png"/><p style="text-align:center"><span class="f_ImageCaption">Right click on Selected MOps</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Work Zeros in Knowledge Bases</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_BoldKeyword">Knowledge Bases</span> allow for parametric definition of <span class="f_BoldKeyword">Work Zeros</span> when a <span class="f_BoldKeyword">Knowledge Base</span> is loaded. &nbsp;As an example, you can specify the <span class="f_BoldKeyword">Work Zero</span> to be at the <span class="f_BoldKeyword">South-East</span> corner of the stock model and save a <span class="f_BoldKeyword">Knowledge Base</span>. &nbsp;When this <span class="f_BoldKeyword">Knowledge Base</span> is loaded, the work zero will be automatically set to the <span class="f_BoldKeyword">South -East</span> corner of the current stock model.  <a href="workzero.html" class="topiclink">If you want a fixed position for your Work Zero, define it using the Pick option</a>.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Geometry Selection Rules</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">If there are no <span class="f_BoldKeyword">Geometry Selection Rules</span> set for the <span class="f_BoldKeyword">Knowledge Base</span> the following message is displayed. &nbsp;If you wish to set <span class="f_BoldKeyword">Global</span> selection rules for the <span class="f_BoldKeyword">Knowledge Base</span>, pick <span class="f_BoldKeyword">Yes</span> to display the <span class="f_BoldKeyword">Geometry Selection Rules</span> dialog. &nbsp;You can assign <span class="f_BoldKeyword">Geometry Selection Rules</span> for each operation in the <span class="f_BoldKeyword">Knowledge Base</span> after it is loaded into another part. &nbsp;See <a href="knowledge_base_rules.html" class="topiclink">Knowledge Base Rules</a> for information about setting <span class="f_BoldKeyword">Selection Rules</span> for a <span class="f_BoldKeyword">Knowledge Base</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:247px"><img alt="Geometry Selection Rules" title="Geometry Selection Rules" width="247" height="132" style="width:247px;height:132px;border:none" src="message-no-selection-rules-set.png"/><p style="text-align:center"><span class="f_ImageCaption">Geometry Selection Rules</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?create_a_knowledge_base.html" target="_top">'+baseurl+'index.html?create_a_knowledge_base.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Reduce Feed Rate at Sharp Corners</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Reduce Feedrate at Corners,Feedrate,Feedrate Optimization,Feedrate Optimization,How To" />
+   <meta name="description" content="There may be times when you want your cutting tool to slow down when it reaches a sharp corner and then speed up again after the corner. &nbsp;We call this Feed Rate Optimization..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "howcanireducemyfeedrateatsharpcorners.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Reduce Feed Rate at Sharp Corners</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?howcanireducemyfeedrateatsharpcorners.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Reduce Feed Rate at Sharp Corners</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-edit-toolpaths-associat.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="howcaniaddtoolcomments.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">There may be times when you want your cutting tool to slow down when it reaches a sharp corner and then speed up again after the corner. &nbsp;We call this <span class="f_BoldKeyword">Feed Rate Optimization</span> and it is available in the <span class="f_BoldKeyword">PRO</span> configuration of each of our CAM plug-ins. &nbsp;Here are the steps to enable this functionality. &nbsp;You can also refer to our tech blog article here: <a href="https://mecsoft.com/blog/feed-rates-explained/" target="_blank" class="weblink">Feed Rates Explained – Extend the Life of Your CNC Tools and Machines</a>.</p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table class="AlertBoxes" style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr class="AlertBoxes">
+<td class="AlertBoxes" style="width:495px; background-color:#ECFFFF; padding:5px; border:solid thin #1159aa;"><p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/><span class="f_BoldKeyword">Feedrate Optimization</span> will only apply to planar toolpaths such as <span class="f_BoldKeyword">2½ Axis</span> operations and some <span class="f_BoldKeyword">3 Axis</span> operations.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">1.</span>Generate your toolpath as you normally world.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="feed-rate-opt-image-1" width="32" height="32" style="margin:0;width:32px;height:32px;border:none" src="feed-rate-opt-image-1.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">2.</span>Make sure you are satisfied with your toolpath (i.e., you have simulated the toolpath and are ready to post-process it to your CNC controller.</p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">3.</span>In the <span class="f_BoldKeyword">Machining Job</span> tree expand the operation folder.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="feed-rate-opt-image-3" width="32" height="32" style="margin:0;width:32px;height:32px;border:none" src="feed-rate-opt-image-3.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">4.</span>Double-click on the <span class="f_BoldKeyword">Toolpath</span> icon to display the <span class="f_BoldKeyword">Toolpath Editor</span>.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:410px"><img alt="Feedrate Optimization Icon (Toolpath Editor)" title="Feedrate Optimization Icon (Toolpath Editor)" width="410" height="148" style="width:410px;height:148px;border:none" src="toolpath-editor.png"/><p style="text-align:center"><span class="f_ImageCaption">Feedrate Optimization Icon (Toolpath Editor)</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">5.</span>From the <span class="f_BoldKeyword">Global Edits</span> tab select the <span class="f_BoldKeyword">Feedrate Optimization</span> icon.<br />
+This will display the <span class="f_BoldKeyword">Feedrate Optimization</span> dialog shown below.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:349px"><img alt="Dialog Box: Feedrate Optimization" title="Dialog Box: Feedrate Optimization" width="349" height="292" style="width:349px;height:292px;border:none" src="feedrate-optizization-dialog.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Feedrate Optimization</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">6.</span>Set your feedrate reduction parameters. &nbsp;Pay special attention to the &nbsp;following options:<br />
+&nbsp;<br />
+<span class="f_BoldParameter">Distance before corner to start reduction</span><br />
+<span class="f_BoldParameter">Distance after corner to reset feedrate</span><br />
+<span class="f_BoldParameter">Feedrate reduction percentage</span><br />
+<span class="f_BoldParameter">&nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">7.</span>Pick OK to close the <span class="f_BoldKeyword">Feedrate Optimization</span> dialog.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table class="AlertBoxes" style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr class="AlertBoxes">
+<td class="AlertBoxes" style="width:495px; background-color:#ECFFFF; padding:5px; border:solid thin #1159aa;"><p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/>Changes are then made to your toolpath! &nbsp;Understand that any changes you make here will be removed if you regenerate your toolpath. &nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">8.</span>Let's review what we did.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Feeds &amp; Speeds</span> for the operation are as shown in this dialog.<br />
+Note that the <span class="f_BoldKeyword">Cut (Cf)</span> value is set to 10 in/min.</p>
+<div class="p_Normal"><div style="margin:0;width:32px"><img alt="Feeds &amp; Speeds tab of the 2 1/2 Axis Profiling operation." title="Feeds &amp; Speeds tab of the 2 1/2 Axis Profiling operation." width="32" height="32" style="width:32px;height:32px;border:none" src="feed-rate-opt-image-5.png"/><p style="text-align:center"><span class="f_ImageCaption">Feeds &amp; Speeds tab of the 2 1/2 Axis Profiling operation.</span></p></div></div>
+<p class="p_Normal">Now look at your <span class="f_BoldKeyword">Toolpath Editor</span> and locate the first <span class="f_BoldKeyword">Cut</span> motion.</p>
+<p class="p_Normal">In our example it is on line <span class="f_BoldKeyword">21</span> as shown below.</p>
+<div class="p_Normal"><div style="margin:0;width:32px"><img alt="Toolpath Editor with Cut Feed reductions" title="Toolpath Editor with Cut Feed reductions" width="32" height="32" style="width:32px;height:32px;border:none" src="feed-rate-opt-image-4.png"/><p style="text-align:center"><span class="f_ImageCaption">Toolpath Editor with Cut Feed reductions</span></p></div></div>
+<p class="p_Normal">Based on the toolpath <span class="f_BoldKeyword">Feeds &amp; Speeds</span> tab and selections made in the <span class="f_BoldKeyword">Feedrate Optimization</span> dialog (shown above) we can see the following:</p>
+<p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Our <span class="f_BoldKeyword">2-1/2 &nbsp;Axis Profiling</span> toolpath is cutting a <span class="f_BoldKeyword">6&quot;</span> square profile.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>On line <span class="f_BoldKeyword">21</span> a <span class="f_BoldKeyword">MARKER</span> is set to start the <span class="f_BoldKeyword">CUT</span> feedrate (our dialog above has it set to 10 in/min).</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>On line <span class="f_BoldKeyword">23</span> we see that the cutter is moved to <span class="f_BoldKeyword">X5.750000</span>. &nbsp;(this is 0.25&quot; before the first corner).</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Then on line <span class="f_BoldKeyword">24</span> we see that a <span class="f_BoldKeyword">FEED</span> <span class="f_BoldKeyword">CHANGE</span> of <span class="f_BoldKeyword">0.25</span> is inserted. &nbsp;(this is the first feedrate reduction of 25%).</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Then on line <span class="f_BoldKeyword">28</span> the cutter has turned the first corner and goes to X6.250000 (this is 0.25&quot; after the first corner).</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Then on line <span class="f_BoldKeyword">29</span>, a <span class="f_BoldKeyword">FEED CHANGE</span> is inserted to <span class="f_BoldKeyword">RESTORE</span> the feedrate back to 100%.</p><p class="p_Normal" style="text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The on line <span class="f_BoldKeyword">31</span>, the feedrate reduction begins again for the next corner.</p></td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">9.</span>When we post the gcode file for the operation we can locate the feedrate reductions as shown below.</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:32px"><img alt="G-Code showing Feedrate Reductions" title="G-Code showing Feedrate Reductions" width="32" height="32" style="width:32px;height:32px;border:none" src="feed-rate-opt-image-6.png"/><p style="text-align:center"><span class="f_ImageCaption">G-Code showing Feedrate Reductions</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Normal" style="display:inline-block;width:24px;margin-left:-24px">10.</span>Here is another example of <span class="f_BoldKeyword">Feedrate Optimization</span>:</p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:251px"><img alt="Example without Feedrate Optimization" title="Example without Feedrate Optimization" width="251" height="200" style="width:251px;height:200px;border:none" src="feedrateopt-toolpath-1.png"/><p style="text-align:center"><span class="f_ImageCaption">Example without Feedrate Optimization</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="g-code-2in-square-haas-wo-feedrate-optimization" width="176" height="218" style="margin:0;width:176px;height:218px;border:none" src="g-code-2in-square-haas-wo-feedrate-optimization.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: center;">Example without <span class="f_BoldKeyword">Feedrate Optimization</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:237px"><img alt="Example with Feedrate Optimization" title="Example with Feedrate Optimization" width="237" height="200" style="width:237px;height:200px;border:none" src="feedrateopt-toolpath-2.png"/><p style="text-align:center"><span class="f_ImageCaption">Example with Feedrate Optimization</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="g-code-2in-square-haas-w-feedrate-optimization" width="176" height="319" style="margin:0;width:176px;height:319px;border:none" src="g-code-2in-square-haas-w-feedrate-optimization.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="2"  style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: center;">Example with <span class="f_BoldKeyword">Feedrate Optimization</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?howcanireducemyfeedrateatsharpcorners.html" target="_top">'+baseurl+'index.html?howcanireducemyfeedrateatsharpcorners.html</a></p>');
+
+</script>
+</body>
+</html>

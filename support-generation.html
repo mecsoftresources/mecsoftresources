@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MESH Module &gt; Ribbon Bar &gt; 3D Print Tab &gt; Build Preparation &gt; Support Generation</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="3D Print,3D Print Support Generation,Support Generation" />
+   <meta name="description" content="Use this command to generate a support structure for a selected mesh to properly support it during the 3D printing process. &nbsp;An insufficiently supported mesh can collapse..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "support-generation.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Support Generation</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?support-generation.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MESH Module &gt; <a href="mesh_ribbon_bar_tabs.html">Ribbon Bar</a> &gt; <a href="3d-print-tab.html">3D Print Tab</a> &gt; Build Preparation&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Support Generation</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="part-orientation.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="3d-print-tab.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="select.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="Support Generation" title="Support Generation" width="132" height="25" style="float:left;margin:0 10px 0 0;width:132px;height:25px;border:none" src="icon-support-generation.png"/>Use this command to generate a support structure for a selected mesh to properly support it during the 3D printing process. &nbsp;An insufficiently supported mesh can collapse during the 3D print process due to overhangs and/or the weight of the print material.</p>
+<p class="p_Normal">Supports are generated based on an overhang value you provide and will extend from overhangs downward in the Z axis to the floor printer's bed. &nbsp;Be sure to read this entire section carefully to fully understand the power of this command.</p>
+<p class="p_NewStyle_atoc"><span class="f_NewStyle_atoc">&nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Read these Tips!</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><div class="p_Normal" style="margin: 0 0 8px 24px;"><div style="float:right;margin:0 0 0 10px;width:131px"><img alt="Support Generation" title="Support Generation" width="131" height="155" style="width:131px;height:155px;border:none" src="support-generation-a.png"/><p style="text-align:center"><span class="f_ImageCaption">Support Generation</span></p></div></div>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">When to use this Command</span>:  <span class="f_BoldKeyword" style="text-decoration: underline;">ONLY</span> use this command after <a href="fit.html" class="topiclink">Fit Mesh</a><span class="f_Numbered"> and </span><a href="part-orientation.html" class="topiclink">Part Orientation</a><span class="f_Numbered"> as these commands confirm the final location and orientation of your part within the 3D printer's volume.</span></p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Good Practice</span>: &nbsp;It is <span class="f_BoldKeyword" style="text-decoration: underline;">ALWAYS</span> a good practice to <span class="f_BoldKeyword"><a href="check__repair.html" class="topiclink">Diagnose</a></span> and <span class="f_BoldKeyword"><a href="auto_repair.html" class="topiclink">Auto Fix</a></span> your mesh <span class="f_BoldKeyword" style="text-decoration: underline;">BEFORE</span> using <span class="f_BoldKeyword">Support Generation</span>.  <span class="f_BoldKeyword" style="text-decoration: underline;">ANY</span> errors such as gaps or self-intersects will have influence on the determination of overhang area and support generation.</p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Experimentation is Advised</span>: &nbsp;Review the <span class="f_BoldKeyword">Work Flow</span> and <span class="f_BoldKeyword">Basic Procedure</span> section below and then experiment with the various options and parameters. &nbsp;You can adjust parameters and preview the support structure prior to committing them to a mesh. &nbsp;The <span class="f_BoldKeyword">User's Guide</span> of your <span class="f_BoldKeyword">3D Printer</span> may also provide recommended values for some of these parameters.</p>
+<p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Understanding Support Structures</span>: &nbsp;This command will add support structures that will &quot;connect&quot; to the surfaces of your 3D Printed part. &nbsp;Understand that these support structures will need to be removed manually once your 3D Print is completed.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Work Flow</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">First use the </span><a href="fit.html" class="topiclink">Fit</a><span class="f_Numbered"> and the </span><a href="part-orientation.html" class="topiclink">Part Orientation</a><span class="f_Numbered"> commands to determine the best orientation for your part within the 3D printer's volume. &nbsp;To determine the 3D printer's volume, first <a href="select.html" class="topiclink">select a 3D printer</a> from the list of supported printers and then <a href="toggleprintervolumevisibility.html" class="topiclink">toggle the display of the printer's volume On</a>.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Parameters</span><span class="f_Numbered"> tab of the dialog and set your desired parameters.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Support Generation</span><span class="f_Numbered"> tab of the dialog to </span><span class="f_BoldKeyword">Generate</span><span class="f_Numbered"> the support preview. &nbsp;You can generate the supports automatically and then add individual supports manually if needed.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Details</span><span class="f_Numbered"> tab and review the information provided.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">Once you are satisfied with the support structure, select the </span><span class="f_BoldKeyword">Create mesh from support structures</span><span class="f_Numbered"> tab, select an option and pick </span><span class="f_BoldKeyword">Create mesh(es)</span><span class="f_Numbered">.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Command Prompts</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Select a mesh for which you want to create supports.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select parameters and generate supports automatically or create them manually.</span></p></td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Basic Procedure</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Screen Pick</span></p>
+</td>
+<td style="vertical-align:top; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Optional Information</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 1</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select <span class="f_BoldKeyword">Support Generation</span> from the <a href="3d-print-tab.html" class="topiclink">3D Print Tab</a>.</p>
+</td>
+<td rowspan="2"  style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;">Steps 1 &amp; 2 can be performed in reverse order. &nbsp;You can select a mesh first and then select the command icon.</p>
+<p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;"><img alt="Select the mesh you want to generate support for." title="Select the mesh you want to generate support for." width="132" height="136" style="margin:0 auto 0 auto;width:132px;height:136px;border:none" src="support-generation-b.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 2</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Select the mesh you want to generate support for and then press <span class="f_BoldKeyword">Enter</span>. You can select from the graphics window or from the <span class="f_BoldKeyword">RhinoCAM-MESH Browser</span>.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 3</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Choose the desired parameters and options and preview the supports.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;"><img alt="Choose the desired parameters and options and preview the supports." title="Choose the desired parameters and options and preview the supports." width="131" height="155" style="margin:0 auto 0 auto;width:131px;height:155px;border:none" src="support-generation-a.png"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:73px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Step 4</span></p>
+</td>
+<td style="vertical-align:top; width:286px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="margin: 0 4px 8px 0;">Choose <span class="f_BoldKeyword">Create mesh(es)</span> to commit the support structure preview to mesh objects.</p>
+</td>
+<td style="vertical-align:middle; width:257px; padding:5px; border:solid thin #c0c0c0;"><p class="p_Normal" style="text-align: center; margin: 0 4px 8px 0;"><img alt="Choose Create mesh(es) to commit the support structure preview to mesh objects." title="Choose Create mesh(es) to commit the support structure preview to mesh objects." width="130" height="153" style="margin:0 auto 0 auto;width:130px;height:153px;border:none" src="support-generation-c.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Support Generation Options</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The following options and reference information are available from the <a href="the_mesh_browser.html" class="topiclink">Mesh Browser</a>.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Parameters</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The following parameters can be adjusted to achieve the desired support generation. &nbsp;Once the values are set, go to the <span class="f_BoldKeyword">Support Generation</span> tab (see below) and pick <span class="f_BoldKeyword">Generate</span>. &nbsp;The support structure will be previewed on your part. &nbsp;You can refer to the images and definitions shown below for guidance.</p>
+<div class="p_Normal"><div style="margin:0;width:434px"><img alt="Support Generation: Parameters tab" title="Support Generation: Parameters tab" width="434" height="441" style="width:434px;height:441px;border:none" src="support-generation-options-dialog-parameters.png"/><p style="text-align:center"><span class="f_ImageCaption">Support Generation: Parameters tab</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:374px"><img alt="Support Generation Parameters" title="Support Generation Parameters" width="374" height="241" style="width:374px;height:241px;border:none" src="support-generation-parameters-b.png"/><p style="text-align:center"><span class="f_ImageCaption">Support Generation Parameters</span></p></div></div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Overhang angle</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The overhang angle where support generation will occur (shown in </span><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #0000ff;">blue</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> on your part).</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword">Minimum overhang height</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Any overhang lower than this height will be ignored in both the support calculation as well as the overhang calculation. </span></p>
+<p class="p_Normal"><span class="f_BoldKeyword">Max angle</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The maximum angle allowed between the Z axis and any support structure. &nbsp;This determines the amount of overhang allowed for support structures. &nbsp;</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The </span><span class="f_BoldKeyword">Max angle</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> should not exceed the </span><span class="f_BoldKeyword">Overhang angle</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> (see above) or the generated support structure might be unprintable.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Support diameter</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The diameter of the support where it touches your part</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Sampling distance</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The distance between support diameters on your part. &nbsp;The smaller the value, the more supports that are generated. &nbsp;The following images illustrate sampling distance. &nbsp;The one of the left to too large while the one of the right is too large!</span></p>
+<div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="width:200px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_ImageCaption"><div style="margin:0;width:180px"><img alt="Sampling distance too large" title="Sampling distance too large" width="180" height="174" style="width:180px;height:174px;border:none" src="sampling-distance-to-large.png"/><p style="text-align:center"><span class="f_ImageCaption">Sampling distance too large</span></p></div></div>
+</td>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:180px"><img alt="Sampling distance too samll" title="Sampling distance too samll" width="180" height="184" style="width:180px;height:184px;border:none" src="sampling-distance-to-small.png"/><p style="text-align:center"><span class="f_ImageCaption">Sampling distance too samll</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Connector diameter</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The allowed diameter where the support connectors contact your part.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Connector height</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The Y distance between the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Connector diameter</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> (on your part) and any support structure. </span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Base diameter</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The diameter created at the base of each connector.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Base height</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The height of each base diameter.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Base connectors on mesh</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Allow</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Disallow</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Minimize</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">This option determines how many base connectors are allowed to contact your part. &nbsp;In the image below on the left, all base connectors in the upper portion of the part are </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Allowed</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> to connect to the part. &nbsp;In the image on the right, base connectors are </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Disallowed</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> to connect to the part. &nbsp;The middle image </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Minimizes</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> contact with the part.</span></p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 24px;"><img alt="Tip!" title="Tip!" width="16" height="22" style="float:left;margin:0 10px 0 0;width:16px;height:22px;border:none" src="hint-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">A word about Base Connectors</span>: &nbsp;Because you will need to re<span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;">move all support material manually, it might be desirable to </span><span class="f_BoldKeyword">Minimize</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span class="f_BoldKeyword">Disallow</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> connectors contacting your part. &nbsp;However, this may increase the amount of support material your printer will consume. &nbsp;Also note that selecting the </span><span class="f_BoldKeyword">Disallow</span><span class="f_Numbered" style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> option may still produce connectors that contact your part in some specific cases when supports cannot be constructed without them.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: -24px; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:140px"><img alt="Allow connectors on mesh, Low support material utilization, High part surface contact" title="Allow connectors on mesh, Low support material utilization, High part surface contact" width="140" height="188" style="width:140px;height:188px;border:none" src="support-gen-allow-base-connectors-on-mesh.png"/><p style="text-align:center"><span class="f_ImageCaption">Allow connectors on mesh, Low support material utilization, High part surface contact</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:140px"><img alt="Minimize connectors, Medium support material utilization, Medium part surface contact" title="Minimize connectors, Medium support material utilization, Medium part surface contact" width="140" height="188" style="width:140px;height:188px;border:none" src="support-gen-minimize-base-connectors-on-mesh.png"/><p style="text-align:center"><span class="f_ImageCaption">Minimize connectors, Medium support material utilization, Medium part surface contact</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:141px"><img alt="Disallow connectors, High support material utilization, Low part surface contact" title="Disallow connectors, High support material utilization, Low part surface contact" width="141" height="188" style="width:141px;height:188px;border:none" src="support-gen-disallow-base-connectors-on-mesh.png"/><p style="text-align:center"><span class="f_ImageCaption">Disallow connectors, High support material utilization, Low part surface contact</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Support Generation</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">The following support generation options are available:</span></p>
+<div class="p_Normal"><div style="margin:0;width:370px"><img alt="Support Generation: Support Generation tab" title="Support Generation: Support Generation tab" width="370" height="316" style="width:370px;height:316px;border:none" src="support-generation-options-dialog-support-generation.png"/><p style="text-align:center"><span class="f_ImageCaption">Support Generation: Support Generation tab</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Automatic Generation</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Tree</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> / </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Straight</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Tree</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> or </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Straight</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> to define the type of support structure to generate. &nbsp;An example of each is shown below.</span></p>
+<div style="text-align: left; text-indent: -24px; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:180px"><img alt="Tree Structure" title="Tree Structure" width="180" height="172" style="width:180px;height:172px;border:none" src="support-gen-tree-add.png"/><p style="text-align:center"><span class="f_ImageCaption">Tree</span></p></div></div>
+</td>
+<td style="vertical-align:bottom; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:180px"><img alt="Straight Structure" title="Straight Structure" width="180" height="179" style="width:180px;height:179px;border:none" src="support-gen-straight.png"/><p style="text-align:center"><span class="f_ImageCaption">Straight</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Add point to support</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button and then pick a point on your part (within the blue overhang area) to add a sampling point. &nbsp;Then pick </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Generate</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> to display the new support structure.</span></p>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Generate</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Pick this button to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Generate</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> a support structure based on the options selected. &nbsp;It will be previewed your part.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Manual Generation</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Add</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button and then pick a point on your part (within the blue overhang area) to add a sampling point to the support structure preview.</span></p>
+<div style="text-align: left; text-indent: -24px; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:450px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Pick a new Sampling Point" title="Pick a new Sampling Point" width="180" height="135" style="margin:0;width:180px;height:135px;border:none" src="pick-a-new-sampling-point.png"/><span class="f_ImageCaption"> </span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="A new branch is added" title="A new branch is added" width="180" height="135" style="margin:0;width:180px;height:135px;border:none" src="pick-a-new-sampling-point-b.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Delete</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button and then pick a connector or branch to delete it from the support structure preview.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Delete all generated structures</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Select this button to delete the current support structure. &nbsp;Note: This can only be used while previewing the support structure before the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create Mesh(es)</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> button is selected. &nbsp;To delete the support structure after its mesh is created, select the mesh from the browser and use the </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Cut</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> command from </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Rhino</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Details</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The following options are available from the <span class="f_BoldKeyword">Details</span> tab:</p>
+<div class="p_Normal"><div style="margin:0;width:370px"><img alt="Support Generation: Details tab" title="Support Generation: Details tab" width="370" height="205" style="width:370px;height:205px;border:none" src="support-generation-options-dialog-details-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">Support Generation: Details tab</span></p></div></div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Support structures characteristics</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">This tab displays information about the currently previewed support structure including the total </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Volume</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and linear </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Length</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">.</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Create Mesh from Support Structures</a></span></td></tr></table></div><div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The following options are available from the <span class="f_BoldKeyword">Create mesh from support structures</span> tab:</p>
+<div class="p_Normal"><div style="margin:0;width:370px"><img alt="Support Generation: Create mesh from support structures tab" title="Support Generation: Create mesh from support structures tab" width="370" height="238" style="width:370px;height:238px;border:none" src="support-generation-options-dialog-create-mesh-from-support-structures-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">Support Generation: Create mesh from support structures tab</span></p></div></div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Options</a></span></td></tr></table></div><div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_BoldKeyword">Create and unite with part </span> <br />
+Select this option to create the support structure and unite its mesh objects with he part mesh object.  <span style="font-weight: bold;">Note</span>: It is advised that you do not use this option unless you are absolutely sure your support structure is correct.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Create as separate mesh &nbsp;</span><br />
+Select this option to create the support structure as a separate mesh object and list it in the <span class="f_BoldKeyword">Browser</span>.  <span style="font-weight: bold;">Note</span>: It is suggested that you use this option as it will be easier to select and delete the support structure mesh later if needed.</p>
+<p class="p_Normal"><span class="f_BoldKeyword">Create as separate mesh for each support tree </span> <br />
+Select this option to create the support structure one separate mesh for each tree structure. &nbsp;refer to the options and examples above for the difference between a <span class="f_BoldKeyword">Tree</span> and a <span class="f_BoldKeyword">Straight</span> support structure. &nbsp;Even if <span class="f_BoldKeyword">Straight</span> is selected, each straight support will be a separate mesh object. &nbsp;All newly created mesh objects will be added to the <span class="f_BoldKeyword">Browser</span>.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create mesh(es)</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> &nbsp;</span><br />
+<span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">When you are satisfied with the support structure, select this button to commit it to actual mesh object(s).  </span><span style="font-family: Arial,Helvetica,sans-serif; font-weight: bold; color: #333333;">Note</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">: Be sure you understand and select the desired </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> option listed above as each has different results.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">To Cancel this Command</a></span></td></tr></table></div><div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Before mesh(es) are selected: <img alt="Press the &lt;Esc&gt; key" title="Press the &lt;Esc&gt; key" width="47" height="32" style="margin:0;width:47px;height:32px;border:none" src="esc-key.png"/> <span style="font-style: italic;">or</span> <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/></p>
+<p class="p_Normal">After mesh(es) are selected: <img alt="Right-click the mouse" title="Right-click the mouse" width="23" height="32" style="margin:0;width:23px;height:32px;border:none" src="icon-right-click.png"/> <span style="font-style: italic;">or </span><img alt="Pick Cancel from the RhinoCAM Browser" title="Pick Cancel from the RhinoCAM Browser" width="13" height="13" style="margin:0;width:13px;height:13px;border:none" src="cancel.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">Related Topics</a></span></td></tr></table></div><div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><a href="mesh_ribbon_bar_tabs.html" class="topiclink">The Ribbon Bar</a></p>
+<p class="p_Normal"><a href="3d-print-tab.html" class="topiclink">3D Print Tab</a></p>
+<p class="p_Normal"><a href="part-orientation.html" class="topiclink">Part Orientation</a></p>
+<p class="p_Normal"><a href="select.html" class="topiclink">Select 3D Printer</a></p>
+<p class="p_Numbered" style="margin: 0 0 8px 24px;"><span class="f_Numbered"><a href="specifications.html" class="topiclink">3D Printer Specifications</a></span></p>
+<p class="p_Normal"><a href="fit.html" class="topiclink">Fit Mesh</a></p>
+<p class="p_Normal"><a href="check.html" class="topiclink">Check Mesh</a></p>
+<p class="p_Normal"><a href="export.html" class="topiclink">Export Mesh</a></p>
+<p class="p_Normal"><a href="generate-g-code.html" class="topiclink">Generate G-Code</a></p>
+<p class="p_Normal"><a href="print.html" class="topiclink">Print</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?support-generation.html" target="_top">'+baseurl+'index.html?support-generation.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How to: Understand Hole Pocketing Output</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Hole Pocketing Output" />
+   <meta name="description" content="Hole pocketing operation can be split up into 3 outputs" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "understandingholepocketingoutput.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How to: Understand Hole Pocketing Output</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?understandingholepocketingoutput.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How to: Understand Hole Pocketing Output</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-implement-arc-fitting.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="honoring-tool-geometry.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="2x0hole-pocketing" width="32" height="32" style="float:right;margin:0 0 0 5px;width:32px;height:32px;border:none" src="2x0hole-pocketing.png"/>Hole pocketing operation can be split up into 3 outputs</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><span class="f_Numbered">Circular interpolation (this is output when you select clean up pass at each Z level)</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_BoldKeyword">Helical interpolation</span><span class="f_Numbered"> (this uses the helix parameters defined under the entry/exit tab)</span><br />
+<span class="f_Numbered">On most machines, helical interpolation is output as </span><span class="f_BoldKeyword">G02/G03 X Y Z I J</span><span class="f_Numbered"> (each helix is output as a separate line of </span><span class="f_BoldKeyword">G02/G03</span><span class="f_Numbered"> code and the Z represents the helix pitch)</span><br />
+<span class="f_Numbered">Make sure to select </span><span class="f_BoldKeyword">Output full 360 helix</span><span class="f_Numbered"> and each helix individually</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><span class="f_BoldKeyword">Spiral Interpolation</span><span class="f_Numbered"> (this is the toolpath that performs the XY cut between the helix to the clean up pass.)</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_Numbered">The output for a spiral interpolation would typically be as follows: </span><span class="f_BoldKeyword">G02/G03 X Y Z I J Q</span><span class="f_Numbered">. Where </span><span class="f_BoldKeyword">Q</span><span class="f_Numbered"> represents the spiral lead. Some machine controllers would require </span><span class="f_BoldKeyword">Spiral Start &amp; end Radius</span><span class="f_Numbered"> / </span><span class="f_BoldKeyword">Spiral number of revolutions</span><span class="f_Numbered"> / </span><span class="f_BoldKeyword">Spiral Total Length</span><span class="f_Numbered"> / </span><span class="f_BoldKeyword">Spiral Angle</span><span class="f_Numbered"> in place of spiral lead.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_Numbered">Your post is currently not set up to output spiral interpolation as we are not sure if your controller supports spiral interpolation. &nbsp;Please check the controller documentation and send us the information with an example for a spiral output.</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+Go to <span class="f_BoldKeyword">CAM Preferences</span> -&gt; <span class="f_BoldKeyword">Output Control</span> located on the machining operations browser. For older versions this would be under <span class="f_BoldKeyword">Machining Preferences</span>.</p><p class="p_Normal" style="margin: 0 0 8px 65px;">* Check <span class="f_BoldKeyword">output spirals as linear motion</span> as checked.</p>
+<p class="p_Normal" style="margin: 0 0 8px 65px;">* Uncheck <span class="f_BoldKeyword">Output Arcs as Linear segments</span></p>
+<p class="p_Normal" style="margin: 0 0 8px 65px;">* Uncheck <span class="f_BoldKeyword">output helix motions as linear segments</span>.</p>
+<p class="p_Normal" style="margin: 0 0 8px 52px;">Regenerate the toolpath when a change is made to machining preferences before post processing.</p>
+<p class="p_Normal" style="margin: 0 0 8px 52px;">Make sure the post processor is configured to output helical interpolation. This is typically defined under the <span class="f_BoldKeyword">Helix/Spiral section</span> in the post processor generator.</p>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?understandingholepocketingoutput.html" target="_top">'+baseurl+'index.html?understandingholepocketingoutput.html</a></p>');
+
+</script>
+</body>
+</html>

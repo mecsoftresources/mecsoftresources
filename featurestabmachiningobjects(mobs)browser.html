@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; User Interface &gt; Machining Objects (Mobs) Browser &gt; Features Tab</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Features,Features Bosses,Features Chamfers,Features Examples,Features Fillets,Features General Pocket (3 Axis),Features Hole Types Recognised,Features Holes,Features Identification on Cursor Highlight,Features Locate the Features Tab,Features Open General Pocket (3 Axis),Features Open Prismatic Pockets,Features Open Slots,Features Planar Faces,Features Prismatic Pockets,Features Right-click on Features Tree,Features Right-click on Part Model,Features Silhouette,Features Slots,Features Stepped Prismatic Pocket,Features Tab Commands,Features T-Slots,Features Types Recognised,Features V-Slots,Features Tab,Features Tab Toolbar Commands,Machining Objects Browser,Machining Objects Browser Features Tab" />
+   <meta name="description" content="Selecting the Features tab under the Machining Objects Browser displays the Feature Manager. &nbsp;It allows you to create and work with detected features from your 3D solid model. ..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "featurestabmachiningobjects(mobs)browser.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Features Tab, Machining Objects (Mobs) Browser</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?featurestabmachiningobjects(mobs)browser.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="userinterface.html">User Interface</a> &gt; <a href="machiningobjectsmobsbro.html">Machining Objects (Mobs) Browser</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Features Tab, Machining Objects (Mobs) Browser</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="regionstab.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="machiningobjectsmobsbro.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="kbasestab.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Selecting the <span class="f_BoldKeyword">Features</span> tab under the <span class="f_BoldKeyword">Machining Objects Browser</span> displays the Feature<span class="f_BoldKeyword"> Manager</span>. &nbsp;It allows you to create and work with detected features from your 3D solid model. &nbsp;See <span class="f_BoldKeyword">Understanding Feature Machining in RhinoCAM</span> for important information about <span class="f_BoldKeyword">Machining Features</span>.</p>
+<p class="p_Normal"><span style="font-weight: bold;">Note</span>: See <a href="right-click-menu-items-mill.html" class="topiclink">Right-Click Commands</a> for a complete list of all right-click commands available from the <a href="millmachiningbrowser.html" class="topiclink">Machining Operations (Mops) Browser</a> and the <a href="machiningobjectsmobsbro.html" class="topiclink">Machining Objects (Mobs) Browser</a>.</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="margin:0 auto; width:494px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:492px; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="alert-icon.png"/><span class="f_BoldKeyword" style="font-weight: bold;">Important:</span><span class="f_BoldKeyword"> Machining Features</span> can <span class="f_BoldKeyword" style="text-decoration: underline;">ONLY</span> be extracted from poly-surface models (i.e., solid models). &nbsp;If your part model is not a solid, you must &quot;stitch&quot; all surfaces into a poly-surface prior to <span class="f_BoldKeyword">Creating Machining Features</span>!</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Right-Click Commands</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">There are <a href="right-click-menu-items-mill.html" class="topiclink">right-click commands</a> available for use in the <span class="f_BoldKeyword">Features</span> tab.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">The Features tab (Machining Objects Browser)</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:392px"><img alt="The Machining Objects (MObs) Browser, Features Tab" title="The Machining Objects (MObs) Browser, Features Tab" width="392" height="349" style="width:392px;height:349px;border:none" src="mobs-browser-features-tab.png"/><p style="text-align:center"><span class="f_ImageCaption">The Machining Objects (MObs) Browser, Features Tab</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Features Tab Commands</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Summary</span></p>
+</td>
+<td colspan="5"  style="vertical-align:top; width:400px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Available Configuration</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:119px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">XPR</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">STD</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">EXP</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRO</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:79px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRE</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="6"  style="vertical-align:top; width:554px; background-color:#DFDFDF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #3d78af;">Features tab Command Icons</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create Machining Features" title="Create Machining Features" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-automatically-create-machining-features.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-size: 12px;">-</span></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Performs <span class="f_BoldKeyword">Automatic Feature Detection (AFD)</span> from your part model based all possible machining <span class="f_BoldKeyword">Orientations</span>. &nbsp;See <span class="f_BoldKeyword">Automatic Feature Detection (AFD</span>) for more information.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create Machining Features" title="Create Machining Features" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-interactive-feature-detection-ifd.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">-</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-size: 12px;">-</span></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Performs <span class="f_BoldKeyword">Interactive Feature Detection (IFD)</span> by selecting a face from your part model to define the machining <span class="f_BoldKeyword">Orientation</span>. &nbsp;See <span class="f_BoldKeyword">Interactive Feature Detection (IFD)</span> for more information.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Select Filters to use when Creating Machining Features" title="Select Filters to use when Creating Machining Features" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-set-filters-for-feature-detection.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-size: 12px;">-</span></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; background-color:#FFFFFF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Allows you to <span class="f_BoldKeyword">Set Filters for Feature Detection</span> so that only certain feature types or hole diameters are detected. &nbsp;See <span class="f_BoldKeyword">Set Filters for Feature Detection</span> for more information.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Select Filters to use when Creating Hole Features" title="Select Filters to use when Creating Hole Features" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-list-features.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-size: 12px;">-</span></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; background-color:#FFFFFF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Allows you to list all of your detected features. &nbsp;See <span class="f_BoldKeyword">List Features</span> for more information.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Select Filters to use when Creating Hole Features" title="Select Filters to use when Creating Hole Features" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-create-machining-kb-for-milling-features.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span class="f_ImageCaption" style="font-size: 12px;">-</span></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; background-color:#FFFFFF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Allows you to setup a features knowledge base. &nbsp;See: <span class="f_BoldKeyword">Setup Features</span> <span class="f_BoldKeyword">Knowledge Base</span>.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Select Filters to use when Creating Hole Features" title="Select Filters to use when Creating Hole Features" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-create-machining-kb-for-selected-hole-feature.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">-</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; background-color:#FFFFFF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Allows you to create a hole feature machining operation. &nbsp;See: Create<span class="f_BoldKeyword"> Hole Feature Machining Operation</span>.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Automatic Feature Machining (AFM)" title="Automatic Feature Machining (AFM)" width="30" height="30" style="margin:0 auto 0 auto;width:30px;height:30px;border:none" src="icon-automatic-feature-machining.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">-</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; background-color:#FFFFFF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Allows you to perform <span class="f_BoldKeyword">Automatic Feature Machining (AFM)</span> based on the default <span class="f_BoldKeyword">(AFM) Knowledge Base</span> defined in the <span class="f_BoldKeyword">Features</span> section of the <span class="f_BoldKeyword">CAM Preferences</span> dialog. &nbsp;See <span class="f_BoldKeyword">Automatic Feature Machining (AFM)</span> for more information.</p>
+</td>
+</tr>
+<tr>
+<td colspan="6"  style="vertical-align:top; width:420px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #3d78af;">Features tab Toolbar Icons</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:108px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Toggle the display of features" title="Toggle the display of features" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="icon-toggle-display-of-features.png"/></p>
+</td>
+<td style="vertical-align:middle; width:119px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">-</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; background-color:#FFFFFF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">This icon <span class="f_BoldKeyword">Toggles the display of Features</span> in the drawing window. &nbsp;It is located at the bottom of the browser when the <span class="f_BoldKeyword">Features</span> tab is active.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Feature Identification on Cursor Highlight</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">After you have performed either <span class="f_BoldKeyword">AFD</span> or <span class="f_BoldKeyword">IFD</span> on your part model, you can move the cursor over a part feature and its identification name will display. &nbsp;This is the name created for the feature and listed in the <span class="f_BoldKeyword">Features</span> tree. </p>
+<div class="p_Normal"><div style="margin:0;width:319px"><img alt="Feature Identification on Cursor Highlight" title="Feature Identification on Cursor Highlight" width="319" height="193" style="width:319px;height:193px;border:none" src="feature-identification-on-cursor-highlight.png"/><p style="text-align:center"><span class="f_ImageCaption">Feature Identification on Cursor Highlight</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Feature Types Recognized</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The feature types recognized are listed in the table below:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:500px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td colspan="5"  style="vertical-align:top; background-color:#1159AA; padding:5px; border:solid thin #1159aa;"><p class="p_Normal" style="text-align: center;"><span style="font-weight: bold; color: #ffffff;">Feature Types Detected</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:81px"><img alt="Hole" title="Hole" width="81" height="60" style="width:81px;height:60px;border:none" src="2x-features-holes.png"/><p style="text-align:center"><span class="f_ImageCaption">Hole</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:85px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Prismatic Pocket" title="Prismatic Pocket" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-prismatic-pocket.png"/><p style="text-align:center"><span class="f_ImageCaption">Prismatic Pocket</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:91px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Open Prismatic Pocket" title="Open Prismatic Pocket" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-open-pocket.png"/><p style="text-align:center"><span class="f_ImageCaption">Open Prismatic Pocket</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:94px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:65px"><img alt="Boss" title="Boss" width="65" height="60" style="width:65px;height:60px;border:none" src="2x-features-prismatic-boss.png"/><p style="text-align:center"><span class="f_ImageCaption">Boss</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="General Pocket (3 Axis)" title="General Pocket (3 Axis)" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-non-prismatic-pocket.png"/><p style="text-align:center"><span class="f_ImageCaption">General Pocket<br/>
+(3 Axis)</span></p></div></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Slot" title="Slot" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-slots.png"/><p style="text-align:center"><span class="f_ImageCaption">Slot</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:85px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Open Slot" title="Open Slot" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-open-slot.png"/><p style="text-align:center"><span class="f_ImageCaption">Open Slot</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:91px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="T-Slot" title="T-Slot" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-t-slot.png"/><p style="text-align:center"><span class="f_ImageCaption">T-Slot</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:94px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="V-Slot" title="V-Slot" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-v-groove.png"/><p style="text-align:center"><span class="f_ImageCaption">V-Slot</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Open General Pocket (3 Axis)" title="Open General Pocket (3 Axis)" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-non-prismatic-open-pocket.png"/><p style="text-align:center"><span class="f_ImageCaption">Open General Pocket<br/>
+(3 Axis)</span></p></div></div>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; padding:5px; border:solid thin #1159aa;"><div class="p_ImageCaption" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Planar Face" title="Planar Face" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-planar-face.png"/><p style="text-align:center"><span class="f_ImageCaption">Planar Face</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:85px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Fillet" title="Fillet" width="68" height="61" style="width:68px;height:61px;border:none" src="2x-features-non-prismatic-fillet.png"/><p style="text-align:center"><span class="f_ImageCaption">Fillet</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:91px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Chamfer" title="Chamfer" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-non-prismatic-chamfer.png"/><p style="text-align:center"><span class="f_ImageCaption">Chamfer</span></p></div></div>
+</td>
+<td style="vertical-align:top; width:94px; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Stepped Prismatic Pocket" title="Stepped Prismatic Pocket" width="68" height="60" style="width:68px;height:60px;border:none" src="2x-features-stepped-pocket.png"/><p style="text-align:center"><span class="f_ImageCaption">Stepped Prismatic Pocket</span></p></div></div>
+</td>
+<td style="vertical-align:top; padding:5px; border:solid thin #1159aa;"><div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:68px"><img alt="Silhouette" title="Silhouette" width="68" height="62" style="width:68px;height:62px;border:none" src="2x-features-silhouette.png"/><p style="text-align:center"><span class="f_ImageCaption">Silhouette</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div class="p_Normal"><div style="margin:0;width:462px"><img alt="Some 2 Axis Feature Examples" title="Some 2 Axis Feature Examples" width="462" height="231" style="width:462px;height:231px;border:none" src="2axis-feature-detection.png"/><p style="text-align:center"><span class="f_ImageCaption">Some 2 Axis Feature Examples</span></p></div></div>
+<div class="p_Normal"><div style="margin:0;width:462px"><img alt="Some 3 Axis Feature Examples" title="Some 3 Axis Feature Examples" width="462" height="222" style="width:462px;height:222px;border:none" src="3axis-feature-detection.png"/><p style="text-align:center"><span class="f_ImageCaption">Some 3 Axis Feature Examples</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?featurestabmachiningobjects(mobs)browser.html" target="_top">'+baseurl+'index.html?featurestabmachiningobjects(mobs)browser.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

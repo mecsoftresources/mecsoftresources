@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>RhinoCAM FAQs &gt; General Training &gt; How To: Create a Tool</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="#1: WebHelp,#1: WebHelp Training: Create a Tool" />
+   <meta name="description" content="Cutting tools can be created anytime before during or after your create a toolpath. &nbsp;We have an extensive guide just on cutting tools called The Cutting Tools Workbook that not..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "how-to-create-a-tool.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">How To: Create a Tool</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?how-to-create-a-tool.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      RhinoCAM FAQs &gt; General Training&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">How To: Create a Tool</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      
+      <a href="how-to-create-a-work-zero.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="welcome.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="how-to-copy_edit-a-toolpath.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Cutting tools can be created anytime before during or after your create a toolpath. &nbsp;We have an extensive guide just on cutting tools called <a href="https://mecsoft.com/blog/the-2018-cutting-tools-workbook-is-here/" target="_blank" class="weblink">The Cutting Tools Workbook</a> that not only teaches you about cutting tools but also provides worksheets for documenting the parameters you will need from your existing tool bin to create those tools in <span class="f_BoldKeyword">RhinoCAM</span>.</p>
+<p class="p_Normal">To create a cutting tool:</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">1.</span><img alt="toggle-machining-objects-browser" width="25" height="25" style="margin:0;width:25px;height:25px;border:none" src="toggle-machining-objects-browser.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">To the left of the </span><span class="f_BoldKeyword">Program</span><span class="f_Numbered"> tab, select the </span><span class="f_BoldKeyword">Tools Machining Objects</span><span class="f_Numbered"> icon to make sure the </span><span class="f_BoldKeyword">Machining Objects Browser</span><span class="f_Numbered"> is displayed.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-program-tab" width="395" height="160" style="margin:0;width:395px;height:160px;border:none" src="how-to-program-tab.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">2.</span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Tools</span><span class="f_Numbered"> tab from the </span><span class="f_BoldKeyword">Machining Objects Browser</span><span class="f_Numbered">.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-tools-tab" width="395" height="125" style="margin:0;width:395px;height:125px;border:none" src="how-to-tools-tab.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">3.</span><img alt="Create/Edit Tools" title="Create/Edit Tools" width="30" height="30" style="margin:0;width:30px;height:30px;border:none" src="doc_filesimage053.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">Select the </span><span class="f_BoldKeyword">Create/Edit Tools</span><span class="f_Numbered"> icon (first icon on the left) to display the </span><span class="f_BoldKeyword">Create/Select Tool</span><span class="f_Numbered"> dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog" width="695" height="432" style="margin:0;width:695px;height:432px;border:none" src="how-to-create-edit-tools-dialog.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">4.</span><img alt="ball-mill-icon" width="30" height="30" style="margin:0;width:30px;height:30px;border:none" src="ball-mill-icon.png"/>  <span class="f_Numbered">The top toolbar lists the supported cutting tools. &nbsp;Select the icon of the tool type you want to create. &nbsp;The dialog will populate with the Tool type's parameters. &nbsp;For this example we select the Ball Mill tool icon.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">5.</span><span class="f_Numbered">Edit the </span><span class="f_BoldKeyword">Name</span><span class="f_Numbered"> field to label your tool with a unique identifying name. &nbsp;Tools are stored by their name.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">6.</span><span class="f_Numbered">Edit the dimension fields to define the tool's physical characteristics including the tool holder, such as diameter length, etc. &nbsp;A preview of the tool will display in the dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog-tool-dims" width="222" height="174" style="margin:0;width:222px;height:174px;border:none" src="how-to-create-edit-tools-dialog-tool-dims.png"/><span class="f_ImageCaption"> <img alt="how-to-create-edit-tools-dialog-tool-preview" width="73" height="253" style="margin:0;width:73px;height:253px;border:none" src="how-to-create-edit-tools-dialog-tool-preview.png"/></span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">7.</span><span class="f_Numbered">Move to the right side of the dialog and select the </span><span class="f_BoldKeyword">Properties</span><span class="f_Numbered"> tab.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">8.</span><span class="f_Numbered">Here, make selections and enter values to define the tool's properties. &nbsp;Tool</span><span class="f_BoldKeyword"> Material</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Number of Flutes</span><span class="f_Numbered">, </span><span class="f_BoldKeyword">Tool Number</span><span class="f_Numbered">, etc. are defined here.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog-tool-properties" width="213" height="238" style="margin:0;width:213px;height:238px;border:none" src="how-to-create-edit-tools-dialog-tool-properties.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">9.</span><span class="f_BoldKeyword">Coolant</span><span class="f_Numbered"> type can be assigned to each tool also.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">10.</span><span class="f_Numbered">If you want a comment to be posted in the G-Code file when the tool is used, enter it in the </span><span class="f_BoldKeyword">Comments</span><span class="f_Numbered"> field.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog-tool-comments" width="188" height="155" style="margin:0;width:188px;height:155px;border:none" src="how-to-create-edit-tools-dialog-tool-comments.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">11.</span><span class="f_Numbered">Now select the </span><span class="f_BoldKeyword">Feeds &amp; Speeds</span><span class="f_Numbered"> tab. &nbsp;Here you can assign all of the </span><span class="f_BoldKeyword">Spindle Parameters</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Feed Rates</span><span class="f_Numbered"> that you want this tool to use.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog-tool-fs-tab" width="211" height="400" style="margin:0;width:211px;height:400px;border:none" src="how-to-create-edit-tools-dialog-tool-fs-tab.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">12.</span><span class="f_Numbered">If you are unsure what values to use, you can select the </span><span class="f_BoldKeyword">Load from File</span><span class="f_Numbered"> button to display the </span><span class="f_BoldKeyword">Feeds and Speeds Calculator</span><span class="f_Numbered"> dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog-tool-fs-tab-calculator" width="353" height="513" style="margin:0;width:353px;height:513px;border:none" src="how-to-create-edit-tools-dialog-tool-fs-tab-calculator.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">13.</span><span class="f_Numbered">From here you will see that information about the </span><span class="f_BoldKeyword">Tool</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Stock</span><span class="f_Numbered"> material are displayed. &nbsp;See <a href="how-to-assign-a-stock-material.html" class="topiclink">How to Assign a Stock Material</a> for more information.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">14.</span><span class="f_Numbered">This dialog is a reference calculator that you can use to suggest spindle speed and cut feed rates based on multiple parameters and variables. &nbsp;You will notice that changing parameters and input variables in this dialog will update the </span><span class="f_BoldKeyword">Computed Variables</span><span class="f_Numbered"> section at the bottom of the dialog including </span><span class="f_BoldKeyword">Spindle Speed</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Cut Feed</span><span class="f_Numbered">. &nbsp;</span><br />
+<span class="f_Numbered">&nbsp;</span><br />
+<span class="f_BoldKeyword" style="font-weight: bold;">NOTE:</span><span class="f_Numbered"> This dialog is only used as a reference to calculate a suggested value for </span><span class="f_BoldKeyword">Spindle Speed</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Cut Feed</span><span class="f_Numbered">.  </span><span class="f_BoldKeyword" style="font-weight: bold; text-decoration: underline;">ALWAYS</span><span class="f_Numbered"> use values for these two parameters that are within recommendations suggested by your machine tool vendor and your first-hand experience with YOUR machine.</span><br />
+<span class="f_Numbered">&nbsp;</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">15.</span><span class="f_Numbered">Pick </span><span class="f_BoldKeyword">OK</span><span class="f_Numbered"> when these two parameter values are to your liking for this tool. </span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">16.</span><span class="f_Numbered">You will notice that the values for these two parameter values </span><span class="f_BoldKeyword">Spindle Speed</span><span class="f_Numbered"> and </span><span class="f_BoldKeyword">Cut Feed</span><span class="f_Numbered"> are then fed into the </span><span class="f_BoldKeyword">Feeds &amp; Speeds</span><span class="f_Numbered"> tab of the </span><span class="f_BoldKeyword">Create/Edit Tool</span><span class="f_Numbered"> dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog-tool-fs-tab2" width="211" height="400" style="margin:0;width:211px;height:400px;border:none" src="how-to-create-edit-tools-dialog-tool-fs-tab2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">17.</span><span class="f_Numbered">You will also see that a percentages of the </span><span class="f_BoldKeyword">Cut Feed</span><span class="f_Numbered"> is used to populate the other </span><span class="f_BoldKeyword">Feed Rate</span><span class="f_Numbered"> value in the </span><span class="f_BoldKeyword">Feed Rates</span><span class="f_Numbered"> section. &nbsp;These percentages can be defined in the </span><span class="f_BoldKeyword">Feeds &amp; Speeds</span><span class="f_Numbered"> section of the </span><span class="f_BoldKeyword">CAM Preferences</span><span class="f_Numbered"> dialog.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">18.</span><span class="f_Numbered">You can also adjust the </span><span class="f_BoldKeyword">Feed Rate Reduction Factors</span><span class="f_Numbered"> if desired.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">19.</span><span class="f_Numbered">When you are satisfied with your tool parameters, select the </span><span class="f_BoldKeyword">Save as New Tool</span><span class="f_Numbered"> button. &nbsp;The new tool will be listed in the </span><span class="f_BoldKeyword">Tools in Session</span><span class="f_Numbered"> list on the left side of the dialog.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog2" width="643" height="274" style="margin:0;width:643px;height:274px;border:none" src="how-to-create-edit-tools-dialog2.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">20.</span><span class="f_Numbered">If you make changes after saving the tool be sure to select the </span><span class="f_BoldKeyword">Save Edits to Tool</span><span class="f_Numbered"> button to save your changes.</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">21.</span><span class="f_Numbered">Now pick </span><span class="f_BoldKeyword">OK</span><span class="f_Numbered"> to close the dialog. &nbsp;You will see that the tool is then listed in the </span><span class="f_BoldKeyword">Tools</span><span class="f_Numbered"> tab list of tools.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog3" width="395" height="142" style="margin:0;width:395px;height:142px;border:none" src="how-to-create-edit-tools-dialog3.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">22.</span><img alt="icon-sort-by-used-tools-tab" width="24" height="24" style="margin:0;width:24px;height:24px;border:none" src="icon-sort-by-used-tools-tab.png"/><span class="f_ImageCaption">  </span><span class="f_Numbered">If you do not see your tool listed make sure the icon to </span><span class="f_BoldKeyword">List only tools used in machining operations</span><span class="f_Numbered"> located at the bottom of the tools list is NOT enabled.</span></p><div style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 48px;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="how-to-create-edit-tools-dialog4" width="395" height="88" style="margin:0;width:395px;height:88px;border:none" src="how-to-create-edit-tools-dialog4.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin-left: 24px;"><span class="f_Numbered" style="display:inline-block;width:24px;margin-left:-24px">23.</span><span class="f_Numbered">You can also create a tool from the </span><span class="f_BoldKeyword">Tools</span><span class="f_Numbered"> tab of each of the different toolpath operation dialogs. &nbsp;From the </span><span class="f_BoldKeyword">Tools</span><span class="f_Numbered"> tab, just select the </span><span class="f_BoldKeyword">Edit/Create/Select Tool ...</span><span class="f_Numbered"> button to display the </span><span class="f_BoldKeyword">Create/Select Tool</span><span class="f_Numbered"> dialog again.</span></p>
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?how-to-create-a-tool.html" target="_top">'+baseurl+'index.html?how-to-create-a-tool.html</a></p>');
+
+</script>
+</body>
+</html>

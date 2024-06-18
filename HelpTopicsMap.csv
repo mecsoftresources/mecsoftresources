@@ -1,0 +1,36 @@
+8880030, version 1,
+8880001,2 axis Facing editing dlg,index.html?vcc_2axis_facing.htm
+8880002,2 axis Pocketing editing dlg,index.html?vcc_2axis_pocketing.htm
+8880003,2 axis Profiling editing dlg,index.html?vcc_2axis_profiling.htm
+8880004,2 axis Engraving editing dlg,index.html?vcc_2axis_engraving.htm
+8880005,3 axis Z Level roughting editing dlg,index.html?vcc_3axis_zlevel_roughing.htm
+8880006,3 axis Z Level finishing editing dlg,index.html?vcc_3axis_zlevel_finishing.htm
+8880007,3 axis Parallel roughting editing dlg,index.html?vcc_3axis_parallel_finishing.htm
+8880008,3 axis Radial machining editing dlg,index.html?vcc_3axis_radial_machining.htm
+8880009,3 axis Spiral machining editing dlg,index.html?vcc_3axis_spiral_machining.htm
+8880010,Hole Drill editing dlg,index.html?vcc_drilling.htm
+8880011,Machine editing dlg,index.html?vcc_machine_setup.htm
+8880012,Post editing dlg,index.html?vcc_post_process_operation.htm
+8880013,Stock editing dlg,index.html?vcc_part_bounds_stock.htm
+8880014,Create tool dlg,index.html?vcc_create_tool_dialog.htm
+8880015,List tools dlg,index.html?vcc_list_tools_dialog.htm
+8880016,Work Zero editing dlg,index.html?vcc_work_zero.htm
+8880017,2 Axis V-Carv Roughing dlg,index.html?vcc_2axis_v_carve_roughing.htm
+8880018,2 Axis V-Carving dlg,index.html?vcc_2axis_v_carving.htm
+8880019,2 Axis Slotting dlg,index.html?vcc_2axis_slotting.htm
+8880020,2 Axis Chamfering dlg,index.html?vcc_2axis_chamfering.htm
+8880021,2 Axis Fillet Milling dlg,index.html?vcc_2axis_filleting.htm
+8880022,2 Axis Hole Pocketing dlg,index.html?vcc_2axis_hole_pocketing.htm
+8880023,2 Axis Hole Profiling dlg,index.html?vcc_2axis_hole_profiling.htm
+8880024,2 Axis Thread Milling dlg,index.html?vcc_2axis_thread_milling.htm
+8880025,2 Axis T-Slotting dlg,index.html?vcc_2axis_t-slotting.htm
+8880026,Holes Tap dlg,index.html?vcc_tapping.htm
+8880027,Holes Bore dlg,index.html?vcc_bore.htm
+8880028,Holes Reverse Bore dlg,index.html?vcc_reverse_bore.htm
+8880029,Box Stock,index.html?vcc_box_stock.htm
+8880030,Cylinder Stock,index.html?vcc_cyclinder_stock.htm
+8880031,Part Cylinder Stock,index.html?vcc_part_cyclinder_stock.htm
+8880034,Color Preferences,index.html?vcc_cam_preferences.htm
+8880035,Toolpath Preferences,index.html?vcc_cam_preferences.htm
+8880036,Post Preferences,index.html?vcc_cam_preferences.htm
+8880038,System Preferences,index.html?vcc_cam_preferences.htm

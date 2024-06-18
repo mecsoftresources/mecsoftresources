@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating Machining Operations &gt; Set World CS</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Align,Align Set World CS" />
+   <meta name="description" content="User can set the location of the World Coordinate System (WCS) Origin with respect to the geometry. &nbsp;An alternative way of thinking about this is to transform all loaded..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "setworldcs.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Set World CS</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?setworldcs.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creatingmachiningoperations.html">Creating Machining Operations</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Set World CS</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="alignstock.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="creatingmachiningoperations.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="material.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal"><img alt="doc_filesimage011" width="75" height="25" style="float:left;margin:0 10px 0 0;width:75px;height:25px;border:none" src="doc_filesimage011.png"/>User can set the location of the <span class="f_BoldKeyword">World Coordinate System</span> (<span class="f_BoldKeyword">WCS</span>) Origin with respect to the geometry. &nbsp;An alternative way of thinking about this is to transform all loaded geometry to an appropriate location. This <span class="f_BoldKeyword">Locate WCS</span> dialog offers you a variety of ways of accomplishing this.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Machining Browser: Set World CS menu item</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This dialog can be invoked by selecting <span class="f_BoldKeyword">Align</span> and <span class="f_BoldKeyword">Set World CS</span> from the <span class="f_BoldKeyword">Program</span> tab under the <span class="f_BoldKeyword">Machining Browser</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:403px"><img alt="Machining Browser: Set World CS menu item&nbsp;" title="Machining Browser: Set World CS menu item&nbsp;" width="403" height="251" style="width:403px;height:251px;border:none" src="doc_filesimage221.png"/><p style="text-align:center"><span class="f_ImageCaption">Machining Browser: Set World CS menu item&nbsp;</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Dialog Box: Locate World Coordinate System</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The <span class="f_BoldKeyword">Locate WCS</span> dialog appears as shown below</p>
+<p class="p_Normal"><img alt="LocateWCS_dialog" title="LocateWCS_dialog" width="345" height="562" style="margin:0;width:345px;height:562px;border:none" src="doc_filesimage222.png"/></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Set WCS Origin</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">You can set the origin by explicitly picking a point or can set it with respect to the <span class="f_BoldKeyword">Part</span> or <span class="f_BoldKeyword">Stock</span> geometry bounding boxes. </p>
+<p class="p_Normal"><span class="f_BoldParameter">Pick &nbsp;</span><br />
+If you select the <span class="f_BoldKeyword">Pick</span> option, the button with the pick cursor <img alt="Pick geometry" title="Pick geometry" width="19" height="21" style="margin:0;width:19px;height:21px;border:none" src="dialog-pick-icon.png"/> close to the bottom of the dialog will be activated. &nbsp;You can then click on this button to graphically select a point to align the <span class="f_BoldKeyword">WCS</span> origin to.</p>
+<p class="p_Normal" style="margin: 0 0 8px 26px;"><span class="f_BoldParameter">X</span> / <span class="f_BoldParameter">Y</span> / <span class="f_BoldParameter">Z</span> / <span class="f_BoldParameter">Pick &nbsp;</span></p>
+<p class="p_Normal" style="margin: 0 0 8px 26px;"><img alt="Pick" title="Pick" width="19" height="21" style="float:left;margin:0 3px 0 0;width:19px;height:21px;border:none" src="dialog-pick-icon.png"/>You can set the <span class="f_BoldKeyword">X</span>, <span class="f_BoldKeyword">Y</span>, <span class="f_BoldKeyword">Z</span> values of the <span class="f_BoldKeyword">WCS</span> (<span class="f_BoldKeyword">World Coordinate System</span>) manually here. &nbsp;Optionally, you can select the <span class="f_BoldKeyword">Pick</span> button to select a point. &nbsp;It's <span class="f_BoldKeyword">XYZ</span> coordinate values will be added to this dialog. &nbsp;</p>
+<p class="p_Normal"><span class="f_BoldParameter">Set to Stock Box &nbsp;</span><br />
+Selecting this item will activate the Zero Face and the Zero Position sections of the dialog. &nbsp;You can then select the Z and the XY locations, with respect to the bounding box of the stock geometry, by choosing the appropriate selections in the dialog.</p>
+<p class="p_Normal"><span class="f_BoldParameter">Set to Part Box &nbsp;</span><br />
+Similar to the previous selection, selecting this item will activate the Zero Face and the Zero Position sections of the dialog. &nbsp;You can then select the Z and the XY locations, with respect to the bounding box of the stock geometry, by choosing the appropriate selections in the dialog.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Zero Face</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Make a selection to locate the Z zero of the <span class="f_BoldKeyword">WCS</span>. &nbsp;This is referred to as the <span class="f_BoldKeyword">Zero Face</span>. </p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Highest Z </span></p>
+<p class="p_Normal">This tells the system that the <span class="f_BoldKeyword">Zero Face</span> should be at the <span class="f_BoldKeyword">Highest Z</span> location of either the <span class="f_BoldKeyword">Stock</span> or <span class="f_BoldKeyword">Part</span>, depending on which <span class="f_BoldKeyword">Set WCS Origin</span> option is selected.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Mid Z &nbsp;</span></p>
+<p class="p_Normal">This tells the system that the <span class="f_BoldKeyword">Zero Face</span> should be at the <span class="f_BoldKeyword">Mid Z</span> location of either the <span class="f_BoldKeyword">Stock</span> or <span class="f_BoldKeyword">Part</span>, depending on which <span class="f_BoldKeyword">Set WCS Origin</span> option is selected.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Lowest Z &nbsp;</span></p>
+<p class="p_Normal">This tells the system that the <span class="f_BoldKeyword">Zero Face</span> should be at the <span class="f_BoldKeyword">Lowest Z</span> location of either the <span class="f_BoldKeyword">Stock</span> or <span class="f_BoldKeyword">Part</span>, depending on which <span class="f_BoldKeyword">Set WCS Origin</span> option is selected.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Zero Position</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Make a selection to locate the Zero Position of the <span class="f_BoldKeyword">WCS</span>. &nbsp;You can select one of the cardinal directions listed below.<span class="f_BoldKeyword"> </span> </p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">North West &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">North West</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="North West (High/Med/Low Z)" title="North West (High/Med/Low Z)" width="198" height="62" style="width:198px;height:62px;border:none" src="set-work-zero-zero-position-nw-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">North West (High/Med/Low Z)</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">North &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">North</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="North (High/Med/Low Z)" title="North (High/Med/Low Z)" width="198" height="59" style="width:198px;height:59px;border:none" src="set-work-zero-zero-position-n-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">North (High/Med/Low Z)</span></p></div></div>
+<p class="p_BoldParameter"><span class="f_BoldParameter">North East &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">North East</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="North East (High/Med/Low Z)" title="North East (High/Med/Low Z)" width="198" height="55" style="width:198px;height:55px;border:none" src="set-work-zero-zero-position-ne-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">North East (High/Med/Low Z)</span></p></div></div>
+<p class="p_Normal"><span class="f_BoldParameter">Mid-West &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">West</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="West (High/Med/Low Z)" title="West (High/Med/Low Z)" width="198" height="57" style="width:198px;height:57px;border:none" src="set-work-zero-zero-position-w-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">West (High/Med/Low Z)</span></p></div></div>
+<p class="p_Normal"><span class="f_BoldParameter">Center &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">Center</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="Center (High/Med/Low Z)" title="Center (High/Med/Low Z)" width="198" height="57" style="width:198px;height:57px;border:none" src="set-work-zero-zero-position-c-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">Center (High/Med/Low Z)</span></p></div></div>
+<p class="p_Normal"><span class="f_BoldParameter">Mid-East &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">East</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="East (High/Med/Low Z)" title="East (High/Med/Low Z)" width="198" height="58" style="width:198px;height:58px;border:none" src="set-work-zero-zero-position-e-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">East (High/Med/Low Z)</span></p></div></div>
+<p class="p_Normal"><span class="f_BoldParameter">South West &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">South West</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="South West (High/Med/Low Z)" title="South West (High/Med/Low Z)" width="198" height="55" style="width:198px;height:55px;border:none" src="set-work-zero-zero-position-sw-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">South West (High/Med/Low Z)</span></p></div></div>
+<p class="p_Normal"><span class="f_BoldParameter">South &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">South</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="South (High/Med/Low Z)" title="South (High/Med/Low Z)" width="198" height="58" style="width:198px;height:58px;border:none" src="set-work-zero-zero-position-s-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">South (High/Med/Low Z)</span></p></div></div>
+<p class="p_Normal"><span class="f_BoldParameter">South East &nbsp;</span></p>
+<p class="p_Normal">Locate the <span class="f_BoldKeyword">WCS</span> in the XY <span class="f_BoldKeyword">South East</span> position. &nbsp;</p>
+<div class="p_Normal" style="text-align: center;"><div style="margin:0 auto 0 auto;width:198px"><img alt="South East (High/Med/Low Z)" title="South East (High/Med/Low Z)" width="198" height="58" style="width:198px;height:58px;border:none" src="set-work-zero-zero-position-se-tooltip.png"/><p style="text-align:center"><span class="f_ImageCaption">South East (High/Med/Low Z)</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?setworldcs.html" target="_top">'+baseurl+'index.html?setworldcs.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','1','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','1');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

@@ -1,0 +1,793 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; User Interface &gt; Machining Browser &gt; Program Tab</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Machining Browser,Machining Browser Program Tab,Program Tab" />
+   <meta name="description" content="Selecting the Program tab in the Mops Browser provides access for specifying Machine, Stock and the definition of Machining Operations." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "programtab.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Program Tab, Machining Browser</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?programtab.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="userinterface.html">User Interface</a> &gt; <a href="millmachiningbrowser.html">Machining Browser</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Program Tab, Machining Browser</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="browser_toggle_tabs.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="millmachiningbrowser.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="simulatetab.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">Selecting the <span class="f_BoldKeyword">Program</span> tab in the <span class="f_BoldKeyword">Mops Browser</span> provides access for specifying <span class="f_BoldKeyword">Machine</span>, <span class="f_BoldKeyword">Stock</span> and the definition of <span class="f_BoldKeyword">Machining Operations</span>.</p>
+<p class="p_Normal"><span style="font-weight: bold;">Note</span>: See <a href="right-click-menu-items-mill.html" class="topiclink">Right-Click Commands</a> for a complete list of all right-click commands available from the <a href="millmachiningbrowser.html" class="topiclink">Machining Operations (Mops) Browser</a> and the <a href="machiningobjectsmobsbro.html" class="topiclink">Machining Objects (Mobs) Browser</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">The Machining Operations (Mops) Browser, Program Tab</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:401px"><img alt="The Machining Operations (MOps) Browser, Program Tab" title="The Machining Operations (MOps) Browser, Program Tab" width="401" height="373" style="width:401px;height:373px;border:none" src="doc_filesimage006-rc-mill.png"/><p style="text-align:center"><span class="f_ImageCaption">The Machining Operations (MOps) Browser, Program Tab</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Machine Setup Pane</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Summary</span></p>
+</td>
+<td colspan="5"  style="vertical-align:top; width:400px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Available Configuration</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">XPR</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">STD</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">EXP</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRO</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:79px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRE</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="6"  style="vertical-align:top; width:554px; background-color:#DFDFDF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold; color: #3d78af;">Machine Setup Pane</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Machine Tool Setup" title="Machine Tool Setup" width="81" height="25" style="margin:0 auto 0 auto;width:81px;height:25px;border:none" src="doc_filesimage007.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Machine Tool Setup:</span> Sets the <span class="f_BoldKeyword">Machine</span> for 2½ axis, 3 axis, 4 axis and 5 axis operations.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Set Post-Processor Options" title="Set Post-Processor Options" width="58" height="25" style="margin:0 auto 0 auto;width:58px;height:25px;border:none" src="doc_filesimage008.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Set Post-Processor Options:</span> Allows you to set the <span class="f_BoldKeyword">Current Post Processor</span>, posted file naming conventions, posted file extension, program to display the posted file.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create Setup Operations" title="Create Setup Operations" width="74" height="22" style="margin:0 auto 0 auto;width:74px;height:22px;border:none" src="setup-icon.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Create Setup Operations: </span>Sets the <span class="f_BoldKeyword">Coordinate System</span> for <span class="f_BoldKeyword">Machining</span>. The orientation of the part can be set using <span class="f_BoldKeyword">Orient Part</span>, orientation of the <span class="f_BoldKeyword">Coordinate System</span> can be defined under <span class="f_BoldKeyword">Set</span> <span class="f_BoldKeyword">CSYS Setup</span> for 3+2 machining and <span class="f_BoldKeyword">Rotate</span> <span class="f_BoldKeyword">Table</span> <span class="f_BoldKeyword">Setup</span> for 4 axis table rotate operations.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Stock Pane</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Summary</span></p>
+</td>
+<td colspan="5"  style="vertical-align:top; width:400px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Available Configuration</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">XPR</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">STD</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">EXP</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRO</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:79px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRE</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="6"  style="vertical-align:top; width:554px; background-color:#DFDFDF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold; color: #376c9d;">Stock Pane</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create Stock Model" title="Create Stock Model" width="76" height="25" style="margin:0 auto 0 auto;width:76px;height:25px;border:none" src="doc_filesimage010.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal">Create Stock Model: Allows you to create Stock geometry. User can also delete a Stock geometry by selecting Delete Stock.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Align" title="Align" width="75" height="25" style="margin:0 auto 0 auto;width:75px;height:25px;border:none" src="doc_filesimage011.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Align</span>: Allows you to Align stock model to part and locate <span class="f_BoldKeyword">WCS</span> with respect to <span class="f_BoldKeyword">Part</span> or <span class="f_BoldKeyword">Stock</span> . &nbsp;This function is especially useful when the part model and the stock model are created without regard to their respective positional locations.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Define Stock Material" title="Define Stock Material" width="78" height="25" style="margin:0 auto 0 auto;width:78px;height:25px;border:none" src="doc_filesimage012.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:400px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Define Stock Material:</span> Allows you to select a material from the material list.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Machining Operations Pane</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section allows you to create machining operations. <span class="f_BoldKeyword">MILL</span> module allows you to create multiple machining operations in a part file. This is a powerful feature that allows you to create an entire sequence of machining operations that is necessary to create the part model from the stock model. This set of operations can additionally be archived with the part file and retrieved at a later time with no loss of information.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Summary</span></p>
+</td>
+<td colspan="5"  style="vertical-align:top; width:400px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Available Configuration</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">XPR</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">STD</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:70px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">EXP</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:82px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRO</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:79px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRE</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+</tr>
+<tr>
+<td colspan="6"  style="vertical-align:top; width:554px; background-color:#DFDFDF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-size: 13px; font-weight: bold; color: #3d78af;">Machining Operations Pane</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Set Current Work Coordinate Zero" title="Set Current Work Coordinate Zero" width="90" height="25" style="margin:0 auto 0 auto;width:90px;height:25px;border:none" src="doc_filesimage013.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:top; width:400px; padding:1px; border:solid thin #3d78af; border-left:none;"><p class="p_Normal"><span class="f_BoldKeyword">Set Current Work Coordinate Zero:</span> &nbsp;Allows you to set the work Coordinate zero (Origin) for the part being programmed.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create 2 ½ Axis Milling Operations" title="Create 2 ½ Axis Milling Operations" width="77" height="25" style="margin:0 auto 0 auto;width:77px;height:25px;border:none" src="doc_filesimage014.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:top; width:400px; padding:1px; border:solid thin #3d78af; border-left:none;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create 2 ½ Axis Milling Operations: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Provides access to 2 ½ Axis Machining Methods.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:150px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create 3 Axis Milling Operations" title="Create 3 Axis Milling Operations" width="76" height="25" style="margin:0 auto 0 auto;width:76px;height:25px;border:none" src="doc_filesimage015.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:top; width:400px; padding:1px; border:solid thin #3d78af; border-left:none;"><p class="p_Normal"><span class="f_BoldKeyword">Create 3 Axis Milling Operations:</span> Provides access to 3 Axis Machining Methods</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create 3 Axis Milling Operations" title="Create 3 Axis Milling Operations" width="101" height="25" style="margin:0 auto 0 auto;width:101px;height:25px;border:none" src="doc_filesimage016.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create 3 Axis Advanced Milling Operations:</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> Provides access to 3 Axis Machining Methods.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create 4 Axis Milling Operations" title="Create 4 Axis Milling Operations" width="77" height="25" style="margin:0 auto 0 auto;width:77px;height:25px;border:none" src="doc_filesimage017.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Create 4 Axis Milling Operations: </span>Provides access to 4 Axis Machining Methods</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create 5 Axis Milling Operations" title="Create 5 Axis Milling Operations" width="77" height="25" style="margin:0 auto 0 auto;width:77px;height:25px;border:none" src="doc_filesimage018.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create 5 Axis Milling Operations: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Provides access to 5 Axis Machining Methods.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Holes" title="Holes" width="74" height="23" style="margin:0 auto 0 auto;width:74px;height:23px;border:none" src="doc_filesimage019.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Holes: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Provides access to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Drilling</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Tapping</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Boring</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Reverse Boring</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> Machining Methods.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Create Miscellaneous Operations" title="Create Miscellaneous Operations" width="37" height="25" style="margin:0 auto 0 auto;width:37px;height:25px;border:none" src="doc_filesimage020.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Create Miscellaneous Operations: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Allows you to create </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Machining Operation Sets</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Machine Control Cycles</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Fixture Offset</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">XY Instance</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> operations.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Knowledge Base Operations" title="Knowledge Base Operations" width="37" height="25" style="margin:0 auto 0 auto;width:37px;height:25px;border:none" src="doc_filesimage021.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;"><a href="knowledgebase.html" class="topiclink">Knowledge Base</a> Operations: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Allows saving and loading of Machining operations to and from a knowledge base.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Utilities" title="Utilities" width="37" height="25" style="margin:0 auto 0 auto;width:37px;height:25px;border:none" src="doc_filesimage023.jpg"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Utilities: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Provides access to </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">G Code Editor</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Post Process</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Generator</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Set Ribbon Preferences" title="Set Ribbon Preferences" width="25" height="25" style="margin:0 auto 0 auto;width:25px;height:25px;border:none" src="doc_filesimage024.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Set <a href="cam-preferences.html" class="topiclink">CAM Preferences</a>: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Provides access to specify </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Color</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">User</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Interface</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Machining</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">, </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Simulation</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;"> and </span><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Feeds Speeds Preferences</span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Maximize Ribbon bar" title="Maximize Ribbon bar" width="25" height="25" style="margin:0 auto 0 auto;width:25px;height:25px;border:none" src="doc_filesimage026.png"/><img alt="Minimize Ribbon bar" title="Minimize Ribbon bar" width="25" height="25" style="margin:0 auto 0 auto;width:25px;height:25px;border:none" src="doc_filesimage025.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Minimize/Maximize Ribbon bar: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Minimizes &amp; Maximizes the ribbon bar.</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Display Help Content" title="Display Help Content" width="25" height="25" style="margin:0 auto 0 auto;width:25px;height:25px;border:none" src="doc_filesimage027.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:70px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:82px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:79px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:301px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span style="font-family: Arial,Helvetica,sans-serif; color: #35628c;">Display Help Content: </span><span style="font-family: Arial,Helvetica,sans-serif; color: #333333;">Open On-line Help document.</span></p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Display Toggle Toolbar</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This toolbar is located at the base of the <span class="f_BoldKeyword">Machining Browser</span> and has the following controls:</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 0;"><table style="width:550px; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td rowspan="2"  style="vertical-align:middle; width:107px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Summary</span></p>
+</td>
+<td colspan="5"  style="vertical-align:top; width:393px; background-color:#3D78AF; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 13px; font-weight: bold; color: #ffffff;">Available Configuration</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:69px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Xpress</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">XPR</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:78px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Standard</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">STD</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:75px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Expert</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">EXP</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:81px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Professional</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRO</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+<td style="vertical-align:top; width:72px; background-color:#F0F0F0; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><span style="font-size: 12px; font-weight: bold;">Premium</span><br />
+<span style="font-size: 12px; font-weight: bold;">(</span><span style="font-size: 12px; font-weight: bold; color: #3d78af;">PRE</span><span style="font-size: 12px; font-weight: bold;">)</span></p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Stock Model Visibility" title="Stock Model Visibility" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="doc_filesimage028.png"/></p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Stock Model Visibility: </span>Turn on/off stock model </p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Material Texture Visibility" title="Material Texture Visibility" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="doc_filesimage029.png"/></p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Material Texture Visibility: </span>Turn on/off material texture visibility</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Toolpath Visibility" title="Toolpath Visibility" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="doc_filesimage030.png"/></p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Toolpath Visibility: </span>Turn on/off toolpath display</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Toggle Hidden Toolpath Display" title="Toggle Hidden Toolpath Display" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="toggle-display-of-hidden-toolpaths.png"/></p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Hidden Toolpath Visibility</span>: Turn the hidden portions of toolpaths on/off.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Display Toolpath Levels" title="Display Toolpath Levels" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="doc_filesimage031.png"/></p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Display Toolpath Levels:</span> Displays tool path by Z levels</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="World CSYS Visibility" title="World CSYS Visibility" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="doc_filesimage032-rh.png"/></p>
+<p class="p_Normal" style="text-align: center;">&nbsp;</p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">World CSYS Visibility: </span>Turns on/off of <span class="f_BoldKeyword">World Coordinate System</span> display.</p>
+</td>
+</tr>
+<tr>
+<td rowspan="2"  style="vertical-align:middle; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="Machine CSYS Visibility" title="Machine CSYS Visibility" width="24" height="24" style="margin:0 auto 0 auto;width:24px;height:24px;border:none" src="doc_filesimage032.png"/></p>
+</td>
+<td style="vertical-align:middle; width:69px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:78px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:75px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:81px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+<td style="vertical-align:middle; width:72px; background-color:#F7F7F7; padding:1px; border:solid thin #3d78af;"><p class="p_Normal" style="text-align: center;"><img alt="checkmark" width="15" height="14" style="margin:0 auto 0 auto;width:15px;height:14px;border:none" src="checkmark.png"/></p>
+</td>
+</tr>
+<tr>
+<td colspan="5"  style="vertical-align:middle; width:306px; padding:1px; border:solid thin #3d78af;"><p class="p_Normal"><span class="f_BoldKeyword">Machine CSYS Visibility: </span>Turns on/off of <span class="f_BoldKeyword">Machine Coordinate System</span> display.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?programtab.html" target="_top">'+baseurl+'index.html?programtab.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

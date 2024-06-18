@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>MILL Module &gt; Creating 4 Axis Operations &gt; 4 Axis Round &gt; Feeds &amp; Speeds</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />   
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="Feeds &amp; Speeds,Feeds &amp; Speeds 4 Axis Operations,Blog,Blog Feed Rates Explained,Feedrate,Feedrate Explained,Blog,Blog The Milling Feeds &amp; Speeds Calculator,Feeds &amp; Speeds,Feeds &amp; Speeds Calculator,Blog,Blog How to Customize Materials Data for Feeds &amp; Speeds Computation,Feedrate,Feedrate How to Customize Materials Data" />
+   <meta name="description" content="The following Feeds &amp; Speeds tab is displayed for all 4 Axis Mill operations. It allows you to select the appropriate Feeds &amp; Speeds for the current Mill operation. In this..." />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <link type="text/css" href="custom.css" rel="stylesheet" />
+
+   <style TYPE="text/css" media="screen"> 
+      html, body { margin:0; 
+        padding:0; 
+        background: #ffffff; 
+      } 
+      div#printheader { display: none; }
+      #idheader { 
+        width:100%; 
+        height:auto; 
+        padding: 0; 
+        margin: 0;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      } 
+      /* The "min-height" for "#idheader table" ensures that the (blue) header of the topic
+         has at least the same height as the header of the navigation panel left of it */
+      #idheader table { background: #3D78AF; min-height: 59px }             
+      #idheader h1 span { color: #FFF }     
+      #idnav {
+        text-align: right;
+        width: 126px;
+        vertical-align: middle;        
+      } 
+      #idnav a { text-decoration: none }
+      #idnav span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background:url('hm_webhelp_buttons_grey.png') top left no-repeat;
+      } 
+      #idnav a span {
+        background-image:url('hm_webhelp_buttons_white.png');
+      } 
+      #idnav a span:hover {
+        background-image:url('hm_webhelp_buttons_orange.png');
+      } 
+      #idnav span.hmbtnprev { background-position: 0 -32px }
+      #idnav span.hmbtnnext { background-position: -24px -32px }
+      #idnav span.hmbtntop  { background-position: -48px -32px }
+      #idnav span.hmbtntoggle  { width: 20px; background-position: -70px -32px }
+      #idnav span.hmbtnprint  { background-position: -88px -32px }
+
+      #callout-table, #overview-table {display:block; position:relative; top:0; left:0;}
+      #callout-icon {display:block; position:absolute; top:-11px; left:-11px;}
+      #callout-icon-flag {display:block; position:absolute; top:-11px; left:-8px;}
+      #callout-table a {text-decoration: none; color: blue;}
+      #callout-table a:visited {text-decoration: none; color: blue;}
+      #overview-table a {text-decoration: none; color: black;}
+      #overview-table a:visited {text-decoration: none; color: black;}
+      #callout-table a:hover, #overview-table a:hover {text-decoration: underline;}       
+      p.help-url { margin: 20px 0 5px 0; text-align: center; font-size: 80%; text-decoration: none }      
+      #switchtoggles { text-align: right; padding: 0 2px 0 0; font-size: 90%; } 
+      .sync-toc { color: #FFF; font-size: 8pt; font-weight: bold; display: none; }
+      .sync-toc a { color: #FFF; text-decoration: none; font-weight: bold;}
+      .sync-toc a:visited { color: #FFF; }
+      .sync-toc a:hover { text-decoration: underline; }
+      a.hmanchor { display: inline-block; margin-top: -4em; padding-top: 4em }	  
+   </style>
+   <style TYPE="text/css" media="print">
+      div#idheader, img.dropdown-toggle-icon, p.help-url { display:none } 
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "feedsandspeeds-4axis.html");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<div id="printheader"><h1 class="p_Heading1"><span class="f_Heading1">Feeds &amp; Speeds, 4 Axis Operations</span></h1>
+</div>
+<div id="idheader">
+<div id="idheaderbg">
+<table style="width:100%;border:none;margin:0px;" cellspacing="0" cellpadding="0"> 
+  <tr>
+    <td class="topichead" style="text-align:left; vertical-align:bottom">
+      <p class="sync-toc">&lt;&lt; <a rel="nofollow" href="index.html?feedsandspeeds-4axis.html" target="_top">Click to Display Table of Contents</a> &gt;&gt;</p>
+      <p class="crumbs"><b>Navigation:</b>&nbsp;
+      
+      MILL Module &gt; <a href="creating4axismachiningoperations.html">Creating 4 Axis Operations</a> &gt; <a href="create-round-4-axis.html">4 Axis Round</a>&nbsp;&gt;</p>
+   
+      <h1 class="p_Heading1"><span class="f_Heading1">Feeds &amp; Speeds, 4 Axis Operations</span></h1>
+
+    </td>
+    <td class="topichead" id="idnav">
+      <a href="javascript:HMToggleExpandAll(!HMAnyToggleOpen())" title="Click to open/close expanding sections"><span class="hmbtntoggle"></span></a>
+      <a href="tool1.html" title="Previous Topic"><span class="hmbtnprev"></span></a>
+      <a href="create-round-4-axis.html" title="Parent Chapter"><span class="hmbtntop"></span></a>
+      <a href="clearance45.html" title="Next Topic"><span class="hmbtnnext"></span></a>
+      
+    </td>
+  </tr>  
+</table>
+</div>
+</div>  
+
+<div id="idcontent"><div id="innerdiv">
+<!-- Ask Internet Explorer 6.users to update their obsolete and dangerous browser --> 
+<!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
+
+<!--ZOOMRESTART-->
+<p class="p_Normal">The following <span class="f_BoldKeyword">Feeds &amp; Speeds</span> tab is displayed for all <span class="f_BoldKeyword">4 Axis</span> <span class="f_BoldKeyword">Mill</span> operations. It allows you to select the appropriate <span class="f_BoldKeyword">Feeds &amp; Speeds</span> for the current <span class="f_BoldKeyword">Mill</span> operation. In this tab, <span class="f_BoldKeyword">Spindle Parameters</span> and <span class="f_BoldKeyword">Feed Rates</span> can be specified. <span class="f_BoldKeyword">Speeds &amp; Feeds</span> can also be loaded <span class="f_BoldKeyword">from a File</span> or from<span class="f_BoldKeyword"> the Tool</span>. </p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A1_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A1','TOGGLE0186A1_ICON')">Feed Rates Explained</a></span></td></tr></table></div><div id="TOGGLE0186A1" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Feed Rates Explained – Extend the Life of Your CNC Tools and Machines" width="130" height="71" style="float:right;margin:0 0 0 5px;width:130px;height:71px;border:none" src="hmfile_hash_e538b430.png"/><span class="f_BoldKeyword">Feed Rate</span> is one of the most important factors to consider when implementing any CNC strategy. Simply put, feed rate is the speed at which the cutter engages the part and is typically measured in units/minute. Suggested cut feed rates will vary depending on the type of material you are cutting (i.e., aluminum, steel, wood, acrylic, etc.), the material of the cutter (carbide, high speed steel, ceramic, etc.) and many other cutting factors including desired surface and the characteristics of the CNC machine itself.</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/feed-rates-explained/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A2_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A2','TOGGLE0186A2_ICON')">Dialog Box: Feeds &amp; Speeds tab</a></span></td></tr></table></div><div id="TOGGLE0186A2" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><div class="p_Normal"><div style="margin:0;width:476px"><img alt="Feeds &amp; Speeds tab, All 4 Axis Operations" title="Feeds &amp; Speeds tab, All 4 Axis Operations" width="476" height="572" style="width:476px;height:572px;border:none" src="feeds-and-speeds-4axis-dialog.png"/><p style="text-align:center"><span class="f_ImageCaption">Feeds &amp; Speeds tab, All 4 Axis Operations</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 35px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A3_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A3','TOGGLE0186A3_ICON')">Spindle Parameters</a></span></td></tr></table></div><div id="TOGGLE0186A3" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 67px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">These parameters refer to the spindle on your machine.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Spindle Speed</span> &nbsp;</p>
+<p class="p_Normal">This is the rotational <span class="f_BoldKeyword">Speed (S)</span> of the milling spindle expressed in <span class="f_BoldKeyword">RPM</span>.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Spindle Direction (CW) &nbsp;</span></p>
+<p class="p_Normal">This sets the spindle rotation to be <span class="f_BoldKeyword">Clockwise</span> (<span class="f_BoldKeyword">CW</span>).</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Spindle Direction (CCW) &nbsp;</span></p>
+<p class="p_Normal">This sets the spindle rotation <span class="f_BoldKeyword">Direction</span> to be <span class="f_BoldKeyword">Counter Clockwise</span> (<span class="f_BoldKeyword">CCW</span>).</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 35px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A4_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A4','TOGGLE0186A4_ICON')">Feed Rates</a></span></td></tr></table></div><div id="TOGGLE0186A4" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 67px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">These are the feedrates (in <span class="f_BoldKeyword">Units/Min</span>) that will be applied to the current toolpath operation. &nbsp;If the values are currently populated from your <span class="f_BoldKeyword">Tool</span> definition (<span class="f_BoldKeyword">Load from Tool</span>), <span class="f_BoldKeyword">Feeds &amp; Speeds</span> table (<span class="f_BoldKeyword">Load from File</span>) or from your <span class="f_BoldKeyword">Knowledge Base</span>, you can override them for this operation.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Plunge (Pf) &nbsp;</span></p>
+<p class="p_Normal"><span class="f_BoldKeyword" style="color: #000000;">This is the </span>rate is the feed before the tool starts to engage in material. This is always vertical.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Approach (Af) &nbsp;</span></p>
+<p class="p_Normal">This is the <span class="f_BoldKeyword">Approach (Af)</span> feedrate (in <span class="f_BoldKeyword">Units/Min</span>) used to prepare the cutter just before it starts to <span class="f_BoldKeyword">Engage</span> into material for cutting.  <span class="f_BoldKeyword">Approach</span> motions are dependent on the method of machining.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Engage (Ef) &nbsp;</span></p>
+<p class="p_Normal">This is the <span class="f_BoldKeyword">Engage (Ef)</span> feedrate (in <span class="f_BoldKeyword">Units/Min</span>) used when the tool is <span class="f_BoldKeyword">Engaging</span> the material just prior to cutting.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Cut (Cf) &nbsp;</span></p>
+<p class="p_Normal">This is the <span class="f_BoldKeyword">Cut (Cf)</span> feedrate (in <span class="f_BoldKeyword">Units/Min</span>) used when the tool is <span class="f_BoldKeyword">Cutting</span> material.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Retract (Rf) &nbsp;</span></p>
+<p class="p_Normal">This is the <span class="f_BoldKeyword">Retract (Rf)</span> feedrate (in <span class="f_BoldKeyword">Units/Min</span>), when the tool is performing a <span class="f_BoldKeyword">Retract</span> move away from material.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Departure (Df) &nbsp;</span></p>
+<p class="p_Normal">The is the feedrate (in <span class="f_BoldKeyword">Units/Min</span>), when the tool <span class="f_BoldKeyword">Departs</span> from the material.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Transfer (Tf) Use Rapid &nbsp;</span></p>
+<p class="p_Normal">This is the <span class="f_BoldKeyword">Transfer (Tf)</span> feedrate (in <span class="f_BoldKeyword">Units/Min</span>) used for <span class="f_BoldKeyword">Transfer</span> motions. &nbsp;If you select <span class="f_BoldKeyword">Use Rapid</span> the posted G-Code will output a rapid motion (G0) with no feed rate.  <span style="font-weight: bold; color: #808080;">Note</span>: For more accurate machining time estimates, use the <span class="f_BoldKeyword">Set</span> option and enter the feed rate to use.<span class="f_BoldKeyword"> </span></p>
+<p class="p_Normal"><span style="font-weight: bold;">Note</span>: Rapid motions in all indexed operations are converted to federate motions when the setup is not aligned with the machine Z. &nbsp;This is done only when in the <a href="manualdefinition.html" class="topiclink">Machine Tool Setup</a>, a head configuration is defined and the option <span class="f_BoldKeyword">Output all coordinates in local Setup Coordinate System</span> is <span style="text-decoration: underline;">NOT</span> checked.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Transfer (Tf) Set &nbsp;</span></p>
+<p class="p_Normal">This is the <span class="f_BoldKeyword">Transfer (Tf)</span> feedrate (in <span class="f_BoldKeyword">Units/Min</span>) used for <span class="f_BoldKeyword">Transfer</span> motions. &nbsp;Select <span class="f_BoldKeyword">Set</span> to enter an actual feedrate value for rapid motions (G0). &nbsp;This is only used for calculating the estimated machining time.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 35px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A5_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A5','TOGGLE0186A5_ICON')">Feed Rates Reduction Factors</a></span></td></tr></table></div><div id="TOGGLE0186A5" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 67px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This section of the dialog allows you to specify <span class="f_BoldKeyword">Feed Rate Reduction Factors</span> for specific tool motions. </p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Plunge between levels &nbsp;</span></p>
+<p class="p_Normal">This is a percentage of the<span class="f_BoldKeyword"> Cut (Cf)</span> feedrate to use when the tool is plunging between Z levels.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">First XY Pass &nbsp;</span></p>
+<p class="p_Normal">This is a percentage of the <span class="f_BoldKeyword">Cut (Cf)</span> feedrate to use on the first XY cut motion when the toolpath uses the full width of the cutter.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Bottom Z Level</span></p>
+<p class="p_Normal">This is the percentage of the <span class="f_BoldKeyword">Cut (Cf)</span> feedrate that will be applied to the last (bottom most) level of the toolpath operation. &nbsp;For example in <span class="f_BoldKeyword">Pocketing</span>, it refers to the floor of the pocket. &nbsp;In <span class="f_BoldKeyword">Profiling</span> it refers to the bottom level of the profile cut.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 35px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A6_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A6','TOGGLE0186A6_ICON')">Coolant</a></span></td></tr></table></div><div id="TOGGLE0186A6" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 67px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Here you can override the <span class="f_BoldKeyword">Coolant</span> that is specified by the Tool.  <span class="f_BoldKeyword">Coolant</span> can be set to <span class="f_BoldKeyword">Flood</span>, <span class="f_BoldKeyword">Mist</span>, <span class="f_BoldKeyword">Through</span> or <span class="f_BoldKeyword">Air</span>.  <span class="f_BoldKeyword">Coolant</span> codes are defined in the post processor generator under <span class="f_BoldKeyword">Misc</span> tab.  <span class="f_BoldKeyword">Coolant Off</span> is also supported as a variable that can be added where needed using the post-processor generator.</p>
+<div class="p_Normal"><div style="margin:0;width:126px"><img alt="Coolant selections available" title="Coolant selections available" width="126" height="88" style="width:126px;height:88px;border:none" src="coolant-menu-2022.png"/><p style="text-align:center"><span class="f_ImageCaption">Coolant selections available</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 35px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A7_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A7','TOGGLE0186A7_ICON')">Load from Tool</a></span></td></tr></table></div><div id="TOGGLE0186A7" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 67px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Load the <span class="f_BoldKeyword">Feed &amp; Speeds</span> values that are saved with the currently selected <span class="f_BoldKeyword">Tool</span>.</p>
+<p class="p_Normal">See: <span class="f_BoldKeyword">Create/Edit Tools</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 35px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A8_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A8','TOGGLE0186A8_ICON')">Load from File</a></span></td></tr></table></div><div id="TOGGLE0186A8" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 67px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">This loads the <span class="f_BoldKeyword">Feeds &amp; Speeds</span> values from the <span class="f_BoldKeyword">Feeds &amp; Speeds Table</span> file. &nbsp;This will display the <span class="f_BoldKeyword">Load Feeds from Table</span> dialog box to make your selections. </p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186A9_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186A9','TOGGLE0186A9_ICON')">Dialog Box: Load Feeds from Table</a></span></td></tr></table></div><div id="TOGGLE0186A9" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Selecting <span class="f_BoldKeyword">OK</span> from this dialog transfers the spindle speed and cut feedrate to the <span class="f_BoldKeyword">Feeds &amp; Speeds</span> tab. The plunge, approach, engage, retract and departure feeds are determined using a percent of the cut feed. &nbsp;The percent to use for transferring the computed cut feed can be set under <span class="f_BoldKeyword">Feeds &amp; Speeds</span> <span class="f_BoldKeyword">Preferences</span>.</p>
+<div class="p_Normal"><div style="margin:0;width:353px"><img alt="Dialog Box: Load Feeds from Table" title="Dialog Box: Load Feeds from Table" width="353" height="508" style="width:353px;height:508px;border:none" src="feeds-speeds-from-file-dialog.png"/><p style="text-align:center"><span class="f_ImageCaption">Dialog Box: Load Feeds from Table</span></p></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AA_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AA','TOGGLE0186AA_ICON')">Data from Table</a></span></td></tr></table></div><div id="TOGGLE0186AA" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_BoldParameter"><span class="f_BoldParameter">Stock Material</span></p>
+<p class="p_Normal">Selecting a <span class="f_BoldKeyword">Stock Material</span> and <span class="f_BoldKeyword">Tool Material</span> displays the <span class="f_BoldKeyword">Surface Speed</span> and <span class="f_BoldKeyword">Feed/Tooth</span>. This information is contained in a feeds and speeds data file which can be edited to add newer materials.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Tool Material</span></p>
+<p class="p_Normal">Selecting a <span class="f_BoldKeyword">Stock Material</span> and <span class="f_BoldKeyword">Tool Material</span> displays the <span class="f_BoldKeyword">Surface Speed</span> and <span class="f_BoldKeyword">Feed/Tooth</span>. This information is contained in a feeds and speeds data file which can be edited to add newer materials.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Surface Speed</span></p>
+<p class="p_Normal">Selecting a <span class="f_BoldKeyword">Stock Material</span> and <span class="f_BoldKeyword">Tool Material</span> displays the <span class="f_BoldKeyword">Surface Speed</span> and <span class="f_BoldKeyword">Feed/Tooth</span>. This information is contained in a feeds and speeds data file which can be edited to add newer materials.</p>
+<p class="p_BoldParameter"><span class="f_BoldParameter">Feed/Tooth</span></p>
+<p class="p_Normal">Selecting a <span class="f_BoldKeyword">Stock Material</span> and <span class="f_BoldKeyword">Tool Material</span> displays the <span class="f_BoldKeyword">Surface Speed</span> and <span class="f_BoldKeyword">Feed/Tooth</span>. This information is contained in a feeds and speeds data file which can be edited to add newer materials.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AB_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AB','TOGGLE0186AB_ICON')">Input Variables</a></span></td></tr></table></div><div id="TOGGLE0186AB" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The input variables - <span class="f_BoldKeyword">Work Diameter</span> is automatically loaded from the Stock Radius. &nbsp;Based on this parameter and the <span class="f_BoldKeyword">Variables Limits</span> parameters, the program computes <span class="f_BoldKeyword">Spindle Speed</span> and <span class="f_BoldKeyword">Cut Feedrate (Cf)</span>. measured in <span class="f_BoldKeyword">Unites/Revolution</span>. &nbsp;Changing the spindle speed modifies the cut feedrate.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AC_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AC','TOGGLE0186AC_ICON')">Maximum Limits for Computation</a></span></td></tr></table></div><div id="TOGGLE0186AC" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">Here you can set the <span class="f_BoldKeyword">Max Spindle Speed</span> and <span class="f_BoldKeyword">Max Cut Feed (Cf)</span> values. &nbsp;Once these two values are set, the <span class="f_BoldKeyword">Spindle Speed</span> and <span class="f_BoldKeyword">Cut Feed</span> calculated by this dialog will not exceed these values even if you attempt to enter higher values into the <span class="f_BoldKeyword">Computed Variables</span> fields. &nbsp;To exceed these values, change them here or you must edit the operation or tool parameters manually.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AD_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AD','TOGGLE0186AD_ICON')">Computed Variables</a></span></td></tr></table></div><div id="TOGGLE0186AD" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal">The variables for <span class="f_BoldKeyword">Spindle Speed</span> and <span class="f_BoldKeyword">Cut Feed (Cf)</span> are computed for you based on the selections made in this dialog but will not exceed the values set in the <span class="f_BoldKeyword">Maximum Limits for Computation</span> section of the dialog. &nbsp;These values are then assigned to the active toolpath operation or tool. &nbsp;You can override either of these variables and the other will update automatically. &nbsp;Since this dialog is a <span class="f_BoldKeyword">Feeds &amp; Speeds Calculator</span>, you cannot override both values. &nbsp;To do so, you must edit the operation or tool parameters manually.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AE_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AE','TOGGLE0186AE_ICON')">The Milling Feeds &amp; Speeds Calculator</a></span></td></tr></table></div><div id="TOGGLE0186AE" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="The Milling Feeds &amp; Speeds Calculator" width="130" height="130" style="float:right;margin:0 0 0 5px;width:130px;height:130px;border:none" src="hmfile_hash_37b317e6.png"/>Did you know that MecSoft’s <span class="f_BoldKeyword">MILL</span> Module plug-ins have a built-in <span class="f_BoldKeyword">Feeds &amp; Speeds Calculator</span>? That’s right, you can ask the program to suggest feeds &amp; speeds values based on your current stock material and active tool parameters! Once a <span class="f_BoldKeyword">Cut Feed</span> is calculated, you can then choose to automatically assign feed rate values for the various toolpath motions in your operation including <span class="f_BoldKeyword">Plunge</span>, <span class="f_BoldKeyword">Approach</span>, <span class="f_BoldKeyword">Engage</span>, <span class="f_BoldKeyword">Retract</span> and <span class="f_BoldKeyword">Departure</span>! The percentages of the <span class="f_BoldKeyword">Cut Feed</span> to assign are all controlled from the <span class="f_BoldKeyword">CAM Preferences</span> dialog. &nbsp;The Milling<span class="f_BoldKeyword"> Feeds &amp; Speeds Calculator</span>...</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/the-milling-feeds-speeds-calculator/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 22px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186AF_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186AF','TOGGLE0186AF_ICON')">Customizing Feeds &amp; Speeds</a></span></td></tr></table></div><div id="TOGGLE0186AF" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 54px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><span class="f_BoldKeyword">MILL</span> module allows you to customize the feeds and speeds based on the stock material being machined, the material of the cutter employed and also the operation type. This is done by archiving your desired feeds and speeds settings in an external data file.</p>
+<p class="p_Normal">A default implementation of this table has been included with the <span class="f_BoldKeyword">RhinoCAM</span> product and can be found in a folder called &quot;<span class="f_BoldKeyword">Materials</span>&quot; under the product installation directory.</p>
+<p class="p_Normal">This xml contains the list of materials, texture, feeds and speeds. The file is located under <span class="f_BoldKeyword">Materials</span> folder in the <span class="f_BoldKeyword">RhinoCAM</span> install directory. (<span class="f_BoldKeyword">C:\ProgramData\MecSoft Corporation\RhinoCAM 2023 for Rhino x.x\Materials</span>).</p>
+<p class="p_Normal">Materials folder contains the following files</p>
+<p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin: 0 0 8px 4px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">FeedsSpeedsDataINCH.xml</span></p><p class="p_Numbered" style="text-indent: 0; padding-left: 24px; margin: 0 0 8px 4px;"><span class="f_Numbered" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:24px;margin-left:-24px">&#8226;</span><span class="f_Numbered">FeedsSpeedsDataMM.xml</span></p><p class="p_Normal" style="margin: 0 0 8px 28px;">The <span class="f_BoldKeyword">Feeds and speeds</span> file is an <span style="font-style: italic;">.</span>xml file format, which can be edited using any text editor to add newer materials. &nbsp;These values can then be recalled at any time to compute the feeds/speeds to be used in the current program. </p>
+<p class="p_Normal" style="margin: 0 0 8px 28px;">The format for this file is shown below.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 28px;"><table style="width:75%; border:solid thin #c0c0c0; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_BoldKeyword"><span class="f_BoldKeyword">&lt;Units&gt;Imperial&lt;/Units&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword">&lt;FeedsSpeeds&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &lt;Material&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;Name&gt;Stock Material&lt;/Name&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;TextureFile&gt;Texture Bitmap&lt;/TextureFile&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;Operation type, Tool Material, Surface Speed, Feed per Tooth&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp;&lt;/Material&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword">&lt;/FeedsSpeeds&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="margin: 0 0 8px 28px;">An example entry is shown below.</p>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 28px;"><table style="border:solid thin #c0c0c0; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:5px; border:none"><p class="p_BoldKeyword"><span class="f_BoldKeyword">&lt;Material&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;Name&gt;ALUMINUM - 2024&lt;/Name&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;TextureFile&gt;ALUMINUM.bmp&lt;/TextureFile&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;MILLING, CARBIDE, 1600.00, 0.0040&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;MILLING, HSS, 400.00, 0.0040&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;MILLING, CERAMIC, 400.00, 0.0040&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;DRILLING, CARBIDE, 960.00, 0.0048&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;DRILLING, HSS, 240.00, 0.0048&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;DRILLING, CERAMIC, 240.00, 0.0048&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;TURNING, CARBIDE, 1800.00, 0.0200&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;TURNING, CERAMIC, 1800.00, 0.0200&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &nbsp; &nbsp;&lt;FeedsSpeedsRecord&gt;TURNING, CERMET, 1800.00, 0.0200&lt;/FeedsSpeedsRecord&gt;</span></p>
+<p class="p_BoldKeyword"><span class="f_BoldKeyword"> &lt;/Material&gt;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 28px;"><table style="width:550px; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:495px; background-color:#ECFFFF; padding:5px; border:none"><p class="p_Normal" style="margin: 0 0 8px 13px;"><img alt="Alert!" title="Alert!" width="20" height="19" style="float:left;margin:0 5px 0 0;width:20px;height:19px;border:none" src="note-icon2.png"/>If part unit is set to Inches, MILL module automatically loads FeedsSpeedsDataINCH.xml and when part unit is set to MM, FeedsSpeedsDataMM.xml is loaded.</p>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: left; text-indent: 0; padding: 0 0 0 0; margin: 0 0 8px 24px;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:32px"><img id="TOGGLE0186B0_ICON" class="dropdown-toggle-icon" alt="tog_minus" width="22" height="20" style="margin:0;width:22px;height:20px;border:none" src="tog_minus.gif"/></td><td style="border:none;padding:0"><span class="f_Heading2_atoc_"><a class="dropdown-toggle" style="font-style: normal; font-weight: bold; color: #1159aa; background-color: transparent; text-decoration: none;" href="javascript:HMToggle('toggle','TOGGLE0186B0','TOGGLE0186B0_ICON')">More on Customizing Materials Data</a></span></td></tr></table></div><div id="TOGGLE0186B0" class="dropdown-toggle-body" style="text-align: left; padding: 0 0 0 0; margin: 0 0 8px 56px;"><table style="width:100%; border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal"><img alt="Best Practices in 2½ Axis Machining" width="130" height="131" style="float:right;margin:0 0 0 5px;width:130px;height:131px;border:none" src="hmfile_hash_b9645e1d.png"/>Note: This blog post is intended for advanced users who are familiar with XML text editing and have administrative access to their Windows Operating System. &nbsp;MecSoft’s CAM plug-ins have a built-in <span class="f_BoldKeyword">Feeds &amp; Speeds Calculator</span> that can suggest <span class="f_BoldKeyword">Spindle Speeds</span> and <span class="f_BoldKeyword">Cut Feed Rates</span> based on your stock material and active tool parameters! &nbsp;However, what if you are cutting stock material that is currently not in our <span class="f_BoldKeyword">Materials Library</span>? &nbsp;Or what if you don’t like what is currently assigned for the material of your choice in the <span class="f_BoldKeyword">Materials Library</span>? &nbsp;This post will show you how to customize MecSoft CAM to add and manage multiple material files as well to add your own stock materials. &nbsp;If you are new to MecSoft’s CAM plug-ins, you can review my earlier post on the <span class="f_BoldKeyword">Feeds &amp; Speeds Calculator</span> and how it works.</p>
+<p class="p_Normal"><a href="https://mecsoft.com/blog/how-to-customize-materials-data-for-feeds-speeds-computation/" target="_blank" class="weblink">Read the full article...</a></p>
+</td>
+</tr>
+</table>
+</div>
+
+<!--ZOOMSTOP-->
+</div></div>
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $(window).bind('resize', function() {
+      var y = $('#idheader').height(); 
+      $('#idcontent').css('margin-top', y);
+      var par = window.parent;
+      if ($( par ).width() <= $( window ).width()+20) {
+        $('#idheader').css('position', 'relative');
+        $('#idcontent').css('margin-top', 0);
+        $('#idbacktotop').css('display', 'block');
+        $('.hmanchor').css('margin-top', -20);
+	$('.hmanchor').css('padding-top', 20);
+      }
+      else {
+        $('#idheader').css('position', 'fixed');
+        $('#idcontent').css('margin-top', $('#idheader').height());
+        $('#idbacktotop').css('display', 'none');
+        $('.hmanchor').css('margin-top', -y-20);
+	$('.hmanchor').css('padding-top', y+20);
+      }
+    });
+    
+    $(window).resize(); //trigger event for initially small displays
+  });
+
+if ((!parent.hmNavigationFrame) && (parent.location) && (parent.location.href)) { $('.sync-toc').show();$('p.crumbs').hide();}
+var baseurl = document.URL.substring(0,document.URL.lastIndexOf("/")+1); 
+$('#idcontent').append('<p class="help-url"><b>URL of this topic:<br /></b><a href="'+baseurl+'index.html' +
+'?feedsandspeeds-4axis.html" target="_top">'+baseurl+'index.html?feedsandspeeds-4axis.html</a></p>');
+
+</script>
+<script type="text/javascript">
+HMInitToggle('TOGGLE0186A1_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A1\',\'TOGGLE0186A1_ICON\')');
+HMInitToggle('TOGGLE0186A1','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A2_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A2\',\'TOGGLE0186A2_ICON\')');
+HMInitToggle('TOGGLE0186A2','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A3_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A3\',\'TOGGLE0186A3_ICON\')');
+HMInitToggle('TOGGLE0186A3','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A4_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A4\',\'TOGGLE0186A4_ICON\')');
+HMInitToggle('TOGGLE0186A4','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A5_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A5\',\'TOGGLE0186A5_ICON\')');
+HMInitToggle('TOGGLE0186A5','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A6_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A6\',\'TOGGLE0186A6_ICON\')');
+HMInitToggle('TOGGLE0186A6','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A7_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A7\',\'TOGGLE0186A7_ICON\')');
+HMInitToggle('TOGGLE0186A7','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A8_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A8\',\'TOGGLE0186A8_ICON\')');
+HMInitToggle('TOGGLE0186A8','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186A9_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186A9\',\'TOGGLE0186A9_ICON\')');
+HMInitToggle('TOGGLE0186A9','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AA_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AA\',\'TOGGLE0186AA_ICON\')');
+HMInitToggle('TOGGLE0186AA','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AB_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AB\',\'TOGGLE0186AB_ICON\')');
+HMInitToggle('TOGGLE0186AB','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AC_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AC\',\'TOGGLE0186AC_ICON\')');
+HMInitToggle('TOGGLE0186AC','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AD_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AD\',\'TOGGLE0186AD_ICON\')');
+HMInitToggle('TOGGLE0186AD','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AE_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AE\',\'TOGGLE0186AE_ICON\')');
+HMInitToggle('TOGGLE0186AE','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186AF_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186AF\',\'TOGGLE0186AF_ICON\')');
+HMInitToggle('TOGGLE0186AF','hm.type','dropdown','hm.state','0');
+HMInitToggle('TOGGLE0186B0_ICON','hm.type','dropdown','hm.state','0','hm.src0','tog_plus.gif','hm.src1','tog_minus.gif','onclick','HMToggle(\'toggle\',\'TOGGLE0186B0\',\'TOGGLE0186B0_ICON\')');
+HMInitToggle('TOGGLE0186B0','hm.type','dropdown','hm.state','0');
+</script>
+</body>
+</html>

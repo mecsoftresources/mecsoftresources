@@ -1,0 +1,385 @@
+;   TOOLTIP MAP FILE
+; Format:
+;          [DIALOG_ID]
+;          {
+;             [CONTROL_ID] | [FILE]
+;          }
+;   Symbol ';' - comment
+;
+;   Latest update: 12/01/16
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+24088 ; IDD_WORKSPACE_SETUP "Define Project Setup"
+{
+   3181 | 3181-ToolTip-ProjectExtents.htm ; IDC_EDIT_LENGTH
+   3155 | 3155-ToolTip-ProjectExtents.htm ; IDC_EDIT_WIDTH
+   3156 | 3156-ToolTip-ProjectResSettings.htm ; IDC_EDIT_X_RES
+   3157 | 3157-ToolTip-ProjectExtents.htm ; IDC_BUTTON_TO_PT
+   3150 | 3150-ToolTip-ProjectExtents.htm ; IDC_EDIT_HEIGHT
+   2768 | 2768-ToolTip-ProjectOrigin.htm ; IDC_EDIT_X
+   1072 | 1072-ToolTip-ProjectOrigin.htm ; IDC_EDIT_Y
+   3159 | 3159-ToolTip-ProjectOrigin.htm ; IDC_BUTTON_ORIGIN
+   3161 | 3161-ToolTip-ProjectMaterial.htm ; IDC_BUTTON_MATERIAL
+   3151 | 3151-ToolTip-ProjectMaterial.htm ; IDC_LIST
+   2851 | 2851-ToolTip-ProjectResSettings.htm ; IDC_RADIO_STANDARD
+   2153 | 2153-ToolTip-ProjectResSettings.htm ; IDC_RADIO_MEDIUM
+   2865 | 2865-ToolTip-ProjectResSettings.htm ; IDC_RADIO_FINE
+   3610 | 3610-ToolTip-ProjectColorOptions.htm ; IDC_PROJECT_RELIEF_COLOR
+   3589 | 3589-ToolTip-ProjectColorOptions.htm ; IDC_PROJECT_SINGLE_RADIO
+   3611 | 3611-ToolTip-ProjectColorOptions.htm ; IDC_PROJECT_SEPARATE_RADIO
+   3553 | 3553-ToolTip-ProjectColorOptions.htm ; IDC_PROJECT_BASE_COLOR
+   2828 | 2828-ToolTip-ProjectColorOptions.htm ; IDC_PROJECT_BASEZ_INP
+   3636 | 3636-ToolTip-ProjectLocAndExtentsGroup.htm ; Project Loc Group
+   3633 | 3633-ToolTip-ProjectMaterial.htm ; Material Group
+   3653 | 3181-ToolTip-ProjectExtents.htm ; Extents Group
+   3635 | 3635-ToolTip-ProjectResSettings.htm ; Resolution Group
+   3634 | 3634-ToolTip-ProjectColorOptions.htm ; Color Options Group
+   3652 | 2768-ToolTip-ProjectOrigin.htm ; Origin Group
+   3167 | 3167-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+24076 ; IDD_MOVE_TO_ORIGIN "Move Selections To Origin"
+{
+   1557 | 1557-ToolTip-MovePickOrigin.htm ; IDC_Y
+   1560 | 1560-ToolTip-MovePickOrigin.htm ; IDC_Z
+   2893 | 2893-ToolTip-MovePickObjects.htm ; IDC_SELECT_OBJECTS
+   2898 | 2898-ToolTip-MovePickOrigin.htm ; IDC_BUTTON_PICK_ORIGIN
+   1555 | 1555-ToolTip-MovePickOrigin.htm ; IDC_X
+}
+24078 ; IDD_ALIGN_PART "Parameters"
+{
+   2895 | 2895-ToolTip-AlignInZ.htm ; IDC_ALIGN_TO_CENTER
+   2834 | 2834-ToolTip-AlignOffsets.htm ; IDC_Y_OFF
+   2844 | 2844-ToolTip-AlignOffsets.htm ; IDC_X_OFF
+   1691 | 1691-ToolTip-AlingXYAlignments.htm ; IDC_NORTH_WEST
+   1682 | 1682-ToolTip-AlingXYAlignments.htm ; IDC_SOUTH_WEST
+   2872 | 2872-ToolTip-AlingXYAlignments.htm ; IDC_MID_WEST
+   1452 | 1452-ToolTip-AlingXYAlignments.htm ; IDC_NORTH
+   1454 | 1454-ToolTip-AlingXYAlignments.htm ; IDC_SOUTH
+   1445 | 1445-ToolTip-AlingXYAlignments.htm ; IDC_CENTER
+   1693 | 1693-ToolTip-AlingXYAlignments.htm ; IDC_NORTH_EAST
+   1688 | 1688-ToolTip-AlingXYAlignments.htm ; IDC_SOUTH_EAST
+   2894 | 2894-ToolTip-AlingXYAlignments.htm ; IDC_MID_EAST
+   2896 | 2896-ToolTip-AlignInZ.htm ; IDC_ALIGN_TO_TOP
+   2899 | 2899-ToolTip-AlignInZ.htm ; IDC_ALIGN_TO_BOTTOM
+}
+24100 ; IDD_ROP_REGIONS_SELECT "Relief Curves/Surfaces"
+{
+   2043 | 2043-ToolTip-ConvertRemoveAll.htm ; IDC_DESELECT_ALL_NEW
+   2046 | 2046-ToolTip-ConvertRemoveActive.htm ; IDC_DESELECT_NEW
+}
+24101 ; IDD_ROP_BORDERREGIONS_TAB "Border Curves"
+{
+   1963 | 1963-ToolTip-ConvertSelSurfacesList.htm ; IDC_REGION_LIST_NEW
+   1972 | 1972-ToolTip-ConvertSelectSurfButton.htm ; IDC_REGION_PICK_NEW
+}
+24102 ; IDD_ROP_DETAILREGIONS_TAB "Detail Curves"
+{
+   1963 | 1963-ToolTip-ConvertSelSurfacesList.htm ; IDC_REGION_LIST_NEW
+   1972 | 1972-ToolTip-ConvertSelectSurfButton.htm ; IDC_REGION_PICK_NEW
+}
+24103 ; IDD_ROP_SURFACEREGIONS_TAB "Surfaces"
+{
+   1963 | 1963-ToolTip-ConvertSelSurfacesList.htm ; IDC_REGION_LIST_NEW
+   1972 | 1972-ToolTip-ConvertSelectSurfButton.htm ; IDC_REGION_PICK_NEW
+}
+24070 ; IDD_RELIEF_GRAYSCALE "Parameters"
+{
+   2001 | 2001-ToolTip-3D-Relief-Reset.htm ; IDC_BUTTON_RESET
+   1132 | 1132-ToolTip-3D-Relief-Invert-Black-White.htm ; IDC_CHECK_INVERT_COLOR
+   3742 | 3742-ToolTip-3D-Relief-EDIT-OP-NAME-RELIEF.htm ; IDC_EDIT_OP_NAME_RELIEF
+   1036 | 1036-ToolTip-PuffParType.htm ; IDC_COMBO_OP_TYPE
+}
+24086 ; IDD_RELIEF_BASIC "Image Edits"
+{
+   1508 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK1
+   1513 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK2
+   1519 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK3
+   1523 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK4
+   1595 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK5
+   1600 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK6
+   1605 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK7
+   1610 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK8
+   1613 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK9
+   1617 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK10
+   1621 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK11
+   1731 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK12
+   1735 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK13
+   1738 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK14
+   1742 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK15
+   2276 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK16
+   2794 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK17
+   1917 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK18
+   1926 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK19
+   1930 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK20
+   1933 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK21
+   1935 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK22
+   1937 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK23
+   1940 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK24
+   1941 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK25
+   1943 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK26
+   1945 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK27
+   1947 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK28
+   1950 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK29
+   1952 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK30
+   1954 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK31
+   1956 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK32
+   3171 | 3171-ToolTip-3D-Relief-Image-Edits-Filter-Off.htm ; IDC_RADIO_SINGLE
+   3172 | 3172-ToolTip-3D-Relief-Image-Edits-Filter-On.htm ; IDC_RADIO_MULTI
+   1096 | 1096-ToolTip-3D-Relief-Image-Edits-Grey-Scale-Red-Input.htm ; IDC_EDIT_RED
+   1101 | 1101-ToolTip-3D-Relief-Image-Edits-Grey-Scale-Green-Input.htm ; IDC_EDIT_GREEN
+   2760 | 2760-ToolTip-3D-Relief-Image-Edits-Grey-Scale-Blue-Input.htm ; IDC_EDIT_BLUE
+   2749 | 2749-ToolTip-3D-Relief-Image-Edits-Grey-Scale-Red-Slider.htm ; IDC_SLIDER_RED
+   2772 | 2772-ToolTip-3D-Relief-Image-Edits-Grey-Scale-Green-Slider.htm ; IDC_SLIDER_GREEN
+   2774 | 2774-ToolTip-3D-Relief-Image-Edits-Grey-Scale-Blue-Slider.htm ; IDC_SLIDER_BLUE
+}
+24091 ; IDD_RELIEF_ADV "Parameter Edits"
+{
+   2056 | 2056-ToolTip-3D-Relief-Par-Edits-Smoothing-Slider.htm ; IDC_SLIDER_SMOOTHING
+   1111 | 1111-ToolTip-3D-Relief-Par-Edits-Smoothing-Factor.htm ; IDC_EDIT_SMOOTHING
+   1085 | 1085-ToolTip-3D-Relief-Par-Edits-Relief-Height-R.htm ; IDC_EDIT_RELIEF_HEIGHT
+   2781 | 2781-ToolTip-3D-Relief-Par-Edits-Size-W.htm ; IDC_EDIT_SIZE_X
+   1059 | 1059-ToolTip-3D-Relief-Par-Edits-Size-H.htm ; IDC_EDIT_SIZE_Y
+   2024 | 2024-ToolTip-3D-Relief-Par-Edits-Size-Pick.htm ; IDC_PICK_SQUARE
+   2808 | 2808-ToolTip-3D-Relief-Par-Edits-Insertion-Point-Pick.htm ; IDC_PICK_INSERTION_POINT
+   1087 | 1087-ToolTip-3D-Relief-Par-Edits-Size-Maintain-Ratio.htm ; IDC_CHECK_ASPECT
+   2897 | 2897-ToolTip-3D-Relief-Par-Edits-Size-Use-Image.htm ; IDC_CHECK_USE_IMAGE_SIZE
+   1080 | 1080-ToolTip-3D-Relief-Par-Edits-Insertion-Point-Y.htm ; IDC_INSERTION_PT_Y
+   3202 | 3202-ToolTip-3D-Relief-Par-Edits-Insertion-Point-X.htm ; IDC_INSERTION_PT_X
+   3660 | 3660-ToolTip-3D-Relief-Par-Edits-Size-Group.htm
+   3661 | 3661-ToolTip-3D-Relief-Par-Edits-Insertion-Point-Group.htm
+   3662 | 3662-ToolTip-3D-Relief-Par-Edits-Relief-Height-Group.htm
+   3663 | 3663-ToolTip-3D-Relief-Par-Edits-Smoothing-Group.htm
+   3659 | 3659-ToolTip-3D-Relief-Par-Edits-Relief-Parameters-Group.htm
+   3649 | 3649-ToolTip-3D-Relief-Image-Edits-Filter-Colors-Group.htm
+   3650 | 3650-ToolTip-RELIEF-BASIC-Image-Edits-Threshold-Criteria-Group.htm
+}
+24112 ; IDD_RELIEF_REGIONS_SELECT "Relief Curves"
+{
+   2043 | 2043-ToolTip-ConvertRemoveAll.htm ; IDC_DESELECT_ALL_NEW
+   2046 | 2046-ToolTip-ConvertRemoveActive.htm ; IDC_DESELECT_NEW
+}
+34523 ; IDD_ROP_BORDERREGIONS_TAB_RELIEF "Border Curves"
+{
+   1963 | 1963-ToolTip-ConvertSelSurfacesList.htm ; IDC_REGION_LIST_NEW
+   1972 | 1972-ToolTip-ConvertSelectSurfButton.htm ; IDC_REGION_PICK_NEW
+}
+24068 ; IDD_PUFF_DIALOG "Parameters"
+{
+   2327 | 2327-ToolTip-PuffParName.htm ; IDC_EDIT_OP_NAME
+   1092 | 1092-ToolTip-PuffParType.htm ; IDC_COMBO1
+   3639 | 2074-ToolTip-PuffParMaxHeight.htm ; IDC_EDIT_MAX_HT Group
+   2074 | 2074-ToolTip-PuffParMaxHeight.htm ; IDC_EDIT_MAX_HT
+   3657 | 3657-ToolTip-PuffParSmoothing.htm ; IDC_ART_PUFF_DO_SMOOTHING_CB
+   1965 | 1965-ToolTip-PuffParSmoothing.htm ; IDC_EDIT_SMOOTH
+   2242 | 2242-ToolTip-PuffParSmoothing.htm ; IDC_SLIDER_SMOOTH
+   3657 | 3657-ToolTip-PuffParSmoothing.htm ; IDC_ART_PUFF_DO_SMOOTHING_CB Group
+}
+24072 ; IDD_SWEPTVOLUME_DIALOG "Create Swept Volume"
+{
+   3743 | 3743-ToolTip-SWEPTVOLUME-DIALOG-EDIT-OP-NAME.htm ; IDC_EDIT_OP_NAME_SWEPT
+   1036 | 1036-ToolTip-PuffParType.htm ; IDC_COMBO_OP_TYPE
+   2762 | 2762-ToolTip-SweepCrossSection.htm ; IDC_EDIT_SCALE
+   2782 | 2782-ToolTip-SweepCrossSection.htm ; IDC_CHECK_FILL
+   2061 | 3167-ToolTip-Dialog-Image.htm ; Dialog Image
+}
+24087 ; IDD_OPTIONS "Options"
+{
+   3644  | 3644-ToolTip-Options-File-Load-Group.htm ; File Load (Group)
+   3160  | 3160-ToolTip-Options-File-Load-Auto-Regen.htm ; Auto Regenerate Projects on File Load (Checkbox)
+   2863  | 2863-ToolTip-Options-File-Load-Output-Single-Mesh.htm ; Output Relief & Base as Single Mesh (Radio)
+   2160  | 2160-ToolTip-Options-File-Load-Output-Separate-Mesh.htm ; Output Relief & Base as Separate Mesh (Radio)
+   3592  | 3592-ToolTip-Options-File-Load-Output-Relief-Only.htm ; Output Relief Mesh Only (Radio)
+   3645  | 3645-ToolTip-Options-Display-Group.htm ; Display (Group)
+   3175  | 3175-ToolTip-Options-Display-Single-Relief-Color.htm ; Display Projects in Single Relief Color (Radio)
+   3183  | 3183-ToolTip-Options-Display-Relief-Base-Color.htm ; Display Projects in Relief & Base Color (Radio)
+   3173  | 3173-ToolTip-Options-Display-Relief-Color.htm ; Relief Color (Selector)
+   3176  | 3176-ToolTip-Options-Display-Base-Color.htm ; Base Color
+   3174  | 3174-ToolTip-Options-Display-Base-Color.htm ; Base Color (Selector)
+   3168  | 3168-ToolTip-Options-Display-Base-Z-Height.htm ; Base Z Height
+   2814  | 2814-ToolTip-Options-Display-Base-Z-Height.htm ; Base Z Height (Input)
+   3646  | 3646-ToolTip-Options-Mesh-Export-Group.htm ; Mesh Export (Group)
+   3199  | 3199-ToolTip-Options-Mesh-Export-Group-Decimate-Mesh.htm ; Decimate Mesh on Export (Checkbox)
+   3191  | 3191-ToolTip-Options-Mesh-Export-Group-Aspect-Ratio.htm ; Aspect Ratio (Input)
+   3186  | 3186-ToolTip-Options-Mesh-Export-Group-Limiting-Length.htm ; Limiting Length (Input)
+   3192  | 3192-ToolTip-Options-Mesh-Export-Chordal-Deviation.htm ; Chordal Deviation (Input)
+   3647  | 3647-ToolTip-Options-Closed-Mesh-Group.htm ; Closed Mesh (Group)
+   1031  | 1031-ToolTip-Options-Closed-Mesh.htm ; Closed Base of Mesh (Checkbox)
+   1037  | 1037-ToolTip-Options-Closed-Mesh-Planar.htm ; Closed Base with Planar Mesh (Radio)
+   1042  | 1042-ToolTip-Options-Closed-Mesh-Mirror.htm ; Closed Base with Mirrir Mesh (Radio)
+   3648  | 3648-ToolTip-Options-User-Interface-Group.htm ; User Interface (Group)
+   3643  | 3643-ToolTip-Options-User-Interface-Show-ToolTips.htm ; Show Context ToolTips (Checkbox)
+   1306  | 1306-ToolTip-Options-User-Interface-Show-ToolTips-Delay.htm ; ToolTip delay (Input)
+}
+24071 ; IDD_RASTER_TO_VECTOR "Parameters"
+{
+   2001 | 2001-ToolTip-3D-Relief-Reset.htm ; IDC_BUTTON_RESET
+   1132 | 1132-ToolTip-3D-Relief-Invert-Black-White.htm ; IDC_CHECK_INVERT_COLOR
+   3765 | 2327-ToolTip-PuffParName.htm ; IDC_EDIT_OP_NAME_VECTOR
+}
+24084 ; IDD_RASVEC_BASIC "Image Edits"
+{
+   2041 | 2038-ToolTip-RELIEF-BASIC-Image-Edits-SLIDER-THRESHOLD.htm ; IDC_EDIT_THRESHOLD
+   2038 | 2038-ToolTip-RELIEF-BASIC-Image-Edits-SLIDER-THRESHOLD.htm ; IDC_SLIDER_THRESHOLD
+   1508 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK1
+   1513 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK2
+   1519 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK3
+   1523 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK4
+   1595 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK5
+   1600 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK6
+   1605 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK7
+   1610 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK8
+   1613 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK9
+   1617 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK10
+   1621 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK11
+   1731 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK12
+   1735 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK13
+   1738 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK14
+   1742 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK15
+   2276 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK16
+   2794 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK17
+   1917 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK18
+   1926 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK19
+   1930 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK20
+   1933 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK21
+   1935 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK22
+   1937 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK23
+   1940 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK24
+   1941 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK25
+   1943 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK26
+   1945 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK27
+   1947 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK28
+   1950 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK29
+   1952 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK30
+   1954 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK31
+   1956 | 1508-ToolTip-RELIEF-BASIC-Image-Edits-Check1.htm ; IDC_CHECK32
+   3171 | 3171-ToolTip-3D-Relief-Image-Edits-Filter-Off.htm ; IDC_RADIO_SINGLE
+   3172 | 3172-ToolTip-3D-Relief-Image-Edits-Filter-On.htm ; IDC_RADIO_MULTI
+   3651 | 3651-ToolTip-RELIEF-BASIC-Image-Edits-Filter-Colors-Group.htm
+   3658 | 3658-ToolTip-3D-Relief-Image-Edits-Gray-Scale-Group.htm
+   3649 | 3649-ToolTip-RELIEF-BASIC-Image-Edits-Filter-Colors-Group.htm   
+}
+24085 ; IDD_RASVEC_ADV "Vector Edits"
+{
+   3158 | 3158-ToolTip-RASVEC-ADV-EDIT-SIZE-W.htm ; IDC_EDIT_SIZE_W
+   3200 | 3158-ToolTip-RASVEC-ADV-EDIT-SIZE-W.htm ; IDC_EDIT_SIZE_H
+   1087 | 1087-ToolTip-RASVEC-ADV-CHECK-ASPECT.htm ; IDC_CHECK_ASPECT
+   2024 | 3158-ToolTip-RASVEC-ADV-EDIT-SIZE-W.htm ; IDC_PICK_SQUARE
+   3165 | 3165-ToolTip-RASVEC-ADV-EDIT-SIZE-X2.htm ; IDC_EDIT_SIZE_X2
+   3208 | 3208-ToolTip-RASVEC-ADV-EDIT-SIZE-Y2.htm ; IDC_EDIT_SIZE_Y2
+   1959 | 1959-ToolTip-RASVEC-ADV-EDIT-RESOLUTION.htm ; IDC_EDIT_RESOLUTION
+   2792 | 2792-ToolTip-RASVEC-ADV-CHECK-FIT-ARC.htm ; IDC_CHECK_FIT_ARC
+   2033 | 2792-ToolTip-RASVEC-ADV-CHECK-FIT-ARC.htm ; IDC_EDIT_TOLERANCE
+   1393 | 1393-ToolTip-RASVEC-ADV-CHECK-ARC-FITTING.htm ; IDC_CHECK_ARC_FITTING
+   2048 | 1393-ToolTip-RASVEC-ADV-CHECK-ARC-FITTING.htm ; IDC_EDIT_ARC_FITTING
+   2897 | 2897-ToolTip-RASVEC-ADV-CHECK-USE-IMAGE-SIZE.htm ; IDC_CHECK_USE_IMAGE_SIZE
+   2845 | 2845-ToolTip-RASVEC-ADV-CHECK-FILTER-LENGTH.htm ; IDC_CHECK_FILTER_LENGTH
+   2852 | 2852-ToolTip-RASVEC-ADV-CHECK-FILTER-AREA.htm ; IDC_CHECK_FILTER_AREA
+   2822 | 2845-ToolTip-RASVEC-ADV-CHECK-FILTER-LENGTH.htm ; IDC_EDIT_FILTER_LENGTH
+   2840 | 2852-ToolTip-RASVEC-ADV-CHECK-FILTER-AREA.htm ; IDC_EDIT_FILTER_AREA
+}
+24092 ; IDD_BROWSERDLG_ROPS 
+{
+   3170 | file.htm ; IDC_ART_RASVEC_TREE
+   3154 | file.htm ; IDC_ART_TREE
+}
+24106 ; IDD_BROWSERDLG_ART_MAIN 
+{
+}
+24082 ; IDD_ART_TREE 
+{
+   3154 | file.htm ; IDC_ART_TREE
+}
+24090 ; IDD_ART_RASVEC_TREE 
+{
+   3170 | file.htm ; IDC_ART_RASVEC_TREE
+}
+24089 ; IDD_ART_PROGRESS_DIALOG "Processing..."
+{
+   3767 | file.htm ; IDC_ABORT
+   2733 | file.htm ; IDC_PROGRESS
+}
+24093 ; IDD_BROWSERDLG "ART Browser"
+{
+}
+24080 ; IDD_CONVERT_3D_GEOMETRY "Parameters"
+{
+   2327 | 2327-ToolTip-PuffParName.htm ; IDC_EDIT_OP_NAME
+   1036 | 1036-ToolTip-PuffParType.htm ; IDC_COMBO_OP_TYPE
+}
+24083 ; IDD_EVALUATION_DIALOG_ART "Dialog"
+{
+   3211 | file.htm ; IDC_FEATURE_PRESENTATION
+   3212 | file.htm ; IDC_TUTORIAL
+   3213 | file.htm ; IDC_ONLINEHELP
+   3216 | file.htm ; IDC_SUPORTEMAIL
+   3214 | file.htm ; IDC_WEBSITE
+   3218 | file.htm ; IDC_DONTSHOW
+  ; IDC_STATIC | file.htm ; IDC_STATIC
+   3182 | file.htm ; IDC_BUTTON_GSG
+}
+1373 ; IDD_BROWSE_BITMAPS "Browse for materials ..."
+{
+  ; IDCANCEL | file.htm ; IDCANCEL
+   1392 | file.htm ; IDC_APPLY_BUTTON
+   1071 | file.htm ; IDC_LIST_CTRL
+  ; IDHELP | file.htm ; IDHELP
+}
+34510 ; IDD_SHAPES 
+{
+   2817 | file.htm ; IDC_LIST_SHAPES
+}
+34511 ; IDD_SHAPES_OP_TYPE "Shape Settings"
+{
+   3490 | 3490-ToolTip-Shape-Op-Type-OK.htm ; IDC_BUTTON_OK
+   2853 | 1092-ToolTip-PuffParType.htm ; IDC_RADIO_ADD
+   2866 | 1092-ToolTip-PuffParType.htm ; IDC_RADIO_SUBTRACT
+   2869 | 1092-ToolTip-PuffParType.htm ; IDC_RADIO_UNITE_HIGH
+   2873 | 1092-ToolTip-PuffParType.htm ; IDC_RADIO_UNITE_LOW
+   2877 | 1092-ToolTip-PuffParType.htm ; IDC_RADIO_INTERSECT_HIGH
+   2875 | 1092-ToolTip-PuffParType.htm ; IDC_RADIO_INTERSECT_LOW
+}
+24069 ; IDD_LICENSE_ART "Enter License Codes"
+{
+   1597 | file.htm ; IDC_LICENSECODE1
+   1612 | file.htm ; IDC_LICENSECODE2
+   2709 | file.htm ; IDC_REQUEST_CODES
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+  ; IDHELP | file.htm ; IDHELP
+   1593 | file.htm ; IDC_MACHINEID
+   1602 | file.htm ; IDC_TRIESLEFT
+   1607 | file.htm ; IDC_DAYSLEFT
+   1614 | file.htm ; IDC_LICLEFT
+   1618 | file.htm ; IDC_LIC_TYPE
+   2240 | file.htm ; IDC_SPLASH
+}
+24073 ; IDD_DIALOG_COORDS "Enter Co-Ordinates"
+{
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+   2768 | 2768-ToolTip-Sweep-Cross-Section-Coordinates.htm ; IDC_EDIT_X
+   1072 | 2768-ToolTip-Sweep-Cross-Section-Coordinates.htm ; IDC_EDIT_Y
+}
+24074 ; IDD_COLSEL "Select Colour"
+{
+  ; IDOK | file.htm ; IDOK
+  ; IDCANCEL | file.htm ; IDCANCEL
+   2737 | file.htm ; IDC_HUE
+   1049 | file.htm ; IDC_SAT
+   2745 | file.htm ; IDC_LUM
+   1056 | file.htm ; IDC_RED
+   2754 | file.htm ; IDC_GREEN
+   1062 | file.htm ; IDC_BLUE
+   2777 | file.htm ; IDC_REF
+   3766 | file.htm ; IDC_ADDCOLOUR
+}
+34513 ; IDD_SHAPE_MOVE "Move"
+{
+   1555 | 1555-ToolTip-Shape-Move-From.htm ; IDC_X
+   1557 | 1555-ToolTip-Shape-Move-From.htm ; IDC_Y
+   2050 | 1555-ToolTip-Shape-Move-From.htm ; IDC_PICK_FROM
+   2084 | 2084-ToolTip-Shape-Move-To.htm ; IDC_TO_X
+   2087 | 2084-ToolTip-Shape-Move-To.htm ; IDC_TO_Y
+   2081 | 2084-ToolTip-Shape-Move-To.htm ; IDC_PICK_TO
+   1695 | 3167-ToolTip-Dialog-Image.htm ; Dialog Image
+}

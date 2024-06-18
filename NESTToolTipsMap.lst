@@ -1,0 +1,109 @@
+;   TOOLTIP MAP FILE
+; Format:
+;          [DIALOG_ID]
+;          {
+;             [CONTROL_ID] | [FILE]
+;          }
+;   Symbol ';' - comment
+;
+;   Latest update: 12/6/18
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+1902 ; IDD_NESTING_TYPE_DLG 
+{
+   2949 | 2949-ToolTip-Rectangular-Nest-Radio.htm ; IDC_RECT_NESTING
+   2953 | 2953-ToolTip-True-Shape-Nest-Radio.htm ; IDC_TRUESHAPE_NESTING
+}
+1903 ; IDD_NESTING_SHEET_SELECT_DLG 
+{
+   2813 | 2813-ToolTip-Select-Curves-Sheets.htm ; IDC_REGION_PICK
+   1145 | 1145-ToolTip-Remove-All-Button.htm ; IDC_DESELECT_ALL
+   1147 | 1147-ToolTip-Remove-Active-Button.htm ; IDC_DESELECT
+   3113 | 3113-ToolTip-Sheet-List.htm ; IDC_SHEET_GRID
+   2821 | 2821-ToolTip-Sheet-Total.htm ; IDC_NEST_SHEET_TOTALNUM
+   3901 | 3901-ToolTip-Sheet-Define.htm ; IDC_NEST_DEFINE_SHEETS
+   3922 | 3922-ToolTip-Sheet-Define-Length.htm ; IDC_NEST_LENGTH
+   3924 | 3924-ToolTip-Sheet-Define-Height.htm ; IDC_NEST_HEIGHT
+   3925 | 3925-ToolTip-Sheet-Define-Count.htm ; IDC_NEST_DSCOUNT
+   3927 | 3927-ToolTip-Sheet-Define-Name.htm ; IDC_NEST_DSNAME
+   3928 | 3928-ToolTip-Sheet-Define-Thickness.htm ; IDC_NEST_THICKNESS
+   3558 | 3558-tooltip-sheet-define-add.htm ; IDC_NEST_ADDDS
+}
+1904 ; IDD_NESTING_PART_SELECT_DLG 
+{
+   2813 | 2813-ToolTip-Select-Curves-Parts.htm ; IDC_REGION_PICK
+   1145 | 1145-ToolTip-Remove-All-Button.htm ; IDC_DESELECT_ALL
+   1147 | 1147-ToolTip-Remove-Active-Button.htm ; IDC_DESELECT
+   2967 | 2967-ToolTip-Mirror-Parts-for-Nest.htm ; IDC_MIRROR_PART
+   2977 | 2977-ToolTip-Allow-Parts-Inside.htm ; IDC_PART_INSIDE_PART
+   2965 | 2965-ToolTip-Orient-Step-Angle.htm ; IDC_ROT_STEP_ANGLE
+   2979 | 2979-ToolTip-Part-List.htm ; IDC_PART_GRID
+   3573 | 3573-ToolTip-Collapse-Up-Button.htm ; IDC_COLLAPSE_ALL
+   3572 | 3572-ToolTip-Expand-Down-Button.htm ; IDC_EXPAND_ALL
+   1391 | 1391-ToolTip-Use-for-Engraving-Sign-Making.htm ; IDC_ENGRAVING
+   3929 | 3929-ToolTip-Parts-Thickness-Filter.htm ; IDC_NEST_THICKNESS_DD
+   3902 | 3902-ToolTip-Parts-Total-Num-Selected.htm ; IDC_NEST_TOTNUM_PARTS
+}
+1905 ; IDD_NESTING_PARAMS_DLG 
+{
+   2946 | 2946-ToolTip-Execute-Nest.htm ; IDC_NEST_EXE
+   2670 | 2670-ToolTip-Accuracy-Slider.htm ; IDC_ACCURACY
+   2951 | 2951-ToolTip-Preview-Nest.htm ; IDC_PREVIEW_NEST
+   2959 | 2959-ToolTip-Dist-Part2Sheet.htm ; IDC_DIST_PART_SHEET
+   2957 | 2957-ToolTip-Dist-Part2Part.htm ; IDC_DIST_PART_PART
+   2823 | 2823-ToolTip-Overflow-Min-Util.htm ; IDC_EDIT_MIN_UTIL
+   3544 | 3544-ToolTip-Est-Number-of-Sheets.htm ; IDC_ESTIMATE_SHEETS_BUTTON
+   3574 | 3574-ToolTip-Tag-Nested-Curves.htm ; IDC_TAG_NESTED_CURVES_AUTOMATICALLY_CHECK
+   2858 | 2858-ToolTip-Annotation-Radio.htm ; IDC_AUTO_TAG_OUTPUT_ANNOTATION
+   3626 | 3626-ToolTip-Auto-Tag-Options-Group.htm ; Auto Tag Group
+   3627 | 3627-ToolTip-Nested-Sheets-Layout-Group.htm ; Nested Sheets Layout Group
+   2156 | 2156-ToolTip-Geometry-Radio.htm ; IDC_AUTO_TAG_OUTPUT_GEOMETRY
+   2841 | 2841-ToolTip-Tag-Text-Height.htm ; IDC_TAG_TEXT_HEIGHT_EDIT
+   3139 | 3139-ToolTip-Space-Between-Sheet.htm ; IDC_SPACING
+   3140 | 3140-ToolTip-Along-Y-Radio.htm ; IDC_ALONGY
+   3594 | 3594-ToolTip-Stack-Radio.htm ; IDC_NOARRAY
+   3141 | 3141-ToolTip-Along-X-Radio.htm ; IDC_ALONGX
+}
+1901 ; IDD_NESTING_BROWSERDLG 
+{
+}
+24055 ; IDD_NESTING_PREVIEW 
+{
+   2982 | 2982-ToolTip-Sheet-Utilization-List.htm ; IDC_NESTEDSHEET_LIST
+   2984 | 2984-ToolTip-Back-Button.htm ; IDC_BACK
+   3540 | 3540-ToolTip-Report-Button.htm ; IDC_NESTING_REPORT
+   3628 | 3628-ToolTip-Nested-Sheets-Geometry-Grouping-Group.htm ; Nested Sheets-Geometry Grouping
+   3629 | 3629-ToolTip-Export-Sheets2Files-Group.htm ; Export Group
+   3858 | 3858-ToolTip-Nest-Preview-Unnested-Parts-List.htm ; IDC_NEST_UNNESTEDLIST
+}
+34587 ; IDD_NEST_UI_OPTIONS_PAGE "User Interface"
+{
+   3736 | 3736-ToolTip-Pref-UI-USE_HELP_TOOLTIPS_NEST.htm ; IDC_USE_HELP_TOOLTIPS_NEST
+   1306 | 1306-ToolTip-Pref-UI-TOOLTIP_DELAY.htm ; IDC_TOOLTIP_DELAY
+   3744 | 3744-ToolTip-Pref-UI-EXPR_RES_TT_CB.htm ; IDC_EXPR_RES_TT_CB
+   3900 | 3900-ToolTip-UI-Num-of-Trailing-Zeros.htm ; IDC_NEST_SYMBOLS_AFTER_COMMA
+}
+34520 ; IDD_NESTING_REPORT_DLG "Nesting Report"
+{
+  ; IDCANCEL | file.htm ; IDCANCEL
+   3502 | 3502-ToolTip-Nesting-Report-List.htm ; IDC_LIST_NESTING_REPORT
+   3548 | 3548-ToolTip-Nesting-Report-Print.htm ; IDC_PRINT_NESTING_REPORT
+}
+34521 ; IDD_ESTIMATE_SHEETS_DLG "Estimated # of Sheets"
+{
+  ; IDCANCEL | file.htm ; IDCANCEL
+   3503 | 3745-ToolTip-Nest-Sheet-Report-Update.htm ; IDC_ESTIMATE_SHEETS_LIST
+   3745 | 3745-ToolTip-Nest-Sheet-Report-Update.htm ; IDC_NEST_UPDATE_SHEET_COUNT
+}
+34642 ; IDD_NEST_COMMIT_DLG 
+{
+   2955 | 2955-ToolTip-Commit-Nest-Button.htm ; IDC_COMMIT_NEST
+   2829 | 2829-ToolTip-Export-Sheets2Files-Group.htm ; IDC_NEST_EXPORT_SHEETS_PATH
+   3554 | 3554-ToolTip-Export-Sheets2Files-Group.htm ; IDC_NEST_EXPORT_SELECT_PATH_BTN
+   3613 | 3613-ToolTip-Export-Sheets2Files-Group.htm ; IDC_MOVE_TO_EXPORT_CHECK
+   3577 | 3577-ToolTip-Export-Sheets2Files-Group.htm ; IDC_NEST_EXPORT_SHEETS_BTN
+   2861 | 2861-ToolTip-Nested-Sheets-GeoGroup.htm ; IDC_USELAYERS
+   2867 | 2867-ToolTip-Nested-Sheets-GeoGroup.htm ; IDC_USENONE
+   2870 | 2870-ToolTip-Nested-Sheets-GeoGroup.htm ; IDC_USEGROUP
+   3614 | 3577-ToolTip-Export-Sheets2Files-Group.htm ; IDC_NEST_EXPORT_PROGRESS
+}
